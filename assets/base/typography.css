@@ -1,0 +1,118 @@
+/*------------------------------------*\
+    TYPOGRAPHY
+\*------------------------------------*/
+
+/**
+  * 1. Dynamic REM size
+  * 
+  * This calc() algorithm provides a more accurate calculation of font-sizes
+  * between breakpoints. Useful for article or marketing based projects that
+  * utilize screen real-estate for varying font-sizes, as opposed to something
+  * like a dashboard that's most likely 16px on all breakpoints.
+  *
+  * calculate
+  * 100 viewport width minus minimum width
+  * divided by (maximum width minus minimum width)
+  * multiplied by (maximum font-size minus minimum font-size)
+  * plus minimum font-size
+  */
+
+html {
+  @apply text-gray-600;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, system-ui, "Segoe UI", 
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: clamp(1em, ((100vw - 18.75em) / 300) * 2 + 1em, 1.125em);
+  /* letter-spacing: 0.01875em; */
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+@screen sm {
+  html {
+    font-size: clamp(1.125em, ((100vw - 37.5em) / 640) * 3 + 1.125em, 1.3125em);
+  }
+}
+
+::selection,
+::-moz-selection {
+  @apply bg-primary-300;
+}
+
+/* All header fonts */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  @apply text-gray-800;
+  margin-bottom: .75em;
+  margin-top: 1.5em;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+  @apply font-extrabold tracking-tight;
+}
+
+h1, .h1 { @apply text-4xl; }
+h2, .h2 { @apply text-2xl; }
+h3, .h3 { @apply text-xl; }
+h4, .h4 { @apply text-lg font-bold; }
+h5, .h5 { @apply text-base font-normal uppercase; }
+h6, .h6 { @apply text-base; }
+
+@screen sm {
+  h1, .h1 { @apply text-6xl; }
+  h2, .h2 { @apply text-4xl; }
+  h3, .h3 { @apply text-2xl; }
+  h4, .h4 { @apply text-xl; }
+  h5, .h5 { @apply text-lg; }
+  h6, .h6 { @apply text-lg; }
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* ul, ol {
+  li {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    position: relative;
+  }
+} */
+
+blockquote {
+	position: relative;
+	padding: 2rem;
+	font-size: 1.25rem;
+	line-height: 1.4;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+blockquote:before {
+  content: "\0201C";
+  font-family: sans-serif;
+  position: absolute;
+  font-size: 4em;
+  left: 0;
+  top: 0;
+}
+
+blockquote:after {
+  content: attr(cite);
+  display: block;
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+hr {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-top-width: 1px;
+  border-color: transparent;
+  background-color: #e7e7e7;
+}

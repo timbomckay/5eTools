@@ -1,0 +1,70 @@
+/* Misc ========================================================================== */
+
+/**
+  * Add the correct display in IE 10+.
+  */
+
+/* template {
+  display: none;
+} */
+
+/**
+  * Add the correct display in IE 10.
+  */
+
+/* [hidden] {
+  display: none;
+} */
+
+/**
+  * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
+  * A thin layer on top of normalize.css that provides a starting point more
+  * suitable for web applications.
+  */
+
+/**
+  * Removes the default spacing and border for appropriate elements.
+  */
+
+/* blockquote,
+dl,
+dd,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+} */
+
+button {
+  background-color: transparent;
+  background-image: none;
+}
+
+/**
+  * Work around a Firefox/IE bug where the transparent `button` background
+  * results in a loss of the default `button` focus styles.
+  */
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+/* ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */

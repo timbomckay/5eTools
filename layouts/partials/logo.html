@@ -1,0 +1,14 @@
+{{ $class := .class }}
+{{ with ((site.GetPage "section" "settings").Resources.GetMatch "identity.md") }}
+  {{- if .Params.logo -}}
+    {{ $image := (site.GetPage "section" "media").Resources.GetMatch (strings.TrimPrefix "/media/" .Params.logo ) }}
+    {{- if true -}}
+      {{ $svg := (print "content/media/" $image | readFile) }}
+      {{ replaceRE "<svg (.*)?>(.*)</svg>" (printf `<svg aria-label="%s logo image" class="%s max-w-full h-auto" ${1}>${2}</svg>` site.Title $class) $svg | safeHTML }}
+    {{- else -}}
+      <img class="{{ $class }}" src="{{ $image.RelPermalink }}" alt="{{ site.Title }} logo image" />
+    {{- end -}}
+  {{- else -}}
+    <span class="block px-5 py-3">{{ site.Title }}</span>
+  {{- end -}}
+{{- end -}}

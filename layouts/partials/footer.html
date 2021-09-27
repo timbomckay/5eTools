@@ -1,0 +1,28 @@
+<footer class="bg-gray-50 border-t-2 mt-24 text-gray-500 text-xs">
+    <div class="text-center max-w-screen-md mx-auto p-6">
+        <div class="sm:flex justify-between items-center">
+            <div>
+                <a href="/" class="inline-block" style="max-width: 14rem; margin-left: -1rem;">
+                    {{- partial "logo" -}}
+                </a>
+            </div>
+            <div class="ml-auto my-4">
+                {{- partial "footer-navigation" -}}
+            </div>
+        </div>
+        <div class="text-center sm:flex items-center justify-between">
+            <span>&copy; {{ dateFormat "2006" now }} {{ .Site.Title }}. All rights reserved.</span>
+            <div class="my-4">
+                {{- partial "social-links" -}}
+            </div>
+        </div>
+    </div>
+</footer>
+
+{{- if .IsHome -}}
+    {{- with ((site.GetPage "section" "settings").Resources.GetMatch "globals.md") -}}
+        {{- if (.Params.netlifycms_identity_widget | default true) -}}
+            <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        {{- end -}}
+    {{- end -}}
+{{- end -}}

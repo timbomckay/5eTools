@@ -1,0 +1,47 @@
+<details class="sm:relative print:hidden">
+  <summary class="sm:hidden hide-marker px-4 py-2">
+    <span class="icon mr-1 text-lg inline-block open:hidden">{{- partial "icons/navigation/menu.svg" -}}</span>
+    <span class="icon mr-1 text-lg hidden open:inline-block">{{- partial "icons/navigation/close.svg" -}}</span>
+    Menu
+  </summary>
+  <nav class="absolute bg-white h-screen left-0 lg:text-xs px-3 py-2 right-0 sm:h-auto sm:py-0 sm:relative sm:text-sm sm:top-auto top-full">
+    {{ $currentPage := . }}
+    {{- with ((site.GetPage "section" "settings").Resources.GetMatch "main-navigation.md") -}}
+      {{ $classes := "block sm:inline-block py-2" }}
+      
+      {{- range .Params.menu -}}
+        {{ $classes := (printf "%s%s" $classes " px-4 text-gray-800 sm:px-2" ) }}
+
+        {{- if eq .type "page" -}}
+          {{- with (site.GetPage .page) -}}
+            <a href="{{ .RelPermalink }}" class="{{ $classes }}{{ if eq $currentPage.RelPermalink .RelPermalink }} active{{ end }}">
+              {{- .LinkTitle -}}
+            </a>
+          {{- end -}}
+        {{- end -}}
+
+        {{- if eq .type "custom" -}}
+          <a href="{{ .url }}"
+            class="{{ $classes }}"
+            {{- if .external -}}
+              target="_blank" rel="noopener"
+            {{- end -}}
+          >
+            {{- .linktitle -}}
+            {{- if .external -}}
+              {{- partial "external-link-icon.html" -}}
+            {{- end -}}
+          </a>
+        {{- end -}}
+      {{- end -}}
+
+      {{- with .Params.cta -}}        
+        {{- with (site.GetPage .) -}}
+          <a href="{{ .RelPermalink }}" class="{{ $classes }} btn btn-primary mt-2 sm:ml-2 sm:mt-0">
+            {{- .LinkTitle -}}
+          </a>
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  </nav>
+</details>

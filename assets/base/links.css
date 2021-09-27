@@ -1,0 +1,41 @@
+/* purgecss start ignore */
+:focus {
+  outline-color: theme('colors.primary.300');
+}
+
+:focus:not(:focus-visible) {
+  outline: none
+}
+/* purgecss end ignore */
+
+a {
+  font-weight: bold;
+  color: theme('colors.primary.500');
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: theme('colors.primary.700');
+  /* text-decoration: underline; */
+}
+
+.header-link {
+  float: left;
+  font-size: 0.75em;
+  margin-left: calc(-1em - 0.25rem);
+  margin-top: 0.1em;
+  padding-right: 0.25rem;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: theme('colors.primary.500');
+  }
+}
+
+:not(:hover) > .header-link:not(:focus) {
+  opacity: 0;
+}

@@ -1,0 +1,18 @@
+{{ with ((site.GetPage "section" "settings").Resources.GetMatch "socials.md") }}
+  <nav>
+    {{ range $k, $v := .Params }}
+      {{ if $v }}
+        <a
+          href="{{ $v }}"
+          target="_blank"
+          rel="noopener"
+          aria-label="Go to {{ $k }} profile"
+          class="icon text-current text-sm p-1 ml-1 leading-3 opacity-75 hover:opacity-100 focus:opacity-100"
+          title="{{ $k }}"
+        >
+          {{- partial (print "logos/" $k ".svg") -}}
+        </a>
+      {{ end }}
+    {{ end }}
+  </nav>
+{{ end }}

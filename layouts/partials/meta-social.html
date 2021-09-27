@@ -1,0 +1,55 @@
+{{ $title := print .Title " · " .Site.Title }}
+{{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+
+<!-- Primary Meta Tags -->
+<meta name="publisher" content="{{ .Site.Title }}" />
+<meta name="title" content="{{ $title }}" />
+<meta name="description" content="{{ .Summary }}" />
+
+<meta itemprop="datePublished" content="{{ dateFormat "2006-01-02" .PublishDate.UTC | safeHTML }}" />
+<meta itemprop="description" content="{{ .Summary }}" />
+<meta itemprop="headline" content="{{ $title }}" />
+<meta itemprop="name" content="{{ $title }}" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:description" content="{{ .Summary }}" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="article:published_time" content="{{ dateFormat "2006-01-02T15:04:05Z" .PublishDate.UTC | safeHTML }}" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="{{ .Summary }}" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+
+<!-- Images -->
+{{ with .Params.hero.image }}
+  <!-- TODO: Provide Fallback Image Setting -->
+  {{ $image := (site.GetPage "section" "media").Resources.GetMatch (strings.TrimPrefix "/media/" . ) }}
+  {{ $src := $image.Permalink }}
+  {{ if ge $image.Width 420 }}
+    {{ $img := ($image.Resize (printf "%s%s" (string 420) "x")) }}
+    {{ $src = $img.Permalink }}
+  {{ end }}
+
+  <meta itemprop="image" content="{{ $src }}" />
+  <meta property="og:image" content="{{ $src }}" />
+  <meta property="og:image:url" content="{{ $src }}" />
+  <meta name="twitter:image" content="{{ $src }}" />
+{{ end }}
+
+{{ if ne .Lastmod .PublishDate }}
+<meta itemprop="dateModified" content="{{ dateFormat "2006-01-02T15:04:05Z" .Lastmod.UTC | safeHTML }}" />
+<meta property="article:modified_time" content="{{ dateFormat "2006-01-02T15:04:05Z" .Lastmod.UTC | safeHTML }}" />
+<meta property="og:updated_time" content="{{ dateFormat "2006-01-02T15:04:05Z" .Lastmod.UTC | safeHTML }}" />
+{{ end }}
+
+{{ if false }}
+<!-- TODO: Provide Social Settings -->
+<meta name="twitter:site" content="@bolsnews" />
+<meta property="article:publisher" content="https://www.facebook.com/belloflostsouls/" />
+{{ end }}

@@ -1,0 +1,31 @@
+{{- with ((site.GetPage "section" "settings").Resources.GetMatch "footer-navigation.md") -}}
+  <nav>
+    {{ $classes := "text-current font-normal inline-block mb-1 ml-4" }}
+    
+    {{- range .Params.menu -}}
+      {{ $classes := (printf "%s %s" $classes "" ) }}
+
+      {{- if eq .type "page" -}}
+        {{- with (site.GetPage .page) -}}
+          <a href="{{ .RelPermalink }}" class="{{ $classes }}">
+            {{- .LinkTitle -}}
+          </a>
+        {{- end -}}
+      {{- end -}}
+
+      {{- if eq .type "custom" -}}
+        <a href="{{ .url }}"
+          class="{{ $classes }}"
+          {{- if .external -}}
+            target="_blank" rel="noopener"
+          {{- end -}}
+        >
+          {{- .linktitle -}}
+          {{- if .external -}}
+            {{- partial "external-link-icon.html" -}}
+          {{- end -}}
+        </a>
+      {{- end -}}
+    {{- end -}}
+  </nav>
+{{- end -}}

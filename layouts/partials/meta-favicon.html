@@ -1,0 +1,20 @@
+{{/*  get identity settings  */}}
+{{ with ((site.GetPage "section" "settings").Resources.GetMatch "identity.md") }}
+  {{/*  get favicon parameter  */}}
+  {{ with .Params.favicon }}
+    {{/* get file that matches the filename */}}
+    {{ $image := (site.GetPage "section" "media").Resources.GetMatch (strings.TrimPrefix "/media/" . ) }}
+    
+    {{/*  generate apple favicons  */}}
+    {{ range $arr := (slice 120 152 180) }}
+      {{ $img := ($image.Resize (printf "%sx%s" (string .) (string .))) }}
+      <link rel="apple-touch-icon" sizes="{{ . }}x{{ . }}" href="{{ $img.RelPermalink }}">
+    {{ end }}
+
+    {{/*  generate other favicons  */}}
+    {{ range $arr := (slice 32 96 192) }}
+      {{ $img := ($image.Resize (printf "%sx%s" (string .) (string .))) }}
+      <link rel="icon" type="image/png" sizes="{{ . }}x{{ . }}" href="{{ $img.RelPermalink }}">
+    {{ end }}
+  {{ end }}
+{{ end }}

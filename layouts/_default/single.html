@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article>
+  {{- partial "hero" . -}}
+  
+  <div class="max-w-ch mx-auto px-6">
+    {{- .Content -}}
+  </div>
+</article>
+{{ end }}
