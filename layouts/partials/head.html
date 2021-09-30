@@ -16,13 +16,3 @@
   {{ $css = $css | minify | fingerprint | resources.PostProcess }}
 {{ end }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" media="all" />
-
-<script>
-  if (localStorage.getItem('netlify-cms-user') != null) {
-    // provide css for netlify preview
-    localStorage.setItem('netlify-cms-preview-css', {{ $css.RelPermalink }});
-  }
-</script>
-
-{{- partial "meta-social" . -}}
-{{- partial "meta-favicon" -}}

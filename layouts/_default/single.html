@@ -1,8 +1,7 @@
 {{ define "main" }}
 <article>
-  {{- partial "hero" . -}}
-  
   <div class="max-w-ch mx-auto px-6">
+    <h1>{{- .Title -}}</h1>
     {{- .Content -}}
   </div>
 </article>

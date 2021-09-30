@@ -1,30 +1,15 @@
 {{ define "main" }}
-  {{- partial "hero" . -}}
   <div class="max-w-ch mx-auto px-6 pt-8 pb-12">
+    <h1>{{- .Title -}}</h1>
     {{ with .Content }}
         {{- . -}}
     {{ end }}
   </div>
   {{ range .Pages }}
-    {{- if .Params.hero.image -}}
-      <article class="mx-auto max-w-screen-lg sm:flex">
-        <div class="sm:mr-4" style="flex:3">
-          {{- partial "image" (dict "src" .Params.hero.image "alt" .Title "loading" "lazy" "class" "") -}}
-        </div>
-        <div class="flex-1" style="flex:2">
-          <div class="max-w-lg mr-auto p-6">
-            <h2 class="mt-4 sm:mt-0"><a href="{{.Permalink}}" class="font-extrabold">{{.Title}}</a></h2>
-            <p>{{ .Summary }}</p>
-            <a href="{{.Permalink}}" class="btn btn-primary mt-4 text-sm">View Page</a>
-          </div>
-        </div>
-      </article>
-    {{- else -}}
-      <article class="mx-auto max-w-ch my-24 px-6">
-        <h2 class="sm:mt-0"><a href="{{.Permalink}}" class="font-extrabold">{{.Title}}</a></h2>
-        <p>{{ .Summary }}</p>
-        <a href="{{.Permalink}}" class="btn btn-primary mt-4 text-sm">View Page</a>
-      </article>
-    {{- end -}}
+    <article class="mx-auto max-w-ch my-24 px-6">
+      <h2 class="sm:mt-0"><a href="{{.Permalink}}" class="font-extrabold">{{.Title}}</a></h2>
+      <p>{{ .Summary }}</p>
+      <a href="{{.Permalink}}" class="btn btn-primary mt-4 text-sm">View Page</a>
+    </article>
   {{ end }}
 {{ end }}
