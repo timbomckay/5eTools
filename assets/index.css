@@ -1,0 +1,45 @@
+@import "normalize/_index.css";
+@import "base/_index.css";
+/* @import "tailwindcss/components"; */
+@import "details-menu.css";
+@import "tailwindcss/utilities";
+
+html {
+  scroll-padding-top: 6rem;
+  scroll-padding-bottom: 3rem;
+}
+
+.not-focus\:sr-only:not(:focus) {
+  @apply sr-only;
+}
+
+pre {
+  @apply text-gray-800;
+  background-color: whitesmoke;
+  padding: 1rem;
+  max-width: 100%;
+  overflow: hidden;
+  text-align: left;
+  white-space: pre-wrap;
+  font-size: 13px;
+  z-index: 999;
+}
+
+pre pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.icon > svg {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  max-width: 100%;
+  max-height: 100%;
+}

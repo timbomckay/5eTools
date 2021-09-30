@@ -1,0 +1,12 @@
+.btn {
+  @apply font-bold inline-block px-4 py-2 rounded;
+}
+
+.btn-primary {
+  @apply bg-primary-500 text-white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  @apply bg-primary-700 text-white;
+}

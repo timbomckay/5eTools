@@ -1,0 +1,11 @@
+{{- if reflect.IsMap . -}}
+  <pre>
+    {{- range $key, $val := . -}}
+      <div>
+        {{- $key }} -- {{ partial "debug" $val -}}
+      </div>
+    {{- end -}}
+  </pre>
+{{- else -}}
+  {{- printf "%#v" . -}}
+{{- end -}}

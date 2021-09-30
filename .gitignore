@@ -1,3 +1,14 @@
-img/
-/inventory/.ipynb_checkpoints
+# files
+.DS_Store
+.env
+.netlify
+deploy
+hugo_stats.json
+.ipynb_checkpoints
 dnd-project-b2aa4-firebase-adminsdk-1ubid-87322187c7.json
+
+# directories
+img/
+node_modules/
+public/
+resources/

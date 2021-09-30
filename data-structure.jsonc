@@ -1,0 +1,67 @@
+{
+  "campaigns": {
+    "--random-id-123--": {
+      "name": "The War of Storms",
+      "users": [ "--random-id-123--" ],
+      "characters": [ "--random-id-123--" ],
+      "notes": [],
+      "timeline": [],
+      "items": [
+        {
+          "id": "--random-id-123--",
+          "notes": [],
+          "identified": true
+        }
+      ]
+    }
+  },
+  "characters": {
+    "--random-id-123--": {
+      "name": "Tenebrae",
+      "items": [
+        {
+          "id": "--random-id-123--",
+          "notes": []
+        }
+      ]
+    }
+  },
+  "items": {
+    "--random-id-123--": {
+      "name": "Bag of Holding",
+      "source": "PHB",
+      "rarity": "string",
+      // merging reqAttune & reqAttuneTags & reqAttuneAlt
+      "attunement": "string | boolean | object",
+      // hasFluff & hasFluffImages
+      "image": "boolean",
+      // entries
+      "description": "array | object",
+      "srd": "boolean",
+      "type": "string",
+      "tier": "string",
+    }
+  },
+  "users": {
+    "--random-id-123--": {
+      "name": "Tim McKay",
+      "email": "timbomckay@gmail.com",
+      // users should select which books they "own",
+      // this determines what content (items) are available in the campaign
+      "books": [ "--random-id-123--" ],
+      // campaign id as master
+      "campaigns": [ "--random-id-123--" ],
+      // created characters
+      "characters": [ "--random-id-123--" ]
+    }
+  },
+  "siteindex": {
+    "adventure": {
+      "out-of-the-abyss": [
+        "chapter-1-prisoners-of-the-drow",
+        "chapter-2-into-the-dark"
+      ]
+    }
+  }
+}
+

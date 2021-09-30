@@ -1,0 +1,2 @@
+{{/*  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />  */}}
+{{- partial "image" (dict "src" (.Destination | safeURL) "alt" .Text "loading" "lazy" "levels" 5) -}}

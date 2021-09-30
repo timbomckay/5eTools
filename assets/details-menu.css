@@ -1,0 +1,10 @@
+summary {
+  cursor: pointer;
+}
+
+.hide-marker { list-style: none; }
+.hide-marker::-webkit-details-marker { display: none; }
+
+[open] .open\:hidden { display: none; }
+[open] .open\:block { display: block; }
+[open] .open\:inline-block { display: inline-block; }
