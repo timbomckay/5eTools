@@ -28,6 +28,11 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+html {
+  font-family: 'PT Serif', serif;
+  font-family: 'Crimson Text', serif;
+}
+
 @screen sm {
   html {
     font-size: clamp(1.125em, ((100vw - 37.5em) / 640) * 3 + 1.125em, 1.3125em);

@@ -21,20 +21,17 @@ const process = (match, tag, meta, _, string) => {
         ? `_${meta}_`
         : `<i>${meta}</i>`;
     case 'area':
+      return `**area ${meta.split('|').shift()}**`;
     case 'link':
-      const [text, href] = meta.split('|');
-      // TODO: Target
-      return markdown
-        ? `[${text}](${href})`
-        : `<a href="${href}">${text}</a>`;
+      return `**${meta.split('|').shift()}**`;
     case 'dice':
     case 'damage':
       const [dice, label] = meta.split('|');
       return label
-        ? `<roll dice="${dice}">${label}<roll>`
-        : `<roll>${dice}<roll>`;
+        ? `<dice-roll dice="${dice}">${label}<dice-roll>`
+        : `<dice-roll>${dice}<dice-roll>`;
     case 'chance':
-      return `<roll chance>${meta} percent<roll>`;
+      return `<dice-roll chance>${meta} percent<dice-roll>`;
     case 'action':
     case 'condition':
     case 'hazard':
@@ -42,17 +39,21 @@ const process = (match, tag, meta, _, string) => {
     case 'sense':
     case 'skill':
     case 'spell':
-      return `<info type="${tag}">${meta}<info>`;
+      return `<fetch-data type="${tag}">${meta}<fetch-data>`;
     case 'hit':
-      return `<b>${meta >= 0 ? '+' : '-'}${meta}</b>`;
+      return markdown
+        ? `**${meta >= 0 ? '+' : '-'}${meta}**`
+        : `<b>${meta >= 0 ? '+' : '-'}${meta}</b>`;
     case 'dc':
       return `DC ${meta}`;
     case 'adventure':
     case 'book':
     case 'creature':
+    case 'disease':
     case 'filter':
     case 'table':
     case 'variantrule':
+      // console.log('process:', tag);
       return meta.split('|').shift();
     default:
       console.log({ match, tag, meta, string });
