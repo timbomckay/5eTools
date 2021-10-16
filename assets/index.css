@@ -2,11 +2,14 @@
 @import "base/_index.css";
 /* @import "tailwindcss/components"; */
 @import "details-menu.css";
+@import "table-of-contents.css";
+@import "tables.css";
 @import "tailwindcss/utilities";
 
 html {
-  scroll-padding-top: 6rem;
+  scroll-padding-top: 4rem;
   scroll-padding-bottom: 3rem;
+  background-image: url('/lightpaperfibers.png');
 }
 
 .not-focus\:sr-only:not(:focus) {
@@ -37,7 +40,7 @@ svg {
 }
 
 .icon > svg {
-  display: inline-block;
+  display: block;
   height: 1em;
   width: 1em;
   max-width: 100%;

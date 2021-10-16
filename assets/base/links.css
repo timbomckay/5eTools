@@ -26,14 +26,12 @@ a:focus {
   float: left;
   font-size: 0.75em;
   margin-left: calc(-1em - 0.25rem);
-  margin-top: 0.1em;
+  margin-top: 0.369em;
   padding-right: 0.25rem;
+}
 
-  &:hover,
-  &:active,
-  &:focus {
-    color: theme('colors.primary.500');
-  }
+.header-link:is(:hover,:active,:focus) {
+  color: theme('colors.primary.500');
 }
 
 :not(:hover) > .header-link:not(:focus) {

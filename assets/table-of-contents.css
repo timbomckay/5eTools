@@ -1,0 +1,25 @@
+table-of-contents {
+  font-size: 14px;
+}
+
+table-of-contents ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+table-of-contents li li {
+  padding-left: 1rem;
+}
+
+table-of-contents a {
+  @apply font-normal;
+}
+
+table-of-contents a:not(.active):not(:hover) {
+  @apply text-gray-600;
+}
+
+table-of-contents li a:not(.active) + ul:not(.has-active) {
+  display: none;
+}

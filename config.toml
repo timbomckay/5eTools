@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Our D&D"
+title = "The Handy Haversack"
 relativeurls = false
 
 [build]
@@ -8,3 +8,8 @@ relativeurls = false
 
 [minify]
   minifyOutput = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

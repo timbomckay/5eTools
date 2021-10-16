@@ -6,7 +6,7 @@
   "scripts": {
     "build": "hugo",
     "serve": "hugo serve",
-    "convert:content": "node ./scripts/create-content.js"
+    "convert:adventure": "node ./scripts/convert-adventure.js"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
