@@ -1,4 +1,4 @@
-// const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme');
 // Shades & Tints generator: https://javisperez.github.io/tailwindcolorshades/#/?primary=1169D3&tv=1
 
 module.exports = {
@@ -6,28 +6,16 @@ module.exports = {
     extend: {
       colors: {
         'primary': {
-          50: '#F3F8FD',
-          100: '#E7F0FB',
-          200: '#C4DAF4',
-          300: '#A0C3ED',
-          400: '#5896E0',
-          500: '#1169D3',
-          600: '#0F5FBE',
-          700: '#0A3F7F',
-          800: '#082F5F',
-          900: '#05203F',
-        },
-        'secondary': {
-          50: '#F8FCF6',
-          100: '#F2FAEC',
-          200: '#DEF2D0',
-          300: '#CAE9B4',
-          400: '#A2D97B',
-          500: '#7AC943',
-          600: '#6EB53C',
-          700: '#497928',
-          800: '#375A1E',
-          900: '#253C14',
+          '50': '#faf3f3', 
+          '100': '#f5e7e7', 
+          '200': '#e7c2c3', 
+          '300': '#d89d9f', 
+          '400': '#ba5456', 
+          '500': '#9d0a0e', 
+          '600': '#8d090d', 
+          '700': '#76080b', 
+          '800': '#5e0608', 
+          '900': '#4d0507'
         },
       },
       maxWidth: {
@@ -35,6 +23,12 @@ module.exports = {
       },
       screens: {
         'print': { 'raw': 'print' },
+      },
+      fontFamily: {
+        serif: [
+          'Crimson Text',
+          ...defaultTheme.fontFamily.serif
+        ]
       },
     },
     screens: {

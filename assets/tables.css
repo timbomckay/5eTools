@@ -1,0 +1,44 @@
+.table-wrapper {
+  @apply text-sm;
+  line-height: 1.1;
+  overflow: auto;
+  max-width: 100%;
+  margin: 1rem 0;
+  max-height: 60vh;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  min-width: 100%;
+}
+
+tbody > tr:nth-child(odd) {
+  @apply bg-yellow-100;
+}
+
+thead > tr,
+tr:nth-child(even) {
+  background-color: white;
+  background-image: url('/lightpaperfibers.png');
+}
+
+td,
+th {
+  background-color: inherit;
+  background-image: inherit;
+  padding: 0.25em 0.5em;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+td:first-child,
+th:first-child{
+  position: sticky;
+  left: 0;
+  max-width: 40vw;
+}

@@ -1,8 +1,105 @@
 {{ define "main" }}
-<article>
-  <div class="max-w-ch mx-auto px-6">
-    <h1>{{- .Title -}}</h1>
-    {{- .Content -}}
-  </div>
-</article>
+<h1 class="mb-6 px-6">{{- .Title -}}</h1>
+
+<div class="gap-8 lg:grid items-start" style="grid-template-columns: auto 10rem;">
+  <article class="max-w-ch mx-auto px-6">
+    {{- $wrappedTable := printf "<div class=table-wrapper> ${1} </div>" -}}
+    {{- .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML -}}
+  </article>
+
+  <aside class="sticky top-16 text-xs font-sans">
+    <details class="relative">
+      <summary class="mb-1">{{- .Title -}}</summary>
+      <nav class="absolute bg-white overflow-x-scroll rounded shadow border-gray-200 border-2 max-h-56">
+        {{ $currentPage := . }}
+
+        {{ range .CurrentSection.Pages }}
+          {{ $classList := slice "block px-2 py-1" }}
+          {{ if (eq .Title $currentPage.Title) }}
+            {{ $classList = $classList | append "" }}
+          {{ else }}
+            {{ $classList = $classList | append "font-normal text-gray-700" }}
+          {{ end }}
+          <a href="{{ .RelPermalink }}" class="{{ delimit (sort $classList) " " }}">{{ .Title }}</a>
+        {{ end }}
+      </nav>
+    </details>
+
+    <table-of-contents>
+      {{ .TableOfContents }}
+    </table-of-contents>
+
+    <div class="flex mt-4 gap-1 items-center">
+      {{ if .NextPage }}
+        <a href="{{ .NextPage.Permalink }}" class="icon text-lg leading-none">
+          {{- partial "icons/navigation/chevron_left.svg" -}}
+        </a>
+      {{ end }}
+      <a href="#skip-nav" class="icon text-xl leading-none">
+        {{- partial "icons/action/arrow_circle_up.svg" -}}
+      </a>
+      {{ if .PrevPage }}
+        <a href="{{ .PrevPage.Permalink }}" class="icon text-lg leading-none">
+          {{- partial "icons/navigation/chevron_right.svg" -}}
+        </a>
+      {{ end }}
+    </div>
+  </aside>
+</div>
+
+<script>
+window.customElements.define('table-of-contents',
+  class extends HTMLElement {
+    connectedCallback() {
+      const { headings } = this;
+      const toc = this;
+
+      const offset = window.visualViewport.height / 4;
+      
+      document.addEventListener('scroll', function(e) {
+        const find = headings.filter(obj => {
+          return obj.target.offsetTop < (window.scrollY + offset);
+        }).pop();
+
+        const current = toc.getElementsByClassName('active');
+
+        console.log((find != null) && (current[0] === find.el));
+        
+        if (current != null) {
+          for (let el of current) {
+            el.classList.remove('active');
+            const list = el.closest('ul');
+            list.classList.remove('has-active');
+          }
+        }
+
+        if (find != null) {
+          find.el.classList.add('active');
+          const list = find.el.closest('ul');
+          list.classList.add('has-active');
+        }
+
+        // console.log({ current });
+
+        // if (!find.el.classList.contains('active')) {
+        //   console.log({ current });
+        // }
+      });
+    }
+
+    get headings() {
+      const arr = [];
+
+      for (let el of this.querySelectorAll('a')) {
+        arr.push({
+          el,
+          target: document.getElementById(el.hash.replace('#', ''))
+        });
+      }
+
+      return arr;
+    }
+  }
+);
+</script>
 {{ end }}
