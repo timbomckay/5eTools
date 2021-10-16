@@ -7,7 +7,7 @@ const processEntry = (entry, level = 2) => {
 
   if (typeof entry === 'string') {
     // console.log('processEntry:string');
-    return convertTags(entry);
+    return convertTags(entry, level, toMarkdown);
   }
 
   switch (entry.type) {
@@ -58,7 +58,7 @@ const processEntry = (entry, level = 2) => {
 
         const createTableRow = (arr) => {
           arr = arr.map((cell, index) => {
-            cell = convertTags(cell);
+            cell = convertTags(cell, level, toMarkdown);
 
             return index === center
               ? `<span class="text-center block">${cell}</span>`
@@ -105,8 +105,8 @@ const processEntry = (entry, level = 2) => {
       return {
         ...obj,
         type: entry.type,
-        labels: entry.colLabels.map(label => convertTags(/^d\d/.test(label) ? `{@dice ${label}}` : label)),
-        rows: JSON.stringify(entry.rows.map(row => row.map(cell => convertTags(cell.entry || cell)))),
+        labels: entry.colLabels.map(label => convertTags(/^d\d/.test(label) ? `{@dice ${label}}` : label), level, toMarkdown),
+        rows: JSON.stringify(entry.rows.map(row => row.map(cell => convertTags(cell.entry || cell, level, toMarkdown)))),
       };
     case 'image':
       // console.log('processEntry:image');

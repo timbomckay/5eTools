@@ -1,11 +1,11 @@
 let level = 0;
-let markdown = false;
+let toMarkdown = false;
 
 const process = (match, tag, meta, _, string) => {
   switch (tag) {
     case 'b':
     case 'bold':
-      if (markdown) {
+      if (toMarkdown) {
         if (match === string) {
           return '#'.repeat(level + 1) + ' ' + meta;
         }
@@ -17,7 +17,7 @@ const process = (match, tag, meta, _, string) => {
     case 'i':
     case 'italic':
     case 'note':
-      return markdown
+      return toMarkdown
         ? `_${meta}_`
         : `<i>${meta}</i>`;
     case 'area':
@@ -28,10 +28,10 @@ const process = (match, tag, meta, _, string) => {
     case 'damage':
       const [dice, label] = meta.split('|');
       return label
-        ? `<dice-roll dice="${dice}">${label}<dice-roll>`
-        : `<dice-roll>${dice}<dice-roll>`;
+        ? `<dice-roll dice="${dice}">${label}</dice-roll>`
+        : `<dice-roll>${dice}</dice-roll>`;
     case 'chance':
-      return `<dice-roll chance>${meta} percent<dice-roll>`;
+      return `<dice-roll chance>${meta} percent</dice-roll>`;
     case 'action':
     case 'condition':
     case 'hazard':
@@ -39,9 +39,9 @@ const process = (match, tag, meta, _, string) => {
     case 'sense':
     case 'skill':
     case 'spell':
-      return `<fetch-data type="${tag}">${meta}<fetch-data>`;
+      return `<fetch-data type="${tag}">${meta.split('|').shift()}</fetch-data>`;
     case 'hit':
-      return markdown
+      return toMarkdown
         ? `**${meta >= 0 ? '+' : '-'}${meta}**`
         : `<b>${meta >= 0 ? '+' : '-'}${meta}</b>`;
     case 'dc':
@@ -61,8 +61,12 @@ const process = (match, tag, meta, _, string) => {
   }
 };
 
-const convertTags = (str, lvl) => {
+const convertTags = (str, lvl, markdown) => {
   level = lvl;
+
+  if (markdown != null) {
+    toMarkdown = markdown
+  }
 
   if (typeof str === 'number') {
     return str;
