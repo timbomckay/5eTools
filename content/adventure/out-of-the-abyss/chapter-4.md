@@ -25,11 +25,11 @@ Sweltering heat and cloying smoke cling to every corner of the duergar city, spe
 
 #### Grackle-Lung
 
-The constant smog in Gracklstugh causes grackle-lung in living, breathing creatures, resulting in persistent, wracking coughs and the spewing of thick, black phlegm. Whenever a living, breathing creature finishes a long rest in Gracklstugh, it must make a DC 11 Constitution saving throw. On each failed save, the creature gains one level of <fetch-data type="condition">exhaustion</fetch-data> as its airways become increasingly clogged. A creature that reaches level 6 <fetch-data type="condition">exhaustion</fetch-data> dies, as normal.
+The constant smog in Gracklstugh causes grackle-lung in living, breathing creatures, resulting in persistent, wracking coughs and the spewing of thick, black phlegm. Whenever a living, breathing creature finishes a long rest in Gracklstugh, it must make a DC 11 Constitution saving throw. On each failed save, the creature gains one level of <wc-fetch type="condition">exhaustion</wc-fetch> as its airways become increasingly clogged. A creature that reaches level 6 <wc-fetch type="condition">exhaustion</wc-fetch> dies, as normal.
 
-A creature with one or more levels of <fetch-data type="condition">exhaustion</fetch-data> brought on by grackle-lung must succeed on a Constitution check to take the Dash action. If the check fails, the action cannot be attempted. If the creature attempts to cast a spell with a verbal component, it must succeed on a Constitution check or be unable to complete the spell, causing the spell to fail with no effect. The DC for each check is 10 + the creature's current <fetch-data type="condition">exhaustion</fetch-data> level.
+A creature with one or more levels of <wc-fetch type="condition">exhaustion</wc-fetch> brought on by grackle-lung must succeed on a Constitution check to take the Dash action. If the check fails, the action cannot be attempted. If the creature attempts to cast a spell with a verbal component, it must succeed on a Constitution check or be unable to complete the spell, causing the spell to fail with no effect. The DC for each check is 10 + the creature's current <wc-fetch type="condition">exhaustion</wc-fetch> level.
 
-If a creature's <fetch-data type="condition">exhaustion</fetch-data> level drops below 1, it no longer suffers the effects of grackle-lung and becomes immune to it for the next week. Duergar and derro are inured to grackle-lung, making Constitution checks against it with advantage. Any spell or effect that cures disease also cures grackle-lung, effectively removing all levels of <fetch-data type="condition">exhaustion</fetch-data> brought on by the affliction.
+If a creature's <wc-fetch type="condition">exhaustion</wc-fetch> level drops below 1, it no longer suffers the effects of grackle-lung and becomes immune to it for the next week. Duergar and derro are inured to grackle-lung, making Constitution checks against it with advantage. Any spell or effect that cures disease also cures grackle-lung, effectively removing all levels of <wc-fetch type="condition">exhaustion</wc-fetch> brought on by the affliction.
 
 ## Going to Gracklstugh
 
@@ -608,7 +608,7 @@ At the end of each hour the adventurers stay inside either derro area, there is 
 
 Sneaking through the senseless arrangement of the burrows is relatively easy, as the derro are normally too preoccupied with their own mad scheming to notice a group trying not to attract attention. The characters can attempt a DC 10 group Dexterity (Stealth) check, with success negating the need to roll for a possible attack at the end of each hour or half hour.
 
-Other means of subterfuge such as illusions, climbing along the walls, or using flying or levitation magic automatically avoid detection, but invisibility of any kind activates magical wards placed by derro savants to guard against duergar intrusion. When a ward activates in response to the presence of an invisible creature, nearby derro fly into a frenzy, creating a chaotic mob meant to drive away invisible duergar patrols. Derro make active Wisdom (Perception) checks contested by the characters' Dexterity (Stealth) checks if a ward is activated. Characters using <fetch-data type="spell">detect magic</fetch-data> actively can spot the invisible sensor of a ward before it activates. Otherwise, invisible characters encounter a ward every 15 minutes they move through derro territory.
+Other means of subterfuge such as illusions, climbing along the walls, or using flying or levitation magic automatically avoid detection, but invisibility of any kind activates magical wards placed by derro savants to guard against duergar intrusion. When a ward activates in response to the presence of an invisible creature, nearby derro fly into a frenzy, creating a chaotic mob meant to drive away invisible duergar patrols. Derro make active Wisdom (Perception) checks contested by the characters' Dexterity (Stealth) checks if a ward is activated. Characters using <wc-fetch type="spell">detect magic</wc-fetch> actively can spot the invisible sensor of a ward before it activates. Otherwise, invisible characters encounter a ward every 15 minutes they move through derro territory.
 
 #### Access to the Whorlstone Tunnels
 
@@ -620,7 +620,7 @@ Any attempt to question the locals without an effective means of disguise or man
 
 ## Halls of Sacred Scrolls
 
-The Halls of Sacred Scrolls comprise a temple of Diirinka carved into a stalagmite in Northfurrow District. Here, the derro Council of Savants meets and plots, living in luxurious quarters and hiding such opulence from their fellow derro. All areas of the Halls of Sacred Scrolls except the central worship chamber are forbidden to derro who aren't savants. Duergar don't enter this place, whose main doors are false and carved into the rock. The savants enter and leave using spells such as <fetch-data type="spell">dimension door</fetch-data> and <fetch-data type="spell">passwall</fetch-data>, while lesser derro access the worship chamber through secret tunnels from the West Cleft.
+The Halls of Sacred Scrolls comprise a temple of Diirinka carved into a stalagmite in Northfurrow District. Here, the derro Council of Savants meets and plots, living in luxurious quarters and hiding such opulence from their fellow derro. All areas of the Halls of Sacred Scrolls except the central worship chamber are forbidden to derro who aren't savants. Duergar don't enter this place, whose main doors are false and carved into the rock. The savants enter and leave using spells such as <wc-fetch type="spell">dimension door</wc-fetch> and <wc-fetch type="spell">passwall</wc-fetch>, while lesser derro access the worship chamber through secret tunnels from the West Cleft.
 
 ## Cairngorm Cavern
 
@@ -642,7 +642,7 @@ This cryptic message refers to the demon lords and the madness their presence is
 
 As the characters prepare to leave, Hgraam calls for his apprentice Dorhun, who arrives bearing a polished crystal the length of a human forearm. Hgraam offers the crystal to the characters as a token of his gratitude, telling them it might be helpful in the future.
 
-The <fetch-data type="item">stonespeaker crystal</fetch-data> resonates strongly with conjuration and divination magic. If the characters keep the crystal after escaping the Underdark, it will be of use if they return to deal with the demonic incursion, as it is linked to the mysterious library of Gravenhollow and has additional properties when used there (see chapter 11).
+The <wc-fetch type="item">stonespeaker crystal</wc-fetch> resonates strongly with conjuration and divination magic. If the characters keep the crystal after escaping the Underdark, it will be of use if they return to deal with the demonic incursion, as it is linked to the mysterious library of Gravenhollow and has additional properties when used there (see chapter 11).
 
 ## Themberchaud's Lair
 
@@ -722,11 +722,11 @@ The Whorlstone Tunnels are home to two unique kinds of faerzress-suffused mushro
 
 #### Bigwig
 
-A bigwig is a four-inch-tall mushroom with a thin stem and a wide purple cap. A creature that eats one can choose to make a DC 12 Constitution saving throw to not be affected by the mushroom's magic. If the creature fails or forgoes the saving throw, it grows in size as though under the enlarge effect of an <fetch-data type="spell">enlarge/reduce</fetch-data> spell. The effect lasts for 1 hour. Ten minutes before the effect ends, the creature feels a tingling sensation, at which point it can sustain its current size by eating another bigwig. The effect ends if the creature eats a pygmywort mushroom or is magically reduced to its normal size (using the reduce effect of an <fetch-data type="spell">enlarge/reduce</fetch-data> spell, for example).
+A bigwig is a four-inch-tall mushroom with a thin stem and a wide purple cap. A creature that eats one can choose to make a DC 12 Constitution saving throw to not be affected by the mushroom's magic. If the creature fails or forgoes the saving throw, it grows in size as though under the enlarge effect of an <wc-fetch type="spell">enlarge/reduce</wc-fetch> spell. The effect lasts for 1 hour. Ten minutes before the effect ends, the creature feels a tingling sensation, at which point it can sustain its current size by eating another bigwig. The effect ends if the creature eats a pygmywort mushroom or is magically reduced to its normal size (using the reduce effect of an <wc-fetch type="spell">enlarge/reduce</wc-fetch> spell, for example).
 
 #### Pygmywort
 
-A pygmywort is a mushroom with a one-inch-long stem and a stubby blue cap with white dots. A creature that eats one can choose to make a DC 12 Constitution saving throw to not be affected by the mushroom's magic. If the creature fails or forgoes the saving throw, it shrinks in size as though under the reduce effect of an <fetch-data type="spell">enlarge/reduce</fetch-data> spell. The effect lasts for 1 hour. Ten minutes before the effect ends, the creature feels a tingling sensation, at which point it can sustain its current size by eating another pygmywort. The effect ends if the creature eats a bigwig mushroom or is magically enlarged to its normal size (using the enlarge effect of an <fetch-data type="spell">enlarge/reduce</fetch-data> spell, for example).
+A pygmywort is a mushroom with a one-inch-long stem and a stubby blue cap with white dots. A creature that eats one can choose to make a DC 12 Constitution saving throw to not be affected by the mushroom's magic. If the creature fails or forgoes the saving throw, it shrinks in size as though under the reduce effect of an <wc-fetch type="spell">enlarge/reduce</wc-fetch> spell. The effect lasts for 1 hour. Ten minutes before the effect ends, the creature feels a tingling sensation, at which point it can sustain its current size by eating another pygmywort. The effect ends if the creature eats a bigwig mushroom or is magically enlarged to its normal size (using the enlarge effect of an <wc-fetch type="spell">enlarge/reduce</wc-fetch> spell, for example).
 
 ### Whorlstone Tunnels Random Encounters
 
@@ -821,10 +821,10 @@ Killing or incapacitating Droki gives the characters the chance to rummage throu
 Droki's satchel is made of stitched darkmantle hide and contains the following items:
 
 - 1 gp and 10 sp
-- A <fetch-data type="item">Spell Scroll (2nd level)</fetch-data> of <fetch-data type="spell">see invisibility</fetch-data>
+- A <wc-fetch type="item">Spell Scroll (2nd level)</wc-fetch> of <wc-fetch type="spell">see invisibility</wc-fetch>
 - Two potions of healing
 - A worthless collection of dead vermin (spiders, centipedes, and the like) in various states of decomposition
-- Pages of lizard-skin parchment held together between two leather covers from two different books. The pages are full of mad scribbles and arcane formulas, but a character proficient in Intelligence (Arcana) can study them for 1 hour to discover that they constitute a spellbook containing the <fetch-data type="spell">Tenser's floating disk</fetch-data> and <fetch-data type="spell">feign death</fetch-data> spells.
+- Pages of lizard-skin parchment held together between two leather covers from two different books. The pages are full of mad scribbles and arcane formulas, but a character proficient in Intelligence (Arcana) can study them for 1 hour to discover that they constitute a spellbook containing the <wc-fetch type="spell">Tenser's floating disk</wc-fetch> and <wc-fetch type="spell">feign death</wc-fetch> spells.
 - A strange lump of black metal, which Droki intends to deliver to the Gray Ghosts (see below)
 - A scroll in a copper tube and four small pouches containing stone giant toenail clippings and skin flecks, which Droki intends to deliver to the cultists (see below). Each pouch is tagged with a different name, and the scroll contains a list of names matching those on the tags, together with descriptions. One of the names is "Dorhun," with a description corresponding to Stonespeaker Hgraam's apprentice. The rest of the names belong to other stone giants of Clan Cairngorm.
 
@@ -963,11 +963,11 @@ The abundance of fungi in the thicket makes it easy to forage here. Among the co
 
 ### Zuggtomoy's Gift
 
-A myconid with Zuggtmoy's gift can, as an action once per day, release a 20-foot-radius cloud of demon-tainted spores. Any other creature within the area that isn't already "blessed" with Zuggtmoy's gift must make a Constitution saving throw, with a save DC of 8 + the myconid's Constitution modifier + the myconid's proficiency bonus. A creature that forgoes or fails the saving throw becomes infected. While infected with Zuggtmoy's gift, the creature gains the ability to cast a special version of the <fetch-data type="spell">tree stride</fetch-data> spell that has no components. This spell allows the infected creature to move through patches of mold and fungi instead of trees. Once it casts this spell, the infected creature can't cast the spell again until it finishes a long rest.
+A myconid with Zuggtmoy's gift can, as an action once per day, release a 20-foot-radius cloud of demon-tainted spores. Any other creature within the area that isn't already "blessed" with Zuggtmoy's gift must make a Constitution saving throw, with a save DC of 8 + the myconid's Constitution modifier + the myconid's proficiency bonus. A creature that forgoes or fails the saving throw becomes infected. While infected with Zuggtmoy's gift, the creature gains the ability to cast a special version of the <wc-fetch type="spell">tree stride</wc-fetch> spell that has no components. This spell allows the infected creature to move through patches of mold and fungi instead of trees. Once it casts this spell, the infected creature can't cast the spell again until it finishes a long rest.
 
 Any creature infected with Zuggtmoy's gift has disadvantage on attack rolls against plant creatures. In addition, whenever an infected creature finishes a short or long rest, it must make a DC 15 Wisdom saving throw. On a failed save, the creature lapses into a state of euphoric bliss. While in this state, the creature can't take actions, bonus actions, or reactions, and must use all of its movement to dance and twirl about. At the end of its turn, the creature can repeat the saving throw, ending the euphoric bliss effect on a success.
 
-A <fetch-data type="spell">remove curse</fetch-data> or <fetch-data type="spell">greater restoration</fetch-data> spell rids a creature of Zuggtmoy's gift.
+A <wc-fetch type="spell">remove curse</wc-fetch> or <wc-fetch type="spell">greater restoration</wc-fetch> spell rids a creature of Zuggtmoy's gift.
 
 ### 5. Raucous Mesa
 
@@ -1044,7 +1044,7 @@ A character proficient and equipped with a poisoner's kit can also collect 1d6 d
 
 The copper tank is a sprinkler used by the duergar to fertilize the fungi in the pit. The copper pipe that extends from the tank is 10 feet long and can be turned so that its nozzle points in any direction. The nozzle is pointed toward the pit by default.
 
-Any creature can use an action to open or close a valve on the tank, releasing a cloud of pungent fertilizer that fills a 30-foot cube. The cloud grows 10 feet per side each round the valve remains open. The cloud has the same effect as a <fetch-data type="spell">stinking cloud</fetch-data> spell (save DC 12), but the effect ends 1d4+1 rounds after the valve is closed or the tank runs out of fertilizer. The tank contains enough fertilizer to spray for 10 rounds.
+Any creature can use an action to open or close a valve on the tank, releasing a cloud of pungent fertilizer that fills a 30-foot cube. The cloud grows 10 feet per side each round the valve remains open. The cloud has the same effect as a <wc-fetch type="spell">stinking cloud</wc-fetch> spell (save DC 12), but the effect ends 1d4+1 rounds after the valve is closed or the tank runs out of fertilizer. The tank contains enough fertilizer to spray for 10 rounds.
 
 As an action or a bonus action, a creature can turn the pipe 90 degrees in any direction.
 
@@ -1078,7 +1078,7 @@ Sounds of combat here alert the duergar in **area 7**. They use their Enlarge ac
 
 #### Treasure
 
-If the characters spend 1 hour ransacking the lab, they can assemble two herbalism kits, one poisoner's kit, and ten healer's kits. In the (unlocked) zurkhwood chests, they find 1d6 vials of acid, 1d6 flasks of alchemist's fire, two <fetch-data type="item">potion of healing</fetch-data>, one <fetch-data type="item">potion of greater healing</fetch-data>, one <fetch-data type="item">potion of fire breath</fetch-data>, and one <fetch-data type="item">potion of psychic resistance</fetch-data>.
+If the characters spend 1 hour ransacking the lab, they can assemble two herbalism kits, one poisoner's kit, and ten healer's kits. In the (unlocked) zurkhwood chests, they find 1d6 vials of acid, 1d6 flasks of alchemist's fire, two <wc-fetch type="item">potion of healing</wc-fetch>, one <wc-fetch type="item">potion of greater healing</wc-fetch>, one <wc-fetch type="item">potion of fire breath</wc-fetch>, and one <wc-fetch type="item">potion of psychic resistance</wc-fetch>.
 
 Depending on whether or not Droki delivered his parcel and took his payment, the desk contains either a lump of black metal or a holy symbol of Laduguer made of mithral (see "Finging Droki"). The desk also holds alchemical recipes scrawled in Dwarvish on torn strips of parchment. A character who studies these scraps for an hour and succeeds on a DC 15 Intelligence (Arcana) check can piece together the formulas for crafting vials of acid and flasks of alchemist's fire. The character can gather enough ingredients in the laboratory to craft 1d4 of each. The character who knows the recipe and has the proper ingredients can craft a vial of acid or flask of alchemist's fire in 1 hour.
 
@@ -1138,7 +1138,7 @@ A crack in the south wall leads to a narrow tunnel that wends toward **area 12**
 
 #### Spiral Path
 
-This path helps to channel the ritual magic the cultists use to tame the cave bears. Though the ritual is currently inactive, the area radiates a faint aura of enchantment under the scrutiny of a <fetch-data type="spell">detect magic</fetch-data> spell.
+This path helps to channel the ritual magic the cultists use to tame the cave bears. Though the ritual is currently inactive, the area radiates a faint aura of enchantment under the scrutiny of a <wc-fetch type="spell">detect magic</wc-fetch> spell.
 
 #### Treasure
 
@@ -1206,7 +1206,7 @@ The tunnel west of this cavern contains a hidden pit (see "Sample Traps" in chap
 
 If the characters return the broken statue (or, at the very least, its second head) to Stonespeaker Hgraam, he gives them an emerald worth 500 gp as a reward, as well as his promise to vouch for them in anything they seek to accomplish in Gracklstugh.
 
-Narrak has a key around his neck that opens the lock on the iron chest, which can also be picked with thieves' tools and a successful DC 17 Dexterity check. The chest contains a jar of <fetch-data type="item">Keoghtom's ointment</fetch-data> and a small leather bag containing 45 gp and 15 sp.
+Narrak has a key around his neck that opens the lock on the iron chest, which can also be picked with thieves' tools and a successful DC 17 Dexterity check. The chest contains a jar of <wc-fetch type="item">Keoghtom's ointment</wc-fetch> and a small leather bag containing 45 gp and 15 sp.
 
 The books have pages made from trillimac caps (see "**area Fungi of the Underdark**" in chapter 2). They contain the mad scribblings of Narrak and his fellow derro savants. A character proficient in Arcana, Investigation, or Religion can spend 8 hours poring through them; subtract 1d4 hours if the character reads Dwarvish. At the end of this time, the character knows that the books outline two rituals: one that causes a one-headed creature to sprout a second head, and another that allows the grafting of a severed head onto a living creature. The notes fail to mention that the ritual's caster must be suffering from some form of madness to perform either ritual successfully.
 

@@ -105,7 +105,7 @@ A character not focused on any other task-including watching for danger while tr
 
 Unless they obtain a supply of food and water, the adventurers must forage to survive on their journey. Finding sustenance in the Underdark is difficult but not impossible. Characters can gather food and water if the party travels at a normal or slow pace. A foraging character makes a Wisdom (Survival) check. The DC is typically 15, but might be as high as 20 in some parts of the Underdark. Food and water requirements for characters are described in chapter 8, "Adventuring," of the _Player's Handbook_.
 
-In addition to foraging, spells such as <fetch-data type="spell">create food and water</fetch-data> and <fetch-data type="spell">goodberry</fetch-data> can help provision the party, and there's always a chance for the characters to encounter others from whom they can buy or steal provisions. Additionally, many creatures the adventurers might meet and kill can be butchered, but the meat they yield spoils after a single day if uneaten. Eating spoiled meat might require a Constitution saving throw to keep the meal down, a Wisdom saving throw to avoid acquiring a level of madness from the awful experience (see "Madness" later in this chapter), or both.
+In addition to foraging, spells such as <wc-fetch type="spell">create food and water</wc-fetch> and <wc-fetch type="spell">goodberry</wc-fetch> can help provision the party, and there's always a chance for the characters to encounter others from whom they can buy or steal provisions. Additionally, many creatures the adventurers might meet and kill can be butchered, but the meat they yield spoils after a single day if uneaten. Eating spoiled meat might require a Constitution saving throw to keep the meal down, a Wisdom saving throw to avoid acquiring a level of madness from the awful experience (see "Madness" later in this chapter), or both.
 
 #### Creature Food Yield
 
@@ -116,7 +116,7 @@ In addition to foraging, spells such as <fetch-data type="spell">create food and
 | Medium | 16 lb. |
 | Large | 32 lb. |
 
-The characters' need to forage and acquire supplies serves as a motivator to drive them to explore and visit different parts of the Underdark. The more desperate their need becomes—as levels of <fetch-data type="condition">exhaustion</fetch-data> rack up—the more risk players will likely be willing to take.
+The characters' need to forage and acquire supplies serves as a motivator to drive them to explore and visit different parts of the Underdark. The more desperate their need becomes—as levels of <wc-fetch type="condition">exhaustion</wc-fetch> rack up—the more risk players will likely be willing to take.
 
 ### Time-Keeping
 
@@ -171,15 +171,15 @@ A creature's madness level starts at 0. When the creature fails a madness saving
 
 If a creature with level 3 madness fails a madness saving throw, its madness level becomes 1. In this way, characters can potentially accumulate multiple forms of madness.
 
-Bouts of short- and long-term madness can be cured as described in the _Dungeon Master's Guide_. Given the demonic source of the madness, <fetch-data type="spell">remove curse</fetch-data> and _dispel evil_ are also effective as cures. A <fetch-data type="spell">greater restoration</fetch-data> spell or more powerful magic is needed to cure indefinite madness and also resets a creature's madness level to 0.
+Bouts of short- and long-term madness can be cured as described in the _Dungeon Master's Guide_. Given the demonic source of the madness, <wc-fetch type="spell">remove curse</wc-fetch> and _dispel evil_ are also effective as cures. A <wc-fetch type="spell">greater restoration</wc-fetch> spell or more powerful magic is needed to cure indefinite madness and also resets a creature's madness level to 0.
 
 ## Death
 
 Allowing the chips to fall where they may in combat emphasizes the challenging nature of this adventure. However, if the characters start falling just as fast, you might want to give the players some opportunities to return dead characters to life during the lower levels of their progress through _Out of the Abyss_.
 
-- A <fetch-data type="item">Spell Scroll (5th level)</fetch-data> of <fetch-data type="spell">raise dead</fetch-data> can turn up among some treasure, either when it is needed or for the characters to save for later. A successful DC 15 spellcasting ability check is required for a lower-level character to use such a scroll.
+- A <wc-fetch type="item">Spell Scroll (5th level)</wc-fetch> of <wc-fetch type="spell">raise dead</wc-fetch> can turn up among some treasure, either when it is needed or for the characters to save for later. A successful DC 15 spellcasting ability check is required for a lower-level character to use such a scroll.
 - A strange faerzress effect can bring a fallen character back to life, but not without a cost. The restored character's madness level increases by 1 upon being restored to life (see "Madness" earlier in this chapter).
-- If a fallen character's body is lost or left behind, the party's drow pursuers find it. The drow high priestess casts <fetch-data type="spell">raise dead</fetch-data> on the corpse so that the character can be questioned. The character might escape later, or can be reunited with the other adventurers in a later chapter of the adventure when the drow catch up to them.
+- If a fallen character's body is lost or left behind, the party's drow pursuers find it. The drow high priestess casts <wc-fetch type="spell">raise dead</wc-fetch> on the corpse so that the character can be questioned. The character might escape later, or can be reunited with the other adventurers in a later chapter of the adventure when the drow catch up to them.
 
 If a player character is permanently slain, think about the ways a player might introduce a new character to the party in the midst of a journey through the Underdark.
 
@@ -224,7 +224,7 @@ A Nilhogg's nose is a small mushroom that grants any creature that eats it advan
 
 A bioluminescent green moss that grows in warm and damp areas, ormu is particularly common near steam tunnels and vents. It sheds dim light in a 5-foot radius, and can be harvested, dried, and made into a phosphorescent powder or pigment.
 
-Also known as "the devil's mushroom," a timmask is a two-foot-tall toadstool with orange and red stripes across its beige cap. Uprooting or destroying a timmask causes it to expel a 15-foot-radius cloud of poisonous spores. Creatures in the area must succeed at a DC 14 Constitution saving throw or be poisoned. While poisoned in this way, the creature is under the effect of a <fetch-data type="spell">confusion</fetch-data> spell with a duration of 1 minute. When the spell effect ends, the poisoned condition also ends.
+Also known as "the devil's mushroom," a timmask is a two-foot-tall toadstool with orange and red stripes across its beige cap. Uprooting or destroying a timmask causes it to expel a 15-foot-radius cloud of poisonous spores. Creatures in the area must succeed at a DC 14 Constitution saving throw or be poisoned. While poisoned in this way, the creature is under the effect of a <wc-fetch type="spell">confusion</wc-fetch> spell with a duration of 1 minute. When the spell effect ends, the poisoned condition also ends.
 
 Tongue of madness is an edible fungus that looks somewhat like a large human tongue. A creature that eats a tongue of madness must succeed on a DC 12 Constitution saving throw or compulsively speak aloud its every thought for the next hour. The effect can be ended with a lesser restoration spell or similar magic.
 
@@ -272,7 +272,7 @@ A bioluminescent green moss that grows in warm and damp areas, ormu is particula
 
 ### Timmask
 
-Also known as "the devil's mushroom," a timmask is a two-foot-tall toadstool with orange and red stripes across its beige cap. Uprooting or destroying a timmask causes it to expel a 15-foot-radius cloud of poisonous spores. Creatures in the area must succeed at a DC 14 Constitution saving throw or be poisoned. While poisoned in this way, the creature is under the effect of a <fetch-data type="spell">confusion</fetch-data> spell with a duration of 1 minute. When the spell effect ends, the poisoned condition also ends.
+Also known as "the devil's mushroom," a timmask is a two-foot-tall toadstool with orange and red stripes across its beige cap. Uprooting or destroying a timmask causes it to expel a 15-foot-radius cloud of poisonous spores. Creatures in the area must succeed at a DC 14 Constitution saving throw or be poisoned. While poisoned in this way, the creature is under the effect of a <wc-fetch type="spell">confusion</wc-fetch> spell with a duration of 1 minute. When the spell effect ends, the poisoned condition also ends.
 
 ### Tongue of Madness
 
@@ -490,9 +490,9 @@ As the adventurers pass through a small cavern, they encounter a patch of slime 
 
 | <span class="text-center block">d6</span> | Encounter |
 | - | - |
-| <span class="text-center block">1-3</span> | Patch of <fetch-data type="hazard">green slime</fetch-data> |
-| <span class="text-center block">4-5</span> | Patch of <fetch-data type="hazard">yellow mold</fetch-data> |
-| <span class="text-center block">6</span> | Patch of <fetch-data type="hazard">brown mold</fetch-data> |
+| <span class="text-center block">1-3</span> | Patch of <wc-fetch type="hazard">green slime</wc-fetch> |
+| <span class="text-center block">4-5</span> | Patch of <wc-fetch type="hazard">yellow mold</wc-fetch> |
+| <span class="text-center block">6</span> | Patch of <wc-fetch type="hazard">brown mold</wc-fetch> |
 
 ### Steam Vent
 
@@ -802,7 +802,7 @@ As characters traverse the Silken Paths, keep in mind the following features.
 
 The characters find a still-living lightfoot halfling cocooned in webbing. He is poisoned and paralyzed for the next hour.
 
-Fargas Rumblefoot was a member of an adventuring band looking for a long-lost tomb when they were attacked by a pack of mad gnolls. Fargas escaped, got lost in the Silken Paths, and was attacked by the spiders. If rescued, he promises to show the characters the way to the tomb in exchange for a share of its treasures (see "Lost Tomb of Khaem" later in this chapter). Fargas is a chaotic good halfling spy. In addition to his armor and weapons, he carries a <fetch-data type="item">potion of invisibility</fetch-data>.
+Fargas Rumblefoot was a member of an adventuring band looking for a long-lost tomb when they were attacked by a pack of mad gnolls. Fargas escaped, got lost in the Silken Paths, and was attacked by the spiders. If rescued, he promises to show the characters the way to the tomb in exchange for a share of its treasures (see "Lost Tomb of Khaem" later in this chapter). Fargas is a chaotic good halfling spy. In addition to his armor and weapons, he carries a <wc-fetch type="item">potion of invisibility</wc-fetch>.
 
 ### Darkmantles
 
@@ -915,7 +915,7 @@ As characters explore the Oozing Temple, keep in mind the following features.
 
 **Air.** The air is stale and perceptibly thin. The temple contains enough air for the oozes, plus 160 hours of breathable air for one creature, divided by the number of creatures present. For example, a party of four adventurers has 40 hours of air. Characters who are at rest and not undertaking activities such as moving or fighting consume half as much air.
 
-Once half of the breathable air is consumed, the characters suffer one level of <fetch-data type="condition">exhaustion</fetch-data> (see appendix A of the Player's Handbook). For each additional 10 percent of the air used up, the characters suffer one additional level of <fetch-data type="condition">exhaustion</fetch-data>. At 90 percent, the characters are unable to move. When the air is used up, they die. Once the first level of <fetch-data type="condition">exhaustion</fetch-data> sets in, the characters become aware that they are running out of air, and know roughly how much they have left.
+Once half of the breathable air is consumed, the characters suffer one level of <wc-fetch type="condition">exhaustion</wc-fetch> (see appendix A of the Player's Handbook). For each additional 10 percent of the air used up, the characters suffer one additional level of <wc-fetch type="condition">exhaustion</wc-fetch>. At 90 percent, the characters are unable to move. When the air is used up, they die. Once the first level of <wc-fetch type="condition">exhaustion</wc-fetch> sets in, the characters become aware that they are running out of air, and know roughly how much they have left.
 
 A lit torch or its equivalent uses up air as a character does. Briefer but hotter magical effects consume 1 hour of air per die of fire damage per round. For example, a fireball spell that deals 8d6 fire damage consumes 8 hours of air, while a fire bolt that deals 1d10 fire damage consumes 1 hour of air per use.
 
@@ -1067,6 +1067,6 @@ On initiative count 1 in the round in which Brysis attacks, the characters hear 
 
 #### Treasure
 
-The thin gold sheath covering Brysis's sarcophagus can be pried loose and is worth 250 gp. Inside the stone sarcophagus, lying atop Brysis's withered and mummified corpse, is a magic sword called <fetch-data type="item">Dawnbringer</fetch-data>. This intelligent weapon is the source of the telepathic messages.
+The thin gold sheath covering Brysis's sarcophagus can be pried loose and is worth 250 gp. Inside the stone sarcophagus, lying atop Brysis's withered and mummified corpse, is a magic sword called <wc-fetch type="item">Dawnbringer</wc-fetch>. This intelligent weapon is the source of the telepathic messages.
 
-The stone chest is unlocked and contains the other treasures Brysis took with her into the afterlife: 4,000 sp, 1,200 gp, eleven zircons (worth 50 gp each), a <fetch-data type="item">necklace of fireballs</fetch-data>, a <fetch-data type="item">philter of love</fetch-data>, and a <fetch-data type="item">potion of greater healing</fetch-data>.
+The stone chest is unlocked and contains the other treasures Brysis took with her into the afterlife: 4,000 sp, 1,200 gp, eleven zircons (worth 50 gp each), a <wc-fetch type="item">necklace of fireballs</wc-fetch>, a <wc-fetch type="item">philter of love</wc-fetch>, and a <wc-fetch type="item">potion of greater healing</wc-fetch>.

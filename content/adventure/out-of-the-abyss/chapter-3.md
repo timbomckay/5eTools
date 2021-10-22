@@ -49,9 +49,9 @@ An even more makeshift craft might involve a character sitting in a floating bar
 
 ##### Swimming
 
-Swimming in the Darklake is a poor choice given the number of dangerous creatures inhabiting it. Check for a creature encounter each hour that characters are swimming, rather than every 4 hours of travel. A swimming character must succeed on a DC 10 Constitution saving throw for each hour of swimming or gain one level of <fetch-data type="condition">exhaustion</fetch-data>.
+Swimming in the Darklake is a poor choice given the number of dangerous creatures inhabiting it. Check for a creature encounter each hour that characters are swimming, rather than every 4 hours of travel. A swimming character must succeed on a DC 10 Constitution saving throw for each hour of swimming or gain one level of <wc-fetch type="condition">exhaustion</wc-fetch>.
 
-Characters not actively swimming but simply clinging to something that floats (including the wreckage of a boat or raft) can drift with the current at a speed of 1 mph. Check for creature encounters each hour that characters float in the water, and call for Constitution checks against <fetch-data type="condition">exhaustion</fetch-data> for every 8 hours of travel.
+Characters not actively swimming but simply clinging to something that floats (including the wreckage of a boat or raft) can drift with the current at a speed of 1 mph. Check for creature encounters each hour that characters float in the water, and call for Constitution checks against <wc-fetch type="condition">exhaustion</wc-fetch> for every 8 hours of travel.
 
 ##### Other Options
 

@@ -23,7 +23,7 @@ Not even the current librarians know who built Gravenhollow. All they know is th
 
 **Hidden from Magic.** Gravenhollow is a window into the passage of time and history, and the magic permeating the library blocks it off from the real world around it. Though divination magic works normally within the library, no divination effect used outside the library can discern any creature, object, or location within it.
 
-**A Place of Peace.** Visitors to the library of Gravenhollow are expected to conduct themselves with decorum, and to refrain from arguments and violence. Creatures that incite conflict quickly draw the attention of the basilisk Veldyskar, who is quick to use his Petrifying Gaze on troublemakers. If a threat arises that Veldyskar can't handle, the library generates <dice-roll>3d6</dice-roll> galeb duhr to assist him.
+**A Place of Peace.** Visitors to the library of Gravenhollow are expected to conduct themselves with decorum, and to refrain from arguments and violence. Creatures that incite conflict quickly draw the attention of the basilisk Veldyskar, who is quick to use his Petrifying Gaze on troublemakers. If a threat arises that Veldyskar can't handle, the library generates <wc-roll>3d6</wc-roll> galeb duhr to assist him.
 
 **Willful Navigation.** Finding anything in Gravenhollow is an effort of will. Whenever a character seeks a specific location in the library (a particular floor or period of history, for example), the character must make a successful DC 14 Wisdom check to find that location. On a failure, the character takes a wrong turn and must make additional checks until successful. If led by one of the library's keepers, characters don't need to make checks to find the location they seek.
 
@@ -59,7 +59,7 @@ A small group of characters scouting can sneak up on Veldyskar with a successful
 
 After his initial greeting, Veldyskar speaks only if spoken to, and his answers are brief. With the basilisk as their guide, it takes the characters another eight hours to reach the gates of Gravenhollow. Untold years ago, a visiting stone giant druid presented the librarians with a gift: Veldyskar, an intelligent basilisk trained to serve the keepers as a guardian and general-purpose helper. The basilisk adapted readily to the timeless nature of the library and embraced his new duties with great dedication.
 
-Veldyskar is committed to the protection of the library and its librarians. If trouble arises, his philosophy is to petrify first and ask questions later. Initially, this presented a problem for the stone giant librarians, as the basilisk had some difficulty reconciling his temper and bestial nature with the recognition of what trouble might actually look like. The stone giants taught Veldyskar how to cast <fetch-data type="spell">greater restoration</fetch-data>, which the basilisk can do once per day to restore anyone who crosses him.
+Veldyskar is committed to the protection of the library and its librarians. If trouble arises, his philosophy is to petrify first and ask questions later. Initially, this presented a problem for the stone giant librarians, as the basilisk had some difficulty reconciling his temper and bestial nature with the recognition of what trouble might actually look like. The stone giants taught Veldyskar how to cast <wc-fetch type="spell">greater restoration</wc-fetch>, which the basilisk can do once per day to restore anyone who crosses him.
 
 ### Gates of Gravenhollow
 
@@ -281,7 +281,7 @@ If the characters set out to find a librarian, Ulthar is the one they find first
 
 Urmas has been following recent events that might have led to the current crisis. He bids the characters to tell him about their own experiences in the Underdark—specifically, their encounters with the demon lords.
 
-Ulthar offers the characters one of the library's <fetch-data type="item">stonespeaker crystal</fetch-data> if they don't have their own, instructing them on how to attune to it. He warns the characters to not let themselves become lost in the visions they will experience.
+Ulthar offers the characters one of the library's <wc-fetch type="item">stonespeaker crystal</wc-fetch> if they don't have their own, instructing them on how to attune to it. He warns the characters to not let themselves become lost in the visions they will experience.
 
 ## Stonespeaker Crystals
 

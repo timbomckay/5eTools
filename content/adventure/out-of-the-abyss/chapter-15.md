@@ -239,7 +239,7 @@ The goblins beg for food. If the characters give them food or otherwise treat th
 
 ### Glyph of Warding
 
-Drow priestesses are fond of placing <fetch-data type="spell">glyph of warding</fetch-data> in the tunnels surrounding Menzoberranzan. Such a glyph allows drow to pass safely but triggers whenever a non-drow passes by it. A drow glyph of warding has a spell save DC of 13 and an explosive runes effect (see the spell's description in the Player's Handbook).
+Drow priestesses are fond of placing <wc-fetch type="spell">glyph of warding</wc-fetch> in the tunnels surrounding Menzoberranzan. Such a glyph allows drow to pass safely but triggers whenever a non-drow passes by it. A drow glyph of warding has a spell save DC of 13 and an explosive runes effect (see the spell's description in the Player's Handbook).
 
 ### Intellect Devourers
 
@@ -544,7 +544,7 @@ The most dominant feature within the city, Narbondel is a 1,000-foot-tall column
 
 The estates of the various drow houses are clustered beneath the plateau of Qu'ellarz'orl in an area called Narbondellyn, allowing the superiors of those drow to literally look down upon them. Largely untouched during Demogorgon's rampage, the so-called "Broad Streets" district remains the bright center of Menzoberranzan, as the lesser houses vie to outdo each other in shows of wealth, power, and influence. Soaring stalagmite towers and great manors rise across the area, which is also home to luxury shops, pleasure houses, and discriminating merchants.
 
-A noble estate in Narbondellyn maintains its own militia, consisting of fifty or more highly disciplined drow warriors and drow elite warrior, with one elite warrior for every ten drow warriors. In addition, an estate holds 3d6 drow noble and scores of slaves, 6d6 of which can be pressed into defending the house. These fighting slaves are usually bugbear, ogre, orc, or quaggoth. Doors and windows are protected with <fetch-data type="spell">glyph of warding</fetch-data> spells (spell save DC 13), and 2d6 gargoyle watch for trouble from ledges and rooftops.
+A noble estate in Narbondellyn maintains its own militia, consisting of fifty or more highly disciplined drow warriors and drow elite warrior, with one elite warrior for every ten drow warriors. In addition, an estate holds 3d6 drow noble and scores of slaves, 6d6 of which can be pressed into defending the house. These fighting slaves are usually bugbear, ogre, orc, or quaggoth. Doors and windows are protected with <wc-fetch type="spell">glyph of warding</wc-fetch> spells (spell save DC 13), and 2d6 gargoyle watch for trouble from ledges and rooftops.
 
 If you want a random encounter to occur as the characters make their way through the Narbondellyn district, roll a d20 and consult the Narbondellyn Encounters table, or choose an encounter that you like. The party can avoid random encounters in Narbondellyn by succeeding on a DC 13 Dexterity (Stealth) group check.
 
@@ -686,7 +686,7 @@ The characters encounter 2d6 female drow acolyte out for a walk. There is a 25 p
 
 ### Drow Mages
 
-The characters encounter 1d3 drow mage out for a walk. There is a 50 percent chance that these mages are members of the Council of Spiders and of a mind to help the characters infiltrate Sorcere, should the characters reveal that they are in league with Vizeran DeVir. These mages offer to cast <fetch-data type="spell">greater invisibility</fetch-data> spells on visible characters and escort the party to Gromph's sanctum in the tower. As long as the characters are under the protection of these mages, they have no hostile encounters until they enter Gromph's sanctum (see "Sorcere" for details).
+The characters encounter 1d3 drow mage out for a walk. There is a 50 percent chance that these mages are members of the Council of Spiders and of a mind to help the characters infiltrate Sorcere, should the characters reveal that they are in league with Vizeran DeVir. These mages offer to cast <wc-fetch type="spell">greater invisibility</wc-fetch> spells on visible characters and escort the party to Gromph's sanctum in the tower. As long as the characters are under the protection of these mages, they have no hostile encounters until they enter Gromph's sanctum (see "Sorcere" for details).
 
 ### Drow Warriors
 
@@ -808,7 +808,7 @@ When Matron Mother Quenthel Baenre resurrected House Do'Urden, she ordered her b
 
 Jarlaxle doesn't want the demon lords rampaging through the Underdark or making it to the surface world. If the characters reveal that their ultimate goal is to send the demon lords back to the Abyss, Jarlaxle gives them whatever aid he can short of doing their "dirty work" for them. If the characters mention Vizeran DeVir, Jarlaxle's interest is piqued, for he thought Vizeran was dead. He warns them not to trust that "relic of a bygone house." If the characters mention Vizeran's plan to make Menzoberranzan the site for the final showdown with the demon lords, Jarlaxle insists that the characters choose a different battleground, warning them that Bregan D'aerthe will oppose any effort to visit further destruction upon the city.
 
-If the characters claim to be looking for a safe way into Sorcere, Jarlaxle arranges for a member of the Council of Spiders to visit the party at a Bregan D'aerthe safe house in West Wall. This male drow mage brings scrolls of <fetch-data type="spell">greater invisibility</fetch-data> - one for each party member - and also gives the characters a password that temporarily bypasses the tower's defenses. Characters who speak the password while inside the tower won't have to deal with the tower's <fetch-data type="spell">guards and wards</fetch-data> effect for a period of 1 hour (see "Sorcere" later in this chapter). Bregan D'aerthe makes sure that the characters have no hostile encounters as they make their way to the Academy.
+If the characters claim to be looking for a safe way into Sorcere, Jarlaxle arranges for a member of the Council of Spiders to visit the party at a Bregan D'aerthe safe house in West Wall. This male drow mage brings scrolls of <wc-fetch type="spell">greater invisibility</wc-fetch> - one for each party member - and also gives the characters a password that temporarily bypasses the tower's defenses. Characters who speak the password while inside the tower won't have to deal with the tower's <wc-fetch type="spell">guards and wards</wc-fetch> effect for a period of 1 hour (see "Sorcere" later in this chapter). Bregan D'aerthe makes sure that the characters have no hostile encounters as they make their way to the Academy.
 
 Once he becomes aware of Gromph's grimoire, Jarlaxle does everything in his power to make sure the characters get the grimoire out of the city. Once Vizeran's ritual is complete, Jarlaxle plans to send Bregan D'aerthe spies to find Vizeran and steal the grimoire, so that he has evidence he can lord over his brother.
 
@@ -836,7 +836,7 @@ The adventurers can safely enter Sorcere with the aid of Matron Mother Quenthel 
 
 ### Guards and Wards
 
-The whole tower is protected by permanent <fetch-data type="spell">guards and wards</fetch-data> spells. The tower's drow residents are immune to the effects, but intruders are not. If the characters have the support of the Council of Spiders, members of the council give them a password which, when spoken aloud inside the tower, grants the speaker immunity to the spells' effect for 1 hour. After that, the password magically changes, and any characters still in the tower must deal with the <fetch-data type="spell">guards and wards</fetch-data> effect.
+The whole tower is protected by permanent <wc-fetch type="spell">guards and wards</wc-fetch> spells. The tower's drow residents are immune to the effects, but intruders are not. If the characters have the support of the Council of Spiders, members of the council give them a password which, when spoken aloud inside the tower, grants the speaker immunity to the spells' effect for 1 hour. After that, the password magically changes, and any characters still in the tower must deal with the <wc-fetch type="spell">guards and wards</wc-fetch> effect.
 
 ### Random Encounters in Sorcere
 
@@ -862,7 +862,7 @@ If the tower goes on alert (as indicated in some of the encounter descriptions),
 
 There is a 50 percent chance that these mages have been forewarned of the party's arrival, either by Vizeran DeVir or by Matron Mother Quenthel Baenre, in which case they let the characters pass. Otherwise, the drow mages assume the characters are intruders and attack unless Grin Ousstyl is with them. If the characters declare that they have Quenthel Baenre's permission to be here, they can convince the mages to stand down with a successful DC 12 Charisma (Deception or Persuasion) check.
 
-If one or more mages fall in battle, the rest use <fetch-data type="spell">greater invisibility</fetch-data> spells to turn invisible and retreat, putting the tower on alert if it isn't already.
+If one or more mages fall in battle, the rest use <wc-fetch type="spell">greater invisibility</wc-fetch> spells to turn invisible and retreat, putting the tower on alert if it isn't already.
 
 ### Giant Spider
 
@@ -907,7 +907,7 @@ A sometime lover and ally of one of the tower's wizards, this fiend adopts the f
 
 ### Gromph's Outer Sanctum
 
-The black marble door to Gromph Baenre's chambers is etched with silvery runes around its edge and closed with an <fetch-data type="spell">arcane lock</fetch-data> keyed to him. Picking the lock requires a successful DC 23 Dexterity check using thieves' tools, while forcing the door open requires a successful DC 25 Strength check. A <fetch-data type="spell">knock</fetch-data> spell also opens the door, and Grin Ousstyl can have the spell prepared if none of the adventurers knows it.
+The black marble door to Gromph Baenre's chambers is etched with silvery runes around its edge and closed with an <wc-fetch type="spell">arcane lock</wc-fetch> keyed to him. Picking the lock requires a successful DC 23 Dexterity check using thieves' tools, while forcing the door open requires a successful DC 25 Strength check. A <wc-fetch type="spell">knock</wc-fetch> spell also opens the door, and Grin Ousstyl can have the spell prepared if none of the adventurers knows it.
 
 > The chamber beyond the door is floored in black marble, lined with shelves laden with books and scrolls, and dominated by a broad desk of polished bone. A plush chair covered with lizard hide sits behind the desk, while a smaller and simpler zurkhwood chair sits facing it on the opposite side. A seven-foot-tall obsidian statue of a fourarmed, sword-wielding drow warrior stands behind the desk against one wall. Burning red candles are set about the room in holders made from skeletal hands.
 
@@ -923,15 +923,15 @@ Anyone speaking the statue's name (Szashune) aloud isn't attacked by it.
 
 #### Trapped Secret Door
 
-Any party member with a passive Wisdom (Perception) score of 20 or higher notices a secret door in the wall, while a character searching the room for secret doors must succeed on a DC 15 Wisdom (Perception) check to find it. Any creature with 12 Hit Dice or fewer that approaches within 5 feet of the secret door without speaking the word _khaless_ ("trust") triggers an <fetch-data type="spell">imprisonment</fetch-data> spell (save DC 17). On a failed save, the creature is trapped in minimus containment inside a gemstone in Gromph's inner sanctum (described in the next section). The trap ceases to exist once a creature becomes imprisoned. A successful <fetch-data type="spell">dispel magic</fetch-data> (DC 19) cast on the secret door removes the trap.
+Any party member with a passive Wisdom (Perception) score of 20 or higher notices a secret door in the wall, while a character searching the room for secret doors must succeed on a DC 15 Wisdom (Perception) check to find it. Any creature with 12 Hit Dice or fewer that approaches within 5 feet of the secret door without speaking the word _khaless_ ("trust") triggers an <wc-fetch type="spell">imprisonment</wc-fetch> spell (save DC 17). On a failed save, the creature is trapped in minimus containment inside a gemstone in Gromph's inner sanctum (described in the next section). The trap ceases to exist once a creature becomes imprisoned. A successful <wc-fetch type="spell">dispel magic</wc-fetch> (DC 19) cast on the secret door removes the trap.
 
-Opening the secret door requires a <fetch-data type="spell">knock</fetch-data> spell or a successful DC 20 Intelligence (Arcana) check to assess and manipulate its magic. Beyond it lies a dark void that can't be dispelled or destroyed. Anyone or anything that touches the void is instantly transported to a labyrinthine demiplane similar to that created by a <fetch-data type="spell">maze</fetch-data> spell. A creature that succeeds on the DC 20 Intelligence check to escape the maze reappears in the middle of the outer sanctum. However, if a creature casts a spell of 5th level or higher while in the demiplane, all creatures and objects in the demiplane instantly appear in Gromph's inner sanctum instead.
+Opening the secret door requires a <wc-fetch type="spell">knock</wc-fetch> spell or a successful DC 20 Intelligence (Arcana) check to assess and manipulate its magic. Beyond it lies a dark void that can't be dispelled or destroyed. Anyone or anything that touches the void is instantly transported to a labyrinthine demiplane similar to that created by a <wc-fetch type="spell">maze</wc-fetch> spell. A creature that succeeds on the DC 20 Intelligence check to escape the maze reappears in the middle of the outer sanctum. However, if a creature casts a spell of 5th level or higher while in the demiplane, all creatures and objects in the demiplane instantly appear in Gromph's inner sanctum instead.
 
 #### Treasure
 
-The collection of rare books and scrolls in the archmage's chambers is worth 15,000 gp, assuming the characters have the means to haul it out. A character who spends 10 minutes poring over the collection can make a DC 15 Intelligence (Arcana) check. On a successful check, the character confirms that Gromph's grimoire isn't among the books in the collection and also identifies the collection's five most valuable tomes, worth 1,000 gp each. However, one of these valuable works is trapped with a <fetch-data type="spell">glyph of warding</fetch-data> that triggers the third effect of <fetch-data type="spell">bestow curse</fetch-data> (save DC 17), and which lasts until dispelled.
+The collection of rare books and scrolls in the archmage's chambers is worth 15,000 gp, assuming the characters have the means to haul it out. A character who spends 10 minutes poring over the collection can make a DC 15 Intelligence (Arcana) check. On a successful check, the character confirms that Gromph's grimoire isn't among the books in the collection and also identifies the collection's five most valuable tomes, worth 1,000 gp each. However, one of these valuable works is trapped with a <wc-fetch type="spell">glyph of warding</wc-fetch> that triggers the third effect of <wc-fetch type="spell">bestow curse</wc-fetch> (save DC 17), and which lasts until dispelled.
 
-The drawers of the desk are sealed with <fetch-data type="spell">arcane lock</fetch-data> spells. Picking a drawer's lock requires thieves' tools and a successful DC 23 Dexterity check. A <fetch-data type="spell">knock</fetch-data> spell or a successful <fetch-data type="spell">dispel magic</fetch-data> (DC 15) cast on a drawer removes its magical lock. When opened, the drawers are empty. An effect similar to <fetch-data type="spell">Leomund's secret chest</fetch-data> shifts the drawers' contents into an extradimensional space when anyone other than Gromph opens them.
+The drawers of the desk are sealed with <wc-fetch type="spell">arcane lock</wc-fetch> spells. Picking a drawer's lock requires thieves' tools and a successful DC 23 Dexterity check. A <wc-fetch type="spell">knock</wc-fetch> spell or a successful <wc-fetch type="spell">dispel magic</wc-fetch> (DC 15) cast on a drawer removes its magical lock. When opened, the drawers are empty. An effect similar to <wc-fetch type="spell">Leomund's secret chest</wc-fetch> shifts the drawers' contents into an extradimensional space when anyone other than Gromph opens them.
 
 ### Gromph's Inner Sanctum
 
@@ -953,7 +953,7 @@ If the yochlol is killed, a character who investigates the grimoire can confirm 
 
 Gromph's grimoire rests atop the lectern near the circle and bears the title _Zhaun'ol'leal_ ("The Book of the Eight" in Elvish) and describes rituals for summoning and binding powerful demons. It's open to a chapter that talks about the summoning of Demogorgon.
 
-The various arcane components and ritual items in the workroom are worth 1,000 gp total. A 6,000 gp diamond also sits on a small stand atop a workbench. It contains any creature trapped by the <fetch-data type="spell">imprisonment</fetch-data> spell that guards the secret door in Gromph's Outer Sanctum.
+The various arcane components and ritual items in the workroom are worth 1,000 gp total. A 6,000 gp diamond also sits on a small stand atop a workbench. It contains any creature trapped by the <wc-fetch type="spell">imprisonment</wc-fetch> spell that guards the secret door in Gromph's Outer Sanctum.
 
 #### XP Awards
 

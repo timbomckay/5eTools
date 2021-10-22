@@ -114,7 +114,7 @@ If the characters stand and fight, or if the drow catch them, they're in for a t
 
 If any of the named drow were killed in chapter 1, they have been replaced by other drow with similar statistics.
 
-On her first turn in combat, Ilvara casts conjure animals to summon two giant spider to fight alongside the drow, while Asha casts <fetch-data type="spell">spirit guardians</fetch-data> on herself and concentrates to maintain it. The other drow cast <fetch-data type="spell">darkness</fetch-data> to hinder ranged attackers before closing to melee. Shoor protects Ilvara, while Jorlan makes no effort to protect his fellow drow. Ilvara prefers to strike from a distance with her <fetch-data type="item">tentacle rod</fetch-data>, or cast spells such as <fetch-data type="spell">poison spray</fetch-data> and <fetch-data type="spell">ray of sickness</fetch-data>.
+On her first turn in combat, Ilvara casts conjure animals to summon two giant spider to fight alongside the drow, while Asha casts <wc-fetch type="spell">spirit guardians</wc-fetch> on herself and concentrates to maintain it. The other drow cast <wc-fetch type="spell">darkness</wc-fetch> to hinder ranged attackers before closing to melee. Shoor protects Ilvara, while Jorlan makes no effort to protect his fellow drow. Ilvara prefers to strike from a distance with her <wc-fetch type="item">tentacle rod</wc-fetch>, or cast spells such as <wc-fetch type="spell">poison spray</wc-fetch> and <wc-fetch type="spell">ray of sickness</wc-fetch>.
 
 If Ilvara loses more than half her hit points, she attempts to summon a yochlol demon.
 
@@ -122,7 +122,7 @@ If Ilvara loses more than half her hit points, she attempts to summon a yochlol 
 
 The characters might have a couple NPC companions around to help them defeat the drow (see "Bidding Farewell"), but if they need more assistance, consider the following options:
 
-- Having pushed themselves to catch up to their prey, the drow all have one level of <fetch-data type="condition">exhaustion</fetch-data>.
+- Having pushed themselves to catch up to their prey, the drow all have one level of <wc-fetch type="condition">exhaustion</wc-fetch>.
 - Ilvara and Asha have already expended some of their spell slots.
 - The characters make it to the surface before being intercepted by the drow, and the dark elves follow them into daylight. Under the light of the sun, the drow have disadvantage on their attack rolls and on Wisdom (Perception) checks relying on sight. The drow can pursue the characters for 1 hour before their armor and weapons are destroyed by the sunlight.
 - Asha chooses the confusion of combat as the moment to betray Ilvara, attacking while the elder priestess's back is turned. Ilvara instantly turns her attention to eliminating the traitor, distracting her and weakening the drow side if she succeeds.

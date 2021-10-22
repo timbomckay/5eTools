@@ -235,7 +235,7 @@ _Lawful neutral male human wizard_
 
 Lord Roaringhorn hails from a Waterdhavian noble family, with all the self-assurance and pride that entails. He pursued his talent for the arcane arts, but never forgot his roots or lost his fondness for spending his family's considerable income on the finer things in life. He's a confident sort who likes to gamble. Winning over Roaringhorn requires a willingness to dine, drink, and potentially game with him.
 
-Lord Roaringhorn is accompanied by a shield guardian and holds its control amulet. The shield guardian currently has a <fetch-data type="spell">lightning bolt</fetch-data> spell stored within it. A character can gain use of the shield guardian by winning a game of chess against the Harper wizard. Zelraun suggests a match after dinner.
+Lord Roaringhorn is accompanied by a shield guardian and holds its control amulet. The shield guardian currently has a <wc-fetch type="spell">lightning bolt</wc-fetch> spell stored within it. A character can gain use of the shield guardian by winning a game of chess against the Harper wizard. Zelraun suggests a match after dinner.
 
 A chess match takes 1 hour, and the outcome is determined by a best-of-three Intelligence check contest. Zelraun's experience gives him a +9 modifier to his Intelligence checks. Zelraun loans the shield guardian and its control amulet to the first character to beat him at the game. If Zelraun proves unbeatable, you can decide that Zelraun, ever the gracious winner, loans the shield guardian and amulet to the party on the provision that the characters vow to redeem themselves with a rematch upon their return from the Underdark.
 
@@ -265,7 +265,7 @@ _Lawful good human fighter_
 
 A devout follower of Tyr and a member of the Order of the Gauntlet, Sir Lanniver is the most respected figure among the factions in Gauntlgrym. Little surprises him at this point in his life, and he accepts what comes with a wry wit and an unshakable faith that things will always work out-provided those of good intent do what must be done. If most of the characters in the party are of good alignment, Sir Lanniver is supportive of their mission and wants them to succeed. However, a party of mostly neutral or evil characters will need to work to gain his support.
 
-If he's of a mind to provide aid, Sir Lanniver pledges five human veterans of the order to the party's mission. The veterans' names are Thora Nabal, Sylrien Havennor, Olaf Renghyi, Elias Drako, and Tamryn Tharke. Sir Lanniver can also offer a member of the party a <fetch-data type="item">+1 warhammer</fetch-data>, one of a handful of treasures held in trust by the order. He prefers to bestow this weapon on a good- or neutral-aligned cleric or paladin. Feel free to swap this magic weapon with another magic item more useful to the adventurers.
+If he's of a mind to provide aid, Sir Lanniver pledges five human veterans of the order to the party's mission. The veterans' names are Thora Nabal, Sylrien Havennor, Olaf Renghyi, Elias Drako, and Tamryn Tharke. Sir Lanniver can also offer a member of the party a <wc-fetch type="item">+1 warhammer</wc-fetch>, one of a handful of treasures held in trust by the order. He prefers to bestow this weapon on a good- or neutral-aligned cleric or paladin. Feel free to swap this magic weapon with another magic item more useful to the adventurers.
 
 If the veterans accompany the party, make five photocopies of the Veteran of the Gauntlet stat card at the end of this chapter. If you don't want to control the veterans yourself, you can distribute the stat cards among the players and let them run the NPCs.
 
@@ -360,7 +360,7 @@ The Zhentarim's intelligence-gathering resources and access to an established Un
 
 In addition to access to the hidden trading post of Mantol-Derith, Davra Jassur can provide Zhentarim mercenaries to fill out the expedition. These eight human thugs proudly wear the crest of the Black Network on their armor. If these NPCs join the party, use the Zhentarim Thug stats. If you don't want to control these NPCs yourself, you can share their stats with the players and let them run the NPCs. The thugs' names are Nero Kelvane, Lenora Haskur, Aligor Moonwhisper, Gorath Torn, Saliyra Dalnor, Primwin Halk, Iandro Alathar, and Lhytris Ilgarn. All of them know the route to Mantol-Derith.
 
-Davra is an assassin. In addition to her weapons, she carries <fetch-data type="item">dust of disappearance</fetch-data> and wears <fetch-data type="item">goggles of night</fetch-data> while roaming the dark halls of Gauntlgrym.
+Davra is an assassin. In addition to her weapons, she carries <wc-fetch type="item">dust of disappearance</wc-fetch> and wears <wc-fetch type="item">goggles of night</wc-fetch> while roaming the dark halls of Gauntlgrym.
 
 ## The Way Ahead
 

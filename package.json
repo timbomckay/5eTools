@@ -5,7 +5,7 @@
   "repository": "https://github.com/timbomckay/5eTools",
   "scripts": {
     "build": "hugo",
-    "serve": "hugo serve",
+    "serve": "hugo server",
     "convert:adventure": "node ./scripts/convert-adventure.js"
   },
   "devDependencies": {

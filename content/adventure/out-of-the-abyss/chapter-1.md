@@ -227,7 +227,7 @@ The drow are arrogant, cruel, and vicious, viewing their slaves as little more t
 
 The commander of Velkynvelve is an ambitious drow priestess looking to rise in the esteem of Lolth and her house. She considers command of a mere outpost a stepping stone in her ascension. The posting is beneath her, and she treats both it and her prisoners with contempt. But she also knows the posting is temporary, and she intends to wring every advantage from it in the meantime.
 
-A member of a drow house with a long history as slavers, Ilvara is a cruel mistress who enjoys taunting and tormenting enemies and underlings alike. In addition to a scourge, she wields a <fetch-data type="item">tentacle rod</fetch-data>. Although she has taken Shoor Vandree as her lover, Ilvara cares no more about him than she did about Jorlan Duskryn, the lover she discarded due to his crippling injuries.
+A member of a drow house with a long history as slavers, Ilvara is a cruel mistress who enjoys taunting and tormenting enemies and underlings alike. In addition to a scourge, she wields a <wc-fetch type="item">tentacle rod</wc-fetch>. Although she has taken Shoor Vandree as her lover, Ilvara cares no more about him than she did about Jorlan Duskryn, the lover she discarded due to his crippling injuries.
 
 ### Asha Vandree
 
@@ -239,7 +239,7 @@ Asha is ambitious enough to know she could assume command of the outpost if anyt
 
 This drow elite warrior has assumed the role of Ilvara's lieutenant and lover after the injuries suffered by his predecessor, Jorlan Duskryn. Shoor is relatively young and quite arrogant for a drow male, proud of his abilities and accomplishments. He is still flush with his success in winning the favor of Ilvara and advancing his position within the outpost, which shows in his swagger and the way he lords it over every other male in Velkynvelve, particularly Jorlan. Still insecure in his position, Shoor feels the need to demonstrate his skill and effectiveness to his mistress and to find ways to please her.
 
-As Ilvara's lieutenant, Shoor carries a <fetch-data type="item">wand of viscid globs</fetch-data>, which once belonged to Jorlan and is used to capture and restrain prisoners.
+As Ilvara's lieutenant, Shoor carries a <wc-fetch type="item">wand of viscid globs</wc-fetch>, which once belonged to Jorlan and is used to capture and restrain prisoners.
 
 ### Jorlan Duskryn
 
@@ -367,7 +367,7 @@ The back half of the chamber, behind the altar, is piled with a semicircle of pi
 
 The altar is flanked by a pair of heavy silver candlesticks worth 25 gp each. They hold thick black candles, lit only when a ritual is being performed in the shrine.
 
-The eight "eyes" of the spider statue are eight pieces of polished jet - four small ones worth 5 gp each and four larger ones worth 10 gp each. Any non-drow who possesses these gems falls under a curse from Lolth. All spiders and spiderlike creatures attack the bearer of the stones on sight, and such creatures have advantage on checks to detect the possessor of the stones. The curse lasts until all the stones are given into the safekeeping of a drow worshiper of Lolth or the gems are subject to a <fetch-data type="spell">remove curse</fetch-data> spell.
+The eight "eyes" of the spider statue are eight pieces of polished jet - four small ones worth 5 gp each and four larger ones worth 10 gp each. Any non-drow who possesses these gems falls under a curse from Lolth. All spiders and spiderlike creatures attack the bearer of the stones on sight, and such creatures have advantage on checks to detect the possessor of the stones. The curse lasts until all the stones are given into the safekeeping of a drow worshiper of Lolth or the gems are subject to a <wc-fetch type="spell">remove curse</wc-fetch> spell.
 
 ### 7. Ilvara's Quarters
 
@@ -383,7 +383,7 @@ Inside, the walls are hung with black mesh resembling a spider's web, extending 
 | <span class="text-center block">2</span> | Ilvara is here |
 | <span class="text-center block">3-6</span> | The room is empty |
 
-Ilvara retreats to her quarters for privacy, rest, and meditation. Roll a d6. On 1-2, the priestess is here. On a roll of 1, Shoor Vandree is also here with her. Ilvara is furious if anyone dares to enter her quarters unbidden. If the characters catch her here, she casts <fetch-data type="spell">web</fetch-data>, <fetch-data type="spell">conjure animals</fetch-data>, or <fetch-data type="spell">insect plague</fetch-data> to bedevil them while she flees and calls for help. If Shoor is with Ilvara, he attacks to cover her escape.
+Ilvara retreats to her quarters for privacy, rest, and meditation. Roll a d6. On 1-2, the priestess is here. On a roll of 1, Shoor Vandree is also here with her. Ilvara is furious if anyone dares to enter her quarters unbidden. If the characters catch her here, she casts <wc-fetch type="spell">web</wc-fetch>, <wc-fetch type="spell">conjure animals</wc-fetch>, or <wc-fetch type="spell">insect plague</wc-fetch> to bedevil them while she flees and calls for help. If Shoor is with Ilvara, he attacks to cover her escape.
 
 #### Trap
 

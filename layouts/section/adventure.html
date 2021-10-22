@@ -1,0 +1,46 @@
+{{ define "main" }}
+  <div class="py-6">
+    <h1>{{- .Title -}}</h1>
+    {{ with .Content }}{{- . -}}{{ end }}
+  </div>
+
+  {{ if .Sections }}
+    <div class="gap-6 grid grid-cols-4">
+      {{ range .Sections }}
+        <article>
+          {{ $link := .Permalink }}
+          {{- with .Params.thumbnail -}}
+            <a
+              href="{{ $link }}"
+              class="block"
+              style="aspect-ratio: 3/4;"
+            >
+              <img
+                class="object-cover w-full h-full"
+                src="https://thegiddylimit.github.io/{{ . | safeURL }}"
+                alt="cover"
+                loading="lazy"
+              />
+            </a>
+          {{- end -}}
+          <span class="sr-only">
+            <a href="{{.Permalink}}" class="font-extrabold">{{.Title}}</a>
+            <a href="{{.Permalink}}" class="text-sm font-sans">View Adventure ></a>
+          </span>
+        </article>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div>
+      {{ range .Pages }}
+        <article>
+          <h3>
+            <a href="{{.Permalink}}" class="font-extrabold">{{ .Title }}</a>
+          </h3>
+          {{ .TableOfContents | replaceRE "TableOfContents" "" | replaceRE "#" (printf "%s%s" .Permalink "#") | replaceRE "<li></li>" "" | replaceRE "<ul></ul>" "" | safeHTML }}
+          <a href="{{.Permalink}}" class="text-sm font-sans">View Chapter ></a>
+        </article>
+      {{ end }}
+    </div>
+  {{ end }}
+{{ end }}

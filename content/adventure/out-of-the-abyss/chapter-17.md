@@ -37,7 +37,7 @@ If the characters lose or destroy the dark heart, they either have to go through
 
 ## Enacting the Plan
 
-Once the _dark heart_ is in place, the ritual can begin. The adventurers and their allies take up a position not far from the _dark heart_, close to where the demons will appear. Where exactly depends on the placement of the talisman and the adventurers' own tactics and plans. They can use a <fetch-data type="spell">sending</fetch-data> spell to signal Vizeran to begin the ritual once the talisman is in place. (If none of the characters can cast <fetch-data type="spell">sending</fetch-data>, Vizeran can provide the spell on a _spell scroll_).
+Once the _dark heart_ is in place, the ritual can begin. The adventurers and their allies take up a position not far from the _dark heart_, close to where the demons will appear. Where exactly depends on the placement of the talisman and the adventurers' own tactics and plans. They can use a <wc-fetch type="spell">sending</wc-fetch> spell to signal Vizeran to begin the ritual once the talisman is in place. (If none of the characters can cast <wc-fetch type="spell">sending</wc-fetch>, Vizeran can provide the spell on a _spell scroll_).
 
 Vizeran (assisted by Grin if the apprentice is available), performs the complex ritual in the sanctum of his tower. The ritual causes the dark heart to radiate a summons throughout the Underdark using the faerzress-an irresistible call drawing the demons toward it. When the ritual reaches its conclusion at the end of nine hours, portals of faerzress form. All the demons and demon lords in the Underdark are drawn through those portals, appearing together in the area around the dark heart talisman.
 
@@ -85,7 +85,7 @@ The demon lords are some of the most powerful foes a party of adventurers could 
 
 #### Allied Forces
 
-Vizeran is needed to perform the ritual, placing him far from the battle and leaving him with three levels of <fetch-data type="condition">exhaustion</fetch-data> (see appendix A of the Player's Handbook) once the ritual is completed. He is thus unwilling to aid the characters during the fight. The archmage prefers to keep Grin Ousstyl to assist him, so the drow mage is likewise unable to assist. However, the adventurers have a number of other allies willing to fight alongside them in this last battle.
+Vizeran is needed to perform the ritual, placing him far from the battle and leaving him with three levels of <wc-fetch type="condition">exhaustion</wc-fetch> (see appendix A of the Player's Handbook) once the ritual is completed. He is thus unwilling to aid the characters during the fight. The archmage prefers to keep Grin Ousstyl to assist him, so the drow mage is likewise unable to assist. However, the adventurers have a number of other allies willing to fight alongside them in this last battle.
 
 Most of the heroes' allies are of limited use against the demon lords-creatures immune to many forms of attack, including nonmagical weapons. Rather than dealing with the ineffectual attacks of allies or a dozen or more additional actions each round, give characters backed up by a group of allies the following benefits.
 
@@ -189,7 +189,7 @@ If you prefer, a demon lord other than Demogorgon could be the victor of the dem
 
 ### Wand of Orcus
 
-When Orcus is defeated, he drops the <fetch-data type="item">Wand of Orcus</fetch-data> (see chapter 7 of the _Dungeon Master's Guide_), which falls to the ground. A party member can try to grab the wand before Demogorgon seizes it as a trophy, but any such theft draws the attention and ire of the Prince of Demons. Angry at its master's defeat, the Wand of Orcus tries to attune itself to the first willing creature other than Demogorgon that touches it. The attunement is instantaneous, allowing the wand's properties to be used during the battle.
+When Orcus is defeated, he drops the <wc-fetch type="item">Wand of Orcus</wc-fetch> (see chapter 7 of the _Dungeon Master's Guide_), which falls to the ground. A party member can try to grab the wand before Demogorgon seizes it as a trophy, but any such theft draws the attention and ire of the Prince of Demons. Angry at its master's defeat, the Wand of Orcus tries to attune itself to the first willing creature other than Demogorgon that touches it. The attunement is instantaneous, allowing the wand's properties to be used during the battle.
 
 ### Destroying Demogorgon
 

@@ -163,13 +163,13 @@ S'slaar's +2 longsword is of drow manufacture (see the "Drowcraft Items" sidebar
 
 This area is held by H'slaat's forces. One troglodyte guards the cave. A character can sneak past the guard with a successful DC 12 Dexterity (Stealth) check.
 
-The cave floor is strewn with gnawed bones-the remains of dead dwarves and drow. A circular pit, nine feet deep, holds six captives - two drow and four shield dwarf commoner. These unfortunates were separated from larger groups (see "Random Encounters" earlier in this chapter) and captured by the troglodytes. Every couple of days, one of them is eaten by the tribe. The captives are filthy and weak; each has four levels of <fetch-data type="condition">exhaustion</fetch-data> and 1 hit point remaining. Any of the captives can explain the nature of the conflict between H'slaat and S'slaar. If freed, the drow immediately flee into the Underdark, but the dwarves offer to join the expeditionary force if the adventurers liberate them. The drow are male members of House Melarn and are named Rinil and Xol. The shield dwarves hail from the Silver Marches and are named Dauthorn Brightmantle (male), Traldak Xornbane (male), Zulia Stonewhisper (female), and Hargritt Hammerhome (female).
+The cave floor is strewn with gnawed bones-the remains of dead dwarves and drow. A circular pit, nine feet deep, holds six captives - two drow and four shield dwarf commoner. These unfortunates were separated from larger groups (see "Random Encounters" earlier in this chapter) and captured by the troglodytes. Every couple of days, one of them is eaten by the tribe. The captives are filthy and weak; each has four levels of <wc-fetch type="condition">exhaustion</wc-fetch> and 1 hit point remaining. Any of the captives can explain the nature of the conflict between H'slaat and S'slaar. If freed, the drow immediately flee into the Underdark, but the dwarves offer to join the expeditionary force if the adventurers liberate them. The drow are male members of House Melarn and are named Rinil and Xol. The shield dwarves hail from the Silver Marches and are named Dauthorn Brightmantle (male), Traldak Xornbane (male), Zulia Stonewhisper (female), and Hargritt Hammerhome (female).
 
 Rubble is piled up along the south wall of the cavern, concealing a hidden passageway to **area 1**. Anyone with a passive Wisdom (Perception) score of 15 or higher notices the passage. Anyone actively searching the rubble must succeed on a DC 10 Wisdom (Perception) check to find it.
 
 #### Treasure
 
-Within the cave, four zurkhwood boxes hold a 50-foot length of spider-silk rope, four flasks of oil, twenty pounds of rancid food, a pile of moldy blankets, six maces and sixteen javelins (all battered but usable), four casks of unspoiled wine worth 10 gp each, and a locked tribute chest. It takes a successful DC 15 Dexterity check using thieves' tools to open the chest, which contains 180 gp (minted in Menzoberranzan and Gracklstugh), three gems each worth 50 gp each, a <fetch-data type="item">potion of gaseous form</fetch-data>, and a +1 dagger with silvery, weblike filigree worked into the hilt. The dagger is of drow manufacture. The crude litters that the troglodytes use to bear these goods are propped up against the cave wall.
+Within the cave, four zurkhwood boxes hold a 50-foot length of spider-silk rope, four flasks of oil, twenty pounds of rancid food, a pile of moldy blankets, six maces and sixteen javelins (all battered but usable), four casks of unspoiled wine worth 10 gp each, and a locked tribute chest. It takes a successful DC 15 Dexterity check using thieves' tools to open the chest, which contains 180 gp (minted in Menzoberranzan and Gracklstugh), three gems each worth 50 gp each, a <wc-fetch type="item">potion of gaseous form</wc-fetch>, and a +1 dagger with silvery, weblike filigree worked into the hilt. The dagger is of drow manufacture. The crude litters that the troglodytes use to bear these goods are propped up against the cave wall.
 
 ### 6. Steam Vent
 
@@ -193,9 +193,9 @@ Two of the stalagmites are roper, while four of the stalactites are piercer (the
 
 #### Treasure
 
-Searching the cave reveals the remains of a half-eaten male drow lying against one wall. The drow carries a small pouch containing 30 gp and two spell scrolls (<fetch-data type="spell">shield</fetch-data> and <fetch-data type="spell">phantasmal force</fetch-data>) written on sheets of trillimac (see "**area Fungi of the Underdark**" in chapter 2).
+Searching the cave reveals the remains of a half-eaten male drow lying against one wall. The drow carries a small pouch containing 30 gp and two spell scrolls (<wc-fetch type="spell">shield</wc-fetch> and <wc-fetch type="spell">phantasmal force</wc-fetch>) written on sheets of trillimac (see "**area Fungi of the Underdark**" in chapter 2).
 
-If the ropers are killed and cut open, the adventurers find 25 pp in the gizzard of one, and a <fetch-data type="item">ring of protection</fetch-data> in the gizzard of the other.
+If the ropers are killed and cut open, the adventurers find 25 pp in the gizzard of one, and a <wc-fetch type="item">ring of protection</wc-fetch> in the gizzard of the other.
 
 ### 9. Sunken Pool
 
@@ -335,7 +335,7 @@ Scaling the chasm walls without gear requires a successful DC 15 Strength (Athle
 
 #### Treasure
 
-The skeleton still wears a <fetch-data type="item">ring of free action</fetch-data> on one bony finger.
+The skeleton still wears a <wc-fetch type="item">ring of free action</wc-fetch> on one bony finger.
 
 ### 5. Echo Chambers
 
@@ -357,7 +357,7 @@ Venturing into Stronk's lair without waking him requires a successful DC 12 Dext
 
 #### Treasure
 
-All the treasure Stronk has taken from his victims has been placed under his sleeping skins for safekeeping: 40 pp, an electrum brooch worth 120 gp, six gems worth 50 gp each, two <fetch-data type="item">potion of greater healing</fetch-data>, and a book of drow poetry worth 100 gp.
+All the treasure Stronk has taken from his victims has been placed under his sleeping skins for safekeeping: 40 pp, an electrum brooch worth 120 gp, six gems worth 50 gp each, two <wc-fetch type="item">potion of greater healing</wc-fetch>, and a book of drow poetry worth 100 gp.
 
 ### 7. Entry Chamber
 
@@ -425,7 +425,7 @@ A chasm cuts across this cavern, stretching from wall to wall. The chasm is 10 f
 
 #### Treasure
 
-At the bottom of the chasm lie the skeletons of two svirfneblin who tried to leap across the chasm while being chased by a purple worm. Lying near the remains are two miner's picks and a small leather pouch containing a <fetch-data type="item">gem of brightness</fetch-data>.
+At the bottom of the chasm lie the skeletons of two svirfneblin who tried to leap across the chasm while being chased by a purple worm. Lying near the remains are two miner's picks and a small leather pouch containing a <wc-fetch type="item">gem of brightness</wc-fetch>.
 
 ### 13. Exit Tunnel
 
@@ -508,7 +508,7 @@ Shedrak meets visitors at the chasm, greeting them in the name of his master, th
 
 As long as the adventurers are respectful toward Shedrak and his master - and particularly if they claim to carry messages or items of possible interest to the beholder - Shedrak agrees to lead them to Karazikar.
 
-If the characters become hostile, Shedrak orders them to depart, lest they provoke the wrath of his all-powerful master. If attacked, he uses his <fetch-data type="spell">globe of invulnerability</fetch-data> scroll, casts <fetch-data type="spell">fly</fetch-data> on himself, and flies into the chasm.
+If the characters become hostile, Shedrak orders them to depart, lest they provoke the wrath of his all-powerful master. If attacked, he uses his <wc-fetch type="spell">globe of invulnerability</wc-fetch> scroll, casts <wc-fetch type="spell">fly</wc-fetch> on himself, and flies into the chasm.
 
 Shedrak allows up to ten party members accompany him, demanding that the rest of the expeditionary force remain behind. Shedrak then leads the smaller group across a bridge into the middle of Karazikar's Maw.
 
@@ -536,7 +536,7 @@ If Karazikar and Shedrak are defeated, the beholder's slaves emerge from various
 - 23 goblin
 - 15 orog
 
-All of the slaves have four levels of <fetch-data type="condition">exhaustion</fetch-data> (see appendix A of the Player's Handbook) and can't do much more than eat and follow simple instructions. They join the party's expeditionary force if urged or ordered to do so, but they aren't effective combatants until they've rested and reduced their <fetch-data type="condition">exhaustion</fetch-data> level.
+All of the slaves have four levels of <wc-fetch type="condition">exhaustion</wc-fetch> (see appendix A of the Player's Handbook) and can't do much more than eat and follow simple instructions. They join the party's expeditionary force if urged or ordered to do so, but they aren't effective combatants until they've rested and reduced their <wc-fetch type="condition">exhaustion</wc-fetch> level.
 
 The slaves know several intriguing bits of information:
 
@@ -557,4 +557,4 @@ The duodrone has 1 hit point remaining and speaks its own language of clicks and
 
 #### Treasure
 
-The beholder used its disintegration eye ray to carve a rough likeness of itself in the ceiling of Karazikar's Maw-a great stone beholder face glaring down upon the gaping chasm, its central eye a hollow shaft that leads up to a hemispherical vault where the beholder hides its considerable hoard: 15,000 gp, 1,300 pp, ten assorted gems worth 500 gp each, a <fetch-data type="item">gem of seeing</fetch-data>, a <fetch-data type="item">necklace of adaptation</fetch-data>, and a <fetch-data type="item">robe of eyes</fetch-data>.
+The beholder used its disintegration eye ray to carve a rough likeness of itself in the ceiling of Karazikar's Maw-a great stone beholder face glaring down upon the gaping chasm, its central eye a hollow shaft that leads up to a hemispherical vault where the beholder hides its considerable hoard: 15,000 gp, 1,300 pp, ten assorted gems worth 500 gp each, a <wc-fetch type="item">gem of seeing</wc-fetch>, a <wc-fetch type="item">necklace of adaptation</wc-fetch>, and a <wc-fetch type="item">robe of eyes</wc-fetch>.

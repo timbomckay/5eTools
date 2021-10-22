@@ -1,25 +1,25 @@
-table-of-contents {
+wc-toc {
   font-size: 14px;
 }
 
-table-of-contents ul {
+wc-toc ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-table-of-contents li li {
+wc-toc li li {
   padding-left: 1rem;
 }
 
-table-of-contents a {
+wc-toc a {
   @apply font-normal;
 }
 
-table-of-contents a:not(.active):not(:hover) {
+wc-toc a:not(.active):not(:hover) {
   @apply text-gray-600;
 }
 
-table-of-contents li a:not(.active) + ul:not(.has-active) {
+wc-toc li a:not(.active) + ul:not(.has-active) {
   display: none;
 }

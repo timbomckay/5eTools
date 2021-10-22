@@ -211,7 +211,7 @@ A successful DC 13 Intelligence (Arcana or Nature) check confirms that the chara
 
 ## Into the Gray Dream
 
-The rapport with Araumycos affects the adventurers like an <fetch-data type="spell">astral projection</fetch-data> spell, sending their astral bodies out into the Astral Plane where Araumycos's vast, dreaming mind resides. Their bodies remain unconscious in suspended animation while they are projected into the Astral Plane. Read the following aloud to the players.
+The rapport with Araumycos affects the adventurers like an <wc-fetch type="spell">astral projection</wc-fetch> spell, sending their astral bodies out into the Astral Plane where Araumycos's vast, dreaming mind resides. Their bodies remain unconscious in suspended animation while they are projected into the Astral Plane. Read the following aloud to the players.
 
 > You are floating, weightless, adrift. A gray, silvery light spreads around you like the dawn of a cloudy day, illuminating a peculiar realm. All of you are floating in a silvery haze that shimmers with swirls of color. Objects drift past in the distance, but whether they are small stones or rocks the size of mountains, you can't say for certain. Your moment of reverie is broken by the sound of Basidia's voice in your mind. "It begins."
 
@@ -245,7 +245,7 @@ Before Zuggtmoy acts against the adventurers, the demon queen is distracted, tur
 
 As the psychic din awakens Araumycos from its trance, the shimmering colors piercing the silver of the Astral Plane flare even brighter. The following round, Araumycos enters into full rapport with the characters and their myconid allies. The entity reveals that Zuggtmoy has already infected its mind with her demonic influence, which Araumycos can feel growing in strength. It's only a matter of time before it falls to the demon queen's will. Focused but fearful, the entity asks the adventurers to cut out and destroy the diseased part of its mind before it's too late.
 
-The characters are guided to the far side of the suspended fungus cluster inside the skull, where a dark mass is spreading. The first time any character comes within 20 feet of the dark mass, it erupts with the effect of an <fetch-data type="spell">Evard's black tentacles</fetch-data> spell. The infected area of Araumycos's mind has AC 13, 100 hit points, and vulnerability to necrotic and psychic damage.
+The characters are guided to the far side of the suspended fungus cluster inside the skull, where a dark mass is spreading. The first time any character comes within 20 feet of the dark mass, it erupts with the effect of an <wc-fetch type="spell">Evard's black tentacles</wc-fetch> spell. The infected area of Araumycos's mind has AC 13, 100 hit points, and vulnerability to necrotic and psychic damage.
 
 When the infected area first takes damage, Zuggtmoy senses it and turns her attention away from Juiblex in an attempt to stop the characters. As she exerts her will over Araumycos, a burst of spores spreads out in a cloud from the infected area. Any creature within 20 feet of the infected area must make a successful DC 19 Constitution saving throw or take 3d6 poison damage and become poisoned. While poisoned in this way, the creature takes 3d6 poison damage at the start of each of its turns. A poisoned creature can repeat the saving throw on each of its turns, ending the effect on itself on a success.
 

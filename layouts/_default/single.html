@@ -25,9 +25,9 @@
       </nav>
     </details>
 
-    <table-of-contents>
+    <wc-toc>
       {{ .TableOfContents }}
-    </table-of-contents>
+    </wc-toc>
 
     <div class="flex mt-4 gap-1 items-center">
       {{ if .NextPage }}
@@ -48,7 +48,7 @@
 </div>
 
 <script>
-window.customElements.define('table-of-contents',
+window.customElements.define('wc-toc',
   class extends HTMLElement {
     connectedCallback() {
       const { headings } = this;
@@ -62,8 +62,6 @@ window.customElements.define('table-of-contents',
         }).pop();
 
         const current = toc.getElementsByClassName('active');
-
-        console.log((find != null) && (current[0] === find.el));
         
         if (current != null) {
           for (let el of current) {
@@ -78,12 +76,6 @@ window.customElements.define('table-of-contents',
           const list = find.el.closest('ul');
           list.classList.add('has-active');
         }
-
-        // console.log({ current });
-
-        // if (!find.el.classList.contains('active')) {
-        //   console.log({ current });
-        // }
       });
     }
 

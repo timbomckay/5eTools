@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "The Handy Haversack"
 relativeurls = false
+disableKinds = [ "RSS", "sitemap" ]
 
 [build]
   writeStats = true

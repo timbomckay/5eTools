@@ -598,7 +598,7 @@ A waterfall fed by an underground freshwater stream pours into a 100-foot-diamet
 
 #### Treasure
 
-Udhask's skeleton appears to be reaching under the stone bed. A character who searches under the bed and succeeds on a DC 15 Wisdom (Perception) check finds a hidden compartment in the floor. Within the compartment is a rotted pouch containing six 100 gp gems and a <fetch-data type="item">potion of invisibility</fetch-data>.
+Udhask's skeleton appears to be reaching under the stone bed. A character who searches under the bed and succeeds on a DC 15 Wisdom (Perception) check finds a hidden compartment in the floor. Within the compartment is a rotted pouch containing six 100 gp gems and a <wc-fetch type="item">potion of invisibility</wc-fetch>.
 
 #### Development
 
@@ -664,8 +664,8 @@ If every statue in this cave is destroyed, Ogrémoch's Bane appears.
 
 The cloud is Ogrémoch's Bane. Characters within the cloud can sense its malevolence, and a successful DC 15 Intelligence (Arcana) check confirms that the cloud is of extraplanar origin. The cloud has a flying speed of 20 feet and is impervious to all damage and spells except the following.
 
-- A <fetch-data type="spell">gust of wind</fetch-data> spell or similar magic can forcibly move the cloud.
-- Casting a <fetch-data type="spell">banishment</fetch-data> spell on the cloud sends it back to the Elemental Plane of Air if it fails its Charisma saving throw (it has a +4 modifier to the roll). A <fetch-data type="spell">dispel evil and good</fetch-data> spell is equally effective and doesn't require a successful attack roll; however, the caster must be in contact with the cloud.
+- A <wc-fetch type="spell">gust of wind</wc-fetch> spell or similar magic can forcibly move the cloud.
+- Casting a <wc-fetch type="spell">banishment</wc-fetch> spell on the cloud sends it back to the Elemental Plane of Air if it fails its Charisma saving throw (it has a +4 modifier to the roll). A <wc-fetch type="spell">dispel evil and good</wc-fetch> spell is equally effective and doesn't require a successful attack roll; however, the caster must be in contact with the cloud.
 
 Creatures native to the Elemental Plane of Earth (including earth elementals, galeb duhr, gargoyles, and xorn) that come in contact with Ogrémoch's Bane instantly fall under the cloud's sway. The effect lasts as long as the enslaved elementals and Ogrémoch's Bane are on the same plane of existence.
 
@@ -831,7 +831,7 @@ In front of the throne is a footstool made from a squat, petrified mushroom. The
 
 #### Treasure
 
-The hidden compartment in the Pudding King's fungal footstool contains 55 gp, 30 ep, a <fetch-data type="item">potion of poison</fetch-data> in a gourd, two <fetch-data type="item">Spell Scroll (4th level)</fetch-data> written on sheets of dried trillimac (<fetch-data type="spell">conjure minor elementals</fetch-data> and <fetch-data type="spell">speak with plants</fetch-data>), and a varnished nothic eye that functions as a <fetch-data type="item">crystal ball of true seeing</fetch-data> that can be used only once.
+The hidden compartment in the Pudding King's fungal footstool contains 55 gp, 30 ep, a <wc-fetch type="item">potion of poison</wc-fetch> in a gourd, two <wc-fetch type="item">Spell Scroll (4th level)</wc-fetch> written on sheets of dried trillimac (<wc-fetch type="spell">conjure minor elementals</wc-fetch> and <wc-fetch type="spell">speak with plants</wc-fetch>), and a varnished nothic eye that functions as a <wc-fetch type="item">crystal ball of true seeing</wc-fetch> that can be used only once.
 
 ## Battle for Blingdenstone
 

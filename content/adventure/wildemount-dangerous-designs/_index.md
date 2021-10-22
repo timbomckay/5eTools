@@ -1,0 +1,11 @@
+{
+  "title": "Wildemount: Dangerous Designs",
+  "id": "DD",
+  "published": "2020-03-17",
+  "thumbnail": "img/covers/EGW.png",
+  "level": {
+    "start": 1,
+    "end": 3
+  },
+  "storyline": "Wildemount"
+}
