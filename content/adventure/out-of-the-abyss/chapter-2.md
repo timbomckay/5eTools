@@ -1069,12 +1069,4 @@ On initiative count 1 in the round in which Brysis attacks, the characters hear 
 
 The thin gold sheath covering Brysis's sarcophagus can be pried loose and is worth 250 gp. Inside the stone sarcophagus, lying atop Brysis's withered and mummified corpse, is a magic sword called <wc-fetch type="item">Dawnbringer</wc-fetch>. This intelligent weapon is the source of the telepathic messages.
 
-<<<<<<< HEAD
 The stone chest is unlocked and contains the other treasures Brysis took with her into the afterlife: 4,000 sp, 1,200 gp, eleven zircons (worth 50 gp each), a <wc-fetch type="item">necklace of fireballs</wc-fetch>, a <wc-fetch type="item">philter of love</wc-fetch>, and a <wc-fetch type="item">potion of greater healing</wc-fetch>.
-=======
-<<<<<<< HEAD
-The stone chest is unlocked and contains the other treasures Brysis took with her into the afterlife: 4,000 sp, 1,200 gp, eleven zircons (worth 50 gp each), a <fetch-data type="item">necklace of fireballs</fetch-data>, a <fetch-data type="item">philter of love</fetch-data>, and a <fetch-data type="item">potion of greater healing</fetch-data>.
-=======
-The stone chest is unlocked and contains the other treasures Brysis took with her into the afterlife: 4,000 sp, 1,200 gp, eleven zircons (worth 50 gp each), a <fetch-data type="item">necklace of fireballs</fetch-data>, a <fetch-data type="item">philter of love</fetch-data>, and a <fetch-data type="item">potion of greater healing</fetch-data>.
->>>>>>> 9c2d7470 (OotA & style updates)
->>>>>>> 9d34d106 (OotA & style updates)

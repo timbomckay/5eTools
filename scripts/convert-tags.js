@@ -28,35 +28,61 @@ const process = (match, tag, meta, _, string) => {
     case 'damage':
       const [dice, label] = meta.split('|');
       return label
-        ? `<dice-roll dice="${dice}">${label}</dice-roll>`
-        : `<dice-roll>${dice}</dice-roll>`;
+        ? `<wc-roll dice="${dice}">${label}</wc-roll>`
+        : `<wc-roll>${dice}</wc-roll>`;
     case 'chance':
-      return `<dice-roll chance>${meta} percent</dice-roll>`;
+      return `<wc-roll chance>${meta} percent</wc-roll>`;
     case 'action':
     case 'condition':
+    case 'feat':
     case 'hazard':
     case 'item':
+    case 'Item':
+    case 'reward':
     case 'sense':
     case 'skill':
     case 'spell':
-      return `<fetch-data type="${tag}">${meta.split('|').shift()}</fetch-data>`;
+    case 'trap':
+      return `<wc-fetch type="${tag}">${meta.split('|').shift()}</wc-fetch>`;
     case 'hit':
       return toMarkdown
         ? `**${meta >= 0 ? '+' : '-'}${meta}**`
         : `<b>${meta >= 0 ? '+' : '-'}${meta}</b>`;
     case 'dc':
       return `DC ${meta}`;
+    case 'atk':
+      switch (meta) {
+        case 'mw':
+          return '_Melee Weapon Attack:_';
+        case 'rw':
+          return '_Ranged Weapon Attack:_';
+        default:
+          return '_Attack:_';
+      }
+    // ignore tag & print meta
+    case '5etools':
     case 'adventure':
+    case 'background':
     case 'book':
+    case 'class':
+    case 'charoption':
+    case 'classFeature':
     case 'creature':
     case 'disease':
+    case 'deity':
     case 'filter':
+    case 'object':
+    case 'race':
+    case 's':
     case 'table':
+    case 'vehicle':
+    case 'vehupgrade':
     case 'variantrule':
-      // console.log('process:', tag);
       return meta.split('|').shift();
+    // no matching case, console log match and print meta
     default:
-      console.log({ match, tag, meta, string });
+      // console.log({ tag });
+      console.log({ match, tag, meta });
       return meta;
   }
 };

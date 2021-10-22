@@ -2,34 +2,137 @@ const convertTags = require('./convert-tags');
 
 let toMarkdown = null;
 
-const processEntry = (entry, level = 2) => {
-  // console.log('processEntry');
+const toMarkdownTable = (entry, level) => {
+  const table = [];
+  let center = null;
+  
+  if (entry.colStyles) {
+    entry.colStyles.forEach((col, i) => {
+      if (col.split(' ').includes('text-center')) {
+        center = i;
+      }
+    });
+  }
 
+  if (entry.caption) {
+    table.push(`${'#'.repeat(level)} ${entry.caption}\n`);
+  }
+
+  const createTableRow = (arr) => {
+    arr = arr.map((cell, index) => {
+      if (typeof cell !== 'string') {
+        if (cell.roll && cell.roll.exact) {
+          cell = cell.roll.exact
+        } else if (cell.type === 'entries') {
+          cell = cell.entries.join(' ');
+        } else {
+          console.log('cell: ', cell);
+        }
+      }
+
+      cell = convertTags(cell, level, toMarkdown);
+
+      return index === center
+        ? `<span class="text-center block">${cell}</span>`
+        : cell
+    }).join(' | ');
+
+    return `| ${arr} |`;
+  };
+
+  let columnCount = entry.rows[0].length;
+
+  if (entry.colLabels != null) {
+    columnCount = Math.max(entry.colLabels.length, columnCount);
+
+    if (columnCount < entry.colLabels.length) {
+      entry.colLabels = [
+        ...entry.colLabels,
+        ...Array( columnCount - entry.colLabels.length ).fill('')
+      ]
+    }
+    
+    table.push(createTableRow(entry.colLabels));
+  }
+
+  table.push(`| ${Array(columnCount).fill('-').join(' | ')} |`);
+  
+  entry.rows.forEach((row) => {
+    table.push(createTableRow(row));
+  });
+  
+  return table;
+}
+
+const processEntry = (entry, level = 2) => {
   if (typeof entry === 'string') {
-    // console.log('processEntry:string');
     return convertTags(entry, level, toMarkdown);
   }
 
   switch (entry.type) {
+    case 'section':
     case 'entries':
+    case 'optfeature':
       const entries = processEntries(entry.entries, level + 1);
 
       // entries[0] = `<b><i>${entry.name}</i></b>. ${entries[0]}`;
 
       return [
         entry.name ? `${'#'.repeat(level)} ${entry.name}` : null,
+        entry.prerequisite ? `_Prerequisite: ${entry.prerequisite}_` : null,
         ...entries
       ].filter(i => i).join('\n\n');
+    case 'insetReadaloud':
     case 'inset':
-      // console.log('processEntry:inset', entry);
-      return '> ' + entry.entries.join('\n> \n> ');
+    case 'quote':
+      const flattenToStrings = (arr) => arr.map((val) => {
+        if (typeof val !== 'string') {
+          switch (val.type) {
+            case 'entries':
+              if (val.name != null) {
+                val.entries[0] = `**${val.name}:** ${val.entries[0]}`;
+              }
+
+              return flattenToStrings(val.entries);
+            case 'list':
+              return [
+                val.name ? `**${val.name}**` : null,
+                ...val.items.map(i => '- ' + convertTags(i.entry || i))
+              ];
+            case 'image':
+              return `![${val.title || ''}](${encodeURI(val.href.path)})`;
+            case 'table':
+              return toMarkdownTable(val, level).join('\n> ');
+            case 'quote':
+              return [
+                ...val.entries,
+                `- ${val.by}`
+              ];
+            default:
+              return val.entries || val;
+          }
+        }
+      
+        return convertTags(val);
+      });
+      
+      return '> ' + [
+        entry.name ? `${'#'.repeat(level)} ${entry.name}` : null,
+        ...flattenToStrings(entry.entries),
+        entry.by ? `- ${entry.by}` : null,
+      ].filter(i => i).flat().join('\n> \n> ');
       
       return {
         ...entry,
         entries: processEntries(entry.entries),
       };
     case 'list':
-      return entry.items.map(item => `- ${processEntry(item)}`).join('\n');
+      // return entry.items.map(item => `- ${processEntry(item)}`).join('\n');
+      
+      return [
+        entry.name ? `${'#'.repeat(level)} ${entry.name}` : null,
+        entry.items.map(item => `- ${processEntry(item)}`).join('\n')
+      ].filter(i => i).join('\n\n');
 
       if (entry.style === 'list-hang-notitle') {
         entry.style = 'none';
@@ -41,55 +144,7 @@ const processEntry = (entry, level = 2) => {
       };
     case 'table':
       if (toMarkdown) {
-        const table = [];
-        let center = null;
-        
-        if (entry.colStyles) {
-          entry.colStyles.forEach((col, i) => {
-            if (col.split(' ').includes('text-center')) {
-              center = i;
-            }
-          });
-        }
-
-        if (entry.caption) {
-          table.push(`${'#'.repeat(level)} ${entry.caption}\n`);
-        }
-
-        const createTableRow = (arr) => {
-          arr = arr.map((cell, index) => {
-            cell = convertTags(cell, level, toMarkdown);
-
-            return index === center
-              ? `<span class="text-center block">${cell}</span>`
-              : cell
-          }).join(' | ');
-
-          return `| ${arr} |`;
-        };
-        
-        const columnCount = Math.max(entry.colLabels.length, entry.rows[0].length);
-
-        // if (columnCount > 4) {
-        //   console.log(entry);
-        // }
-
-        if (columnCount < entry.colLabels.length) {
-          entry.colLabels = [
-            ...entry.colLabels,
-            ...Array( columnCount - entry.colLabels.length ).fill('')
-          ]
-        }
-        
-        table.push(createTableRow(entry.colLabels));
-
-        table.push(`| ${Array(columnCount).fill('-').join(' | ')} |`);
-        
-        entry.rows.forEach((row) => {
-          table.push(createTableRow(row));
-        });
-        
-        return table.join('\n');
+        return toMarkdownTable(entry, level).join('\n');
       }
       
       const obj = {};
@@ -109,7 +164,6 @@ const processEntry = (entry, level = 2) => {
         rows: JSON.stringify(entry.rows.map(row => row.map(cell => convertTags(cell.entry || cell, level, toMarkdown)))),
       };
     case 'image':
-      // console.log('processEntry:image');
       return `![${entry.title}](${encodeURI(entry.href.path)})`;
     case 'item':
       if (entry.entries != null) {
@@ -118,8 +172,37 @@ const processEntry = (entry, level = 2) => {
       }
 
       return `<b>${entry.name}</b> ${processEntry(entry.entry)}`;
+    case 'gallery':
+      const arr = [];
+
+      arr.push('<wc-gallery>');
+
+      entry.images.forEach((img) => {
+        arr.push(`![${img.title}](${encodeURI(img.href.path)})`)
+      });
+
+      arr.push('</wc-gallery>');
+
+      return arr.join('\n\n');;
+    case 'flowchart':
+      return '> ' + entry.blocks.map(e => {
+        return [
+          e.name ? `${'#'.repeat(level)} ${e.name}` : null,
+          ...e.entries.map(e => convertTags(e, level, toMarkdown)),
+        ].filter(i => i).flat().join('\n> \n> ');
+      }).filter(i => i).flat().join('\n> \n> ');
+    case 'inlineBlock':
+      return entry.entries.map(val => {
+        if (typeof val !== 'string') {
+          if (val.type === 'link') {
+            return val.text;
+          }
+        }
+
+        return val;
+      }).join('');
     default:
-      console.log(entry);
+      console.log('no case:', entry.type);
       return entry;
   }
 };
