@@ -17,11 +17,11 @@ tbody > tr:nth-child(odd) {
   @apply bg-yellow-100;
 }
 
-thead > tr,
+/* thead > tr,
 tr:nth-child(even) {
   background-color: white;
   background-image: url('/lightpaperfibers.png');
-}
+} */
 
 td,
 th {

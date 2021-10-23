@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}" itemscope itemtype="http://schema.org/WebPage">
+<html
+    lang="{{ .Site.LanguageCode }}"
+    style="background-image:url('{{"/lightpaperfibers.png" | relURL }}')"
+>
     {{- partial "head" . -}}
     <body class="flex flex-col min-h-screen">
         {{- partial "header" . -}}

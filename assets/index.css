@@ -9,7 +9,7 @@
 html {
   scroll-padding-top: 4rem;
   scroll-padding-bottom: 3rem;
-  background-image: url('/lightpaperfibers.png');
+  /* background-image: url('/lightpaperfibers.png'); */
 }
 
 .not-focus\:sr-only:not(:focus) {
