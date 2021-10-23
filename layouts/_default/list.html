@@ -1,15 +1,49 @@
 {{ define "main" }}
-  <div class="max-w-ch mx-auto px-6 pt-8 pb-12">
+  <div class="max-w-ch mx-auto px-6 mt-8 mb-12">
     <h1>{{- .Title -}}</h1>
     {{ with .Content }}
         {{- . -}}
     {{ end }}
   </div>
+  
   {{ range .Pages }}
-    <article class="mx-auto max-w-ch my-24 px-6">
-      <h2 class="sm:mt-0"><a href="{{.Permalink}}" class="font-extrabold">{{.Title}}</a></h2>
-      <p>{{ .Summary }}</p>
-      <a href="{{.Permalink}}" class="btn btn-primary mt-4 text-sm">View Page</a>
-    </article>
+    <div class="my-24">
+      <div class="mx-auto max-w-ch px-6">
+        <h2 class="sm:mt-0">
+          <a href="{{.Permalink}}" class="font-extrabold">
+            {{- .Title -}}
+          </a>
+        </h2>
+        <p>{{ .Summary }}</p>
+      </div>
+
+      {{ if .Sections }}
+      <div class="max-w-screen-lg mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        {{ range first 4 .Sections }}
+          <article>
+            {{ $link := .Permalink }}
+            {{- with .Params.thumbnail -}}
+              <a
+                href="{{ $link }}"
+                class="block"
+                style="aspect-ratio: 3/4;"
+              >
+                <img
+                  class="object-cover w-full h-full"
+                  src="https://thegiddylimit.github.io/{{ . | safeURL }}"
+                  alt="cover"
+                  loading="lazy"
+                />
+              </a>
+            {{- end -}}
+            <span class="sr-only">
+              <a href="{{.Permalink}}" class="font-extrabold">{{.Title}}</a>
+              <a href="{{.Permalink}}" class="text-sm font-sans">View Adventure ></a>
+            </span>
+          </article>
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
   {{ end }}
 {{ end }}

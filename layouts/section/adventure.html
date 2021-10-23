@@ -1,11 +1,11 @@
 {{ define "main" }}
-  <div class="py-6">
+  <div class="max-w-ch mx-auto w-full">
     <h1>{{- .Title -}}</h1>
     {{ with .Content }}{{- . -}}{{ end }}
   </div>
 
   {{ if .Sections }}
-    <div class="gap-6 grid grid-cols-4">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
       {{ range .Sections }}
         <article>
           {{ $link := .Permalink }}
@@ -31,15 +31,14 @@
       {{ end }}
     </div>
   {{ else }}
-    <div>
+    <div class="max-w-ch mx-auto">
       {{ range .Pages }}
         <article>
           <h3>
-            <a href="{{.Permalink}}" class="font-extrabold">{{ .Title }}</a>
+            <a href="{{.Permalink}}" class="font-extrabold">{{- .Title -}}</a>
           </h3>
           {{ .TableOfContents | replaceRE "TableOfContents" "" | replaceRE "#" (printf "%s%s" .Permalink "#") | replaceRE "<li></li>" "" | replaceRE "<ul></ul>" "" | safeHTML }}
-          <a href="{{.Permalink}}" class="text-sm font-sans">View Chapter ></a>
-        </article>
+          </article>
       {{ end }}
     </div>
   {{ end }}
