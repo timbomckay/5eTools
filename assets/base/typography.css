@@ -74,31 +74,25 @@ p > a {
 }
 
 blockquote {
-  @apply bg-yellow-100 border-primary-700 bg-opacity-50;
-	position: relative;
-	padding: 1.125rem;
+  @apply bg-yellow-100 bg-opacity-50 relative p-4;
   margin: 2rem auto;
-  border-left-width: 2px;
-  border-right-width: 2px;
+  border-width: 8px;
+  border-image-source: url("data:image/svg+xml;utf8,<svg height='24' width='24' fill='rgb(118, 8, 11)' xmlns='http://www.w3.org/2000/svg'><circle cx='4' cy='4' r='4'></circle><circle cx='20' cy='4' r='4'></circle><circle cx='4' cy='20' r='4'></circle><circle cx='20' cy='20' r='4'></circle></svg>");
+  border-image-slice: 8;
+  border-image-outset: 3px;
 }
 
 blockquote:before,
-blockquote:after,
-blockquote > *:first-child:before,
-blockquote > *:first-child:after {
-  @apply border-primary-700 rounded-full;
+blockquote:after {
+  @apply border-primary-700 block absolute;
   content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  border-width: 4px;
-  position: absolute;
+  top: -8px;
+  bottom: -8px;
+  border-left-width: 2px;
 }
 
-blockquote:before { left: -5px; top: -4px; }
-blockquote:after { right: -5px; top: -4px; }
-blockquote > *:first-child:before { left: -5px; bottom: -4px; }
-blockquote > *:first-child:after { right: -5px; bottom: -4px; }
+blockquote:before { left: -8px; }
+blockquote:after { right: -8px; }
 
 hr {
   margin-top: 3em;
