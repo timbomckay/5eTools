@@ -1,0 +1,47 @@
+{{ define "main" }}
+  <main class="lg:pb-10 mx-auto px-4 lg:px-6 mb-6 lg:mb-8 w-full">
+    <div class="max-w-ch mx-auto w-full">
+      <h1>{{- .Title -}}</h1>
+      {{ with .Content }}{{- . -}}{{ end }}
+    </div>
+
+    {{ if .Sections }}
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        {{ range .Sections }}
+          <article>
+            {{ $link := .Permalink }}
+            {{- with .Params.thumbnail -}}
+              <a
+                href="{{ $link }}"
+                class="block"
+                style="aspect-ratio: 3/4;"
+              >
+                <img
+                  class="object-cover w-full h-full"
+                  src="https://thegiddylimit.github.io/{{ . | safeURL }}"
+                  alt="cover"
+                  loading="lazy"
+                />
+              </a>
+            {{- end -}}
+            <span class="sr-only">
+              <a href="{{.Permalink}}" class="font-extrabold">{{.Title}}</a>
+              <a href="{{.Permalink}}" class="text-sm font-sans">View Adventure ></a>
+            </span>
+          </article>
+        {{ end }}
+      </div>
+    {{ else }}
+      <div class="max-w-ch mx-auto">
+        {{ range .Pages }}
+          <article>
+            <h3>
+              <a href="{{.Permalink}}" class="font-extrabold">{{- .Title -}}</a>
+            </h3>
+            {{ .TableOfContents | replaceRE "TableOfContents" "" | replaceRE "#" (printf "%s%s" .Permalink "#") | replaceRE "<li></li>" "" | replaceRE "<ul></ul>" "" | safeHTML }}
+            </article>
+        {{ end }}
+      </div>
+    {{ end }}
+  </main>
+{{ end }}

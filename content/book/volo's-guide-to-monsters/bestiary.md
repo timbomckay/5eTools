@@ -1,0 +1,110 @@
+{
+  "title": "Bestiary",
+  "weight": 3
+}
+
+- Alhoon
+- Annis Hag
+- Babau
+- Banderhobb
+- Barghest
+- Bheur Hag
+- Black Guard Drake
+- Blue Guard Drake
+- Bodak
+- Boggle
+- Brontosaurus
+- Catoblepas
+- Cave Fisher
+- Chitine
+- Choldrith
+- Cloud Giant Smiling One
+- Cranium Rat
+- Darkling
+- Darkling Elder
+- Death Kiss
+- Deep Scion
+- Deinonychus
+- Devourer
+- Dimetrodon
+- Draegloth
+- Elder Brain
+- Fire Giant Dreadnought
+- Firenewt Warlock of Imix
+- Firenewt Warrior
+- Flail Snail
+- Flind
+- Froghemoth
+- Frost Giant Everlasting One
+- Gauth
+- Gazer
+- Giant Strider
+- Girallon
+- Gnoll Flesh Gnawer
+- Gnoll Hunter
+- Gnoll Witherling
+- Green Guard Drake
+- Grung
+- Grung Elite Warrior
+- Grung Wildling
+- Hadrosaurus
+- Hobgoblin Devastator
+- Hobgoblin Iron Shadow
+- Illithilich
+- Ki-rin
+- Kobold Dragonshield
+- Kobold Inventor
+- Kobold Scale Sorcerer
+- Korred
+- Leucrotta
+- Maw Demon
+- Meenlock
+- Mind Flayer Psion
+- Mindwitness
+- Morkoth
+- Mouth of Grolantor
+- Neogi
+- Neogi Hatchling
+- Neogi Master
+- Neothelid
+- Nilbog
+- Orc Blade of Ilneval
+- Orc Claw of Luthic
+- Orc Hand of Yurtrus
+- Orc Nurtured One of Yurtrus
+- Orc Red Fang of Shargaas
+- Quetzalcoatlus
+- Quickling
+- Red Guard Drake
+- Redcap
+- Sea Spawn
+- Shadow Mastiff
+- Shoosuva
+- Slithering Tracker
+- Spawn of Kyuss
+- Stegosaurus
+- Stone Giant Dreamwalker
+- Storm Giant Quintessent
+- Swarm of Cranium Rats
+- Tanarukk
+- Thorny
+- Tlincalli
+- Trapper
+- Ulitharid
+- Vargouille
+- Vegepygmy
+- Vegepygmy Chief
+- Velociraptor
+- White Guard Drake
+- Wood Woad
+- Xvart
+- Xvart Speaker
+- Xvart Warlock of Raxivort
+- Yeth Hound
+- Yuan-ti Anathema
+- Yuan-ti Broodguard
+- Yuan-ti Malison (Type 4)
+- Yuan-ti Malison (Type 5)
+- Yuan-ti Mind Whisperer
+- Yuan-ti Nightmare Speaker
+- Yuan-ti Pit Master

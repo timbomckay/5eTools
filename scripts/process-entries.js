@@ -19,10 +19,26 @@ const toMarkdownTable = (entry, level) => {
   }
 
   const createTableRow = (arr) => {
+    if (!Array.isArray(arr)) {
+      if (arr.type === 'row') {
+        if (arr.style === 'row-indent-first') {
+          arr.row[0] = '&nbsp;'.repeat(4) + arr.row[0];
+        } else {
+          console.log('createTableRow:', arr);
+        }
+
+        arr = arr.row;
+      }
+    }
+
     arr = arr.map((cell, index) => {
-      if (typeof cell !== 'string') {
-        if (cell.roll && cell.roll.exact) {
-          cell = cell.roll.exact
+      if ((typeof cell !== 'string') && (typeof cell !== 'number')) {
+        if (cell.roll) {
+          if (cell.roll.exact) {
+            cell = cell.roll.exact
+          } else {
+            cell = cell.roll.min + '-' + cell.roll.max;
+          }
         } else if (cell.type === 'entries') {
           cell = cell.entries.join(' ');
         } else {
@@ -73,7 +89,8 @@ const processEntry = (entry, level = 2) => {
     case 'section':
     case 'entries':
     case 'optfeature':
-      const entries = processEntries(entry.entries, level + 1);
+    case 'tableGroup':
+      const entries = processEntries(entry.entries || entry.tables, level + 1);
 
       // entries[0] = `<b><i>${entry.name}</i></b>. ${entries[0]}`;
 
@@ -97,7 +114,13 @@ const processEntry = (entry, level = 2) => {
             case 'list':
               return [
                 val.name ? `**${val.name}**` : null,
-                ...val.items.map(i => '- ' + convertTags(i.entry || i))
+                ...val.items.map(i => {
+                  if (i.entries != null) {
+                    i.entry = i.entries.join(' ');
+                  }
+
+                  return '- ' + convertTags(i.entry || i);
+                })
               ];
             case 'image':
               return `![${val.title || ''}](${encodeURI(val.href.path)})`;
@@ -191,11 +214,14 @@ const processEntry = (entry, level = 2) => {
           ...e.entries.map(e => convertTags(e, level, toMarkdown)),
         ].filter(i => i).flat().join('\n> \n> ');
       }).filter(i => i).flat().join('\n> \n> ');
+    case 'inline':
     case 'inlineBlock':
       return entry.entries.map(val => {
         if (typeof val !== 'string') {
           if (val.type === 'link') {
             return val.text;
+          } else {
+            console.log('inline/Block:', val);
           }
         }
 

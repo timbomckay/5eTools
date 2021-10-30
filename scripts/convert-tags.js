@@ -59,29 +59,46 @@ const process = (match, tag, meta, _, string) => {
         default:
           return '_Attack:_';
       }
+    case 'highlight':
+      return `<mark>${meta.split('|').shift()}</mark>`;
+    // comic font styles for rick & morty campaign
+    case 'comic':
+    case 'comicNote':
+      return `<span class="font-comic">${meta.split('|').shift()}</span>`;
+    case 'comicH1':
+    case 'comicH2':
+    case 'comicH3':
+    case 'comicH4':
+    case 'comicH5':
+      return `${'#'.repeat(tag.replace('comicH', ''))} <span class="font-comic">${meta.split('|').shift()}</span>`;
     // ignore tag & print meta
     case '5etools':
     case 'adventure':
     case 'background':
     case 'book':
-    case 'class':
+    case 'boon':
     case 'charoption':
+    case 'class':
     case 'classFeature':
     case 'creature':
-    case 'disease':
+    case 'cult':
     case 'deity':
+    case 'disease':
     case 'filter':
+    case 'language':
     case 'object':
+    case 'optfeature':
     case 'race':
     case 's':
+    case 'subclassFeature':
     case 'table':
+    case 'u':
+    case 'variantrule':
     case 'vehicle':
     case 'vehupgrade':
-    case 'variantrule':
       return meta.split('|').shift();
     // no matching case, console log match and print meta
     default:
-      // console.log({ tag });
       console.log({ match, tag, meta });
       return meta;
   }
