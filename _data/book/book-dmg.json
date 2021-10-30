@@ -15734,51 +15734,35 @@
 										],
 										[
 											"12-14",
-											{
-												"type": "table",
-												"caption": "Figurine of Wondrous Power",
-												"colLabels": [
-													"d8",
-													"Magic Item"
-												],
-												"colStyles": [
-													"col-2 text-center",
-													"col-10"
-												],
-												"rows": [
-													[
-														"01",
-														"{@item Figurine of wondrous power, bronze griffon}"
-													],
-													[
-														"02",
-														"{@item Figurine of wondrous power, ebony fly}"
-													],
-													[
-														"03",
-														"{@item Figurine of wondrous power, golden lions}"
-													],
-													[
-														"04",
-														"{@item Figurine of wondrous power, ivory goats}"
-													],
-													[
-														"05",
-														"{@item Figurine of wondrous power, marble elephant}"
-													],
-													[
-														"06-07",
-														"{@item Figurine of wondrous power, onyx dog}"
-													],
-													[
-														"08",
-														"{@item Figurine of wondrous power, serpentine owl}"
-													]
-												],
-												"data": {
-													"tableIgnore": true
-												}
-											}
+											"Figurine of Wondrous Power (roll d8)"
+										],
+										[
+											"",
+											"01 - {@item Figurine of wondrous power, bronze griffon}"
+										],
+										[
+											"",
+											"02 - {@item Figurine of wondrous power, ebony fly}"
+										],
+										[
+											"",
+											"03 - {@item Figurine of wondrous power, golden lions}"
+										],
+										[
+											"",
+											"04 - {@item Figurine of wondrous power, ivory goats}"
+										],
+										[
+											"",
+											"05 - {@item Figurine of wondrous power, marble elephant}"
+										],
+										[
+											"",
+											"06-07 - tem Figurine of wondrous power, onyx dog}"
+										],
+										[
+											"",
+											"08 - {@item Figurine of wondrous power, serpentine owl}"
 										],
 										[
 											"15",
@@ -16548,51 +16532,35 @@
 										],
 										[
 											"76",
-											{
-												"type": "table",
-												"caption": "Magic armor",
-												"colLabels": [
-													"1d12",
-													""
-												],
-												"colStyles": [
-													"col-2 text-center",
-													"col-10"
-												],
-												"rows": [
-													[
-														"1-2",
-														"{@item +2 half plate armor}"
-													],
-													[
-														"3-4",
-														"{@item +2 plate armor}"
-													],
-													[
-														"5-6",
-														"{@item +3 studded leather armor}"
-													],
-													[
-														"7-8",
-														"{@item +3 breastplate}"
-													],
-													[
-														"9-10",
-														"{@item +3 splint armor}"
-													],
-													[
-														"11",
-														"{@item +3 half plate armor}"
-													],
-													[
-														"12",
-														"{@item +3 plate armor}"
-													]
-												],
-												"data": {
-													"tableIgnore": true
-												}
-											}
+											"Magic armor (roll d12)"
+										],
+										[
+											"",
+											"1-2 - @item +2 half plate armor}"
+										],
+										[
+											"",
+											"3-4 - @item +2 plate armor}"
+										],
+										[
+											"",
+											"5-6 - @item +3 studded leather armor}"
+										],
+										[
+											"",
+											"7-8 - @item +3 breastplate}"
+										],
+										[
+											"",
+											"9-10 - item +3 splint armor}"
+										],
+										[
+											"",
+											"11 - {@item +3 half plate armor}"
+										],
+										[
+											"",
+											"12 - {@item +3 plate armor}"
 										],
 										[
 											"77",

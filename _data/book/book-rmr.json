@@ -29,7 +29,7 @@
 						"{@comicH1 POWER, morty!}",
 						"{@comic The most {@i important} part of D&D.}",
 						"{@comic People play this game because they want limitless power and treasure and to act like a complete badass all the time.}",
-						"{@comic I-I-I mean, honestly, it's the {@i illusion} of power, Morty. We play games to distract ourselves from the reality that the universe is an unfeeling, uncontrollable s***storm and everything we do is {@b {@i {@comicH4 MEANINGLESS}}}, but fine, fine. That's just a b-b-*BURP*-baseline assumption we have to make because this is a human game for human people.}",
+						"{@comic I-I-I mean, honestly, it's the {@i illusion} of power, Morty. We play games to distract ourselves from the reality that the universe is an unfeeling, uncontrollable s***storm and everything we do is {@b {@i MEANINGLESS}}, but fine, fine. That's just a b-b-*BURP*-baseline assumption we have to make because this is a human game for human people.}",
 						{
 							"type": "image",
 							"href": {
@@ -41,7 +41,7 @@
 							"height": 298
 						},
 						"{@comic W-w-we're not playing {@i Glabbins & Gunchins} with a buncha Bloofians, now are we? No, no we're not.}",
-						"{@comic Dungeons & Dragons is a portal gun to {@b {@i {@comicH4 INFINITE IDEAS}}} and {@b {@i {@comicH4 INFINITE POWER}}} without n-n-needing to be a genius like me who built one, Morty. It's not as {@i good} as a portal gun, but it's also a lot {@b cheaper} and doesn't require unstable energy sources to operate.}",
+						"{@comic Dungeons & Dragons is a portal gun to {@b {@i INFINITE IDEAS}} and {@b {@i INFINITE POWER}} without n-n-needing to be a genius like me who built one, Morty. It's not as {@i good} as a portal gun, but it's also a lot {@b cheaper} and doesn't require unstable energy sources to operate.}",
 						"{@comicH1 it's good stuff.}"
 					]
 				},
@@ -108,9 +108,9 @@
 						},
 						"{@comicH3 Yeah and no.}",
 						"{@comic Being a Dungeon Master is all that stuff, but it's a lot {@i more} than that.}",
-						"{@comic {@comicH1 playing d&d is good, but running it is a total power load, morty!}}",
-						"{@comic Y-y-you get to be a {@comicH3 god}, Morty. You control the h-h-horizontal and the vertical. Y-y-ou tell the players what's going on and then you entertain their asses with your {@i brilliance}, Morty. You get a little taste of what it's like to be {@comicH3 me}, all the time. I'm your teacher now. School can't help you here. School is a {@i prison}. Ninety-two percent of races in the universe don't even believe in schools\u2014because they know. They already know.}",
-						"{@comic Anyway, the point is, the Dungeon Master is in charge, and since I don't want that balding little turd from the {@b cartoon} messing with us again, that means {@comicH3 I'm} in charge. O-o-or if you're reading this book right now, which you are if you're seeing these words, th-th-then {@i you're} in charge! {@b {@i {@comicH4 YOU}! }}I totally just {@i deputized} you by the power of Greyhawk, or whatever it is.}"
+						"{@comic H1 playing d&d is good, but running it is a total power load, morty!}",
+						"{@comic Y-y-you get to be a {@i god}, Morty. You control the h-h-horizontal and the vertical. Y-y-ou tell the players what's going on and then you entertain their asses with your {@i brilliance}, Morty. You get a little taste of what it's like to be {@b me}, all the time. I'm your teacher now. School can't help you here. School is a {@i prison}. Ninety-two percent of races in the universe don't even believe in schools\u2014because they know. They already know.}",
+						"{@comic Anyway, the point is, the Dungeon Master is in charge, and since I don't want that balding little turd from the {@b cartoon} messing with us again, that means {@b I'm} in charge. O-o-or if you're reading this book right now, which you are if you're seeing these words, th-th-then {@i you're} in charge! {@b {@i YOU}! }I totally just {@i deputized} you by the power of Greyhawk, or whatever it is.}"
 					]
 				},
 				{
@@ -127,9 +127,9 @@
 							"width": 200,
 							"height": 256
 						},
-						"{@comic This is a book for {@comicH3 new players} so they don't want to blow your mind, Morty, but stuff can get wild. Literally, if you can imagine it, it can be in your game!}",
+						"{@comic This is a book for {@b new players} so they don't want to blow your mind, Morty, but stuff can get wild. Literally, if you can imagine it, it can be in your game!}",
 						"{@comicH3 I'm talking about owlbears, Morty! }",
-						"{@comic Th-th-that's an owl mixed with a bear! And they lay eggs, Morty! {@b {@i {@comicH4 OWLBEAR EGGS}}}! You crack open one of those and a giant beak-faced heap of {@comicH3 goop} comes out. I-i-it's delicious on toast. You've gotta try it.}",
+						"{@comic Th-th-that's an owl mixed with a bear! And they lay eggs, Morty! {@b {@i OWLBEAR EGGS}}! You crack open one of those and a giant beak-faced heap of {@b goop} comes out. I-i-it's delicious on toast. You've gotta try it.}",
 						"{@comic Anyway, that's just the tip of iceberg. Take a gander through the Monster Manual sometime and get a glimpse of what these sick designers come up with. It'll blow your mind, Morty.}"
 					]
 				},
@@ -147,7 +147,7 @@
 					"type": "inset",
 					"id": "009",
 					"entries": [
-						" {@comic {@b {@i {@comicH4 \"UNEXPECTED\"}}} i-i-is the key word there, Morty. Your job as the DM is to mess with player expectations.} {@comicH1 mess them up real good.} {@comic Set 'em up and then tweak their nipples, Morty. You're not winning until someone cries. It's about the journey, not the destination.} "
+						" {@comic {@b {@i \"UNEXPECTED\"}} i-i-is the key word there, Morty. Your job as the DM is to mess with player expectations.} {@b mess them up real good.} {@comic Set 'em up and then tweak their nipples, Morty. You're not winning until someone cries. It's about the journey, not the destination.} "
 					]
 				},
 				"There's no winning and losing in D&D\u2014at least not the way those terms are usually understood. Together, the DM and the players create a story of bold adventurers who confront deadly perils. Sometimes an adventurer might come to a grisly end, torn apart by ferocious monsters or done in by a nefarious villain. Even so, the other adventurers can search for powerful magic to revive their fallen comrade, or the player might choose to play a new character. The group might fail to complete an adventure successfully, but if the players had a good time and created a memorable story, they all win.",
@@ -176,8 +176,8 @@
 							"width": 120,
 							"height": 134
 						},
-						"{@comic Lemme make this really clear: {@b {@i {@comicH4 THE DUNGEON MASTER IS THE WINNER BY DEFAULT}.}}}",
-						"{@comic B-b-being in charge and messing with your friends makes you {@comicH3 top dog}, dawg. After that, it comes down to who gets the most phat loot, experience points, and who rolled the best.}",
+						"{@comic Lemme make this really clear: {@b {@i THE DUNGEON MASTER IS THE WINNER BY DEFAULT}.}}",
+						"{@comic B-b-being in charge and messing with your friends makes you {@b top dog}, dawg. After that, it comes down to who gets the most phat loot, experience points, and who rolled the best.}",
 						{
 							"type": "image",
 							"href": {
@@ -188,7 +188,7 @@
 							"width": 120,
 							"height": 146
 						},
-						"{@comic I-i-if creating some compelling narrative about your m-m-motivations for saving your brother the Prince of Pituitary who was taken by rabid rust monsters gets your rocks off, well then whoop-de-doo for you, but i-i-in the end it all comes down to {@b {@i {@comicH4 POWER}}} and {@b {@i {@comicH4 CONTROL}}}. Y-y-you've got it, or you don't.}"
+						"{@comic I-i-if creating some compelling narrative about your m-m-motivations for saving your brother the Prince of Pituitary who was taken by rabid rust monsters gets your rocks off, well then whoop-de-doo for you, but i-i-in the end it all comes down to {@b {@i POWER}} and {@b {@i CONTROL}}. Y-y-you've got it, or you don't.}"
 					]
 				},
 				{
@@ -213,7 +213,7 @@
 									"height": 174
 								},
 								"{@comic Thanks, book. I'm gonna show Morty and everyone else how Dungeon Mastering {@i really} works.}",
-								"{@comic {@b {@i {@comicH4 D&D RICKTH EDITION}}} takes the b-b-*BURP*-basics and blows them out a demon lord's turdhole.}"
+								"{@comic {@b {@i D&D RICKTH EDITION}} takes the b-b-*BURP*-basics and blows them out a demon lord's turdhole.}"
 							]
 						},
 						"From there, look over the rest of this book. You don't need to memorize everything before your first game, but it helps if you know where to find the rules while you play. Then get familiar with the adventure, and you'll be ready to gather your friends together to play.",
@@ -222,7 +222,7 @@
 							"type": "inset",
 							"id": "00d",
 							"entries": [
-								"{@comic Using the same character as someone else is kind of a dick move, but I get it. A non-genius human mind can only handle so many options, and f-f-five is all they put in this box, so go with what you've got, right? It's probably easier to just get rid of one of your friends.} {@b {@i {@comicH4 {@b {@i {@comicH2 LOVE AND FRIENDSHIP ARE}}} B-B-*BURP*-{@b {@i {@comicH2 BIOLOGICAL BULLS**T}}}}}} {@comic Also, I might just be editorializing at this point, but {@i who names a character Albric}? Use the real name of somebody at the table. What are they gonna do about it?} "
+								"{@comic Using the same character as someone else is kind of a dick move, but I get it. A non-genius human mind can only handle so many options, and f-f-five is all they put in this box, so go with what you've got, right? It's probably easier to just get rid of one of your friends. {@b {@i LOVE AND FRIENDSHIP ARE}} B-B-*BURP*-{@b {@i BIOLOGICAL BULLS**T}} Also, I might just be editorializing at this point, but {@i who names a character Albric}? Use the real name of somebody at the table. What are they gonna do about it?}"
 							]
 						},
 						{
@@ -256,7 +256,7 @@
 											"width": 100,
 											"height": 100
 										},
-										"{@comic There's only one set in here, so that means they're {@comicH3 mine}. Get your own dice. That way you can blame {@i them} for all your shortcomings. Tell your friends to get their own set, too.}",
+										"{@comic There's only one set in here, so that means they're {@b mine}. Get your own dice. That way you can blame {@i them} for all your shortcomings. Tell your friends to get their own set, too.}",
 										"{@comic If you start sharing dice, people will start expecting you to share everything. You gotta nip that in the bud, or the next thing you know, you'll wake up in an alley without a kidney.}",
 										"{@comicH1 You can never have too many dice, Morty!}"
 									]
@@ -316,7 +316,8 @@
 													"width": 199,
 													"height": 251
 												},
-												"{@comic {@comicH3 Don't let players trick you, Morty.} Players constantly ask questions as a way to try and make stuff happen that you didn't intend. Are they spending too much time investigating that stupid dark corner in the tavern? Now there's a tentacle monster in it.}"
+												"{@comicH3 Don't let players trick you, Morty.}",
+												"{@comic Players constantly ask questions as a way to try and make stuff happen that you didn't intend. Are they spending too much time investigating that stupid dark corner in the tavern? Now there's a tentacle monster in it.}"
 											]
 										}
 									]
@@ -391,7 +392,7 @@
 													"width": 170,
 													"height": 190
 												},
-												"{@comic {@comicH1 DAMN, MORTY!}}",
+												"{@comicH1 DAMN, MORTY!}",
 												"{@comic It's only chapter 1 and these wily sons of b****es are already going for the upsell. Capitalism at work, Morty.}"
 											]
 										}
@@ -419,7 +420,7 @@
 											"width": 120,
 											"height": 149
 										},
-										"{@comic L-l-leave it to Wizards of the Coast to reinvent {@b {@i {@comicH4 MATH}}}!}",
+										"{@comic L-l-leave it to Wizards of the Coast to reinvent {@b {@i MATH}}!}",
 										"{@comicH1 JEEZ.}"
 									]
 								}
@@ -460,13 +461,13 @@
 									"width": 280,
 									"height": 364
 								},
-								"{@comic {@comicH1 here's what you really need to know about these abilities, morty:}}",
-								"{@comic {@comicH3 STRENGTH:} How to hit stuff}",
-								"{@comic {@comicH3 DEXTERITY:} How to keep from being hit by stuff}",
-								"{@comic {@comicH3 CONSTITUTION:} How to survive getting hit by stuff}",
-								"{@comic {@comicH3 INTELLIGENCE:} Good for arcane stuff}",
-								"{@comic {@comicH3 WISDOM:} Finding stuff}",
-								"{@comic {@comicH3 CHARISMA:} Dump stat, ignore it}"
+								"{@comicH1 here's what you really need to know about these abilities, morty:}",
+								"{@comic {@b STRENGTH:} How to hit stuff}",
+								"{@comic {@b DEXTERITY:} How to keep from being hit by stuff}",
+								"{@comic {@b CONSTITUTION:} How to survive getting hit by stuff}",
+								"{@comic {@b INTELLIGENCE:} Good for arcane stuff}",
+								"{@comic {@b WISDOM:} Finding stuff}",
+								"{@comic {@b CHARISMA:} Dump stat, ignore it}"
 							]
 						},
 						{
@@ -547,7 +548,7 @@
 											"type": "inset",
 											"id": "020",
 											"entries": [
-												" {@comic Notice how they've got stats there up to {@comicH3 30} even though you can only start with a max of {@comicH3 20}? That's there to show you a simple fact of life: S-s-some things are just {@i better} than you, Morty. I mean, a {@u lot} of things are better than {@i you}, but I also mean here in the world of D&D.} {@comic Anything 8 or lower I call a {@i \"blart.\"} It comes from this dimension I found where all numbers less than 9 have the same term: \"blart.\" It means fart. Fart, fart, fart, fart, fart, fart, fart, fart, nine, ten, eleven, you get it.} {@comic Anyway, blarts stink, Morty.} "
+												" {@comic Notice how they've got stats there up to {@b 30} even though you can only start with a max of {@b 20}? That's there to show you a simple fact of life: S-s-some things are just {@i better} than you, Morty. I mean, a {@u lot} of things are better than {@i you}, but I also mean here in the world of D&D.} {@comic Anything 8 or lower I call a {@i \"blart.\"} It comes from this dimension I found where all numbers less than 9 have the same term: \"blart.\" It means fart. Fart, fart, fart, fart, fart, fart, fart, fart, nine, ten, eleven, you get it.} {@comic Anyway, blarts stink, Morty.} "
 											]
 										}
 									]
@@ -621,9 +622,9 @@
 											"width": 279,
 											"height": 404
 										},
-										"{@comic Th-th-this {@b {@i {@comicH4 ADVANTAGE/DISADVANTAGE}}} thing is perfect to use against {@b annoying} players.}",
-										"{@comic If your player Maureen says, \"Shouldn't these goblins run away after we killed seventy-two of their pals?\" you just look her right in the eye and say, \"No, Maureen. They {@i shouldn't}. These g-g-goblins are hopped up on {@b gnoll blood} they chugged before the battle and now they've got {@comicH3 advantage}, so how do you like that, {@i Maureeeeen}?\"}",
-										"{@comic And don't let players turn this back on you either. When Maureen's character Flardo the Fearless tries to chug gnoll blood on his own, you just shake your head and say, \"Awwwww nuts, Maureen. That gnoll blood is {@b toxic} to dwarves, so now you've got {@comicH3 disadvantage} on all your rolls, {@i Maureeeeen}.\"}",
+										"{@comic Th-th-this {@b {@i ADVANTAGE/DISADVANTAGE}} thing is perfect to use against {@b annoying} players.}",
+										"{@comic If your player Maureen says, \"Shouldn't these goblins run away after we killed seventy-two of their pals?\" you just look her right in the eye and say, \"No, Maureen. They {@i shouldn't}. These g-g-goblins are hopped up on {@b gnoll blood} they chugged before the battle and now they've got {@b advantage}, so how do you like that, {@i Maureeeeen}?\"}",
+										"{@comic And don't let players turn this back on you either. When Maureen's character Flardo the Fearless tries to chug gnoll blood on his own, you just shake your head and say, \"Awwwww nuts, Maureen. That gnoll blood is {@b toxic} to dwarves, so now you've got {@b disadvantage} on all your rolls, {@i Maureeeeen}.\"}",
 										"{@comic Finger guns optional.}"
 									]
 								}
@@ -642,7 +643,7 @@
 									"type": "inset",
 									"id": "028",
 									"entries": [
-										"{@comic {@b {@i {@comicH4 ABILITY CHECKS}}} are another solid way to punish players who question you, Morty.}",
+										"{@comic {@b {@i ABILITY CHECKS}} are another solid way to punish players who question you, Morty.}",
 										"{@comicH1 make them do ability checks for every last little thing until they acknowledge your superiority.}",
 										{
 											"type": "image",
@@ -677,7 +678,7 @@
 											"height": 145
 										},
 										"{@comic Did I just say \"{@i traps}?\" Damn straight, Hoyty-toyty. Now make a {@b Wisdom} check to see if you notice the razor wire perfectly positioned to cleave Flardo's feet from his ankles.}",
-										"{@b {@i {@comicH4 ANYONE ELSE HAVE ANY F***ING QUESTIONS? DIDN'T THINK SO}.}}"
+										"{@b {@i ANYONE ELSE HAVE ANY F***ING QUESTIONS? DIDN'T THINK SO}.}"
 									]
 								},
 								{
@@ -700,7 +701,7 @@
 													"width": 249,
 													"height": 315
 												},
-												"{@comic Th-th-these {@b {@i {@comicH4 INCREMENTAL BONUSES}}} don't seem like much, but you've gotta {@i watch out} because players will nickel and dime every miniscule bonus they can to try and \"win.\"}",
+												"{@comic Th-th-these {@b {@i INCREMENTAL BONUSES}}} don't seem like much, but you've gotta {@i watch out} because players will nickel and dime every miniscule bonus they can to try and \"win.\"}",
 												"{@comic Be ready with a penalty or disadvantage any time you need to wipe that smile off their face.}"
 											]
 										}
@@ -728,7 +729,7 @@
 											"type": "inset",
 											"id": "02c",
 											"entries": [
-												" {@comic A good DM knows when to force players to make contested rolls {@comicH3 against} each other, Morty.} {@comic {@comicH1 You wanna keep the adventuring party from operating too efficiently, }} {@comic so put 'em in situations where they need to {@b arm wrestle for rations} at the campsite or {@b have a drinking contest} at dinner with the Duke of Dingleberry.} "
+												"{@comic A good DM knows when to force players to make contested rolls {@i against} each other, Morty. {@b You wanna keep the adventuring party from operating too efficiently, } so put 'em in situations where they need to {@b arm wrestle for rations} at the campsite or {@b have a drinking contest} at dinner with the Duke of Dingleberry.} "
 											]
 										}
 									]
@@ -834,7 +835,7 @@
 											"height": 523
 										},
 										"{@comicH1 ACROBATICS}",
-										"{@comic D-d-don't let players convince you that they can use Dexterity (Acrobatics) to d-d-{@b dodge} attacks or any of that s***. Skills are for non-combat rolls {@comicH3 only}, dawg.}",
+										"{@comic D-d-don't let players convince you that they can use Dexterity (Acrobatics) to d-d-{@b dodge} attacks or any of that s***. Skills are for non-combat rolls {@b only}, dawg.}",
 										"{@comic Players will walk all over you if you let them, Morty. They'll squeeze every last ounce out of the rules if you're not careful. Stay vigilant, or they'll start having a lot of fun.}"
 									]
 								},
@@ -858,7 +859,7 @@
 											"entries": [
 												"{@comicH1 SLEIGHT OF HAND}",
 												"{@comic Stealing is a time-honored D&D tradition, Morty. Rogues do it, obviously, but everyone else does too.}",
-												"{@b {@i {@comicH4 EVEN CLERICS}!}}",
+												"{@b {@i EVEN CLERICS}!}",
 												{
 													"type": "image",
 													"href": {
@@ -941,7 +942,7 @@
 												},
 												"{@comic S-s-sure you can memorize all this if you want: passive blah-blah and how much of a character's ass is sticking out or whatever, but if you wanna do this Rick-style, here's how it goes: roll a {@dice d20} behind your DM screen and then\u2014it {@i doesn't matter what the roll was}, just look at the players, squint your eyes a bit, and say:}",
 												"{@comicH1 \"oops. they spotted you.\"}",
-												"{@comic {@b {@i {@comicH4 BAM-A-LAM}! }}Problem solved. Saves you a lotta trouble, Morty. Gets you to the good stuff.}"
+												"{@comic {@b {@i BAM-A-LAM}!} Problem solved. Saves you a lotta trouble, Morty. Gets you to the good stuff.}"
 											]
 										}
 									]
@@ -970,7 +971,7 @@
 									"type": "inset",
 									"id": "03d",
 									"entries": [
-										"{@comic There are {@i tons} of ways to use Constitution checks that these ding-dongs don't want you to know about. They don't have {@i vision} like I do, Morty. They don't see the {@comicH3 big picture}. Here are some great Constitution checks that \"push beyond normal limits\":}",
+										"{@comic There are {@i tons} of ways to use Constitution checks that these ding-dongs don't want you to know about. They don't have {@i vision} like I do, Morty. They don't see the {@b big picture}. Here are some great Constitution checks that \"push beyond normal limits\":}",
 										{
 											"type": "image",
 											"href": {
@@ -985,8 +986,8 @@
 											"type": "list",
 											"items": [
 												"{@comic When your character is at a fancy dinner with the Duchess of Dingleberry and suddenly has a monster fart, can they hold it in? You gotta be a hero sometimes, Morty. You might think that's Strength (Athletics) or Dexterity (Acrobatics), but trust me, Morty, that's p-p-pure Constitution right there.}",
-												"{@comic Have you ever got a {@i paper cut} in the webby part between your fingers, Morty? It's the most painful thing in the universe. No one can even {@i see} it, but it still b-b-*BURP*-{@i burns}, Morty. Paper cuts can happen at {@b any} moment, and when they do, you've just got to keep it together. The world's a dangerous place, Morty. I can't believe they didn't mention that Constitution's how you keep your s*** {@comicH3 locked down}.}",
-												"{@comic Drinking! Look, I kn-kn-know the D&D people don't want to glorify drinking in a game for 13-year-olds, but y-y-you're {@b {@i {@comicH4 14}}}, Morty. Also, this is the theater of the mind, or whatever, so it's not {@i real} drinking\u2014but trust me, you're gonna love that too.}"
+												"{@comic Have you ever got a {@i paper cut} in the webby part between your fingers, Morty? It's the most painful thing in the universe. No one can even {@i see} it, but it still b-b-*BURP*-{@i burns}, Morty. Paper cuts can happen at {@b any} moment, and when they do, you've just got to keep it together. The world's a dangerous place, Morty. I can't believe they didn't mention that Constitution's how you keep your s*** {@b locked down}.}",
+												"{@comic Drinking! Look, I kn-kn-know the D&D people don't want to glorify drinking in a game for 13-year-olds, but y-y-you're {@b {@i 14}}, Morty. Also, this is the theater of the mind, or whatever, so it's not {@i real} drinking\u2014but trust me, you're gonna love that too.}"
 											]
 										}
 									]
@@ -1085,7 +1086,7 @@
 													"height": 343
 												},
 												"{@comicH1 ANIMAL HANDLING}",
-												"{@comic S-s-some players think they're {@i animal whisperers}, Morty. Don't let them befriend animals in your game. It always starts with one {@b wolf} or {@b squirrel}, then, next thing you know, you're tracking a f***ing {@b {@i {@comicH4 MENAGERIE}}}, each one with their own character sheet. {@i N-n-no pets}!}"
+												"{@comic S-s-some players think they're {@i animal whisperers}, Morty. Don't let them befriend animals in your game. It always starts with one {@b wolf} or {@b squirrel}, then, next thing you know, you're tracking a f***ing {@b {@i MENAGERIE}}, each one with their own character sheet. {@i N-n-no pets}!}"
 											]
 										}
 									]
@@ -1101,11 +1102,11 @@
 											"id": "049",
 											"entries": [
 												"{@comicH1 INSIGHT}",
-												"{@comic S-s-some players use Insight on {@comicH3 everything}, Morty. They think they're Sherlock Holmes, analyzing every word they hear, looking for hidden meanings.}",
+												"{@comic S-s-some players use Insight on {@b everything}, Morty. They think they're Sherlock Holmes, analyzing every word they hear, looking for hidden meanings.}",
 												"{@comic There's no meaning to any of this, Morty. Not D&D, not life, nothing. So here's how you deal with this:}",
 												"{@comic Tell them that there's something {@i fishy} going on, but refuse to elaborate, no matter how high they roll.}",
-												"{@comic {@comicH3 OR }}",
-												"{@comic Grab a random scrap of paper from behind your DM screen and scribble a symbol on it, just seriously {@comicH3 anything}, then surreptitiously slide it over to them.}",
+												"{@comicH3 OR }",
+												"{@comic Grab a random scrap of paper from behind your DM screen and scribble a symbol on it, just seriously {@b anything}, then surreptitiously slide it over to them.}",
 												{
 													"type": "image",
 													"href": {
@@ -1168,7 +1169,7 @@
 													"height": 191
 												},
 												"{@comicH1 PERCEPTION}",
-												"{@comic That Insight stuff I mentioned earlier goes {@comicH3 double} for Perception, Morty.}",
+												"{@comic That Insight stuff I mentioned earlier goes {@b double} for Perception, Morty.}",
 												"{@comic Some players just can't stop staring and listening and sniffing instead of {@i doing}. It can't all be that interesting, but they're gonna try anyway.}"
 											]
 										}
@@ -1195,7 +1196,7 @@
 													"height": 218
 												},
 												"{@comicH1 SURVIVAL}",
-												"{@comic If a player {@i really} pisses you off, make them roll Wisdom (Survival) for {@comicH3 everything}:}",
+												"{@comic If a player {@i really} pisses you off, make them roll Wisdom (Survival) for {@b everything}:}",
 												"{@comicH1 make their butt cheeks clench in fear every time you look in their direction.}"
 											]
 										}
@@ -1267,7 +1268,9 @@
 									"type": "inset",
 									"id": "057",
 									"entries": [
-										" {@comic {@comicH3 This is the core of it, Morty: }} {@comicH1 FORCE THEM TO JUMP THROUGH POINTLESS HOOPS FOR YOUR OWN ENTERTAINMENT.} {@comic Some players think they're unt-t-touchable, Morty. This is how you touch them with the {@i finger of God}.} "
+										"{@comicH3 This is the core of it, Morty: }}",
+										"{@comicH1 FORCE THEM TO JUMP THROUGH POINTLESS HOOPS FOR YOUR OWN ENTERTAINMENT.}",
+										"{@comic Some players think they're unt-t-touchable, Morty. This is how you touch them with the {@i finger of God}.}"
 									]
 								},
 								{
@@ -1314,7 +1317,7 @@
 							"width": 199,
 							"height": 214
 						},
-						"{@comic {@comicH1 OKAY, MORTY. WE'RE PAST THE BEGINNER S***.}}",
+						"{@comicH1 OKAY, MORTY. WE'RE PAST THE BEGINNER S***.}",
 						"{@comic This is where the dice really hit the table, and you get to kick ass or watch your ass get kicked.}",
 						"{@comic Pay close attention, because I'm gonna teach you how to D with some D: {@i die with some dignity}.}"
 					]
@@ -1374,7 +1377,7 @@
 									"type": "inset",
 									"id": "05e",
 									"entries": [
-										" {@comic Remember before when I mentioned stuff about messing with player expectations? Combat and non-combat surprises are a crucial part of that, Morty.} {@comic If one of your players is wasting too much time searching for s*** that doesn't matter, or getting weepy about their character's backstory, just yell {@comicH3 \"SURPRISE!\"} and drop a random encounter on their asses.} "
+										" {@comic Remember before when I mentioned stuff about messing with player expectations? Combat and non-combat surprises are a crucial part of that, Morty.} {@comic If one of your players is wasting too much time searching for s*** that doesn't matter, or getting weepy about their character's backstory, just yell {@b \"SURPRISE!\"} and drop a random encounter on their asses.} "
 									]
 								},
 								{
@@ -1391,7 +1394,7 @@
 											"width": 139,
 											"height": 156
 										},
-										"{@comic In fact, here's a {@comicH3 SURPRISE} Table I j-j-just whipped up that you can use. Roll a {@dice d12} and consult the results over here.}"
+										"{@comic In fact, here's a {@b SURPRISE} Table I j-j-just whipped up that you can use. Roll a {@dice d12} and consult the results over here.}"
 									]
 								},
 								{
@@ -1479,7 +1482,7 @@
 											"width": 139,
 											"height": 172
 										},
-										"{@comic {@comicH3 This} is why Dexterity is so important, Morty. You've gotta be fast to get what you want in life and in D&D.}",
+										"{@comic {@b This} is why Dexterity is so important, Morty. You've gotta be fast to get what you want in life and in D&D.}",
 										{
 											"type": "image",
 											"href": {
@@ -1527,7 +1530,7 @@
 													"width": 150,
 													"height": 247
 												},
-												"{@comic Not that you would ever have this problem, Morty, but deciding on a {@comicH3 bonus action} is actually pretty tough when you've got the {@b ability to see all possible outcomes} in {@b all possible timelines}.}",
+												"{@comic Not that you would ever have this problem, Morty, but deciding on a {@b bonus action} is actually pretty tough when you've got the {@b ability to see all possible outcomes} in {@b all possible timelines}.}",
 												{
 													"type": "image",
 													"href": {
@@ -1570,7 +1573,7 @@
 												},
 												"{@comic Time doesn't stop for players' self-indulgent bulls**t here, Morty.}",
 												"{@comic Six seconds per round.}",
-												"{@comic {@b {@i {@comicH4 KEEP IT SNAPPY}.}}}"
+												"{@comic {@b {@i KEEP IT SNAPPY}.}}}"
 											]
 										}
 									]
@@ -1646,7 +1649,7 @@
 											"width": 250,
 											"height": 480
 										},
-										"{@comic This is a {@comicH3 terrible} example, Morty.}",
+										"{@comic This is a {@b terrible} example, Morty.}",
 										"{@comic If you got a wizard to cast the {@i fly} spell on you, then you should {@i never set your feet on the ground until that spell expires}.}",
 										"{@comicH1 WHAT KIND IF A$$HOLE IS GONNA}",
 										"{@b {@comic WALK}}",
@@ -1750,7 +1753,7 @@
 											"width": 319,
 											"height": 509
 										},
-										"{@comic Just imagine for a second that you're {@u not} a 14-year-old weakling with crushing anxiety and low intellect. This is roleplaying, remember? Okay, so imagine that you're cool like your character is supposed to be cool, and then {@b {@i {@comicH4 DESCRIBE THE COOL THINGS YOU THINK THEY SHOULD DO}.}}}",
+										"{@comic Just imagine for a second that you're {@u not} a 14-year-old weakling with crushing anxiety and low intellect. This is roleplaying, remember? Okay, so imagine that you're cool like your character is supposed to be cool, and then {@b {@i DESCRIBE THE COOL THINGS YOU THINK THEY SHOULD DO}.}}",
 										"{@comic If you just drop the dice on the table and say \"I swing my sword\" or \"I cast {@i magic missile}\" or whatever....}",
 										"{@comic Look. Your daily life is a futile merry-go-round of crushing repetition, and every single moment is another tick of the clock that carries you closer to the grave. This game is meant to help you escape that futile reality for just a little while.}",
 										"{@comicH1 this is your opportunity to describe something fun and then do it.}",
@@ -1852,7 +1855,7 @@
 									"type": "inset",
 									"id": "07c",
 									"entries": [
-										" {@comicH1 READY} {@comic If a player steps away from a goblin instead of killing it, they're a useless little weasel who deserves what's coming to 'em, Morty.} "
+										"{@comicH1 READY} {@comic If a player steps away from a goblin instead of killing it, they're a useless little weasel who deserves what's coming to 'em, Morty.} "
 									]
 								}
 							]
@@ -1953,7 +1956,7 @@
 												"{@comic Rolling a natural 20 is {@b always} exciting, Morty.}",
 												"{@comic Yes, it's just one number out of twenty and it shouldn't be a big deal, but it feels {@i awesome}.}",
 												"{@comic Lord your randomly-generated superiority over everyone else.}",
-												"{@comic {@comicH3 Take a photo of it and send it to your mom.}}"
+												"{@comicH3 Take a photo of it and send it to your mom.}"
 											]
 										}
 									]
@@ -2062,7 +2065,7 @@
 											"width": 150,
 											"height": 180
 										},
-										"{@b {@i {@comicH2 DON'T F*** WITH THAT SIMPLE LIFE-DEATH ECOSYSTEM}.}}",
+										"{@b {@i {@b DON'T F*** WITH THAT SIMPLE LIFE-DEATH ECOSYSTEM}.}}",
 										{
 											"type": "image",
 											"href": {
@@ -2074,7 +2077,7 @@
 											"height": 186
 										},
 										"{@comic When a player announces they're going to use \"unarmed combat,\" everyone at the game table retreats into the darkest part of their mind and starts praying for death.}",
-										"{@comic {@comicH3 No one} wants to watch you play through a 1 damage + Strength bonus per hit slapfest.}",
+										"{@b No one} wants to watch you play through a 1 damage + Strength bonus per hit slapfest.}",
 										{
 											"type": "image",
 											"href": {
@@ -2086,7 +2089,7 @@
 											"height": 181
 										},
 										"{@comic It's boring and stupid.}",
-										"{@b {@i {@comicH4 JUST USE A DAMN WEAPON OR A SPELL}.}}"
+										"{@b {@i JUST USE A DAMN WEAPON OR A SPELL}.}"
 									]
 								}
 							]
@@ -2113,7 +2116,7 @@
 											"width": 149,
 											"height": 178
 										},
-										"{@comic Good advice. If you ever need to retreat from combat, make sure you do it by {@b {@i {@comicH4 RIDING AN EXPLOSION}.}}}"
+										"{@comic Good advice. If you ever need to retreat from combat, make sure you do it by {@b {@i RIDING AN EXPLOSION}.}}"
 									]
 								}
 							]
@@ -2184,7 +2187,7 @@
 									"height": 183
 								},
 								"{@comic When things are going bad and you need a barrier between you and a half-dozen flaming arrows, hug a corpse, Morty.}",
-								"{@comic {@b {@i {@comicH4 HUG IT TIGHT}.}}}"
+								"{@comic {@b {@i HUG IT TIGHT}.}}"
 							]
 						}
 					]
@@ -2199,7 +2202,7 @@
 							"type": "inset",
 							"id": "095",
 							"entries": [
-								" {@comic \"Constant companions\" makes it sound all sweet, like it's no big deal that this game has a {@comicH3 stat} for how alive you are.} {@comic That's dark as f***, Morty.} "
+								" {@comic \"Constant companions\" makes it sound all sweet, like it's no big deal that this game has a {@b stat} for how alive you are.} {@comic That's dark as f***, Morty.} "
 							]
 						},
 						{
@@ -2276,11 +2279,11 @@
 													"width": 279,
 													"height": 326
 												},
-												"{@b {@i {@comicH2 CRITICAL FAIL}}}",
+												"{@b {@i {@b CRITICAL FAIL}}}",
 												"{@comic Notice that there aren't any critical fails here in the rules. That's because the math is {@i completely ridiculous}.}",
 												"{@comic You roll a {@dice d20} over and over each session, so if 5 percent of the time it caused a lethally stupid mistake, you'd be dead faster than Jerry's sex drive.}",
-												"{@comic {@b {@i {@comicH4 BUT-}}}}",
-												"{@comic If you're the DM and want your players to go to brown town in their shorts, tell them that a specific roll you just assigned them has a Critical Fail Condition, which I pronounce {@comicH3 \"CuFuC.\"}}",
+												"{@comic {@b {@i BUT-}}}",
+												"{@comic If you're the DM and want your players to go to brown town in their shorts, tell them that a specific roll you just assigned them has a Critical Fail Condition, which I pronounce {@b \"CuFuC.\"}}",
 												"{@comic Tell them that getting a {@i 1} on this particular roll is the {@b worst} possible thing they could ever do.}",
 												"{@comic Then, on the rare occasion it actually happens, roll a {@dice d12} and consult this special {@i Critical Fail Table} I put together just for you:}"
 											]
@@ -2435,7 +2438,7 @@
 									"type": "inset",
 									"id": "0a2",
 									"entries": [
-										"{@comic {@comicH1 this here is why D&D is so great, morty.}}",
+										"{@comicH1 this here is why D&D is so great, morty.}",
 										"{@comic Damage is an {@i abstraction}.}",
 										{
 											"type": "image",
@@ -2509,7 +2512,7 @@
 													"height": 167
 												},
 												"{@comic A god your mom created\u2014and {@i I} created your mom, so what does that make {@b me}, Morty?!}",
-												"{@comic {@comicH3 I'm your} grandgod, {@comicH3 Morty!}}"
+												"{@comic {@b I'm your} grandgod, {@b Morty!}}"
 											]
 										}
 									]
@@ -2534,7 +2537,7 @@
 													"width": 279,
 													"height": 352
 												},
-												"{@comic And th-th-that's why you gotta be {@b {@i {@comicH4 NUMB}}}... numb to the universe 'cause it's numb to you... numb... num... {@i number one}! }",
+												"{@comic And th-th-that's why you gotta be {@b {@i NUMB}}... numb to the universe 'cause it's numb to you... numb... num... {@i number one}! }",
 												"{@comic We're number one, Morty!}",
 												"{@comic Nuuuuummber ooo-*BURP*-oone!}"
 											]
@@ -2711,7 +2714,7 @@
 							"width": 160,
 							"height": 180
 						},
-						"{@comic {@comicH3 Let's keep going! }}",
+						"{@comicH3 Let's keep going! }",
 						"{@comic Did I already say the part about me being your {@i grandgod}? Well, that hasn't changed, Morty, {@b and it never will}!}",
 						"{@comic Okay, cool.}"
 					]
@@ -2878,7 +2881,7 @@
 										},
 										"{@comic &nbsp;...}",
 										"{@comic I changed my mind.}",
-										"{@comic L-l-let 'em rest once in a while, but make sure they know that any time {@b they} take a long rest, the creatures in the dungeon are {@comicH3 also} taking a long rest!}",
+										"{@comic L-l-let 'em rest once in a while, but make sure they know that any time {@b they} take a long rest, the creatures in the dungeon are {@b also} taking a long rest!}",
 										"{@comic Every long rest gives the monsters they're gonna face more hit points and bonuses!}",
 										{
 											"type": "image",
@@ -3075,7 +3078,7 @@
 									"width": 150,
 									"height": 183
 								},
-								"{@comic Back in my day we had {@comicH3 THAC0}, Morty. It was honestly crazy, but I loved it. You really don't want me to try to explain it, though.}"
+								"{@comic Back in my day we had {@b THAC0}, Morty. It was honestly crazy, but I loved it. You really don't want me to try to explain it, though.}"
 							]
 						},
 						{
@@ -3811,7 +3814,7 @@
 									"height": 244
 								},
 								"{@comic Summer is {@b right}, Morty.}",
-								"{@comic Damsels in distress and chainmail bikinis are a thing of the {@comicH3 past}. Bad tropes gotta die off, Morty.}"
+								"{@comic Damsels in distress and chainmail bikinis are a thing of the {@b past}. Bad tropes gotta die off, Morty.}"
 							]
 						},
 						{
@@ -4345,7 +4348,7 @@
 													"type": "inset",
 													"id": "101",
 													"entries": [
-														" {@comic {@i Anything} can be a torch, if you try hard enough.} {@comic Actually, you don't have to try that hard.} {@comic {@b {@i {@comicH4 IT'S FIRE, MORTY}.}}} {@comic Even {@b you} can figure this one out.} {@comic {@b Literally} humanity's first invention, Morty.} "
+														"{@comic {@i Anything} can be a torch, if you try hard enough. Actually, you don't have to try that hard. {@b {@i IT'S FIRE, MORTY}.} Even {@b you} can figure this one out. {@b Literally} humanity's first invention, Morty.} "
 													]
 												}
 											]
@@ -4759,7 +4762,7 @@
 											"height": 171
 										},
 										"{@comicH1 PREPARED SPELLS?!}",
-										"{@comic {@comicH3 This} is a feeble attempt to try and impose some kind of cap on wizardly supremacy.}",
+										"{@comic {@b This} is a feeble attempt to try and impose some kind of cap on wizardly supremacy.}",
 										"{@comic If I'm ever a player at your table, you can ignore these limits. They're unnecessary.}"
 									]
 								}
@@ -4960,7 +4963,7 @@
 											"type": "inset",
 											"id": "11d",
 											"entries": [
-												" {@comicH1 (V)} {@comic The rules don't actually say what {@i specific} words you have to speak for a {@comicH3 verbal component}, so I just say whatever comes to mind or power up a filthy insult and let 'er rip.} "
+												"{@comicH1 (V)} {@comic The rules don't actually say what {@i specific} words you have to speak for a {@b verbal component}, so I just say whatever comes to mind or power up a filthy insult and let 'er rip.} "
 											]
 										},
 										{
@@ -4984,7 +4987,7 @@
 											"type": "inset",
 											"id": "11f",
 											"entries": [
-												" {@comicH1 (S)} {@comic Again, they don't specify what {@comicH3 magical moves} are required, so get Schwifty and s***.} {@comic Make your spellcasting signature move so hot that monsters beg to join your side before you blast 'em into {@i Experience Particles}.} "
+												"{@comicH1 (S)} {@comic Again, they don't specify what {@b magical moves} are required, so get Schwifty and s***.} {@comic Make your spellcasting signature move so hot that monsters beg to join your side before you blast 'em into {@i Experience Particles}.} "
 											]
 										}
 									]
@@ -5001,7 +5004,7 @@
 											"type": "inset",
 											"id": "121",
 											"entries": [
-												" {@comicH1 (M)} {@comic {@b {@i {@comicH4 NO ONE IS KEEPING TRACK OF PINCHES OF DUST AND CLUMPS OF MOSS}.}}} {@comic Don't be that guy, Morty. The Dungeon Master will tell you when a spell's got ingredients worth shelling out for. The rest is just doing cool hand symbols and saying {@comicH3 BLADOWIE! }(see below).} "
+												"{@comicH1 (M) {@b {@i NO ONE IS KEEPING TRACK OF PINCHES OF DUST AND CLUMPS OF MOSS}.} Don't be that guy, Morty. The Dungeon Master will tell you when a spell's got ingredients worth shelling out for. The rest is just doing cool hand symbols and saying {@b BLADOWIE! }(see below).}"
 											]
 										},
 										{
@@ -5043,7 +5046,7 @@
 													"width": 140,
 													"height": 167
 												},
-												"{@comic According to your mother, this duration is also known as {@comicH1 \"jerry in bed.\"}}",
+												"{@comic According to your mother, this duration is also known as {@b \"jerry in bed.\"}}",
 												"{@comic Yeah, I didn't want that visual either, Morty. Sucks for us.}"
 											]
 										}
@@ -5399,7 +5402,7 @@
 											"id": "13b",
 											"entries": [
 												"When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd.",
-												"{@comic {@comicH3 Pure Jerry spell!} Why help other people when you could jack yourself up with magic and kick more ass?!}"
+												"{@comic {@b Pure Jerry spell!} Why help other people when you could jack yourself up with magic and kick more ass?!}"
 											]
 										}
 									]
@@ -5711,7 +5714,7 @@
 								},
 								"For the duration, you understand the literal meaning of spoken language that you hear. You also understand written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.",
 								"This spell does not decode secret messages in a text or any glyph, such as an arcane sigil, that isn't part of a written language.",
-								"{@comic The only language you need to know in D&D is {@comicH3 the language of violence}, Morty.}",
+								"{@comic The only language you need to know in D&D is {@b the language of violence}, Morty.}",
 								"{@comic Everyone speaks it and translations are crystal clear. Jerrys want to talk through a battle or \"parlay\" their asses out of conflict. Never do that.}"
 							]
 						},
@@ -5777,7 +5780,7 @@
 								},
 								"You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.",
 								"As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.",
-								"{@comic {@comicH3 Pure Jerry.} This is life or death combat, not a f***ing {@b rave}.}"
+								"{@comic {@b Pure Jerry.} This is life or death combat, not a f***ing {@b rave}.}"
 							]
 						},
 						{
@@ -5925,7 +5928,7 @@
 											"entries": [
 												"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd.",
 												"{@comic If you're a wizard and don't take this when it comes available, then just eat your own character sheet.}",
-												"{@comic This is {@b the} classic {@comicH3 pyro-bomb} and it's beautiful, Morty. Chuck this into a room of monsters and get out the marshmallows.}"
+												"{@comic This is {@b the} classic {@b pyro-bomb} and it's beautiful, Morty. Chuck this into a room of monsters and get out the marshmallows.}"
 											]
 										}
 									]
@@ -6065,7 +6068,7 @@
 											"id": "16a",
 											"entries": [
 												"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st.",
-												"{@comic Awwww yeah, {@comicH3 God Bolt}. Give 'em that radiant damage where the sun don't shine.}"
+												"{@comic Awwww yeah, {@b God Bolt}. Give 'em that radiant damage where the sun don't shine.}"
 											]
 										}
 									]
@@ -6371,7 +6374,7 @@
 											"width": 140,
 											"height": 174
 										},
-										"{@comic {@comicH3 Abjuration} is usually garbage, but since wizards are forced to walk around wearing {@comicH3 toilet paper} for protection because Wizards of the Coast thinks they're OP, this spell might actually keep you alive.}"
+										"{@comic {@b Abjuration} is usually garbage, but since wizards are forced to walk around wearing {@b toilet paper} for protection because Wizards of the Coast thinks they're OP, this spell might actually keep you alive.}"
 									]
 								}
 							]
@@ -6429,7 +6432,7 @@
 											"id": "183",
 											"entries": [
 												"When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.",
-												"{@comic Notice this spell's most {@b important} feature, Morty: {@comicH3 NO ATTACK ROLL.}}",
+												"{@comic Notice this spell's most {@b important} feature, Morty: {@b NO ATTACK ROLL.}}",
 												"{@comic It hits and hurts. Simple-dimple. Little glowing arrows of death at your command, and nobody can do s*** about it.}"
 											]
 										}
@@ -6952,7 +6955,7 @@
 											"id": "1a3",
 											"entries": [
 												"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for every two slot levels above the 2nd.",
-												"{@comic There's {@i nothing} as demoralizing as being hit by a big ol' {@comicH3 ghost schlong}.}"
+												"{@comic There's {@i nothing} as demoralizing as being hit by a big ol' {@b ghost schlong}.}"
 											]
 										}
 									]
@@ -7459,9 +7462,10 @@
 			"name": "{@comicH1 APPENDIX B: WHAT IS THE F***ING POINT?!}",
 			"id": "1bc",
 			"entries": [
-				"{@comic {@comicH3 Okay, Morty.} Maybe it's just the vodka and the tranquilizers talking, b-b-but I think we've reached a critical moment in your D&D education. Y-y-you've internalized a lot of the key features, and you're tingling with anticipation of the adventures to come.}",
+				"{@comicH3 Okay, Morty.}",
+				"{@comic Maybe it's just the vodka and the tranquilizers talking, b-b-but I think we've reached a critical moment in your D&D education. Y-y-you've internalized a lot of the key features, and you're tingling with anticipation of the adventures to come.}",
 				"{@comic That's good, that's real good. Now your grandpa Rick's gonna blow your tiny mind and teach you the {@b deepest} and {@b darkest} part of D&D...}",
-				"{@comic {@b {@i {@comicH4 NONE OF THIS MATTERS}.}}}",
+				"{@comicH4 {@i NONE OF THIS MATTERS}.}}",
 				"{@comic What?!}",
 				"{@comic YEAH.}",
 				"{@comicH1 the rules don't MEAN S***.}",
@@ -7469,18 +7473,18 @@
 				"{@comic {@i \"Why the hell did I just go through over sixty pages of dice and rolling and systems and spells and whatever else if none of it matters?! Why do millions of people play this weird nerdy game and invest themselves in it if none of it matters?!\"}}",
 				"{@comic Y-y-your brain is focused on the game as it is, instead of the game as it {@b could} be, Morty. I-I-I told you at the start that D&D is a {@i portal gun}, and I meant that, even while I was taking potshots at Wizards of the Coast and their corporate overlord bean counters.}",
 				"{@comic People don't live heroic lives, Morty. They trudge through their feeble existence wishing they had some kind of b-b-b-*BURP*-bigger role in the universe.}",
-				"{@comic {@comicH3 That's what D&D really is, Morty.}}",
+				"{@comicH3 That's what D&D really is, Morty.}",
 				"{@comic It's a weird little place where everyone gets to gut goblins and blast bugbears and be kinda sorta awesome for a little while. Sometimes it's weird and annoying but when it works, Morty, when it really {@b works}, and your players are putty in the palm of your hand\u2014their hopes and dreams hanging on your every word and a roll of the dice....}",
 				"{@comic That's why we do this, get it?}",
 				"{@comic You know I-I-I'm not a fan of {@i bureaucracy} o-o-or {@i systems}. I don't do {@b absolutes}. Neither should you.}",
 				"{@comic I can teach you D&D Rickth Edition and make it {@b obvious} what you {@i should} be doing, but in the end you're gonna do it your own way. You're gonna screw it all up and make a mess, and then start over and then screw it up in new and different ways.}",
 				"{@comic Good.}",
-				"{@comic {@comicH3 Roll the dice. Get stupid.}}",
+				"{@comicH3 Roll the dice. Get stupid.}",
 				"{@comicH1 entertain yourself. entertain your friends too.}",
-				"{@b {@i {@comicH4 THE REST DOESN'T MATTER}.}}",
+				"{@b {@i THE REST DOESN'T MATTER}.}",
 				"{@comic The rest is just corporate branding and nostalgia, sucking face with nihilistic attention-seeking edgelords in search of the mighty dollar.}",
 				"{@comic Yeah, I said it.}",
-				"{@comic {@comicH3 Truth bomb barr}*uuuuurrrrp*{@comicH3 age!}}",
+				"{@comicH3 Truth bomb barr*uuuuurrrrp* age!}",
 				"{@comic Ready to see how a {@b master} crafts a memorable dungeoneering experience, Morty? Keep a hold of your butt cheeks and take a peek at the {@b adventure book}:}",
 				"{@comicH1 the lost dungeon of rickedness: Big Rick Energy}"
 			]
