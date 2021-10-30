@@ -1,0 +1,1217 @@
+<!doctype html><html lang=en-us style=background-image:url(/5eTools/lightpaperfibers.png)><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Chapter 4: Spellcasting · The Handy Haversack</title>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=HandheldFriendly content="True">
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<script src=/5eTools/main.js defer></script>
+<link rel=stylesheet href="/5eTools/index.min.c9d5cbc26ca74c023ead23b8a8c53c65d351d88edd30fc950ba0e75286335110.css" media=all>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=UnifrakturMaguntia&display=swap" rel=stylesheet>
+<body class="flex flex-col min-h-screen"><a href=#skip-nav class="fixed bg-primary-500 focus:text-white leading-none m-2 not-focus:sr-only px-3 py-2 text-xs z-50">Skip Navigation</a>
+<header class="bg-white print:absolute px-4 border-b-2 sticky top-0 z-40">
+<div class="flex items-center justify-between max-w-screen-md mx-auto">
+<div>
+<a href=https://timbomckay.github.io/5eTools/ class="block py-2 px-4">The Handy Haversack</a>
+</div>
+</div>
+</header>
+<div id=skip-nav tabindex=-1 class=sr-only></div>
+<main class="lg:pb-10 mx-auto px-4 lg:px-6 mb-6 lg:mb-8">
+<h1 class="mb-6 px-6">Chapter 4: Spellcasting</h1>
+<div class="gap-8 lg:grid items-start" style="grid-template-columns:auto 10rem">
+<article class="max-w-ch mx-auto px-6"><p>Magic permeates the worlds of D&D and most often appears in the form of a spell. This chapter provides the rules for casting spells. Clerics and wizards have distinctive ways of learning and preparing their spells, and monsters use spells in unique ways. Regardless of its source, a spell follows the rules here.</p>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/116-c4-01.png alt=undefined class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/117-ram-head-dafuq.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>This is the <em>real</em> stuff right here!</span></p>
+<h1 id=span-classfont-comicits-magic-mortyspan>
+<a href=#span-classfont-comicits-magic-mortyspan class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a><span class=font-comic>IT&rsquo;S MAGIC, MORTY!</span></h1><p><span class=font-comic>Blazing fire shooting out of your fingertips, mind control, teleportation, and other badass power moves!</span></p>
+<p><span class=font-comic>Yeah, yeah&mldr; your rogue can pick a lock and climb a wall. I just blew that f***ing door off its hinges and then flew past you on my way to eldritch glory.</span></p>
+<h1 id=span-classfont-comiceat-my-sparkly-assssssspan>
+<a href=#span-classfont-comiceat-my-sparkly-assssssspan class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a><span class=font-comic>EAT MY SPARKLY ASSSSSS!</span></h1></blockquote>
+<h2 id=what-is-a-spell>
+<a href=#what-is-a-spell class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>What Is a Spell?</h2><p>A spell is a discrete magical effect, a single shaping of the magical energies that suffuse the multiverse into a specific, limited expression. In casting a spell, a character carefully plucks at the invisible strands of raw magic suffusing the world, pins them in place in a particular pattern, sets them vibrating in a specific way, and then releases them to unleash the desired effect—in most cases, all in the span of seconds.</p>
+<p>Spells can be versatile tools, weapons, or protective wards. They can deal damage or undo it, impose or remove conditions (see appendix A), drain life energy away, and restore life to the dead.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/118-ram-head-smile2.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>Read all that and then explain to me how an axe-wielding mouth breather is gonna keep up with ME.</span></p>
+<p><span class=font-comic>Do you see a section in this book about fighter powers? You suuuure don&rsquo;t.</span></p>
+</blockquote>
+<h3 id=spell-level>
+<a href=#spell-level class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Spell Level</h3><p>Every spell in this set has a level from 0 to 3. A spell&rsquo;s level is a general indicator of how powerful it is, with the lowly (but still impressive) <wc-fetch type=spell>magic missile</wc-fetch> at 1st level and the devastating <wc-fetch type=spell>fireball</wc-fetch> at 3rd. (Spells of higher levels, up to 9th, exist in the world but aren&rsquo;t included in this set.) Cantrips—simple but powerful spells that characters can cast almost by rote—are level 0. The higher a spell&rsquo;s level, the higher level a spellcaster must be to use that spell.</p>
+<p>Spell level and character level don&rsquo;t correspond directly. Typically, a character has to be at least 5th level, not 3rd level, to cast a 3rd-level spell.</p>
+<h3 id=known-and-prepared-spells>
+<a href=#known-and-prepared-spells class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Known and Prepared Spells</h3><p>Before a spellcaster can use a spell, he or she must have the spell firmly fixed in mind. Clerics and wizards undergo a process of preparing spells. <mark>The number of spells a caster can have fixed in mind at any given time is shown on the character sheets.</mark></p>
+<p>A character can change this list of prepared spells upon finishing a long rest (see chapter 3). Preparing a new list of spells requires time spent in meditation or study: at least 1 minute per spell level for each spell on the list.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/119-ram-head-stern-flip.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<h1 id=span-classfont-comicprepared-spellsspan>
+<a href=#span-classfont-comicprepared-spellsspan class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a><span class=font-comic>PREPARED SPELLS?!</span></h1><p><span class=font-comic><strong>This</strong> is a feeble attempt to try and impose some kind of cap on wizardly supremacy.</span></p>
+<p><span class=font-comic>If I&rsquo;m ever a player at your table, you can ignore these limits. They&rsquo;re unnecessary.</span></p>
+</blockquote>
+<h3 id=spell-slots>
+<a href=#spell-slots class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Spell Slots</h3><p>Regardless of how many spells a caster knows or prepares, he or she can cast only a limited number of spells before resting. Manipulating the fabric of magic and channeling its energy into even a simple spell is physically and mentally taxing, and higher-level spells are even more so. Thus, the character sheet for a spellcaster includes how many spell slots of each level the character can use at each character level. For example, at 3rd level, the wizard has four 1st-level slots and two 2nd-level slots.</p>
+<p>When a character casts a spell, he or she expends a slot of that spell&rsquo;s level or higher, effectively &ldquo;filling&rdquo; a slot with the spell. You can think of a spell slot as a groove of a certain size—small for a 1st-level slot, larger for a spell of higher level. A 1st-level spell fits into a slot of any size, but a 3rd-level spell fits only in a slot that is at least 3rd level. So when the wizard casts <wc-fetch type=spell>magic missile</wc-fetch>, a 1st-level spell, he or she spends a 1st-level slot and has three remaining.</p>
+<p>Finishing a long rest restores any expended spell slots.</p>
+<p>Some monsters have special abilities that let them cast spells without using spell slots.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/120-c4-02.jpg alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>I&rsquo;m not gonna let some <em>dweeb</em> ruin my game by thinking outside the box and being <strong>clever</strong> with his powers.</span></p>
+<p><span class=font-comic>So I watch spellcasters like you watch those women on the shampoo commercials.</span></p>
+</blockquote>
+<h4 id=casting-a-spell-at-a-higher-level>
+<a href=#casting-a-spell-at-a-higher-level class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Casting a Spell at a Higher Level</h4><p>When a spellcaster casts a spell using a slot that is a higher level than the spell, the spell assumes the higher level for that casting. For instance, if a wizard casts <wc-fetch type=spell>magic missile</wc-fetch> using a 2nd-level slot, that <wc-fetch type=spell>magic missile</wc-fetch> is 2nd level. The spell effectively expands to fill the slot.</p>
+<p>Some spells, such as <wc-fetch type=spell>magic missile</wc-fetch> and <wc-fetch type=spell>cure wounds</wc-fetch>, have more powerful effects when cast at a higher level, as detailed in the spell&rsquo;s description.</p>
+<h3 id=cantrips>
+<a href=#cantrips class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Cantrips</h3><p>A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster&rsquo;s mind and infused the caster with the magic needed to produce the effect over and over. A cantrip&rsquo;s spell level is 0.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/121-ram-head-yas.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>Don&rsquo;t let that &ldquo;zero&rdquo; throw you, Morty.</span></p>
+<p><span class=font-comic>In this case,</span></p>
+<h1 id=span-classfont-comiczero-makes-the-herospan>
+<a href=#span-classfont-comiczero-makes-the-herospan class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a><span class=font-comic>zero makes the hero.</span></h1></blockquote>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/122-ram-head-rick-lol3.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>These little spells can pack a lotta <strong>punch</strong>, and the right application of <em>cantrippery</em> can convince peasants and other small-brained creatures that you&rsquo;re <strong>Doctor Badass</strong>.</span></p>
+</blockquote>
+<h3 id=rituals>
+<a href=#rituals class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Rituals</h3><p>Certain spells have a special tag: ritual. Such a spell can be cast following the normal rules for spellcasting, or the spell can be cast as a ritual. The ritual version of a spell takes 10 minutes longer to cast than normal, and it doesn&rsquo;t expend a spell slot.</p>
+<p>A cleric or a wizard can cast a spell as a ritual if the spell has the ritual tag. The cleric must also have the spell prepared, while the wizard need only have the spell in his or her spellbook.</p>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/123-c4-03.png alt=undefined class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<blockquote>
+<h4 id=casting-in-armor>
+<a href=#casting-in-armor class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Casting in Armor</h4><p>Because of the mental focus and precise gestures required for spellcasting, you must be proficient with the armor you are wearing to cast a spell. You are otherwise too distracted and physically hampered by your armor for spellcasting.</p>
+</blockquote>
+<h2 id=casting-a-spell>
+<a href=#casting-a-spell class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Casting a Spell</h2><p>When a character casts any spell, the rules here apply, regardless of the character&rsquo;s class or the spell&rsquo;s effects.</p>
+<p>Each spell description in this chapter begins with a block of information, including the spell&rsquo;s name, level, school of magic, casting time, range, components, and duration. The rest of a spell entry describes the spell&rsquo;s effect.</p>
+<h3 id=casting-time>
+<a href=#casting-time class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Casting Time</h3><p>Most spells require a single action to cast, but some spells require a bonus action, a reaction, or much more time.</p>
+<h4 id=bonus-action>
+<a href=#bonus-action class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Bonus Action</h4><p>A spell cast with a bonus action is especially swift. You must use a bonus action on your turn to cast the spell, provided that you haven&rsquo;t already taken a bonus action this turn. You can&rsquo;t cast another spell during the same turn, except for a cantrip with a casting time of 1 action.</p>
+<h4 id=reactions>
+<a href=#reactions class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Reactions</h4><p>Some spells can be cast as reactions. These spells take a fraction of a second to bring about and are cast in response to some event. If a spell can be cast as a reaction, the spell description tells you exactly when you can do so.</p>
+<h4 id=longer-casting-times>
+<a href=#longer-casting-times class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Longer Casting Times</h4><p>Certain spells (including spells cast as rituals) require more time to cast: minutes or even hours. When you cast a spell with a casting time longer than a single action or reaction, you must spend your action each turn casting the spell, and you must maintain your concentration while you do so (see &ldquo;Concentration&rdquo; later in this chapter). If your concentration is broken, the spell fails, but you don&rsquo;t expend a spell slot. If you want to try casting the spell again, you must start over.</p>
+<h3 id=range>
+<a href=#range class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Range</h3><p>The target of a spell must be within the spell&rsquo;s range. For a spell like <wc-fetch type=spell>magic missile</wc-fetch>, the target is a creature. For a spell like <wc-fetch type=spell>fireball</wc-fetch>, the target is the point in space where the ball of fire erupts.</p>
+<p>Most spells have ranges expressed in feet. Some spells can target only a creature (including you) that you touch.</p>
+<p>Other spells, such as the <wc-fetch type=spell>shield</wc-fetch> spell, affect only you. These spells have a range of self.</p>
+<p>Spells that create cones or lines of effect that originate from you also have a range of self, indicating that the origin point of the spell&rsquo;s effect must be you (see &ldquo;Areas of Effect&rdquo; later in the this chapter).</p>
+<p>Once a spell is cast, its effects aren&rsquo;t limited by its range, unless the spell&rsquo;s description says otherwise.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/124-ram-head-rick-lol.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<h1 id=span-classfont-comica-hot-protip-herespan>
+<a href=#span-classfont-comica-hot-protip-herespan class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a><span class=font-comic>a hot protip here:</span></h1><p><span class=font-comic>Just memorize the <strong>range</strong> of every spell and, when you fight other spellcasters, plant yourself 5 feet or so beyond their max casting range—then show &lsquo;em your <em>asssss</em>.</span></p>
+</blockquote>
+<h3 id=components>
+<a href=#components class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Components</h3><p>A spell&rsquo;s components are the physical requirements you must meet in order to cast it. Each spell&rsquo;s description indicates whether it requires verbal (V), somatic (S), or material (M) components. If you can&rsquo;t provide one or more of a spell&rsquo;s components, you are unable to cast the spell.</p>
+<h4 id=verbal-v>
+<a href=#verbal-v class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Verbal (V)</h4><p>Most spells require the chanting of mystic words. The words themselves aren&rsquo;t the source of the spell&rsquo;s power; rather, the particular combination of sounds, with specific pitch and resonance, sets the threads of magic in motion. Thus, a character who is gagged or in an area of silence, such as one created by the <wc-fetch type=spell>silence</wc-fetch> spell, can&rsquo;t cast a spell with a verbal component.</p>
+<blockquote>
+<h1 id=span-classfont-comicv-span-classfont-comicthe-rules-dont-actually-say-what-i-specificspan-words-you-have-to-speak-for-a-verbal-component-so-i-just-say-whatever-comes-to-mind-or-power-up-a-filthy-insult-and-let-er-ripspan>
+<a href=#span-classfont-comicv-span-classfont-comicthe-rules-dont-actually-say-what-i-specificspan-words-you-have-to-speak-for-a-verbal-component-so-i-just-say-whatever-comes-to-mind-or-power-up-a-filthy-insult-and-let-er-ripspan class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a><span class=font-comic>(V)} <span class=font-comic>The rules don&rsquo;t actually say what {@i specific</span> words you have to speak for a <strong>verbal component</strong>, so I just say whatever comes to mind or power up a filthy insult and let &lsquo;er rip.</span></h1></blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/125-c4-04.png alt=undefined class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<h4 id=somatic-s>
+<a href=#somatic-s class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Somatic (S)</h4><p>Spellcasting gestures might include a forceful gesticulation or an intricate set of gestures. If a spell requires a somatic component, the caster must have free use of at least one hand to perform these gestures.</p>
+<blockquote>
+<h1 id=span-classfont-comics-span-classfont-comicagain-they-dont-specify-what-b-magical-movesspan-are-required-so-get-schwifty-and-s-span-classfont-comicmake-your-spellcasting-signature-move-so-hot-that-monsters-beg-to-join-your-side-before-you-blast-em-into-i-experience-particlesspanspan>
+<a href=#span-classfont-comics-span-classfont-comicagain-they-dont-specify-what-b-magical-movesspan-are-required-so-get-schwifty-and-s-span-classfont-comicmake-your-spellcasting-signature-move-so-hot-that-monsters-beg-to-join-your-side-before-you-blast-em-into-i-experience-particlesspanspan class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a><span class=font-comic>(S)} <span class=font-comic>Again, they don&rsquo;t specify what {@b magical moves</span> are required, so get Schwifty and s***.} <span class=font-comic>Make your spellcasting signature move so hot that monsters beg to join your side before you blast &lsquo;em into {@i Experience Particles</span>.</span></h1></blockquote>
+<h4 id=material-m>
+<a href=#material-m class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Material (M)</h4><p>Casting some spells requires particular objects, specified in parentheses in the component entry. A component pouch includes all the needed material components to cast spells, except those that have a gold piece cost shown in the spell. A cleric&rsquo;s holy symbol replaces material components, again excepting those with a gold piece cost. If a cost is indicated, a character must purchase that specific component before casting the spell in question.</p>
+<p>If a spell specifies that the material component is consumed by the spell, the caster must provide this component for each casting of the spell.</p>
+<p>A spellcaster must have a hand free to access these components, but it can be the same hand that he or she uses to perform somatic components.</p>
+<blockquote>
+<h1 id=span-classfont-comicm-i-no-one-is-keeping-track-of-pinches-of-dust-and-clumps-of-moss-dont-be-that-guy-morty-the-dungeon-master-will-tell-you-when-a-spells-got-ingredients-worth-shelling-out-for-the-rest-is-just-doing-cool-hand-symbols-and-saying-bladowie-see-belowspan>
+<a href=#span-classfont-comicm-i-no-one-is-keeping-track-of-pinches-of-dust-and-clumps-of-moss-dont-be-that-guy-morty-the-dungeon-master-will-tell-you-when-a-spells-got-ingredients-worth-shelling-out-for-the-rest-is-just-doing-cool-hand-symbols-and-saying-bladowie-see-belowspan class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a><span class=font-comic>(M) <strong>{@i NO ONE IS KEEPING TRACK OF PINCHES OF DUST AND CLUMPS OF MOSS</strong>.} Don&rsquo;t be that guy, Morty. The Dungeon Master will tell you when a spell&rsquo;s got ingredients worth shelling out for. The rest is just doing cool hand symbols and saying **BLADOWIE! **(see below).</span></h1></blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/126-c4-05.png alt=undefined class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<h3 id=duration>
+<a href=#duration class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Duration</h3><p>A spell&rsquo;s duration is the length of time the spell persists. A duration can be expressed in rounds, minutes, hours, or even years. A spell might specify that its effects last until the spell is dispelled or the effects are destroyed.</p>
+<h4 id=instantaneous>
+<a href=#instantaneous class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Instantaneous</h4><p>Many spells are instantaneous. The spell harms, heals, creates, or alters a creature or an object in a way that can&rsquo;t be dispelled, because its magic exists <mark>only for an instant</mark>.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/127-ram-head-daze.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>According to your mother, this duration is also known as <strong>&ldquo;jerry in bed."</strong></span></p>
+<p><span class=font-comic>Yeah, I didn&rsquo;t want that visual either, Morty. Sucks for us.</span></p>
+</blockquote>
+<h4 id=concentration>
+<a href=#concentration class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Concentration</h4><p>Some spells require you to maintain concentration in order to keep their magic active. If you lose concentration, such a spell ends.</p>
+<p>If a spell must be maintained with concentration, that fact appears in its Duration entry, and the spell specifies how long you can concentrate on it. You can end concentration at any time (no action required).</p>
+<p>Normal activity, such as moving and attacking, doesn&rsquo;t interfere with concentration. The following factors can break concentration:</p>
+<ul>
+<li><strong>Casting another spell that requires concentration.</strong> You lose concentration on a spell if you cast another spell that requires concentration. You can&rsquo;t concentrate on two spells at once.</li>
+<li><strong>Taking damage</strong>. Whenever you take damage while you are concentrating on a spell, you must make a Constitution saving throw to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher. If you take damage from multiple sources, such as an arrow and a dragon&rsquo;s breath, you make a separate saving throw for each source of damage.</li>
+<li><strong>Being incapacitated or killed.</strong> You lose concentration on a spell if you are <wc-fetch type=condition>incapacitated</wc-fetch> (as explained in appendix A) or if you die.</li>
+</ul>
+<h3 id=targets>
+<a href=#targets class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Targets</h3><p>A typical spell requires you to pick one or more targets to be affected by the spell&rsquo;s magic. A spell&rsquo;s description tells you whether the spell targets creatures, objects, or a point of origin for an area of effect (described below).</p>
+<h4 id=a-clear-path-to-the-target>
+<a href=#a-clear-path-to-the-target class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>A Clear Path to the Target</h4><p>To target something, you must have a clear path to it, so it can&rsquo;t be behind total cover.</p>
+<p>If you place an area of effect at a point that you can&rsquo;t see and an obstruction, such as a wall, is between you and that point, the point of origin comes into being on the near side of that obstruction.</p>
+<h4 id=targeting-yourself>
+<a href=#targeting-yourself class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Targeting Yourself</h4><p>If a spell targets a creature of your choice, you can choose yourself, unless the creature must be hostile or specifically a creature other than you. If you are in the area of effect of a spell you cast, you can target yourself.</p>
+<h3 id=areas-of-effect>
+<a href=#areas-of-effect class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Areas of Effect</h3><p>Spells such as <wc-fetch type=spell>burning hands</wc-fetch> and <wc-fetch type=spell>fireball</wc-fetch> cover an area, allowing them to affect multiple creatures at once.</p>
+<p>A spell&rsquo;s description specifies its area of effect, which typically has one of four different shapes: cone, cube, line, or sphere (each illustrated on the DM screen). Every area of effect has a point of origin, a location from which the spell&rsquo;s energy erupts. The rules for each shape specify how you position its point of origin. Typically, a point of origin is a point in space, but some spells have an area whose origin is a creature or an object.</p>
+<p>A spell&rsquo;s effect expands in straight lines from the point of origin. If no unblocked straight line extends from the point of origin to a location within the area of effect, that location isn&rsquo;t included in the spell&rsquo;s area. To block one of these imaginary lines, an obstruction must provide total cover, as explained in chapter 2.</p>
+<p>The point of origin of an area of effect isn&rsquo;t included in the area, unless the area is a sphere.</p>
+<h4 id=cone>
+<a href=#cone class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Cone</h4><p>A cone extends in a direction you choose from its point of origin. A cone&rsquo;s width at a given point along its length is equal to that point&rsquo;s distance from the point of origin. A cone&rsquo;s area of effect specifies its maximum length.</p>
+<h4 id=cube>
+<a href=#cube class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Cube</h4><p>You select a cube&rsquo;s point of origin, which lies anywhere on a face of the cubic effect. The cube&rsquo;s size is expressed as the length of each side.</p>
+<h4 id=line>
+<a href=#line class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Line</h4><p>A line extends from its point of origin in a straight path up to its length and covers an area defined by its width.</p>
+<h4 id=sphere>
+<a href=#sphere class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Sphere</h4><p>You select a sphere&rsquo;s point of origin, and the sphere extends outward from that point. The sphere&rsquo;s size is expressed as a radius in feet that extends from the point.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/128-ram-head-ehlol.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>D-d-don&rsquo;t feel like you&rsquo;ve gotta be limited to those### <span class=font-comic>kiddie block shapes</span> for your spell effects, Morty.</span></p>
+<p><span class=font-comic>When I&rsquo;m the Dungeon Master and bad guys are launching loads of <em>murder magic</em>, I&rsquo;ll just dump chips or hock a big loogie on the battle map to figure out where the spell hits.</span></p>
+</blockquote>
+<h3 id=saving-throws>
+<a href=#saving-throws class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Saving Throws</h3><p>Many spells specify that a target can make a saving throw to avoid some or all of a spell&rsquo;s effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure.</p>
+<p>The DC to resist one of your spells equals 8 + your spellcasting ability modifier + your proficiency bonus. This number is on the character sheets for the cleric and the wizard, and in the statistics for a monster that casts spells.</p>
+<h3 id=attack-rolls>
+<a href=#attack-rolls class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Attack Rolls</h3><p>Some spells require the caster to make an attack roll to determine whether the spell effect hits the intended target. Your attack bonus with a spell attack equals your spellcasting ability modifier + your proficiency bonus.</p>
+<p>Most spells that require attack rolls involve ranged attacks. Remember that you have disadvantage on a ranged attack roll if you are within 5 feet of a hostile creature that can see you and that isn&rsquo;t <wc-fetch type=condition>incapacitated</wc-fetch> (see chapter 2).</p>
+<h3 id=combining-magical-effects>
+<a href=#combining-magical-effects class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Combining Magical Effects</h3><p>The effects of different spells add together while the durations of those spells overlap. The effects of the same spell cast multiple times don&rsquo;t combine, however. Instead, the most potent effect—such as the highest bonus—from those castings applies while their durations overlap.</p>
+<p>For example, if two clerics cast <wc-fetch type=spell>bless</wc-fetch> on the same target, that character gains the spell&rsquo;s benefit only once; he or she doesn&rsquo;t get to roll two bonus dice.</p>
+<blockquote>
+<h4 id=schools-of-magic>
+<a href=#schools-of-magic class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Schools of Magic</h4><p>Scholars who study the workings of magic group spells into eight categories called schools of magic. The schools help describe spells; the schools have no game rules of their own.</p>
+<p><strong>Abjuration</strong> spells are protective, often creating barriers or warding off trespassers. <strong>Conjuration</strong> spells transport objects or creatures from one location to another. <strong>Divination</strong> spells reveal glimpses of the future, the locations of hidden things, or visions of distant people or places. <strong>Enchantment</strong> spells affect the minds of others, influencing or controlling their behavior. <strong>Evocation</strong> spells tap mystical sources of energy to create a variety of effects, including blasts of fire and channeling positive energy to heal wounds. <strong>Illusion</strong> spells deceive the senses or minds of others. <strong>Necromancy</strong> spells manipulate the energies of life and death. <strong>Transmutation</strong> spells change the properties or physical form of a creature or object.</p>
+</blockquote>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/129-c4-07.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>Ignore most of this, Morty.</span></p>
+<p><span class=font-comic>The only two schools of magic you need to worry about are <em>evocation</em> and <em>necromancy</em>, blowing s*** up and messing with the dead—preferably at the same time.</span></p>
+</blockquote>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/130-c4-06.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<h1 id=span-classfont-comic50-spellsspan>
+<a href=#span-classfont-comic50-spellsspan class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a><span class=font-comic>50+ SPELLS</span></h1><p><span class=font-comic>are too much for your <em>tiny</em> mind to handle, Morty, so I went through and rated them so you&rsquo;ll know which ones are gonna get you m-m-### <span class=font-comic>mad killz</span> and which ones your <em>dad</em> thinks are cool.</span></p>
+</blockquote>
+<h2 id=spell-lists>
+<a href=#spell-lists class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Spell Lists</h2><h3 id=cleric-spells>
+<a href=#cleric-spells class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Cleric Spells</h3><h4 id=cantrips-0-level>
+<a href=#cantrips-0-level class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Cantrips (0 Level)</h4><ul>
+<li>Guidance <span class=font-comic>MEH</span></li>
+<li>Light <span class=font-comic>Ok</span></li>
+<li>Resistance <span class=font-comic>Ok</span></li>
+<li>Sacred Flame <span class=font-comic>Yes, Burn</span></li>
+<li>Thaumaturgy <span class=font-comic>ok</span></li>
+</ul>
+<h4 id=1st-level>
+<a href=#1st-level class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>1st Level</h4><ul>
+<li>Bless <span class=font-comic>OK</span></li>
+<li>Command <span class=font-comic>MEH</span></li>
+<li>Cure Wounds <span class=font-comic>YES</span></li>
+<li>Detect Magic <span class=font-comic>OK</span></li>
+<li>Guiding Bolt <span class=font-comic>YES, BURN</span></li>
+<li>Healing Word <span class=font-comic>YES</span></li>
+<li>Inflict Wounds <span class=font-comic>YES, HURT</span></li>
+<li>Sanctuary <span class=font-comic>JERRY SPELL</span></li>
+<li>Shield of Faith <span class=font-comic>OK</span></li>
+</ul>
+<h4 id=2nd-level>
+<a href=#2nd-level class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>2nd Level</h4><ul>
+<li>Aid <span class=font-comic>JERRY SPELL</span></li>
+<li>Augury <span class=font-comic>JERRY SPELL</span></li>
+<li>Hold Person <span class=font-comic>OK</span></li>
+<li>Lesser Restoration <span class=font-comic>OK</span></li>
+<li>Prayer of Healing <span class=font-comic>YES</span></li>
+<li>Silence <span class=font-comic>OK</span></li>
+<li>Spiritual Weapon <span class=font-comic>YES, HURT</span></li>
+<li>Warding Bond <span class=font-comic>JERRY SPELL</span></li>
+</ul>
+<h4 id=3rd-level>
+<a href=#3rd-level class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>3rd Level</h4><ul>
+<li>Beacon of Hope <span class=font-comic>JERRY SPELL</span></li>
+<li>Dispel Magic <span class=font-comic>JERRY SPELL</span></li>
+<li>Mass Healing Word <span class=font-comic>YES</span></li>
+<li>Protection from Energy <span class=font-comic>JERRY SPELL</span></li>
+<li>Revivify <span class=font-comic>OK</span></li>
+<li>Spirit Guardians <span class=font-comic>OK</span></li>
+</ul>
+<h3 id=wizard-spells>
+<a href=#wizard-spells class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Wizard Spells</h3><h4 id=cantrips-0-level-1>
+<a href=#cantrips-0-level-1 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Cantrips (0 Level)</h4><ul>
+<li>Dancing Lights <span class=font-comic>JERRY SPELL</span></li>
+<li>Light <span class=font-comic>OK</span></li>
+<li>Mage Hand <span class=font-comic>YES</span></li>
+<li>Prestidigitation <span class=font-comic>YES</span></li>
+<li>Ray of Frost <span class=font-comic>YES, CHILL</span></li>
+<li>Shocking Grasp <span class=font-comic>YES, ZAP</span></li>
+</ul>
+<h4 id=1st-level-1>
+<a href=#1st-level-1 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>1st Level</h4><ul>
+<li>Burning Hands <span class=font-comic>YES, BURN</span></li>
+<li>Charm Person <span class=font-comic>JERRY SPELL</span></li>
+<li>Comprehend Languages <span class=font-comic>JERRY SPELL</span></li>
+<li>Detect Magic <span class=font-comic>OK</span></li>
+<li>Feather Fall <span class=font-comic>Yes</span></li>
+<li>Identify <span class=font-comic>OK</span></li>
+<li>Mage Armor <span class=font-comic>YES</span></li>
+<li>Magic Missile <span class=font-comic>YES, Poke</span></li>
+<li>Shield <span class=font-comic>OK</span></li>
+<li>Sleep <span class=font-comic>Meh</span></li>
+<li>Thunderwave <span class=font-comic>Yes, Rumble</span></li>
+</ul>
+<h4 id=2nd-level-1>
+<a href=#2nd-level-1 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>2nd Level</h4><ul>
+<li>Blur <span class=font-comic>MEH</span></li>
+<li>Darkness <span class=font-comic>OK</span></li>
+<li>Flaming Sphere <span class=font-comic>Yes, Burn</span></li>
+<li>Hold Person <span class=font-comic>OK</span></li>
+<li>Invisibility <span class=font-comic>YES</span></li>
+<li>Misty Step <span class=font-comic>OK</span></li>
+<li>Spider Climb <span class=font-comic>OK</span></li>
+<li>Suggestion <span class=font-comic>JERRY SPELL</span></li>
+<li>Web <span class=font-comic>OK</span></li>
+</ul>
+<h4 id=3rd-level-1>
+<a href=#3rd-level-1 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>3rd Level</h4><ul>
+<li>Dispel Magic <span class=font-comic>JERRY SPELL</span></li>
+<li>Fireball <span class=font-comic>Oh Hell YES</span></li>
+<li>Fly <span class=font-comic>YES</span></li>
+<li>Lightning Bolt <span class=font-comic>YES, Big Zap</span></li>
+<li>Protection from Energy <span class=font-comic>JERRY SPELL</span></li>
+</ul>
+<h2 id=spells>
+<a href=#spells class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Spells</h2><p>Presented in alphabetical order, these spells are used by characters and monsters in this set.</p>
+<p>Some of the spells cause <strong>conditions</strong>, including <wc-fetch type=condition>charmed</wc-fetch>, <wc-fetch type=condition>deafened</wc-fetch>, <wc-fetch type=condition>frightened</wc-fetch>, <wc-fetch type=condition>invisible</wc-fetch>, <wc-fetch type=condition>paralyzed</wc-fetch>, <wc-fetch type=condition>prone</wc-fetch>, <wc-fetch type=condition>restrained</wc-fetch>, and <wc-fetch type=condition>unconscious</wc-fetch>. Consult appendix A to learn a condition&rsquo;s effects in the game.</p>
+<h3 id=aid>
+<a href=#aid class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Aid</h3><p><em>2nd-level abjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 30 feet</li>
+<li><strong>Components</strong>: V, S, M (a tiny strip of white cloth)</li>
+<li><strong>Duration</strong>: 8 hours</li>
+</ul>
+<p>Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target&rsquo;s hit point maximum and current hit points increase by 5 for the duration.</p>
+<h5 id=at-higher-levels>
+<a href=#at-higher-levels class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 3rd level or higher, a target&rsquo;s hit points increase by an additional 5 for each slot level above 2nd.</p>
+<p><span class=font-comic><strong>Pure Jerry spell!</strong> Why help other people when you could jack yourself up with magic and kick more ass?!</span></p>
+<h3 id=augury>
+<a href=#augury class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Augury</h3><p><em>2nd-level divination (ritual</em>)</p>
+<ul>
+<li><strong>Casting Time</strong>: 1 minute</li>
+<li><strong>Range</strong>: Self</li>
+<li><strong>Components</strong>: V, S, M (specially marked sticks, bones, or similar tokens worth at least 25 gp)</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:</p>
+<ul>
+<li><em>Weal</em>, for good results</li>
+<li><em>Woe</em>, for bad results</li>
+<li><em>Weal and woe</em>, for both good and bad results</li>
+<li><em>Nothing</em>, for results that are not especially good or bad</li>
+</ul>
+<p>The spell doesn&rsquo;t take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.</p>
+<p>If you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a false reading. The DM makes this roll in secret.</p>
+<p><span class=font-comic>This is for theater majors and Jerrys. Don&rsquo;t worry about divining the future when you play D&D, Morty. The story will find you when you start killing.</span></p>
+<h3 id=beacon-of-hope>
+<a href=#beacon-of-hope class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Beacon of Hope</h3><p><em>3rd-level abjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 30 feet</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Concentration, up to 1 minute</li>
+</ul>
+<p>This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing.</p>
+<p><span class=font-comic>Jerry spell in full effect! Don&rsquo;t waste your spell slots helping other people! You know what&rsquo;ll help them even more? If you <strong>kill</strong> the creatures <strong>attacking</strong> everyone!</span></p>
+<h3 id=bless>
+<a href=#bless class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Bless</h3><p><em>1st-level enchantment</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 30 feet</li>
+<li><strong>Components</strong>: V, S, M (a sprinkling of holy water)</li>
+<li><strong>Duration</strong>: Concentration, up to 1 minute</li>
+</ul>
+<p>You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a <wc-roll>d4</wc-roll> and add the number rolled to the attack roll or saving throw.</p>
+<h5 id=at-higher-levels-1>
+<a href=#at-higher-levels-1 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+<p><span class=font-comic>Almost a Jerry spell, but at least you can pump up a bunch of people so they can kill s*** better.</span></p>
+<h3 id=blur>
+<a href=#blur class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Blur</h3><p><em>2nd-level illusion</em></p>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/131-c4-08.png alt=undefined class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Self</li>
+<li><strong>Components</strong>: V</li>
+<li><strong>Duration</strong>: Concentration, up to 1 minute</li>
+</ul>
+<p>Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn&rsquo;t rely on sight, as with <wc-fetch type=sense>blindsight</wc-fetch>, or can see through illusions, as with <wc-fetch type=sense>truesight</wc-fetch>.</p>
+<p><span class=font-comic>If I wanna see blurry, shifting, wavering people in front of me, I&rsquo;ll just keep drinking.</span></p>
+<h3 id=burning-hands>
+<a href=#burning-hands class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Burning Hands</h3><p><em>1st-level evocation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Self (15-foot cone)</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes <wc-roll>3d6</wc-roll> fire damage on a failed save, or half as much damage on a successful one.</p>
+<p>The fire ignites any flammable objects in the area that are not being worn or carried.</p>
+<h5 id=at-higher-levels-2>
+<a href=#at-higher-levels-2 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by <wc-roll>1d6</wc-roll> for each slot level above 1st.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/132-ram-head-ehlol.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic><em>&ldquo;Sheet of Flames&rdquo;</em> sounds like a heavy metal concept album.</span></p>
+<p><span class=font-comic>I dig it.</span></p>
+</blockquote>
+<h3 id=charm-person>
+<a href=#charm-person class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Charm Person</h3><p><em>1st-level enchantment</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 30 feet</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: 1 hour</li>
+</ul>
+<p>You attempt to charm a humanoid you choose within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is <wc-fetch type=condition>charmed</wc-fetch> by you until the spell ends or until you or your companions do anything harmful to it. The <wc-fetch type=condition>charmed</wc-fetch> creature regards you as a friendly acquaintance.</p>
+<h5 id=at-higher-levels-3>
+<a href=#at-higher-levels-3 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
+<p><span class=font-comic>Jerry needs this spell just to make friends.</span></p>
+<p><span class=font-comic>If you really wanna charm someone, do what everyone else does—get rich and buy their loyalty.</span></p>
+<h3 id=command>
+<a href=#command class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Command</h3><p><em>1st-level enchantment</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 60 feet</li>
+<li><strong>Components</strong>: V</li>
+<li><strong>Duration</strong>: 1 round</li>
+</ul>
+<p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn&rsquo;t understand your language, or if your command is directly harmful to it.</p>
+<p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target is prevented from following your command, the spell ends.</p>
+<h5 id=approach>
+<a href=#approach class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Approach</h5><p>The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p>
+<h5 id=drop>
+<a href=#drop class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Drop</h5><p>The target drops whatever it is holding and then ends its turn.</p>
+<h5 id=flee>
+<a href=#flee class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Flee</h5><p>The target spends its turn moving away from you by the fastest available means.</p>
+<h5 id=grovel>
+<a href=#grovel class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Grovel</h5><p>The target falls <wc-fetch type=condition>prone</wc-fetch> and then ends its turn.</p>
+<h5 id=halt>
+<a href=#halt class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Halt</h5><p>The target doesn&rsquo;t move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/133-c4-09.jpg alt=undefined class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<h5 id=at-higher-levels-4>
+<a href=#at-higher-levels-4 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
+<p><span class=font-comic>As much as forcing people to grovel amuses me, it&rsquo;s easier to make &lsquo;em fear you by lighting all their s*** on _fire_.</span></p>
+<p><span class=font-comic>Save your spell slots, Morty.</span></p>
+<h3 id=comprehend-languages>
+<a href=#comprehend-languages class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Comprehend Languages</h3><p><em>1st-level divination (ritual</em>)</p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Self</li>
+<li><strong>Components</strong>: V, S, M (a pinch of soot and salt)</li>
+<li><strong>Duration</strong>: 1 hour</li>
+</ul>
+<p>For the duration, you understand the literal meaning of spoken language that you hear. You also understand written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.</p>
+<p>This spell does not decode secret messages in a text or any glyph, such as an arcane sigil, that isn&rsquo;t part of a written language.</p>
+<p><span class=font-comic>The only language you need to know in D&D is <strong>the language of violence</strong>, Morty.</span></p>
+<p><span class=font-comic>Everyone speaks it and translations are crystal clear. Jerrys want to talk through a battle or &ldquo;parlay&rdquo; their asses out of conflict. Never do that.</span></p>
+<h3 id=cure-wounds>
+<a href=#cure-wounds class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Cure Wounds</h3><p><em>1st-level evocation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>A creature you touch regains a number of hit points equal to <wc-roll>1d8</wc-roll> + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+<h5 id=at-higher-levels-5>
+<a href=#at-higher-levels-5 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 2nd level or higher, the healing increases by <wc-roll>1d8</wc-roll> for each slot level above 1st.</p>
+<p><span class=font-comic>It&rsquo;s a necessary evil. When you get hurt, you gotta get <em>healed</em>. I recommend <strong>not</strong> getting hurt.</span></p>
+<h3 id=dancing-lights>
+<a href=#dancing-lights class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Dancing Lights</h3><p><em>Evocation cantrip</em></p>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/134-c4-10.png alt=undefined class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 120 feet</li>
+<li><strong>Components</strong>: V, S, M (a bit of phosphorus or wychwood, or a glowworm)</li>
+<li><strong>Duration</strong>: Concentration, up to 1 minute</li>
+</ul>
+<p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.</p>
+<p>As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell&rsquo;s range.</p>
+<p><span class=font-comic><strong>Pure Jerry.</strong> This is life or death combat, not a f***ing <strong>rave</strong>.</span></p>
+<h3 id=darkness>
+<a href=#darkness class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Darkness</h3><p><em>2nd-level evocation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 60 feet</li>
+<li><strong>Components</strong>: V, M (bat fur and a drop of pitch or piece of coal)</li>
+</ul>
+<p><strong>Duration</strong>: Concentration, up to 10 minutes</p>
+<p>Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with <wc-fetch type=sense>darkvision</wc-fetch> can&rsquo;t see through this darkness, and no nonmagical light can illuminate it.</p>
+<p>If the point you choose is on an object you are holding or one that is not being worn or carried, the darkness emanates from the object and moves with it. Covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.</p>
+<p>If any of this spell&rsquo;s area overlaps with an area of light created by a spell of 2nd level or lower, the entire area of light is dispelled.</p>
+<p><span class=font-comic>Not as good as blasting monsters, but it has its place. Getting the drop on some sucker and gutting &lsquo;em is pretty sweet.</span></p>
+<h3 id=detect-magic>
+<a href=#detect-magic class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Detect Magic</h3><p><em>1st-level divination (ritual</em>)</p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Self</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Concentration, up to 10 minutes</li>
+</ul>
+<p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</p>
+<p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+<p><span class=font-comic>Anything that helps you find more magic loot is fine by me.</span></p>
+<h3 id=dispel-magic>
+<a href=#dispel-magic class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Dispel Magic</h3><p><em>3rd-level abjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 120 feet</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell&rsquo;s level. On a successful check, the spell ends.</p>
+<h5 id=at-higher-levels-6>
+<a href=#at-higher-levels-6 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell&rsquo;s level is equal to or less than the level of the spell slot you used.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/135-ram-head-rick-madconfused.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>Why would I waste a spell slot to just get rid of someone else&rsquo;s spell?</span></p>
+<p><span class=font-comic><em>That&rsquo;s so stupid</em>!</span></p>
+<p><span class=font-comic>Abjuration is the <strong>worst</strong>, Morty. I-i-it&rsquo;s so Jerry.</span></p>
+</blockquote>
+<h3 id=feather-fall>
+<a href=#feather-fall class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Feather Fall</h3><p><em>1st-level transmutation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 reaction, which you take when you or a creature within 60 feet of you falls</li>
+<li><strong>Range</strong>: 60 feet</li>
+<li><strong>Components</strong>: V, M (a small feather or piece of down)</li>
+<li><strong>Duration</strong>: 1 minute</li>
+</ul>
+<p>Choose up to five falling creatures within range. A falling creature&rsquo;s rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.</p>
+<p><span class=font-comic>Wanna freak people out? Jump off an airship, and while everyone&rsquo;s screaming, &ldquo;He&rsquo;s gonna die!&rdquo;, cast this little number after you pass through a cloud.</span></p>
+<p><span class=font-comic>You&rsquo;ll float safely to the ground, while those suckers are tearily planning your funeral.</span></p>
+<h3 id=fireball>
+<a href=#fireball class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Fireball</h3><p><em>3rd-level evocation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 150 feet</li>
+<li><strong>Components</strong>: V, S, M (a tiny ball of bat guano and sulfur)</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes <wc-roll>8d6</wc-roll> fire damage on a failed save, or half as much damage on a successful one.</p>
+<p>The fire spreads around corners. It ignites flammable objects in the area that are not being worn or carried.</p>
+<h5 id=at-higher-levels-7>
+<a href=#at-higher-levels-7 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 4th level or higher, the damage increases by <wc-roll>1d6</wc-roll> for each slot level above 3rd.</p>
+<p><span class=font-comic>If you&rsquo;re a wizard and don&rsquo;t take this when it comes available, then just eat your own character sheet.</span></p>
+<p><span class=font-comic>This is <strong>the</strong> classic <strong>pyro-bomb</strong> and it&rsquo;s beautiful, Morty. Chuck this into a room of monsters and get out the marshmallows.</span></p>
+<h3 id=flaming-sphere>
+<a href=#flaming-sphere class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Flaming Sphere</h3><p><em>2nd-level conjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 60 feet</li>
+<li><strong>Components</strong>: V, S, M (a bit of tallow, a pinch of brimstone, and a dusting of powdered iron)</li>
+<li><strong>Duration</strong>: Concentration, up to 1 minute</li>
+</ul>
+<p>A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes <wc-roll>2d6</wc-roll> fire damage on a failed save, or half as much damage on a successful one.</p>
+<p>As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere&rsquo;s damage, and the sphere stops moving this turn.</p>
+<p>When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</p>
+<h5 id=at-higher-levels-8>
+<a href=#at-higher-levels-8 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 3rd level or higher, the damage increases by <wc-roll>1d6</wc-roll> for each slot level above 2nd.</p>
+<p><span class=font-comic>This is <em>fireball&rsquo;s</em> slightly stunted younger brother, Morty. That said, there <em>is</em> something viscerally satisfying about rolling a ball of fire around over a bunch of a-holes.</span></p>
+<h3 id=fly>
+<a href=#fly class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Fly</h3><p><em>3rd-level transmutation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S, M (a wing feather from any bird)</li>
+<li><strong>Duration</strong>: Concentration, up to 10 minutes</li>
+</ul>
+<p>You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.</p>
+<h5 id=at-higher-levels-9>
+<a href=#at-higher-levels-9 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/136-ram-head-rick-lol2.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>Peeing on your opponents from above is a top shelf move.</span></p>
+</blockquote>
+<h3 id=guidance>
+<a href=#guidance class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Guidance</h3><p><em>Divination cantrip</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Concentration, up to 1 minute</li>
+</ul>
+<p>You touch one willing creature. Once before the spell ends, the target can roll a <wc-roll>d4</wc-roll> and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.</p>
+<p><span class=font-comic>If you need this spell to make your ability check, maybe you just shouldn&rsquo;t do that thing you&rsquo;re doing? Stay in your lane, Jerry.</span></p>
+<h3 id=guiding-bolt>
+<a href=#guiding-bolt class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Guiding Bolt</h3><p><em>1st-level evocation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 120 feet</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: 1 round</li>
+</ul>
+<p>A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes <wc-roll>4d6</wc-roll> radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.</p>
+<h5 id=at-higher-levels-10>
+<a href=#at-higher-levels-10 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by <wc-roll>1d6</wc-roll> for each slot level above 1st.</p>
+<p><span class=font-comic>Awwww yeah, <strong>God Bolt</strong>. Give &lsquo;em that radiant damage where the sun don&rsquo;t shine.</span></p>
+<h3 id=healing-word>
+<a href=#healing-word class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Healing Word</h3><p><em>1st-level evocation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 bonus action</li>
+<li><strong>Range</strong>: 60 feet</li>
+<li><strong>Components</strong>: V</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>A creature of your choice within range regains hit points equal to <wc-roll>1d4</wc-roll> + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+<h5 id=at-higher-levels-11>
+<a href=#at-higher-levels-11 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 2nd level or higher, the healing increases by <wc-roll>1d4</wc-roll> for each slot level above 1st.</p>
+<p><span class=font-comic>You can just utter a word to yourself and you feel quantifiably better, Morty! Your life&rsquo;s essence goes back up! Who needs a long rest!</span></p>
+<h3 id=hold-person>
+<a href=#hold-person class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Hold Person</h3><p><em>2nd-level enchantment</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 60 feet</li>
+<li><strong>Components</strong>: V, S, M (a small, straight piece of iron)</li>
+<li><strong>Duration</strong>: Concentration, up to 1 minute</li>
+</ul>
+<p>Choose a humanoid within range that you can see. The target must succeed on a Wisdom saving throw or be <wc-fetch type=condition>paralyzed</wc-fetch> for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p>
+<h5 id=at-higher-levels-12>
+<a href=#at-higher-levels-12 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.</p>
+<p><span class=font-comic>Stopping some dingus in their tracks is aight. Not as cool as lighting them on fire, but maybe that&rsquo;s step two.</span></p>
+<h3 id=identify>
+<a href=#identify class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Identify</h3><p><em>1st-level divination (ritual</em>)</p>
+<ul>
+<li><strong>Casting Time</strong>: 1 minute</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S, M (a pearl worth at least 100 gp and an owl feather)</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.</p>
+<p>If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.</p>
+<p><span class=font-comic>Learning what magic loot you just pulled off the corpses of your vanquished foes is a worthwhile investment.</span></p>
+<h3 id=inflict-wounds>
+<a href=#inflict-wounds class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Inflict Wounds</h3><p><em>1st-level necromancy</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>Make a melee spell attack against a creature you can reach. On a hit, the target takes <wc-roll>3d10</wc-roll> necrotic damage.</p>
+<h5 id=at-higher-levels-13>
+<a href=#at-higher-levels-13 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by <wc-roll>1d10</wc-roll> for each slot level above 1st.</p>
+<p><span class=font-comic>&ldquo;Necrotic damage&rdquo; is a classy way of saying &ldquo;your taint just rotted off."</span></p>
+<h3 id=invisibility>
+<a href=#invisibility class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Invisibility</h3><p><em>2nd-level illusion</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S, M (an eyelash encased in gum arabic)</li>
+<li><strong>Duration</strong>: Concentration, up to 1 hour</li>
+</ul>
+<p>A creature you touch becomes <wc-fetch type=condition>invisible</wc-fetch> until the spell ends. Anything the target is wearing or carrying is <wc-fetch type=condition>invisible</wc-fetch> as long as it is on the target&rsquo;s person. The spell ends early for a target that attacks or casts a spell.</p>
+<h5 id=at-higher-levels-14>
+<a href=#at-higher-levels-14 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+<p><span class=font-comic>Drop eldritch vengeance on your enemies and then VORP right outta sight. <strong>Classic</strong>.</span></p>
+<h3 id=lesser-restoration>
+<a href=#lesser-restoration class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Lesser Restoration</h3><p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/137-c4-11.png alt=undefined class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><em>2nd-level abjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>You touch a creature and can end either one disease or one condition afflicting it. The condition can be <wc-fetch type=condition>blinded</wc-fetch>, <wc-fetch type=condition>deafened</wc-fetch>, <wc-fetch type=condition>paralyzed</wc-fetch>, or <wc-fetch type=condition>poisoned</wc-fetch>.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/138-ram-head-dafuq.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>The world of D&D is a dirty place, Morty. Th-th-they don&rsquo;t have body wash or tetanus shots or even tweezers. It&rsquo;s disgusting when you think about it.</span></p>
+<p><span class=font-comic>They should just call this spell <em>&ldquo;Magic Soap."</em></span></p>
+</blockquote>
+<h3 id=light>
+<a href=#light class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Light</h3><p><em>Evocation cantrip</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, M (a firefly or phosphorescent moss)</li>
+<li><strong>Duration</strong>: 1 hour</li>
+</ul>
+<p>You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like, and covering the object with something opaque blocks the light. The spell ends early if you cast it again or dismiss it as an action.</p>
+<p>If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.</p>
+<p><span class=font-comic>When you&rsquo;re going down in a dirty hole to kill monsters, it&rsquo;s kinda useful to be able to see where the f*** they are.</span></p>
+<h3 id=lightning-bolt>
+<a href=#lightning-bolt class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Lightning Bolt</h3><p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/139-c4-12.png alt=undefined class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><em>3rd-level evocation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Self (100-foot line)</li>
+<li><strong>Components</strong>: V, S, M (a bit of fur and a rod of amber, crystal, or glass)</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes <wc-roll>8d6</wc-roll> lightning damage on a failed save, or half as much damage on a successful one.</p>
+<p>The lightning ignites flammable objects in the area that are not being worn or carried.</p>
+<h5 id=at-higher-levels-15>
+<a href=#at-higher-levels-15 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 4th level or higher, the damage increases by <wc-roll>1d6</wc-roll> for each slot level above 3rd.</p>
+<p><span class=font-comic>If you&rsquo;re stupid and didn&rsquo;t pick up fireball, then you better grab this. Zap, Crackle, Pop, b*****s!</span></p>
+<h3 id=mage-armor>
+<a href=#mage-armor class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Mage Armor</h3><p><em>1st-level abjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S, M (a piece of cured leather)</li>
+<li><strong>Duration</strong>: 8 hours</li>
+</ul>
+<p>You touch a willing creature who isn&rsquo;t wearing armor, and a protective magical force surrounds it until the spell ends. The target&rsquo;s base AC becomes 13 + its Dexterity modifier. The spell ends early if the target dons armor or if you dismiss the spell as an action.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/140-ram-head-sarcasm.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic><strong>Abjuration</strong> is usually garbage, but since wizards are forced to walk around wearing <strong>toilet paper</strong> for protection because Wizards of the Coast thinks they&rsquo;re OP, this spell might actually keep you alive.</span></p>
+</blockquote>
+<h3 id=mage-hand>
+<a href=#mage-hand class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Mage Hand</h3><p><em>Conjuration cantrip</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 30 feet</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: 1 minute</li>
+</ul>
+<p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p>
+<p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p>
+<p>The hand can&rsquo;t attack, activate magic items, or carry more than 10 pounds.</p>
+<p><span class=font-comic>Push stuff around.</span></p>
+<p><span class=font-comic>Trigger a trap from a safe distance.</span></p>
+<p><span class=font-comic>Mess with your friends.</span></p>
+<p><span class=font-comic>Pick your horse&rsquo;s nose while riding said horse.</span></p>
+<p><span class=font-comic><strong>I-I can keep going.</strong></span></p>
+<h3 id=magic-missile>
+<a href=#magic-missile class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Magic Missile</h3><p><em>1st-level evocation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 120 feet</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>You create three glowing darts of magical force. Each dart hits a creature of your choice within range that you can see. A dart deals <wc-roll>1d4 + 1</wc-roll> force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p>
+<h5 id=at-higher-levels-16>
+<a href=#at-higher-levels-16 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.</p>
+<p><span class=font-comic>Notice this spell&rsquo;s most <strong>important</strong> feature, Morty: <strong>NO ATTACK ROLL.</strong></span></p>
+<p><span class=font-comic>It hits and hurts. Simple-dimple. Little glowing arrows of death at your command, and nobody can do s*** about it.</span></p>
+<h3 id=mass-healing-word>
+<a href=#mass-healing-word class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Mass Healing Word</h3><p><em>3rd-level evocation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 bonus action</li>
+<li><strong>Range</strong>: 60 feet</li>
+<li><strong>Components</strong>: V</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>As you call out words of restoration, up to six creatures you choose within range regain hit points equal to <wc-roll>1d4</wc-roll> + your spellcasting ability modifier. The targets must be within 30 feet of each other. This spell has no effect on undead or constructs.</p>
+<h5 id=at-higher-levels-17>
+<a href=#at-higher-levels-17 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 4th level or higher, the healing increases by <wc-roll>1d4</wc-roll> for each slot level above 3rd.</p>
+<p><span class=font-comic>Smart clerics hold this spell in reserve until their party members pay up. These heals don&rsquo;t come cheap.</span></p>
+<h3 id=misty-step>
+<a href=#misty-step class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Misty Step</h3><p><em>2nd-level conjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 bonus action</li>
+<li><strong>Range</strong>: Self</li>
+<li><strong>Components</strong>: V</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/141-ram-head-smile2.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>Perfect for ripping a big nasty fart and then moving elsewhere for maximum deniability.</span></p>
+</blockquote>
+<h3 id=prayer-of-healing>
+<a href=#prayer-of-healing class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Prayer of Healing</h3><p><em>2nd-level evocation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 10 minutes</li>
+<li><strong>Range</strong>: 30 feet</li>
+<li><strong>Components</strong>: V</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>Up to six creatures of your choice within range each regain hit points equal to <wc-roll>2d8</wc-roll> + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+<h5 id=at-higher-levels-18>
+<a href=#at-higher-levels-18 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 3rd level or higher, the healing increases by <wc-roll>1d8</wc-roll> for each slot level above 2nd.</p>
+<p><span class=font-comic>That 10-minute casting time is a <em>buzzkill</em>, but when your crew&rsquo;s doing the downtime thing, it gives you something to occupy yourself with so you don&rsquo;t have to participate in their campfire bonding rituals.</span></p>
+<h3 id=prestidigitation>
+<a href=#prestidigitation class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Prestidigitation</h3><p><em>Transmutation cantrip</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 10 feet</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Up to 1 hour</li>
+</ul>
+<p>This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:</p>
+<ul>
+<li>Create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</li>
+<li>Instantaneously light or snuff out a candle, a torch, or a small campfire.</li>
+<li>Instantaneously clean or soil an object no larger than 1 cubic foot.</li>
+<li>Chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</li>
+<li>Make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</li>
+<li>Create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</li>
+</ul>
+<p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
+<p><span class=font-comic>I bet at first glance you figured I&rsquo;d call this as a Jerry spell, but it&rsquo;s <em>not</em>, Morty. Prestidigitation is <strong>awesome</strong>! It doesn&rsquo;t take up any spell slots because it&rsquo;s a cantrip. That means you can use it <strong>constantly</strong>&mldr; and you <em>should</em>.</span></p>
+<p><span class=font-comic>Everywhere your wizard goes, they&rsquo;ll have glittering teeth, musky magic cologne, a warming glow, and their own personal soundtrack. Clean clothes, too. The other members of your party are gonna shamble into town smelling like ass while you get to be Slick McDick, Wizard Supreme.</span></p>
+<h3 id=protection-from-energy>
+<a href=#protection-from-energy class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Protection from Energy</h3><p><em>3rd-level abjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Concentration, up to 1 hour</li>
+</ul>
+<p>For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.</p>
+<p><span class=font-comic>Don&rsquo;t waste third level spell slots on protecto-trash. Kill your enemies fast and you won&rsquo;t even need defense.</span></p>
+<h3 id=ray-of-frost>
+<a href=#ray-of-frost class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Ray of Frost</h3><p><em>Evocation cantrip</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 60 feet</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes <wc-roll>1d8</wc-roll> cold damage, and its speed is reduced by 10 feet until the start of your next turn.</p>
+<p>The spell&rsquo;s damage increases by <wc-roll>1d8</wc-roll> when you reach 5th level (<wc-roll>2d8</wc-roll>), 11th level (<wc-roll>3d8</wc-roll>), and 17th level (<wc-roll>4d8</wc-roll>).</p>
+<p><span class=font-comic>This is it, Morty, the third of the holy triumvirate of low-level wizard DPS. It&rsquo;s a song of ice <strong>and</strong> fire <strong>AND</strong> lightning.</span></p>
+<h3 id=resistance>
+<a href=#resistance class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Resistance</h3><p><em>Abjuration cantrip</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S, M (a miniature cloak)</li>
+<li><strong>Duration</strong>: Concentration, up to 1 minute</li>
+</ul>
+<p>You touch one willing creature. Once before the spell ends, the target can roll a <wc-roll>d4</wc-roll> and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/142-ram-head-rick-smile-flip.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>Wait, the material component for this is &ldquo;a miniature cloak&rdquo;?</span></p>
+<p><span class=font-comic>Who the f*** is running around with a pouch full of miniature cloaks?</span></p>
+<p><span class=font-comic>Wizards of the Coast, whatever you&rsquo;re smoking, I want some.</span></p>
+</blockquote>
+<h3 id=revivify>
+<a href=#revivify class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Revivify</h3><p><em>3rd-level necromancy</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S, M (diamonds worth 300 gp, which are consumed when the spell is cast)</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell cannot return to life a creature that has died of old age, nor can it restore any missing body parts.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/143-ram-head-meh.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>Calling the spell &ldquo;Have you tried <em>not</em> dying?&rdquo; would be more accurate, but not as catchy.</span></p>
+</blockquote>
+<h3 id=sacred-flame>
+<a href=#sacred-flame class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Sacred Flame</h3><p><em>Evocation cantrip</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 60 feet</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>Flame-like radiance descends on a creature within range that you can see. The target must succeed on a Dexterity saving throw or take <wc-roll>1d8</wc-roll> radiant damage. The target gains no benefit from cover for this saving throw.</p>
+<p>The spell&rsquo;s damage increases by <wc-roll>1d8</wc-roll> when you reach 5th level (<wc-roll>2d8</wc-roll>), 11th level (<wc-roll>3d8</wc-roll>), and 17th level (<wc-roll>4d8</wc-roll>).</p>
+<p><span class=font-comic>Not bad, but radiant damage means your enemy&rsquo;s clothes don&rsquo;t catch on fire, so it&rsquo;s not as funny.</span></p>
+<h3 id=sanctuary>
+<a href=#sanctuary class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Sanctuary</h3><p><em>1st-level abjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 bonus action</li>
+<li><strong>Range</strong>: 30 feet</li>
+<li><strong>Components</strong>: V, S, M (a small silver mirror)</li>
+<li><strong>Duration</strong>: 1 minute</li>
+</ul>
+<p>You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn&rsquo;t protect the warded creature from area effects, such as the explosion of a fireball.</p>
+<p>If the warded creature makes an attack or casts a spell that affects an enemy creature, this spell ends early.</p>
+<p><span class=font-comic>Don&rsquo;t worry about <strong>protecting</strong> things, Morty. Everything dies.</span></p>
+<h3 id=shield>
+<a href=#shield class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Shield</h3><p><em>1st-level abjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 reaction, which you take when you are hit by an attack or targeted by the <wc-fetch type=spell>magic missile</wc-fetch> spell</li>
+<li><strong>Range</strong>: Self</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: 1 round</li>
+</ul>
+<p>An <wc-fetch type=condition>invisible</wc-fetch> barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <wc-fetch type=spell>magic missile</wc-fetch>.</p>
+<p><span class=font-comic>The spellcasting equivalent of a <strong>jockstrap</strong>: useful in the right circumstances, but way cooler if you can do your thing without needing it—and eventually it&rsquo;ll need a wash.</span></p>
+<h3 id=shield-of-faith>
+<a href=#shield-of-faith class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Shield of Faith</h3><p><em>1st-level abjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 bonus action</li>
+<li><strong>Range</strong>: 60 feet</li>
+<li><strong>Components</strong>: V, S, M (a small parchment with a bit of holy text written on it)</li>
+<li><strong>Duration</strong>: Concentration, up to 10 minutes</li>
+</ul>
+<p>A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.</p>
+<p><span class=font-comic>I dunno, I kinda respect this.</span></p>
+<p><span class=font-comic>A cleric who takes 10 minutes to concentrate on how much they love their god so <em>you</em> can get punched harder. That&rsquo;s pretty metal.</span></p>
+<h3 id=shocking-grasp>
+<a href=#shocking-grasp class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Shocking Grasp</h3><p><em>Evocation cantrip</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p>Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes <wc-roll>1d8</wc-roll> lightning damage, and it can&rsquo;t take reactions until the start of its next turn.</p>
+<p>The spell&rsquo;s damage increases by <wc-roll>1d8</wc-roll> when you reach 5th level (<wc-roll>2d8</wc-roll>), 11th level (<wc-roll>3d8</wc-roll>), and 17th level (<wc-roll>4d8</wc-roll>).</p>
+<p><span class=font-comic>Like shuffling your feet on a carpet just before slapping some sense into a goblin.</span></p>
+<h3 id=silence>
+<a href=#silence class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Silence</h3><p><em>2nd-level illusion (ritual</em>)</p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 120 feet</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Concentration, up to 10 minutes</li>
+</ul>
+<p>For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are <wc-fetch type=condition>deafened</wc-fetch> while entirely inside it. Casting a spell that includes a verbal component is impossible there.</p>
+<p><span class=font-comic>I like busting this one out on enemy spellcasters and then throwing up the universal sign language for &ldquo;Oops! Guess you&rsquo;re f***ed!"</span></p>
+<h3 id=sleep>
+<a href=#sleep class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Sleep</h3><p><em>1st-level enchantment</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 90 feet</li>
+<li><strong>Components</strong>: V, S, M (a pinch of fine sand, rose petals, or a cricket)</li>
+<li><strong>Duration</strong>: 1 minute</li>
+</ul>
+<p>This spell sends creatures into a magical slumber. Roll <wc-roll>5d8</wc-roll>; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in increasing order of their current hit points (ignoring <wc-fetch type=condition>unconscious</wc-fetch> creatures).</p>
+<p>Starting with the creature that has the lowest current hit points, each creature affected by this spell falls <wc-fetch type=condition>unconscious</wc-fetch> until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature&rsquo;s hit points from the total before moving on to the creature with the next lowest hit points. A creature&rsquo;s hit points must be equal to or less than the remaining total for that creature to be affected.</p>
+<p>Undead and creatures immune to being <wc-fetch type=condition>charmed</wc-fetch> aren&rsquo;t affected by this spell.</p>
+<h5 id=at-higher-levels-19>
+<a href=#at-higher-levels-19 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 2nd level or higher, roll an additional <wc-roll>2d8</wc-roll> for each slot level above 1st.</p>
+<p><span class=font-comic>A spell that requires me to tiptoe around the battlefield is not my style, Morty. Like, I get that it can be useful, but it still just feels like a stopgap.</span></p>
+<p><span class=font-comic>It&rsquo;s not <em>full</em> Jerry, but it&rsquo;s also not rushing into my prepared spell list either.</span></p>
+<h3 id=spider-climb>
+<a href=#spider-climb class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Spider Climb</h3><p><em>2nd-level transmutation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S, M (a drop of bitumen and a spider)</li>
+<li><strong>Duration</strong>: Concentration, up to 1 hour</li>
+</ul>
+<p>Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gains a climbing speed equal to its walking speed.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/144-ram-head-smile3.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>I enjoy throwing spells down from above while walking on the ceiling. I&rsquo;m man enough to admit it.</span></p>
+</blockquote>
+<h3 id=spirit-guardians>
+<a href=#spirit-guardians class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Spirit Guardians</h3><p><em>3rd-level conjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Self (15-foot radius)</li>
+<li><strong>Components</strong>: V, S, M (a holy symbol)</li>
+<li><strong>Duration</strong>: Concentration, up to 10 minutes</li>
+</ul>
+<p>You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish.</p>
+<p>When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creature&rsquo;s speed is halved in the area, and when the creature enters the area or starts its turn there, it must make a Wisdom saving throw (no more than once per turn). On a failed save, the creature takes <wc-roll>3d8</wc-roll> radiant damage (if you are good or neutral) or <wc-roll>3d8</wc-roll> necrotic damage (if you are evil). On a successful save, the creature takes half as much damage.</p>
+<h5 id=at-higher-levels-20>
+<a href=#at-higher-levels-20 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 4th level or higher, the damage increases by <wc-roll>1d8</wc-roll> for each slot level above 3rd.</p>
+<p><span class=font-comic>Crazy ghosts that zap monsters for you?</span></p>
+<p><span class=font-comic>That&rsquo;s f***ing cool.</span></p>
+<p><span class=font-comic>It&rsquo;s more hands-off than my typical &ldquo;crush your enemies, see them driven before you&rdquo; approach, but I definitely see the appeal.</span></p>
+<h3 id=spiritual-weapon>
+<a href=#spiritual-weapon class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Spiritual Weapon</h3><p><em>2nd-level evocation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 bonus action</li>
+<li><strong>Range</strong>: 60 feet</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: 1 minute</li>
+</ul>
+<p>You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to <wc-roll>1d8</wc-roll> + your spellcasting ability modifier.</p>
+<p>As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.</p>
+<p>The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell&rsquo;s effect resemble that weapon.</p>
+<h5 id=at-higher-levels-21>
+<a href=#at-higher-levels-21 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 3rd level or higher, the damage increases by <wc-roll>1d8</wc-roll> for every two slot levels above the 2nd.</p>
+<p><span class=font-comic>There&rsquo;s <em>nothing</em> as demoralizing as being hit by a big ol&rsquo; <strong>ghost schlong</strong>.</span></p>
+<h3 id=suggestion>
+<a href=#suggestion class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Suggestion</h3><p><em>2nd-level enchantment</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 30 feet</li>
+<li><strong>Components</strong>: V, M (a snake&rsquo;s tongue and either a bit of honeycomb or a drop of sweet oil)</li>
+<li><strong>Duration</strong>: Concentration, up to 8 hours</li>
+</ul>
+<p>You suggest a course of activity (limited to a sentence or two) and magically influence a creature you choose within range that can hear and understand you. Creatures that can&rsquo;t be <wc-fetch type=condition>charmed</wc-fetch> are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act automatically negates the effect of the spell.</p>
+<p>The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.</p>
+<p>You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition is not met before the spell expires, the activity is not performed.</p>
+<p>If you or any of your companions damage the target, the spell ends early.</p>
+<p><span class=font-comic>Here&rsquo;s a <strong>real</strong> suggestion: don&rsquo;t take a spell that requires 10 minutes of arguing at the table to figure out if it worked or not.</span></p>
+<h3 id=thaumaturgy>
+<a href=#thaumaturgy class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Thaumaturgy</h3><p><em>Transmutation cantrip</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 30 feet</li>
+<li><strong>Components</strong>: V</li>
+<li><strong>Duration</strong>: Up to 1 minute</li>
+</ul>
+<p>You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:</p>
+<ul>
+<li>Your voice booms up to three times as loud as normal for 1 minute.</li>
+<li>You cause flames to flicker, brighten, dim, or change color for 1 minute.</li>
+<li>You cause harmless tremors in the ground for 1 minute.</li>
+<li>You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.</li>
+<li>You instantaneously cause an unlocked door or window to fly open or slam shut.</li>
+<li>You alter the appearance of your eyes for 1 minute.</li>
+</ul>
+<p>If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.</p>
+<p><span class=font-comic>This spell wants to be prestidigitation for clerics, but it&rsquo;s definitely on the weak side. Here&rsquo;s some harmless tremors for you—<em>FAAART</em></span></p>
+<h3 id=thunderwave>
+<a href=#thunderwave class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Thunderwave</h3><p><em>1st-level evocation</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Self (15-foot cube)</li>
+<li><strong>Components</strong>: V, S</li>
+<li><strong>Duration</strong>: Instantaneous</li>
+</ul>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/145-c4-13-rick-hooray.png alt=undefined class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p>A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes <wc-roll>2d8</wc-roll> thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and is not pushed.</p>
+<p>In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell&rsquo;s effect, and the spell emits a thunderous boom audible out to 300 feet.</p>
+<h5 id=at-higher-levels-22>
+<a href=#at-higher-levels-22 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>At Higher Levels</h5><p>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by <wc-roll>1d8</wc-roll> for each slot level above 1st.</p>
+<p><span class=font-comic>Let this baby fly when the bass drops, Morty. Trust me. The crowd will go <em>wild</em>.</span></p>
+<h3 id=warding-bond>
+<a href=#warding-bond class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Warding Bond</h3><p><em>2nd-level abjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: Touch</li>
+<li><strong>Components</strong>: V, S, M (a pair of platinum rings worth at least 50 gp each, which you and the target must wear for the duration)</li>
+<li><strong>Duration</strong>: 1 hour</li>
+</ul>
+<p>This spell wards a willing creature you touch and creates a mystic connection between you and the subject until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has resistance to all damage. Also, each time it takes damage, you take the same amount of damage.</p>
+<p>The spell ends early if you drop to 0 hit points or if you and the subject become separated by more than 60 feet. You can also dismiss the spell as an action.</p>
+<blockquote>
+<p><span class="block -mx-6 lg:-mx-28">
+<img src=https://thegiddylimit.github.io/img/book/RMR/146-ram-head-meh.png alt class="mx-auto relative z-10" loading=lazy>
+</span></p>
+<p><span class=font-comic>Here&rsquo;s a better idea: How about I <em>don&rsquo;t</em> link my life force to somebody else? I don&rsquo;t know or trust any of these clowns.</span></p>
+</blockquote>
+<h3 id=web>
+<a href=#web class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Web</h3><p><em>2nd-level conjuration</em></p>
+<ul>
+<li><strong>Casting Time</strong>: 1 action</li>
+<li><strong>Range</strong>: 60 feet</li>
+<li><strong>Components</strong>: V, S, M (a bit of spiderweb)</li>
+<li><strong>Duration</strong>: Concentration, up to 1 hour</li>
+</ul>
+<p>You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.</p>
+<p>If the webs are not anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.</p>
+<p>Each creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is <wc-fetch type=condition>restrained</wc-fetch> as long as it remains in the webs or until it breaks free.</p>
+<p>A creature <wc-fetch type=condition>restrained</wc-fetch> by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer <wc-fetch type=condition>restrained</wc-fetch>.</p>
+<p>The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing <wc-roll>2d4</wc-roll> fire damage to any creature that starts its turn in the fire.</p>
+<p><span class=font-comic>I&rsquo;m not here to tell anyone <strong>where</strong> and <strong>when</strong> they should blow their personal sticky load, y&rsquo;know? Th-th-that&rsquo;s a personal choice.</span></p>
+<p><span class=font-comic>Everybody needs to make their own decisions.</span></p>
+</article>
+<aside class="sticky top-16 text-xs font-sans">
+<details class=relative>
+<summary class=mb-1>Chapter 4: Spellcasting</summary>
+<nav class="absolute bg-white overflow-x-scroll rounded shadow border-gray-200 border-2 max-h-56">
+<a href=/5eTools/book/dungeons-dragons-vs.-rick-and-morty-basic-rules/chapter-1/ class="block px-2 py-1 font-normal text-gray-700">Chapter 1: How to Play</a>
+<a href=/5eTools/book/dungeons-dragons-vs.-rick-and-morty-basic-rules/chapter-2/ class="block px-2 py-1 font-normal text-gray-700">Chapter 2: Combat</a>
+<a href=/5eTools/book/dungeons-dragons-vs.-rick-and-morty-basic-rules/chapter-3/ class="block px-2 py-1 font-normal text-gray-700">Chapter 3: Adventuring</a>
+<a href=/5eTools/book/dungeons-dragons-vs.-rick-and-morty-basic-rules/chapter-4/ class="block px-2 py-1">Chapter 4: Spellcasting</a>
+<a href=/5eTools/book/dungeons-dragons-vs.-rick-and-morty-basic-rules/appendix-a/ class="block px-2 py-1 font-normal text-gray-700">Appendix A: Conditions</a>
+<a href=/5eTools/book/dungeons-dragons-vs.-rick-and-morty-basic-rules/comic-h1-appendix-b/ class="block px-2 py-1 font-normal text-gray-700">{@comicH1 APPENDIX B: WHAT IS THE F***ING POINT?!}</a>
+</nav>
+</details>
+<wc-toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#what-is-a-spell>What Is a Spell?</a>
+<ul>
+<li><a href=#spell-level>Spell Level</a></li>
+<li><a href=#known-and-prepared-spells>Known and Prepared Spells</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<ul>
+<li><a href=#spell-slots>Spell Slots</a></li>
+<li><a href=#cantrips>Cantrips</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<ul>
+<li><a href=#rituals>Rituals</a></li>
+</ul>
+</li>
+<li><a href=#casting-a-spell>Casting a Spell</a>
+<ul>
+<li><a href=#casting-time>Casting Time</a></li>
+<li><a href=#range>Range</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<ul>
+<li><a href=#components>Components</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<ul>
+<li><a href=#duration>Duration</a></li>
+<li><a href=#targets>Targets</a></li>
+<li><a href=#areas-of-effect>Areas of Effect</a></li>
+<li><a href=#saving-throws>Saving Throws</a></li>
+<li><a href=#attack-rolls>Attack Rolls</a></li>
+<li><a href=#combining-magical-effects>Combining Magical Effects</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href=#spell-lists>Spell Lists</a>
+<ul>
+<li><a href=#cleric-spells>Cleric Spells</a></li>
+<li><a href=#wizard-spells>Wizard Spells</a></li>
+</ul>
+</li>
+<li><a href=#spells>Spells</a>
+<ul>
+<li><a href=#aid>Aid</a></li>
+<li><a href=#augury>Augury</a></li>
+<li><a href=#beacon-of-hope>Beacon of Hope</a></li>
+<li><a href=#bless>Bless</a></li>
+<li><a href=#blur>Blur</a></li>
+<li><a href=#burning-hands>Burning Hands</a></li>
+<li><a href=#charm-person>Charm Person</a></li>
+<li><a href=#command>Command</a></li>
+<li><a href=#comprehend-languages>Comprehend Languages</a></li>
+<li><a href=#cure-wounds>Cure Wounds</a></li>
+<li><a href=#dancing-lights>Dancing Lights</a></li>
+<li><a href=#darkness>Darkness</a></li>
+<li><a href=#detect-magic>Detect Magic</a></li>
+<li><a href=#dispel-magic>Dispel Magic</a></li>
+<li><a href=#feather-fall>Feather Fall</a></li>
+<li><a href=#fireball>Fireball</a></li>
+<li><a href=#flaming-sphere>Flaming Sphere</a></li>
+<li><a href=#fly>Fly</a></li>
+<li><a href=#guidance>Guidance</a></li>
+<li><a href=#guiding-bolt>Guiding Bolt</a></li>
+<li><a href=#healing-word>Healing Word</a></li>
+<li><a href=#hold-person>Hold Person</a></li>
+<li><a href=#identify>Identify</a></li>
+<li><a href=#inflict-wounds>Inflict Wounds</a></li>
+<li><a href=#invisibility>Invisibility</a></li>
+<li><a href=#lesser-restoration>Lesser Restoration</a></li>
+<li><a href=#light>Light</a></li>
+<li><a href=#lightning-bolt>Lightning Bolt</a></li>
+<li><a href=#mage-armor>Mage Armor</a></li>
+<li><a href=#mage-hand>Mage Hand</a></li>
+<li><a href=#magic-missile>Magic Missile</a></li>
+<li><a href=#mass-healing-word>Mass Healing Word</a></li>
+<li><a href=#misty-step>Misty Step</a></li>
+<li><a href=#prayer-of-healing>Prayer of Healing</a></li>
+<li><a href=#prestidigitation>Prestidigitation</a></li>
+<li><a href=#protection-from-energy>Protection from Energy</a></li>
+<li><a href=#ray-of-frost>Ray of Frost</a></li>
+<li><a href=#resistance>Resistance</a></li>
+<li><a href=#revivify>Revivify</a></li>
+<li><a href=#sacred-flame>Sacred Flame</a></li>
+<li><a href=#sanctuary>Sanctuary</a></li>
+<li><a href=#shield>Shield</a></li>
+<li><a href=#shield-of-faith>Shield of Faith</a></li>
+<li><a href=#shocking-grasp>Shocking Grasp</a></li>
+<li><a href=#silence>Silence</a></li>
+<li><a href=#sleep>Sleep</a></li>
+<li><a href=#spider-climb>Spider Climb</a></li>
+<li><a href=#spirit-guardians>Spirit Guardians</a></li>
+<li><a href=#spiritual-weapon>Spiritual Weapon</a></li>
+<li><a href=#suggestion>Suggestion</a></li>
+<li><a href=#thaumaturgy>Thaumaturgy</a></li>
+<li><a href=#thunderwave>Thunderwave</a></li>
+<li><a href=#warding-bond>Warding Bond</a></li>
+<li><a href=#web>Web</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</wc-toc>
+<div class="flex mt-4 gap-1 items-center">
+<a href=https://timbomckay.github.io/5eTools/adventure/ghosts-of-saltmarsh/chapter-4/ class="icon text-lg leading-none"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></a>
+<a href=#skip-nav class="icon text-xl leading-none"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="20" viewBox="0 0 20 20" width="20"><g><rect fill="none" height="20" width="20"/><path d="M10 4c3.31.0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-1c-3.87.0-7 3.13-7 7s3.13 7 7 7 7-3.13 7-7c0-3.87-3.13-7-7-7zm-.5 7v3h1v-3H13l-3-3-3 3H9.5z"/></g></svg></a>
+<a href=https://timbomckay.github.io/5eTools/adventure/rise-of-tiamat/chapters-11-and-12/ class="icon text-lg leading-none"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></a>
+</div>
+</aside>
+</div>
+<script>window.customElements.define('wc-toc',class extends HTMLElement{connectedCallback(){const{headings:a}=this,b=this,c=window.visualViewport.height/4;document.addEventListener('scroll',function(f){const d=a.filter(a=>a.target.offsetTop<window.scrollY+c).pop(),e=b.getElementsByClassName('active');if(e!=null)for(let a of e){a.classList.remove('active');const b=a.closest('ul');b.classList.remove('has-active')}if(d!=null){d.el.classList.add('active');const a=d.el.closest('ul');a.classList.add('has-active')}})}get headings(){const a=[];for(let b of this.querySelectorAll('a'))a.push({el:b,target:document.getElementById(b.hash.replace('#',''))});return a}})</script>
+</main>
+<footer></footer></body>
+</html>

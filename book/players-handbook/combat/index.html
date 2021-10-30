@@ -1,0 +1,508 @@
+<!doctype html><html lang=en-us style=background-image:url(/5eTools/lightpaperfibers.png)><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Combat · The Handy Haversack</title>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=HandheldFriendly content="True">
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<script src=/5eTools/main.js defer></script>
+<link rel=stylesheet href="/5eTools/index.min.c9d5cbc26ca74c023ead23b8a8c53c65d351d88edd30fc950ba0e75286335110.css" media=all>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=UnifrakturMaguntia&display=swap" rel=stylesheet>
+<body class="flex flex-col min-h-screen"><a href=#skip-nav class="fixed bg-primary-500 focus:text-white leading-none m-2 not-focus:sr-only px-3 py-2 text-xs z-50">Skip Navigation</a>
+<header class="bg-white print:absolute px-4 border-b-2 sticky top-0 z-40">
+<div class="flex items-center justify-between max-w-screen-md mx-auto">
+<div>
+<a href=https://timbomckay.github.io/5eTools/ class="block py-2 px-4">The Handy Haversack</a>
+</div>
+</div>
+</header>
+<div id=skip-nav tabindex=-1 class=sr-only></div>
+<main class="lg:pb-10 mx-auto px-4 lg:px-6 mb-6 lg:mb-8">
+<h1 class="mb-6 px-6">Combat</h1>
+<div class="gap-8 lg:grid items-start" style="grid-template-columns:auto 10rem">
+<article class="max-w-ch mx-auto px-6"><p>The clatter of a sword striking against a shield. The terrible rending sound as monstrous claws tear through armor. A brilliant flash of light as a ball of flame blossoms from a wizard&rsquo;s spell. The sharp tang of blood in the air, cutting through the stench of vile monsters.</p>
+<p>Roars of fury, shouts of triumph, cries of pain. Combat in D&D can be chaotic, deadly, and thrilling.</p>
+<p>This chapter provides the rules you need for your characters and monsters to engage in combat, whether it is a brief skirmish or an extended conflict in a dungeon or on a field of battle. Throughout this chapter, the rules address you, the player or Dungeon Master.</p>
+<p>The Dungeon Master controls all the monsters and nonplayer characters involved in combat, and each other player controls an adventurer. &ldquo;You&rdquo; can also mean the character or monster that you control.</p>
+<blockquote>
+<h3 id=combat-step-by-step>
+<a href=#combat-step-by-step class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Combat Step by Step</h3><ul>
+<li>
+<p>The DM determines whether anyone involved in the combat encounter is surprised.</p>
+</li>
+<li>
+<p>The DM decides where all the characters and monsters are located. Given the adventurers' marching order or their stated positions in the room or other location, the DM figures out where the adversaries are—how far away and in what direction.</p>
+</li>
+<li>
+<p>Everyone involved in the combat encounter rolls initiative, determining the order of combatants' turns.</p>
+</li>
+<li>
+<p>Each participant in the battle takes a turn in initiative order.</p>
+</li>
+<li>
+<p>When everyone involved in the combat has had a turn, the round ends. Repeat step 4 until the fighting stops.</p>
+</li>
+</ul>
+</blockquote>
+<h2 id=the-order-of-combat>
+<a href=#the-order-of-combat class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>The Order of Combat</h2><p>A typical combat encounter is a clash between two sides, a flurry of weapon swings, feints, parries, footwork, and spellcasting. The game organizes the chaos of combat into a cycle of rounds and turns. A round represents about 6 seconds in the game world. During a round, each participant in a battle takes a turn. The order of turns is determined at the beginning of a combat encounter, when everyone rolls initiative. Once everyone has taken a turn, the fight continues to the next round if neither side has defeated the other.</p>
+<h3 id=surprise>
+<a href=#surprise class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Surprise</h3><p>A band of adventurers sneaks up on a bandit camp, springing from the trees to attack them. A gelatinous cube glides down a dungeon passage, unnoticed by the adventurers until the cube engulfs one of them. In these situations, one side of the battle gains surprise over the other.</p>
+<p>The DM determines who might be surprised. If neither side tries to be stealthy, they automatically notice each other. Otherwise, the DM compares the Dexterity (<wc-fetch type=skill>Stealth</wc-fetch>) checks of anyone hiding with the passive Wisdom (<wc-fetch type=skill>Perception</wc-fetch>) score of each creature on the opposing side. Any character or monster that doesn&rsquo;t notice a threat is surprised at the start of the encounter.</p>
+<p>If you&rsquo;re surprised, you can&rsquo;t move or take an action on your first turn of the combat, and you can&rsquo;t take a reaction until that turn ends. A member of a group can be surprised even if the other members aren&rsquo;t.</p>
+<h3 id=initiative>
+<a href=#initiative class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Initiative</h3><p>Initiative determines the order of turns during combat. When combat starts, every participant makes a Dexterity check to determine their place in the initiative order. The DM makes one roll for an entire group of identical creatures, so each member of the group acts at the same time.</p>
+<p>The DM ranks the combatants in order from the one with the highest Dexterity check total to the one with the lowest. This is the order (called the initiative order) in which they act during each round. The initiative order remains the same from round to round.</p>
+<p>If a tie occurs, the DM decides the order among tied DM-controlled creatures, and the players decide the order among their tied characters. The DM can decide the order if the tie is between a monster and a player character. Optionally, the DM can have the tied characters and monsters each roll a d20 to determine the order, highest roll going first.</p>
+<h3 id=your-turn>
+<a href=#your-turn class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Your Turn</h3><p>On your turn, you can <strong>move</strong> a distance up to your speed and <strong>take one action</strong>. You decide whether to move first or take your action first. Your speed—sometimes called your walking speed—is noted on your character sheet.</p>
+<p>The most common actions you can take are described in the &ldquo;Actions in Combat&rdquo; section later in this chapter. Many class features and other abilities provide additional options for your action.</p>
+<p>The &ldquo;Movement and Position&rdquo; section later in this chapter gives the rules for your move.</p>
+<p>You can forgo moving, taking an action, or doing anything at all on your turn. If you can&rsquo;t decide what to do on your turn, consider taking the <wc-fetch type=action>Dodge</wc-fetch> or <wc-fetch type=action>Ready</wc-fetch> action, as described in &ldquo;Actions in Combat.&rdquo;</p>
+<h4 id=bonus-actions>
+<a href=#bonus-actions class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Bonus Actions</h4><p>Various class features, spells, and other abilities let you take an additional action on your turn called a bonus action. The Cunning Action feature, for example, allows a rogue to take a bonus action. You can take a bonus action only when a special ability, spell, or other feature of the game states that you can do something as a bonus action. You otherwise don&rsquo;t have a bonus action to take.</p>
+<p>You can take only one bonus action on your turn, so you must choose which bonus action to use when you have more than one available.</p>
+<p>You choose when to take a bonus action during your turn, unless the bonus action&rsquo;s timing is specified, and anything that deprives you of your ability to take actions also prevents you from taking a bonus action.</p>
+<h4 id=other-activity-on-your-turn>
+<a href=#other-activity-on-your-turn class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Other Activity on Your Turn</h4><p>Your turn can include a variety of flourishes that require neither your action nor your move.</p>
+<p>You can communicate however you are able, through brief utterances and gestures, as you take your turn.</p>
+<p>You can also interact with one object or feature of the environment for free, during either your move or your action. For example, you could open a door during your move as you stride toward a foe, or you could draw your weapon as part of the same action you use to attack.</p>
+<p>If you want to interact with a second object, you need to use your action. Some magic items and other special objects always require an action to use, as stated in their descriptions.</p>
+<p>The DM might require you to use an action for any of these activities when it needs special care or when it presents an unusual obstacle. For instance, the DM could reasonably expect you to use an action to open a stuck door or turn a crank to lower a drawbridge.</p>
+<blockquote>
+<h5 id=interacting-with-objects-around-you>
+<a href=#interacting-with-objects-around-you class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Interacting with Objects Around You</h5><p>Here are a few examples of the sorts of thing you can do in tandem with your movement and action:</p>
+<ul>
+<li>
+<p>draw or sheathe a sword</p>
+</li>
+<li>
+<p>open or close a door</p>
+</li>
+<li>
+<p>withdraw a potion from your backpack</p>
+</li>
+<li>
+<p>pick up a dropped axe</p>
+</li>
+<li>
+<p>take a bauble from a table</p>
+</li>
+<li>
+<p>remove a ring from your finger</p>
+</li>
+<li>
+<p>stuff some food into your mouth</p>
+</li>
+<li>
+<p>plant a banner in the ground</p>
+</li>
+<li>
+<p>fish a few coins from your belt pouch</p>
+</li>
+<li>
+<p>drink all the ale in a flagon</p>
+</li>
+<li>
+<p>throw a lever or a switch</p>
+</li>
+<li>
+<p>pull a torch from a sconce</p>
+</li>
+<li>
+<p>take a book from a shelf you can reach</p>
+</li>
+<li>
+<p>extinguish a small flame</p>
+</li>
+<li>
+<p>don a mask</p>
+</li>
+<li>
+<p>pull the hood of your cloak up and over your head</p>
+</li>
+<li>
+<p>put your ear to a door</p>
+</li>
+<li>
+<p>kick a small stone</p>
+</li>
+<li>
+<p>turn a key in a lock</p>
+</li>
+<li>
+<p>tap the floor with a 10-foot pole</p>
+</li>
+<li>
+<p>hand an item to another character</p>
+</li>
+</ul>
+</blockquote>
+<h3 id=reactions>
+<a href=#reactions class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Reactions</h3><p>Certain special abilities, spells, and situations allow you to take a special action called a reaction. A reaction is an instant response to a trigger of some kind, which can occur on your turn or on someone else&rsquo;s. The opportunity attack, described later in this chapter, is the most common type of reaction.</p>
+<p>When you take a reaction, you can&rsquo;t take another one until the start of your next turn. If the reaction interrupts another creature&rsquo;s turn, that creature can continue its turn right after the reaction.</p>
+<h2 id=movement-and-position>
+<a href=#movement-and-position class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Movement and Position</h2><p>In combat, characters and monsters are in constant motion, often using movement and position to gain the upper hand.</p>
+<p>On your turn, you can move a distance up to your speed. You can use as much or as little of your speed as you like on your turn, following the rules here.</p>
+<p>Your movement can include jumping, climbing, and swimming. These different modes of movement can be combined with walking, or they can constitute your entire move. However you&rsquo;re moving, you deduct the distance of each part of your move from your speed until it is used up or until you are done moving.</p>
+<p>The &ldquo;Special Types of Movement&rdquo; section in chapter 8 gives the particulars for jumping, climbing, and swimming.</p>
+<h3 id=breaking-up-your-move>
+<a href=#breaking-up-your-move class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Breaking Up Your Move</h3><p>You can break up your movement on your turn, using some of your speed before and after your action. For example, if you have a speed of 30 feet, you can move 10 feet, take your action, and then move 20 feet.</p>
+<h4 id=moving-between-attacks>
+<a href=#moving-between-attacks class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Moving between Attacks</h4><p>If you take an action that includes more than one weapon attack, you can break up your movement even further by moving between those attacks. For example, a fighter who can make two attacks with the Extra Attack feature and who has a speed of 25 feet could move 10 feet, make an attack, move 15 feet, and then attack again.</p>
+<h4 id=using-different-speeds>
+<a href=#using-different-speeds class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Using Different Speeds</h4><p>If you have more than one speed, such as your walking speed and a flying speed, you can switch back and forth between your speeds during your move. Whenever you switch, subtract the distance you&rsquo;ve already moved from the new speed. The result determines how much farther you can move. If the result is 0 or less, you can&rsquo;t use the new speed during the current move.</p>
+<p>For example, if you have a speed of 30 and a flying speed of 60 because a wizard cast the fly spell on you, you could fly 20 feet, then walk 10 feet, and then leap into the air to fly 30 feet more.</p>
+<h3 id=difficult-terrain>
+<a href=#difficult-terrain class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Difficult Terrain</h3><p>Combat rarely takes place in bare rooms or on featureless plains.</p>
+<p>Boulder-strewn caverns, briar-choked forests, treacherous staircases—the setting of a typical fight contains difficult terrain.</p>
+<p>Every foot of movement in difficult terrain costs 1 extra foot. This rule is true even if multiple things in a space count as difficult terrain.</p>
+<p>Low furniture, rubble, undergrowth, steep stairs, snow, and shallow bogs are examples of difficult terrain. The space of another creature, whether hostile or not, also counts as difficult terrain.</p>
+<h3 id=being-prone>
+<a href=#being-prone class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Being Prone</h3><p>Combatants often find themselves lying on the ground, either because they are knocked down or because they throw themselves down. In the game, they are <wc-fetch type=condition>prone</wc-fetch>, a condition described in the appendix.</p>
+<p>You can drop <wc-fetch type=condition>prone</wc-fetch> without using any of your speed. Standing up takes more effort; doing so costs an amount of movement equal to half your speed. For example, if your speed is 30 feet, you must spend 15 feet of movement to stand up. You can&rsquo;t stand up if you don&rsquo;t have enough movement left or if your speed is 0.</p>
+<p>To move while <wc-fetch type=condition>prone</wc-fetch>, you must crawl or use magic such as teleportation. Every foot of movement while crawling costs 1 extra foot. Crawling 1 foot in difficult terrain, therefore, costs 3 feet of movement.</p>
+<h3 id=moving-around-other-creatures>
+<a href=#moving-around-other-creatures class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Moving around Other Creatures</h3><p>You can move through a nonhostile creature&rsquo;s space. In contrast, you can move through a hostile creature&rsquo;s space only if the creature is at least two sizes larger or smaller than you. Remember that another creature&rsquo;s space is difficult terrain for you.</p>
+<p>Whether a creature is a friend or an enemy, you can&rsquo;t willingly end your move in its space.</p>
+<p>If you leave a hostile creature&rsquo;s reach during your move, you provoke an opportunity attack, as explained later in the chapter.</p>
+<h3 id=flying-movement>
+<a href=#flying-movement class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Flying Movement</h3><p>Flying creatures enjoy many benefits of mobility, but they must also deal with the danger of falling. If a flying creature is knocked <wc-fetch type=condition>prone</wc-fetch>, has its speed reduced to 0, or is otherwise deprived of the ability to move, the creature falls, unless it has the ability to hover or it is being held aloft by magic, such as by the <wc-fetch type=spell>fly</wc-fetch> spell.</p>
+<h3 id=creature-size>
+<a href=#creature-size class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Creature Size</h3><p>Each creature takes up a different amount of space.</p>
+<p>The Size Categories table shows how much space a creature of a particular size controls in combat. Objects sometimes use the same size categories.</p>
+<h4 id=size-categories>
+<a href=#size-categories class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Size Categories</h4><div class=table-wrapper> <table>
+<thead>
+<tr>
+<th>Size</th>
+<th>Space</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiny</td>
+<td>2½ by 2½ ft.</td>
+</tr>
+<tr>
+<td>Small</td>
+<td>5 by 5 ft.</td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>5 by 5 ft.</td>
+</tr>
+<tr>
+<td>Large</td>
+<td>10 by 10 ft.</td>
+</tr>
+<tr>
+<td>Huge</td>
+<td>15 by 15 ft.</td>
+</tr>
+<tr>
+<td>Gargantuan</td>
+<td>20 by 20 ft. or larger</td>
+</tr>
+</tbody>
+</table> </div>
+<h4 id=space>
+<a href=#space class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Space</h4><p>A creature&rsquo;s space is the area in feet that it effectively controls in combat, not an expression of its physical dimensions. A typical Medium creature isn&rsquo;t 5 feet wide, for example, but it does control a space that wide. If a Medium hobgoblin stands in a 5-foot-wide doorway, other creatures can&rsquo;t get through unless the hobgoblin lets them.</p>
+<p>A creature&rsquo;s space also reflects the area it needs to fight effectively. For that reason, there&rsquo;s a limit to the number of creatures that can surround another creature in combat. Assuming Medium combatants, eight creatures can fit in a 5-foot radius around another one.</p>
+<p>Because larger creatures take up more space, fewer of them can surround a creature.</p>
+<p>If four Large creatures crowd around a Medium or smaller one, there&rsquo;s little room for anyone else. In contrast, as many as twenty Medium creatures can surround a Gargantuan one.</p>
+<h4 id=squeezing-into-a-smaller-space>
+<a href=#squeezing-into-a-smaller-space class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Squeezing into a Smaller Space</h4><p>A creature can squeeze through a space that is large enough for a creature one size smaller than it. Thus, a Large creature can squeeze through a passage that&rsquo;s only 5 feet wide. While squeezing through a space, a creature must spend 1 extra foot for every foot it moves there, and it has disadvantage on attack rolls and Dexterity saving throws. Attack rolls against the creature have advantage while it&rsquo;s in the smaller space.</p>
+<blockquote>
+<h3 id=variant-playing-on-a-grid>
+<a href=#variant-playing-on-a-grid class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Variant: Playing on a Grid</h3><p>If you play out a combat using a square grid and miniatures or other tokens, follow these rules.</p>
+<p><strong>Squares:</strong> Each square on the grid represents 5 feet.</p>
+<p><strong>Speed:</strong> Rather than moving foot by foot, move square by square on the grid. This means you use your speed in 5-foot segments. This is particularly easy if you translate your speed into squares by dividing the speed by 5. For example, a speed of 30 feet translates into a speed of 6 squares.</p>
+<p>If you use a grid often, consider writing your speed in squares on your character sheet.</p>
+<p><strong>Entering a Square:</strong> To enter a square, you must have at least 1 square of movement left, even if the square is diagonally adjacent to the square you&rsquo;re in. (The rule for diagonal movement sacrifices realism for the sake of smooth play. The Dungeon Master&rsquo;s Guide provides guidance on using a more realistic approach.)</p>
+<p>If a square costs extra movement, as a square of difficult terrain does, you must have enough movement left to pay for entering it. For example, you must have at least 2 squares of movement left to enter a square of difficult terrain.</p>
+<p><strong>Corners:</strong> Diagonal movement can&rsquo;t cross the corner of a wall, large tree, or other terrain feature that fills its space.</p>
+<p><strong>Ranges:</strong> To determine the range on a grid between two things—whether creatures or objects—start counting squares from a square adjacent to one of them and stop counting in the space of the other one. Count by the shortest route.</p>
+</blockquote>
+<h2 id=actions-in-combat>
+<a href=#actions-in-combat class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Actions in Combat</h2><p>When you take your action on your turn, you can take one of the actions presented here, an action you gained from your class or a special feature, or an action that you improvise. Many monsters have action options of their own in their stat blocks.</p>
+<p>When you describe an action not detailed elsewhere in the rules, the DM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure.</p>
+<ul>
+<li><wc-fetch type=action>Attack</wc-fetch></li>
+<li><wc-fetch type=action>Cast a Spell</wc-fetch></li>
+<li><wc-fetch type=action>Dash</wc-fetch></li>
+<li><wc-fetch type=action>Disengage</wc-fetch></li>
+<li><wc-fetch type=action>Dodge</wc-fetch></li>
+<li><wc-fetch type=action>Help</wc-fetch></li>
+<li><wc-fetch type=action>Hide</wc-fetch></li>
+<li><wc-fetch type=action>Ready</wc-fetch></li>
+<li><wc-fetch type=action>Search</wc-fetch></li>
+<li><wc-fetch type=action>Use an Object</wc-fetch></li>
+<li><wc-fetch type=action>Improvising an Action</wc-fetch></li>
+</ul>
+<h2 id=making-an-attack>
+<a href=#making-an-attack class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Making an Attack</h2><p>Whether you&rsquo;re striking with a melee weapon, firing a weapon at range, or making an attack roll as part of a spell, an attack has a simple structure.</p>
+<ul>
+<li><b>1. Choose a target.</b> Pick a target within your attack&rsquo;s range: a creature, an object, or a location.</li>
+<li><b>2. Determine modifiers.</b> The DM determines whether the target has cover and whether you have advantage or disadvantage against the target. In addition, spells, special abilities, and other effects can apply penalties or bonuses to your attack roll.</li>
+<li><b>3. Resolve the attack.</b> You make the attack roll. On a hit, you roll damage, unless the particular attack has rules that specify otherwise. Some attacks cause special effects in addition to or instead of damage.</li>
+</ul>
+<p>If there&rsquo;s ever any question whether something you&rsquo;re doing counts as an attack, the rule is simple: if you&rsquo;re making an attack roll, you&rsquo;re making an attack.</p>
+<h3 id=attack-rolls>
+<a href=#attack-rolls class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Attack Rolls</h3><p>When you make an attack, your attack roll determines whether the attack hits or misses. To make an attack roll, roll a d20 and add the appropriate modifiers. If the total of the roll plus modifiers equals or exceeds the target&rsquo;s Armor Class (AC), the attack hits. The AC of a character is determined at character creation, whereas the AC of a monster is in its stat block.</p>
+<h4 id=modifiers-to-the-roll>
+<a href=#modifiers-to-the-roll class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Modifiers to the Roll</h4><p>When a character makes an attack roll, the two most common modifiers to the roll are an ability modifier and the character&rsquo;s proficiency bonus. When a monster makes an attack roll, it uses whatever modifier is provided in its stat block.</p>
+<h5 id=ability-modifier>
+<a href=#ability-modifier class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Ability Modifier</h5><p>The ability modifier used for a melee weapon attack is Strength, and the ability modifier used for a ranged weapon attack is Dexterity. Weapons that have the finesse or thrown property break this rule.</p>
+<p>Some spells also require an attack roll. The ability modifier used for a spell attack depends on the spellcasting ability of the spellcaster, as explained in chapter 10.</p>
+<h5 id=proficiency-bonus>
+<a href=#proficiency-bonus class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Proficiency Bonus</h5><p>You add your proficiency bonus to your attack roll when you attack using a weapon with which you have proficiency, as well as when you attack with a spell.</p>
+<h4 id=rolling-1-or-20>
+<a href=#rolling-1-or-20 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Rolling 1 or 20</h4><p>Sometimes fate blesses or curses a combatant, causing the novice to hit and the veteran to miss.</p>
+<p>If the <wc-roll>d20</wc-roll> roll for an attack is a 20, the attack hits regardless of any modifiers or the target&rsquo;s AC. This is called a critical hit, which is explained later in this chapter.</p>
+<p>If the <wc-roll>d20</wc-roll> roll for an attack is a 1, the attack misses regardless of any modifiers or the target&rsquo;s AC.</p>
+<h3 id=unseen-attackers-and-targets>
+<a href=#unseen-attackers-and-targets class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Unseen Attackers and Targets</h3><p>Combatants often try to escape their foes' notice by hiding, casting the <wc-fetch type=spell>invisibility</wc-fetch> spell, or lurking in darkness.</p>
+<p>When you attack a target that you can&rsquo;t see, you have disadvantage on the attack roll. This is true whether you&rsquo;re guessing the target&rsquo;s location or you&rsquo;re targeting a creature you can hear but not see. If the target isn&rsquo;t in the location you targeted, you automatically miss, but the DM typically just says that the attack missed, not whether you guessed the target&rsquo;s location correctly.</p>
+<p>When a creature can&rsquo;t see you, you have advantage on attack rolls against it.</p>
+<p>If you are hidden—both unseen and unheard—when you make an attack, you give away your location when the attack hits or misses.</p>
+<h3 id=ranged-attacks>
+<a href=#ranged-attacks class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Ranged Attacks</h3><p>When you make a ranged attack, you fire a bow or a crossbow, hurl a handaxe, or otherwise send projectiles to strike a foe at a distance. A monster might shoot spines from its tail. Many spells also involve making a ranged attack.</p>
+<h4 id=range>
+<a href=#range class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Range</h4><p>You can make ranged attacks only against targets within a specified range.</p>
+<p>If a ranged attack, such as one made with a spell, has a single range, you can&rsquo;t attack a target beyond this range.</p>
+<p>Some ranged attacks, such as those made with a longbow or a shortbow, have two ranges. The smaller number is the normal range, and the larger number is the long range. Your attack roll has disadvantage when your target is beyond normal range, and you can&rsquo;t attack a target beyond the long range.</p>
+<h4 id=ranged-attacks-in-close-combat>
+<a href=#ranged-attacks-in-close-combat class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Ranged Attacks in Close Combat</h4><p>Aiming a ranged attack is more difficult when a foe is next to you. When you make a ranged attack with a weapon, a spell, or some other means, you have disadvantage on the attack roll if you are within 5 feet of a hostile creature who can see you and who isn&rsquo;t <wc-fetch type=condition>incapacitated</wc-fetch>.</p>
+<h3 id=melee-attacks>
+<a href=#melee-attacks class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Melee Attacks</h3><p>Used in hand-to-hand combat, a melee attack allows you to attack a foe within your reach. A melee attack typically uses a handheld weapon such as a sword, a warhammer, or an axe. A typical monster makes a melee attack when it strikes with its claws, horns, teeth, tentacles, or other body part. A few spells also involve making a melee attack.</p>
+<p>Most creatures have a 5-foot reach and can thus attack targets within 5 feet of them when making a melee attack. Certain creatures (typically those larger than Medium) have melee attacks with a greater reach than 5 feet, as noted in their descriptions.</p>
+<p>Instead of using a weapon to make a melee weapon attack, you can use an <strong>unarmed strike</strong>: a punch, kick, head-butt, or similar forceful blow (none of which count as weapons). On a hit, an unarmed strike deals bludgeoning damage equal to 1 + your Strength modifier. You are proficient with your unarmed strikes.</p>
+<h3 id=opportunity-attacks>
+<a href=#opportunity-attacks class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Opportunity Attacks</h3><p>In a fight, everyone is constantly watching for enemies to drop their guard. You can rarely move heedlessly past your foes without putting yourself in danger; doing so provokes an opportunity attack.</p>
+<p>You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack interrupts the provoking creature&rsquo;s movement, occurring right before the creature leaves your reach.</p>
+<p>You can avoid provoking an opportunity attack by taking the <wc-fetch type=action>Disengage</wc-fetch> action. You also don&rsquo;t provoke an opportunity attack when you teleport or when someone or something moves you without using your movement, action, or reaction. For example, you don&rsquo;t provoke an opportunity attack if an explosion hurls you out of a foe&rsquo;s reach or if gravity causes you to fall past an enemy.</p>
+<h3 id=two-weapon-fighting>
+<a href=#two-weapon-fighting class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Two-Weapon Fighting</h3><p>When you take the <wc-fetch type=action>Attack</wc-fetch> action and attack with a light melee weapon that you&rsquo;re holding in one hand, you can use a bonus action to attack with a different light melee weapon that you&rsquo;re holding in the other hand. You don&rsquo;t add your ability modifier to the damage of the bonus attack, unless that modifier is negative.</p>
+<p>If either weapon has the thrown property, you can throw the weapon, instead of making a melee attack with it.</p>
+<blockquote>
+<h3 id=contests-in-combat>
+<a href=#contests-in-combat class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Contests in Combat</h3><p>Battle often involves pitting your prowess against that of your foe. Such a challenge is represented by a contest. This section includes the most common contests that require an action in combat: grappling and shoving a creature. The DM can use these contests as models for improvising others.</p>
+</blockquote>
+<h3 id=grappling>
+<a href=#grappling class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Grappling</h3><p>When you want to grab a creature or wrestle with it, you can use the <wc-fetch type=action>Attack</wc-fetch> action to make a special melee attack, a grapple. If you&rsquo;re able to make multiple attacks with the <wc-fetch type=action>Attack</wc-fetch> action, this attack replaces one of them. The target of your grapple must be no more than one size larger than you, and it must be within your reach.</p>
+<p>Using at least one free hand, you try to seize the target by making a grapple check, a Strength (<wc-fetch type=skill>Athletics</wc-fetch>) check contested by the target&rsquo;s Strength (<wc-fetch type=skill>Athletics</wc-fetch>) or Dexterity (<wc-fetch type=skill>Acrobatics</wc-fetch>) check (the target chooses the ability to use). You succeed automatically if the target is <wc-fetch type=condition>incapacitated</wc-fetch>. If you succeed, you subject the target to the <wc-fetch type=condition>grappled</wc-fetch> condition (see the appendix). The condition specifies the things that end it, and you can release the target whenever you like (no action required).</p>
+<h4 id=escaping-a-grapple>
+<a href=#escaping-a-grapple class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Escaping a Grapple</h4><p>A <wc-fetch type=condition>grappled</wc-fetch> creature can use its action to escape. To do so, it must succeed on a Strength (<wc-fetch type=skill>Athletics</wc-fetch>) or Dexterity (<wc-fetch type=skill>Acrobatics</wc-fetch>) check contested by your Strength (<wc-fetch type=skill>Athletics</wc-fetch>) check.</p>
+<h4 id=moving-a-grappled-target>
+<a href=#moving-a-grappled-target class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Moving a Grappled Target</h4><p>When you move, you can drag or carry the <wc-fetch type=condition>grappled</wc-fetch> creature with you, but your speed is halved, unless the creature is two or more sizes smaller than you.</p>
+<h3 id=shoving-a-creature>
+<a href=#shoving-a-creature class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Shoving a Creature</h3><p>Using the <wc-fetch type=action>Attack</wc-fetch> action, you can make a special melee attack to shove a creature, either to knock it <wc-fetch type=condition>prone</wc-fetch> or push it away from you. If you&rsquo;re able to make multiple attacks with the <wc-fetch type=action>Attack</wc-fetch> action, this attack replaces one of them.</p>
+<p>The target of your shove must be no more than one size larger than you, and it must be within your reach. You make a Strength (<wc-fetch type=skill>Athletics</wc-fetch>) check contested by the target&rsquo;s Strength (<wc-fetch type=skill>Athletics</wc-fetch>) or Dexterity (<wc-fetch type=skill>Acrobatics</wc-fetch>) check (the target chooses the ability to use). You succeed automatically if the target is <wc-fetch type=condition>incapacitated</wc-fetch>. If you succeed, you either knock the target <wc-fetch type=condition>prone</wc-fetch> or push it 5 feet away from you.</p>
+<h2 id=cover>
+<a href=#cover class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Cover</h2><p>Walls, trees, creatures, and other obstacles can provide cover during combat, making a target more difficult to harm. A target can benefit from cover only when an attack or other effect originates on the opposite side of the cover.</p>
+<p>There are three degrees of cover. If a target is behind multiple sources of cover, only the most protective degree of cover applies; the degrees aren&rsquo;t added together. For example, if a target is behind a creature that gives half cover and a tree trunk that gives three-quarters cover, the target has three-quarters cover.</p>
+<p>A target with <strong>half cover</strong> has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.</p>
+<p>A target with <strong>three-quarters</strong> cover has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.</p>
+<p>A target with <strong>total cover</strong> can&rsquo;t be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by an obstacle.</p>
+<h2 id=damage-and-healing>
+<a href=#damage-and-healing class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Damage and Healing</h2><p>Injury and the risk of death are constant companions of those who explore the worlds of D&D. The thrust of a sword, a well-placed arrow, or a blast of flame from a fireball spell all have the potential to damage, or even kill, the hardiest of creatures.</p>
+<h3 id=hit-points>
+<a href=#hit-points class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Hit Points</h3><p>Hit points represent a combination of physical and mental durability, the will to live, and luck. Creatures with more hit points are more difficult to kill. Those with fewer hit points are more fragile.</p>
+<p>A creature&rsquo;s current hit points (usually just called hit points) can be any number from the creature&rsquo;s hit point maximum down to 0. This number changes frequently as a creature takes damage or receives healing. Whenever a creature takes damage, that damage is subtracted from its hit points. The loss of hit points has no effect on a creature&rsquo;s capabilities until the creature drops to 0 hit points.</p>
+<h3 id=damage-rolls>
+<a href=#damage-rolls class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Damage Rolls</h3><p>Each weapon, spell, and harmful monster ability specifies the damage it deals. You roll the damage die or dice, add any modifiers, and apply the damage to your target. Magic weapons, special abilities, and other factors can grant a bonus to damage.</p>
+<p>When attacking with a <strong>weapon</strong>, you add your ability modifier—the same modifier used for the attack roll to the damage. A <strong>spell</strong> tells you which dice to roll for damage and whether to add any modifiers.</p>
+<p>If a spell or other effect deals damage to <strong>more than one target</strong> at the same time, roll the damage once for all of them. For example, when a wizard casts fireball or a cleric casts flame strike, the spell&rsquo;s damage is rolled once for all creatures caught in the blast.</p>
+<h4 id=critical-hits>
+<a href=#critical-hits class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Critical Hits</h4><p>When you score a critical hit, you get to roll extra dice for the attack&rsquo;s damage against the target. Roll all of the attack&rsquo;s damage dice twice and add them together. Then add any relevant modifiers as normal. To speed up play, you can roll all the damage dice at once.</p>
+<p>For example, if you score a critical hit with a dagger, roll 2d4 for the damage, rather than 1d4, and then add your relevant ability modifier. If the attack involves other damage dice, such as from the rogue&rsquo;s Sneak Attack feature, you roll those dice twice as well.</p>
+<h4 id=damage-types>
+<a href=#damage-types class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Damage Types</h4><p>Different attacks, damaging spells, and other harmful effects deal different types of damage. Damage types have no rules of their own, but other rules, such as damage resistance, rely on the types.</p>
+<p>The damage types follow, with examples to help a DM assign a damage type to a new effect.</p>
+<h5 id=acid>
+<a href=#acid class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Acid</h5><p>The corrosive spray of a black dragon&rsquo;s breath and the dissolving enzymes secreted by a black pudding deal acid damage.</p>
+<h5 id=bludgeoning>
+<a href=#bludgeoning class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Bludgeoning</h5><p>Blunt force attacks—hammers, falling, constriction, and the like—deal bludgeoning damage.</p>
+<h5 id=cold>
+<a href=#cold class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Cold</h5><p>The infernal chill radiating from an ice devil&rsquo;s spear and the frigid blast of a white dragon&rsquo;s breath deal cold damage.</p>
+<h5 id=fire>
+<a href=#fire class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Fire</h5><p>Red dragons breathe fire, and many spells conjure flames to deal fire damage.</p>
+<h5 id=force>
+<a href=#force class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Force</h5><p>Force is pure magical energy focused into a damaging form. Most effects that deal force damage are spells, including magic missile and spiritual weapon.</p>
+<h5 id=lightning>
+<a href=#lightning class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Lightning</h5><p>A lightning bolt spell and a blue dragon&rsquo;s breath deal lightning damage.</p>
+<h5 id=necrotic>
+<a href=#necrotic class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Necrotic</h5><p>Necrotic damage, dealt by certain undead and some spells, withers matter and even the soul.</p>
+<h5 id=piercing>
+<a href=#piercing class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Piercing</h5><p>Puncturing and impaling attacks, including spears and monsters' bites, deal piercing damage.</p>
+<h5 id=poison>
+<a href=#poison class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Poison</h5><p>Venomous stings and the toxic gas of a green dragon&rsquo;s breath deal poison damage.</p>
+<h5 id=psychic>
+<a href=#psychic class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Psychic</h5><p>Mental abilities such as a mind flayer&rsquo;s psionic blast deal psychic damage.</p>
+<h5 id=radiant>
+<a href=#radiant class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Radiant</h5><p>Radiant damage, dealt by a cleric&rsquo;s flame strike spell or an angel&rsquo;s smiting weapon, sears the flesh like fire and overloads the spirit with power.</p>
+<h5 id=slashing>
+<a href=#slashing class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Slashing</h5><p>Swords, axes, and monsters' claws deal slashing damage.</p>
+<h5 id=thunder>
+<a href=#thunder class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Thunder</h5><p>A concussive burst of sound, such as the effect of the thunderwave spell, deals thunder damage.</p>
+<h3 id=damage-resistance-and-vulnerability>
+<a href=#damage-resistance-and-vulnerability class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Damage Resistance and Vulnerability</h3><p>Some creatures and objects are exceedingly difficult or unusually easy to hurt with certain types of damage.</p>
+<p>If a creature or an object has <strong>resistance</strong> to a damage type, damage of that type is halved against it. If a creature or an object has <strong>vulnerability</strong> to a damage type, damage of that type is doubled against it.</p>
+<p>Resistance and then vulnerability are applied after all other modifiers to damage. For example, a creature has resistance to bludgeoning damage and is hit by an attack that deals 25 bludgeoning damage. The creature is also within a magical aura that reduces all damage by 5. The 25 damage is first reduced by 5 and then halved, so the creature takes 10 damage.</p>
+<p>Multiple instances of resistance or vulnerability that affect the same damage type count as only one instance. For example, if a creature has resistance to fire damage as well as resistance to all nonmagical damage, the damage of a nonmagical fire is reduced by half against the creature, not reduced by three-quarters.</p>
+<blockquote>
+<h4 id=describing-the-effects-of-damage>
+<a href=#describing-the-effects-of-damage class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Describing the Effects of Damage</h4><p>Dungeon Masters describe hit point loss in different ways. When your current hit point total is half or more of your hit point maximum, you typically show no signs of injury. When you drop below half your hit point maximum, you show signs of wear, such as cuts and bruises. An attack that reduces you to 0 hit points strikes you directly, leaving a bleeding injury or other trauma, or it simply knocks you <wc-fetch type=condition>unconscious</wc-fetch>.</p>
+</blockquote>
+<h3 id=healing>
+<a href=#healing class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Healing</h3><p>Unless it results in death, damage isn&rsquo;t permanent. Even death is reversible through powerful magic. Rest can restore a creature&rsquo;s hit points (as explained in chapter 8), and magical methods such as a cure wounds spell or a potion of healing can remove damage in an instant.</p>
+<p>When a creature receives healing of any kind, hit points regained are added to its current hit points. A creature&rsquo;s hit points can&rsquo;t exceed its hit point maximum, so any hit points regained in excess of this number are lost. For example, a druid grants a ranger 8 hit points of healing. If the ranger has 14 current hit points and has a hit point maximum of 20, the ranger regains 6 hit points from the druid, not 8.</p>
+<p>A creature that has died can&rsquo;t regain hit points until magic such as the revivify spell has restored it to life.</p>
+<h3 id=dropping-to-0-hit-points>
+<a href=#dropping-to-0-hit-points class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Dropping to 0 Hit Points</h3><p>When you drop to 0 hit points, you either die outright or fall <wc-fetch type=condition>unconscious</wc-fetch>, as explained in the following sections.</p>
+<h4 id=instant-death>
+<a href=#instant-death class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Instant Death</h4><p>Massive damage can kill you instantly. When damage reduces you to 0 hit points and there is damage remaining, you die if the remaining damage equals or exceeds your hit point maximum.</p>
+<p>For example, a cleric with a maximum of 12 hit points currently has 6 hit points. If she takes 18 damage from an attack, she is reduced to 0 hit points, but 12 damage remains. Because the remaining damage equals her hit point maximum, the cleric dies.</p>
+<h4 id=falling-unconscious>
+<a href=#falling-unconscious class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Falling Unconscious</h4><p>If damage reduces you to 0 hit points and fails to kill you, you fall <wc-fetch type=condition>unconscious</wc-fetch> (see the appendix). This unconsciousness ends if you regain any hit points.</p>
+<h4 id=death-saving-throws>
+<a href=#death-saving-throws class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Death Saving Throws</h4><p>Whenever you start your turn with 0 hit points, you must make a special saving throw, called a death saving throw, to determine whether you creep closer to death or hang onto life. Unlike other saving throws, this one isn&rsquo;t tied to any ability score. You are in the hands of fate now, aided only by spells and features that improve your chances of succeeding on a saving throw.</p>
+<p>Roll a d20. If the roll is 10 or higher, you succeed. Otherwise, you fail. A success or failure has no effect by itself. On your third success, you become stable (see below). On your third failure, you die. The successes and failures don&rsquo;t need to be consecutive; keep track of both until you collect three of a kind. The number of both is reset to zero when you regain any hit points or become stable.</p>
+<h5 id=rolling-1-or-20-1>
+<a href=#rolling-1-or-20-1 class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Rolling 1 or 20</h5><p>When you make a death saving throw and roll a 1 on the d20, it counts as two failures. If you roll a 20 on the d20, you regain 1 hit point.</p>
+<h5 id=damage-at-0-hit-points>
+<a href=#damage-at-0-hit-points class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Damage at 0 Hit Points</h5><p>If you take any damage while you have 0 hit points, you suffer a death saving throw failure. If the damage is from a critical hit, you suffer two failures instead. If the damage equals or exceeds your hit point maximum, you suffer instant death.</p>
+<h4 id=stabilizing-a-creature>
+<a href=#stabilizing-a-creature class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Stabilizing a Creature</h4><p>The best way to save a creature with 0 hit points is to heal it. If healing is unavailable, the creature can at least be stabilized so that it isn&rsquo;t killed by a failed death saving throw.</p>
+<p>You can use your action to administer first aid to an <wc-fetch type=condition>unconscious</wc-fetch> creature and attempt to stabilize it, which requires a successful DC 10 Wisdom (<wc-fetch type=skill>Medicine</wc-fetch>) check.</p>
+<p>A stable creature doesn&rsquo;t make death saving throws, even though it has 0 hit points, but it does remain <wc-fetch type=condition>unconscious</wc-fetch>. The creature stops being stable, and must start making death saving throws again, if it takes any damage. A stable creature that isn&rsquo;t healed regains 1 hit point after 1d4 hours.</p>
+<h4 id=monsters-and-death>
+<a href=#monsters-and-death class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Monsters and Death</h4><p>Most DMs have a monster die the instant it drops to 0 hit points, rather than having it fall <wc-fetch type=condition>unconscious</wc-fetch> and make death saving throws.</p>
+<p>Mighty villains and special nonplayer characters are common exceptions; the DM might have them fall <wc-fetch type=condition>unconscious</wc-fetch> and follow the same rules as player characters.</p>
+<h3 id=knocking-a-creature-out>
+<a href=#knocking-a-creature-out class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Knocking a Creature Out</h3><p>Sometimes an attacker wants to incapacitate a foe, rather than deal a killing blow. When an attacker reduces a creature to 0 hit points with a melee attack, the attacker can knock the creature out. The attacker can make this choice the instant the damage is dealt. The creature falls <wc-fetch type=condition>unconscious</wc-fetch> and is stable.</p>
+<h3 id=temporary-hit-points>
+<a href=#temporary-hit-points class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Temporary Hit Points</h3><p>Some spells and special abilities confer temporary hit points to a creature. Temporary hit points aren&rsquo;t actual hit points; they are a buffer against damage, a pool of hit points that protect you from injury.</p>
+<p>When you have temporary hit points and take damage, the temporary hit points are lost first, and any leftover damage carries over to your normal hit points. For example, if you have 5 temporary hit points and take 7 damage, you lose the temporary hit points and then take 2 damage.</p>
+<p>Because temporary hit points are separate from your actual hit points, they can exceed your hit point maximum. A character can, therefore, be at full hit points and receive temporary hit points.</p>
+<p>Healing can&rsquo;t restore temporary hit points, and they can&rsquo;t be added together. If you have temporary hit points and receive more of them, you decide whether to keep the ones you have or to gain the new ones. For example, if a spell grants you 12 temporary hit points when you already have 10, you can have 12 or 10, not 22.</p>
+<p>If you have 0 hit points, receiving temporary hit points doesn&rsquo;t restore you to consciousness or stabilize you.</p>
+<p>They can still absorb damage directed at you while you&rsquo;re in that state, but only true healing can save you.</p>
+<p>Unless a feature that grants you temporary hit points has a duration, they last until they&rsquo;re depleted or you finish a long rest.</p>
+<h2 id=mounted-combat>
+<a href=#mounted-combat class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Mounted Combat</h2><p>A knight charging into battle on a warhorse, a wizard casting spells from the back of a griffon, or a cleric soaring through the sky on a pegasus all enjoy the benefits of speed and mobility that a mount can provide.</p>
+<p>A willing creature that is at least one size larger than you and that has an appropriate anatomy can serve as a mount, using the following rules.</p>
+<h3 id=mounting-and-dismounting>
+<a href=#mounting-and-dismounting class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Mounting and Dismounting</h3><p>Once during your move, you can mount a creature that is within 5 feet of you or dismount. Doing so costs an amount of movement equal to half your speed. For example, if your speed is 30 feet, you must spend 15 feet of movement to mount a horse. Therefore, you can&rsquo;t mount it if you don&rsquo;t have 15 feet of movement left or if your speed is 0.</p>
+<p>If an effect moves your mount against its will while you&rsquo;re on it, you must succeed on a DC 10 Dexterity saving throw or fall off the mount, landing <wc-fetch type=condition>prone</wc-fetch> in a space within 5 feet of it. If you&rsquo;re knocked <wc-fetch type=condition>prone</wc-fetch> while mounted, you must make the same saving throw.</p>
+<p>If your mount is knocked <wc-fetch type=condition>prone</wc-fetch>, you can use your reaction to dismount it as it falls and land on your feet. Otherwise, you are dismounted and fall <wc-fetch type=condition>prone</wc-fetch> in a space within 5 feet it.</p>
+<h3 id=controlling-a-mount>
+<a href=#controlling-a-mount class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Controlling a Mount</h3><p>While you&rsquo;re mounted, you have two options. You can either control the mount or allow it to act independently. Intelligent creatures, such as dragons, act independently.</p>
+<p>You can control a mount only if it has been trained to accept a rider. Domesticated horses, donkeys, and similar creatures are assumed to have such training.</p>
+<p>The initiative of a controlled mount changes to match yours when you mount it. It moves as you direct it, and it has only three action options: <wc-fetch type=action>Dash</wc-fetch>, <wc-fetch type=action>Disengage</wc-fetch>, and <wc-fetch type=action>Dodge</wc-fetch>. A controlled mount can move and act even on the turn that you mount it.</p>
+<p>An independent mount retains its place in the initiative order. Bearing a rider puts no restrictions on the actions the mount can take, and it moves and acts as it wishes. It might flee from combat, rush to attack and devour a badly injured foe, or otherwise act against your wishes.</p>
+<p>In either case, if the mount provokes an opportunity attack while you&rsquo;re on it, the attacker can target you or the mount.</p>
+<h2 id=underwater-combat>
+<a href=#underwater-combat class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Underwater Combat</h2><p>When adventurers pursue sahuagin back to their undersea homes, fight off sharks in an ancient shipwreck, or find themselves in a flooded dungeon room, they must fight in a challenging environment. Underwater the following rules apply.</p>
+<p>When making a <strong>melee weapon attack</strong>, a creature that doesn&rsquo;t have a swimming speed (either natural or granted by magic) has disadvantage on the attack roll unless the weapon is a dagger, javelin, shortsword, spear, or trident.</p>
+<p>A <strong>ranged weapon attack</strong> automatically misses a target beyond the weapon&rsquo;s normal range. Even against a target within normal range, the attack roll has disadvantage unless the weapon is a crossbow, a net, or a weapon that is thrown like a javelin (including a spear, trident, or dart).</p>
+<p>Creatures and objects that are fully immersed in water have resistance to fire damage.</p>
+</article>
+<aside class="sticky top-16 text-xs font-sans">
+<details class=relative>
+<summary class=mb-1>Combat</summary>
+<nav class="absolute bg-white overflow-x-scroll rounded shadow border-gray-200 border-2 max-h-56">
+<a href=/5eTools/book/players-handbook/introduction/ class="block px-2 py-1 font-normal text-gray-700">Introduction</a>
+<a href=/5eTools/book/players-handbook/step-by-step-characters/ class="block px-2 py-1 font-normal text-gray-700">Step-by-Step Characters</a>
+<a href=/5eTools/book/players-handbook/races/ class="block px-2 py-1 font-normal text-gray-700">Races</a>
+<a href=/5eTools/book/players-handbook/classes/ class="block px-2 py-1 font-normal text-gray-700">Classes</a>
+<a href=/5eTools/book/players-handbook/personality-and-background/ class="block px-2 py-1 font-normal text-gray-700">Personality and Background</a>
+<a href=/5eTools/book/players-handbook/equipment/ class="block px-2 py-1 font-normal text-gray-700">Equipment</a>
+<a href=/5eTools/book/players-handbook/customization-options/ class="block px-2 py-1 font-normal text-gray-700">Customization Options</a>
+<a href=/5eTools/book/players-handbook/using-ability-scores/ class="block px-2 py-1 font-normal text-gray-700">Using Ability Scores</a>
+<a href=/5eTools/book/players-handbook/adventuring/ class="block px-2 py-1 font-normal text-gray-700">Adventuring</a>
+<a href=/5eTools/book/players-handbook/combat/ class="block px-2 py-1">Combat</a>
+<a href=/5eTools/book/players-handbook/spellcasting/ class="block px-2 py-1 font-normal text-gray-700">Spellcasting</a>
+<a href=/5eTools/book/players-handbook/spells/ class="block px-2 py-1 font-normal text-gray-700">Spells</a>
+<a href=/5eTools/book/players-handbook/conditions/ class="block px-2 py-1 font-normal text-gray-700">Conditions</a>
+<a href=/5eTools/book/players-handbook/gods-of-the-multiverse/ class="block px-2 py-1 font-normal text-gray-700">Gods of the Multiverse</a>
+<a href=/5eTools/book/players-handbook/the-planes-of-existence/ class="block px-2 py-1 font-normal text-gray-700">The Planes of Existence</a>
+</nav>
+</details>
+<wc-toc>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#combat-step-by-step>Combat Step by Step</a></li>
+</ul>
+</li>
+<li><a href=#the-order-of-combat>The Order of Combat</a>
+<ul>
+<li><a href=#surprise>Surprise</a></li>
+<li><a href=#initiative>Initiative</a></li>
+<li><a href=#your-turn>Your Turn</a></li>
+<li><a href=#reactions>Reactions</a></li>
+</ul>
+</li>
+<li><a href=#movement-and-position>Movement and Position</a>
+<ul>
+<li><a href=#breaking-up-your-move>Breaking Up Your Move</a></li>
+<li><a href=#difficult-terrain>Difficult Terrain</a></li>
+<li><a href=#being-prone>Being Prone</a></li>
+<li><a href=#moving-around-other-creatures>Moving around Other Creatures</a></li>
+<li><a href=#flying-movement>Flying Movement</a></li>
+<li><a href=#creature-size>Creature Size</a></li>
+<li><a href=#variant-playing-on-a-grid>Variant: Playing on a Grid</a></li>
+</ul>
+</li>
+<li><a href=#actions-in-combat>Actions in Combat</a></li>
+<li><a href=#making-an-attack>Making an Attack</a>
+<ul>
+<li><a href=#attack-rolls>Attack Rolls</a></li>
+<li><a href=#unseen-attackers-and-targets>Unseen Attackers and Targets</a></li>
+<li><a href=#ranged-attacks>Ranged Attacks</a></li>
+<li><a href=#melee-attacks>Melee Attacks</a></li>
+<li><a href=#opportunity-attacks>Opportunity Attacks</a></li>
+<li><a href=#two-weapon-fighting>Two-Weapon Fighting</a></li>
+<li><a href=#contests-in-combat>Contests in Combat</a></li>
+<li><a href=#grappling>Grappling</a></li>
+<li><a href=#shoving-a-creature>Shoving a Creature</a></li>
+</ul>
+</li>
+<li><a href=#cover>Cover</a></li>
+<li><a href=#damage-and-healing>Damage and Healing</a>
+<ul>
+<li><a href=#hit-points>Hit Points</a></li>
+<li><a href=#damage-rolls>Damage Rolls</a></li>
+<li><a href=#damage-resistance-and-vulnerability>Damage Resistance and Vulnerability</a></li>
+<li><a href=#healing>Healing</a></li>
+<li><a href=#dropping-to-0-hit-points>Dropping to 0 Hit Points</a></li>
+<li><a href=#knocking-a-creature-out>Knocking a Creature Out</a></li>
+<li><a href=#temporary-hit-points>Temporary Hit Points</a></li>
+</ul>
+</li>
+<li><a href=#mounted-combat>Mounted Combat</a>
+<ul>
+<li><a href=#mounting-and-dismounting>Mounting and Dismounting</a></li>
+<li><a href=#controlling-a-mount>Controlling a Mount</a></li>
+</ul>
+</li>
+<li><a href=#underwater-combat>Underwater Combat</a></li>
+</ul>
+</nav>
+</wc-toc>
+<div class="flex mt-4 gap-1 items-center">
+<a href=https://timbomckay.github.io/5eTools/adventure/curse-of-strahd/chapter-8/ class="icon text-lg leading-none"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></a>
+<a href=#skip-nav class="icon text-xl leading-none"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="20" viewBox="0 0 20 20" width="20"><g><rect fill="none" height="20" width="20"/><path d="M10 4c3.31.0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-1c-3.87.0-7 3.13-7 7s3.13 7 7 7 7-3.13 7-7c0-3.87-3.13-7-7-7zm-.5 7v3h1v-3H13l-3-3-3 3H9.5z"/></g></svg></a>
+<a href=https://timbomckay.github.io/5eTools/book/dungeon-masters-guide/dungeon-masters-workshop/ class="icon text-lg leading-none"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></a>
+</div>
+</aside>
+</div>
+<script>window.customElements.define('wc-toc',class extends HTMLElement{connectedCallback(){const{headings:a}=this,b=this,c=window.visualViewport.height/4;document.addEventListener('scroll',function(f){const d=a.filter(a=>a.target.offsetTop<window.scrollY+c).pop(),e=b.getElementsByClassName('active');if(e!=null)for(let a of e){a.classList.remove('active');const b=a.closest('ul');b.classList.remove('has-active')}if(d!=null){d.el.classList.add('active');const a=d.el.closest('ul');a.classList.add('has-active')}})}get headings(){const a=[];for(let b of this.querySelectorAll('a'))a.push({el:b,target:document.getElementById(b.hash.replace('#',''))});return a}})</script>
+</main>
+<footer></footer></body>
+</html>

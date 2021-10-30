@@ -1,0 +1,903 @@
+<!doctype html><html lang=en-us style=background-image:url(/5eTools/lightpaperfibers.png)><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>DM Screen · The Handy Haversack</title>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=HandheldFriendly content="True">
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<script src=/5eTools/main.js defer></script>
+<link rel=stylesheet href="/5eTools/index.min.c9d5cbc26ca74c023ead23b8a8c53c65d351d88edd30fc950ba0e75286335110.css" media=all>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=UnifrakturMaguntia&display=swap" rel=stylesheet>
+<body class="flex flex-col min-h-screen"><a href=#skip-nav class="fixed bg-primary-500 focus:text-white leading-none m-2 not-focus:sr-only px-3 py-2 text-xs z-50">Skip Navigation</a>
+<header class="bg-white print:absolute px-4 border-b-2 sticky top-0 z-40">
+<div class="flex items-center justify-between max-w-screen-md mx-auto">
+<div>
+<a href=https://timbomckay.github.io/5eTools/ class="block py-2 px-4">The Handy Haversack</a>
+</div>
+</div>
+</header>
+<div id=skip-nav tabindex=-1 class=sr-only></div>
+<main class="lg:pb-10 mx-auto px-4 lg:px-6 mb-6 lg:mb-8">
+<h1 class="mb-6 px-6">DM Screen</h1>
+<div class="gap-8 lg:grid items-start" style="grid-template-columns:auto 10rem">
+<article class="max-w-ch mx-auto px-6"><h3 id=npc-characteristics>
+<a href=#npc-characteristics class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>NPC Characteristics</h3><div class=table-wrapper> <table>
+<thead>
+<tr>
+<th><span class="text-center block">d20</span></th>
+<th>Characteristic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="text-center block">1</span></td>
+<td>Absentminded</td>
+</tr>
+<tr>
+<td><span class="text-center block">2</span></td>
+<td>Arrogant</td>
+</tr>
+<tr>
+<td><span class="text-center block">3</span></td>
+<td>Boorish</td>
+</tr>
+<tr>
+<td><span class="text-center block">4</span></td>
+<td>Chews something</td>
+</tr>
+<tr>
+<td><span class="text-center block">5</span></td>
+<td>Clumsy</td>
+</tr>
+<tr>
+<td><span class="text-center block">6</span></td>
+<td>Curious</td>
+</tr>
+<tr>
+<td><span class="text-center block">7</span></td>
+<td>Dim-witted</td>
+</tr>
+<tr>
+<td><span class="text-center block">8</span></td>
+<td>Fiddles and fidgets nervously</td>
+</tr>
+<tr>
+<td><span class="text-center block">9</span></td>
+<td>Frequently uses the wrong word</td>
+</tr>
+<tr>
+<td><span class="text-center block">10</span></td>
+<td>Friendly</td>
+</tr>
+<tr>
+<td><span class="text-center block">11</span></td>
+<td>Irritable</td>
+</tr>
+<tr>
+<td><span class="text-center block">12</span></td>
+<td>Prone to predictions of certain doom</td>
+</tr>
+<tr>
+<td><span class="text-center block">13</span></td>
+<td>Pronounced scar</td>
+</tr>
+<tr>
+<td><span class="text-center block">14</span></td>
+<td>Slurs words, lisps, or stutters</td>
+</tr>
+<tr>
+<td><span class="text-center block">15</span></td>
+<td>Speaks loudly or whispers</td>
+</tr>
+<tr>
+<td><span class="text-center block">16</span></td>
+<td>Squints</td>
+</tr>
+<tr>
+<td><span class="text-center block">17</span></td>
+<td>Stares into distance</td>
+</tr>
+<tr>
+<td><span class="text-center block">18</span></td>
+<td>Suspicious</td>
+</tr>
+<tr>
+<td><span class="text-center block">19</span></td>
+<td>Uses colorful oaths and exclamations</td>
+</tr>
+<tr>
+<td><span class="text-center block">20</span></td>
+<td>Uses flowery speech or long words</td>
+</tr>
+</tbody>
+</table> </div>
+<h3 id=npc-ideals>
+<a href=#npc-ideals class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>NPC Ideals</h3><div class=table-wrapper> <table>
+<thead>
+<tr>
+<th><span class="text-center block">d20</span></th>
+<th>Ideal (Alignment)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="text-center block">1</span></td>
+<td>Aspiration (any)</td>
+</tr>
+<tr>
+<td><span class="text-center block">2</span></td>
+<td>Charity (good)</td>
+</tr>
+<tr>
+<td><span class="text-center block">3</span></td>
+<td>Community (lawful)</td>
+</tr>
+<tr>
+<td><span class="text-center block">4</span></td>
+<td>Creativity (chaotic)</td>
+</tr>
+<tr>
+<td><span class="text-center block">5</span></td>
+<td>Discovery (any)</td>
+</tr>
+<tr>
+<td><span class="text-center block">6</span></td>
+<td>Fairness (lawful)</td>
+</tr>
+<tr>
+<td><span class="text-center block">7</span></td>
+<td>Freedom (chaotic)</td>
+</tr>
+<tr>
+<td><span class="text-center block">8</span></td>
+<td>Glory (any)</td>
+</tr>
+<tr>
+<td><span class="text-center block">9</span></td>
+<td>Greater good (good)</td>
+</tr>
+<tr>
+<td><span class="text-center block">10</span></td>
+<td>Greed (evil)</td>
+</tr>
+<tr>
+<td><span class="text-center block">11</span></td>
+<td>Honor (lawful)</td>
+</tr>
+<tr>
+<td><span class="text-center block">12</span></td>
+<td>Independence (chaotic)</td>
+</tr>
+<tr>
+<td><span class="text-center block">13</span></td>
+<td>Knowledge (neutral)</td>
+</tr>
+<tr>
+<td><span class="text-center block">14</span></td>
+<td>Life (good)</td>
+</tr>
+<tr>
+<td><span class="text-center block">15</span></td>
+<td>Live and let live (neutral)</td>
+</tr>
+<tr>
+<td><span class="text-center block">16</span></td>
+<td>Might (evil)</td>
+</tr>
+<tr>
+<td><span class="text-center block">17</span></td>
+<td>Nation (any)</td>
+</tr>
+<tr>
+<td><span class="text-center block">18</span></td>
+<td>People (neutral)</td>
+</tr>
+<tr>
+<td><span class="text-center block">19</span></td>
+<td>Power (evil)</td>
+</tr>
+<tr>
+<td><span class="text-center block">20</span></td>
+<td>Redemption (any)</td>
+</tr>
+</tbody>
+</table> </div>
+<h3 id=npc-bonds>
+<a href=#npc-bonds class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>NPC Bonds</h3><div class=table-wrapper> <table>
+<thead>
+<tr>
+<th><span class="text-center block">d10</span></th>
+<th>Bonds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="text-center block">1</span></td>
+<td>Personal goal or achievement</td>
+</tr>
+<tr>
+<td><span class="text-center block">2</span></td>
+<td>Family member</td>
+</tr>
+<tr>
+<td><span class="text-center block">3</span></td>
+<td>Colleagues or compatriots</td>
+</tr>
+<tr>
+<td><span class="text-center block">4</span></td>
+<td>Benefactor, patron, or employer</td>
+</tr>
+<tr>
+<td><span class="text-center block">5</span></td>
+<td>Romantic interest</td>
+</tr>
+<tr>
+<td><span class="text-center block">6</span></td>
+<td>Special place</td>
+</tr>
+<tr>
+<td><span class="text-center block">7</span></td>
+<td>Keepsake</td>
+</tr>
+<tr>
+<td><span class="text-center block">8</span></td>
+<td>Valuable possession</td>
+</tr>
+<tr>
+<td><span class="text-center block">9</span></td>
+<td>Revenge</td>
+</tr>
+<tr>
+<td><span class="text-center block">10</span></td>
+<td>Roll twice, ignoring further rolls of 10</td>
+</tr>
+</tbody>
+</table> </div>
+<h3 id=npc-flaws>
+<a href=#npc-flaws class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>NPC Flaws</h3><div class=table-wrapper> <table>
+<thead>
+<tr>
+<th><span class="text-center block">d12</span></th>
+<th>Flaw</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="text-center block">1</span></td>
+<td>Forbidden love or romantic susceptibility</td>
+</tr>
+<tr>
+<td><span class="text-center block">2</span></td>
+<td>Dependence</td>
+</tr>
+<tr>
+<td><span class="text-center block">3</span></td>
+<td>Arrogance</td>
+</tr>
+<tr>
+<td><span class="text-center block">4</span></td>
+<td>Envy of another person&rsquo;s possessions or station</td>
+</tr>
+<tr>
+<td><span class="text-center block">5</span></td>
+<td>Overpowering greed</td>
+</tr>
+<tr>
+<td><span class="text-center block">6</span></td>
+<td>Prone to rage</td>
+</tr>
+<tr>
+<td><span class="text-center block">7</span></td>
+<td>Powerful enemy</td>
+</tr>
+<tr>
+<td><span class="text-center block">8</span></td>
+<td>Specific phobia</td>
+</tr>
+<tr>
+<td><span class="text-center block">9</span></td>
+<td>Shameful or scandalous history</td>
+</tr>
+<tr>
+<td><span class="text-center block">10</span></td>
+<td>Secret crime or misdeed</td>
+</tr>
+<tr>
+<td><span class="text-center block">11</span></td>
+<td>Possession of forbidden lore</td>
+</tr>
+<tr>
+<td><span class="text-center block">12</span></td>
+<td>Foolhardy bravery</td>
+</tr>
+</tbody>
+</table> </div>
+<h3 id=name-generator>
+<a href=#name-generator class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Name Generator</h3><div class=table-wrapper> <table>
+<thead>
+<tr>
+<th>d20</th>
+<th><span class="text-center block">Beginning</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><span class="text-center block">—</span></td>
+</tr>
+<tr>
+<td>2</td>
+<td><span class="text-center block">—</span></td>
+</tr>
+<tr>
+<td>3</td>
+<td><span class="text-center block">—</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td><span class="text-center block">—</span></td>
+</tr>
+<tr>
+<td>5</td>
+<td><span class="text-center block">A-</span></td>
+</tr>
+<tr>
+<td>6</td>
+<td><span class="text-center block">Be-</span></td>
+</tr>
+<tr>
+<td>7</td>
+<td><span class="text-center block">De-</span></td>
+</tr>
+<tr>
+<td>8</td>
+<td><span class="text-center block">El-</span></td>
+</tr>
+<tr>
+<td>9</td>
+<td><span class="text-center block">Fa-</span></td>
+</tr>
+<tr>
+<td>10</td>
+<td><span class="text-center block">Jo-</span></td>
+</tr>
+<tr>
+<td>11</td>
+<td><span class="text-center block">Ki-</span></td>
+</tr>
+<tr>
+<td>12</td>
+<td><span class="text-center block">La-</span></td>
+</tr>
+<tr>
+<td>13</td>
+<td><span class="text-center block">Ma-</span></td>
+</tr>
+<tr>
+<td>14</td>
+<td><span class="text-center block">Na-</span></td>
+</tr>
+<tr>
+<td>15</td>
+<td><span class="text-center block">O-</span></td>
+</tr>
+<tr>
+<td>16</td>
+<td><span class="text-center block">Pa-</span></td>
+</tr>
+<tr>
+<td>17</td>
+<td><span class="text-center block">Re-</span></td>
+</tr>
+<tr>
+<td>18</td>
+<td><span class="text-center block">Se-</span></td>
+</tr>
+<tr>
+<td>19</td>
+<td><span class="text-center block">Si-</span></td>
+</tr>
+<tr>
+<td>20</td>
+<td><span class="text-center block">Ta-</span></td>
+</tr>
+</tbody>
+</table> </div>
+<div class=table-wrapper> <table>
+<thead>
+<tr>
+<th>d20</th>
+<th><span class="text-center block">Middle</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><span class="text-center block">bar</span></td>
+</tr>
+<tr>
+<td>2</td>
+<td><span class="text-center block">ched</span></td>
+</tr>
+<tr>
+<td>3</td>
+<td><span class="text-center block">dell</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td><span class="text-center block">far</span></td>
+</tr>
+<tr>
+<td>5</td>
+<td><span class="text-center block">gran</span></td>
+</tr>
+<tr>
+<td>6</td>
+<td><span class="text-center block">hal</span></td>
+</tr>
+<tr>
+<td>7</td>
+<td><span class="text-center block">jen</span></td>
+</tr>
+<tr>
+<td>8</td>
+<td><span class="text-center block">kel</span></td>
+</tr>
+<tr>
+<td>9</td>
+<td><span class="text-center block">lim</span></td>
+</tr>
+<tr>
+<td>10</td>
+<td><span class="text-center block">mor</span></td>
+</tr>
+<tr>
+<td>11</td>
+<td><span class="text-center block">net</span></td>
+</tr>
+<tr>
+<td>12</td>
+<td><span class="text-center block">penn</span></td>
+</tr>
+<tr>
+<td>13</td>
+<td><span class="text-center block">quil</span></td>
+</tr>
+<tr>
+<td>14</td>
+<td><span class="text-center block">rond</span></td>
+</tr>
+<tr>
+<td>15</td>
+<td><span class="text-center block">sark</span></td>
+</tr>
+<tr>
+<td>16</td>
+<td><span class="text-center block">shen</span></td>
+</tr>
+<tr>
+<td>17</td>
+<td><span class="text-center block">tur</span></td>
+</tr>
+<tr>
+<td>18</td>
+<td><span class="text-center block">vash</span></td>
+</tr>
+<tr>
+<td>19</td>
+<td><span class="text-center block">yor</span></td>
+</tr>
+<tr>
+<td>20</td>
+<td><span class="text-center block">zen</span></td>
+</tr>
+</tbody>
+</table> </div>
+<div class=table-wrapper> <table>
+<thead>
+<tr>
+<th>d20</th>
+<th><span class="text-center block">End</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><span class="text-center block">—</span></td>
+</tr>
+<tr>
+<td>2</td>
+<td><span class="text-center block">-a</span></td>
+</tr>
+<tr>
+<td>3</td>
+<td><span class="text-center block">-ac</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td><span class="text-center block">-ai</span></td>
+</tr>
+<tr>
+<td>5</td>
+<td><span class="text-center block">-al</span></td>
+</tr>
+<tr>
+<td>6</td>
+<td><span class="text-center block">-am</span></td>
+</tr>
+<tr>
+<td>7</td>
+<td><span class="text-center block">-an</span></td>
+</tr>
+<tr>
+<td>8</td>
+<td><span class="text-center block">-ar</span></td>
+</tr>
+<tr>
+<td>9</td>
+<td><span class="text-center block">-ea</span></td>
+</tr>
+<tr>
+<td>10</td>
+<td><span class="text-center block">-el</span></td>
+</tr>
+<tr>
+<td>11</td>
+<td><span class="text-center block">-er</span></td>
+</tr>
+<tr>
+<td>12</td>
+<td><span class="text-center block">-ess</span></td>
+</tr>
+<tr>
+<td>13</td>
+<td><span class="text-center block">-ett</span></td>
+</tr>
+<tr>
+<td>14</td>
+<td><span class="text-center block">-ic</span></td>
+</tr>
+<tr>
+<td>15</td>
+<td><span class="text-center block">-id</span></td>
+</tr>
+<tr>
+<td>16</td>
+<td><span class="text-center block">-il</span></td>
+</tr>
+<tr>
+<td>17</td>
+<td><span class="text-center block">-in</span></td>
+</tr>
+<tr>
+<td>18</td>
+<td><span class="text-center block">-is</span></td>
+</tr>
+<tr>
+<td>19</td>
+<td><span class="text-center block">-or</span></td>
+</tr>
+<tr>
+<td>20</td>
+<td><span class="text-center block">-us</span></td>
+</tr>
+</tbody>
+</table> </div>
+<h3 id=encounter-distance>
+<a href=#encounter-distance class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Encounter Distance</h3><div class=table-wrapper> <table>
+<thead>
+<tr>
+<th>Terrain</th>
+<th>Encounter Distance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arctic, desert, farmland, or grassland</td>
+<td><wc-roll>6d6 × 10</wc-roll> feet</td>
+</tr>
+<tr>
+<td>Forest, swamp, or woodland</td>
+<td><wc-roll>2d8 × 10</wc-roll> feet</td>
+</tr>
+<tr>
+<td>Hills or wastelands</td>
+<td><wc-roll>2d10 × 10</wc-roll> feet</td>
+</tr>
+<tr>
+<td>Jungle</td>
+<td><wc-roll>2d6 × 10</wc-roll> feet</td>
+</tr>
+<tr>
+<td>Mountains</td>
+<td><wc-roll>4d10 × 10</wc-roll> feet</td>
+</tr>
+</tbody>
+</table> </div>
+<div class=table-wrapper> <table>
+<thead>
+<tr>
+<th>Audible Distance</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trying to be quiet</td>
+<td><wc-roll>2d6 × 5</wc-roll> feet</td>
+</tr>
+<tr>
+<td>Normal noise level</td>
+<td><wc-roll>2d6 × 10</wc-roll> feet</td>
+</tr>
+<tr>
+<td>Very loud</td>
+<td><wc-roll>2d6 × 50</wc-roll> feet</td>
+</tr>
+</tbody>
+</table> </div>
+<div class=table-wrapper> <table>
+<thead>
+<tr>
+<th>Visibility Outdoors</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clear day, no obstructions</td>
+<td>2 miles</td>
+</tr>
+<tr>
+<td>Rain</td>
+<td>1 mile</td>
+</tr>
+<tr>
+<td>Fog</td>
+<td>100 to 300 feet</td>
+</tr>
+<tr>
+<td>From a height</td>
+<td>× 20</td>
+</tr>
+</tbody>
+</table> </div>
+<h3 id=something-happens>
+<a href=#something-happens class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Something happens!</h3><div class=table-wrapper> <table>
+<thead>
+<tr>
+<th><span class="text-center block">d20</span></th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="text-center block">1</span></td>
+<td>A door opens.</td>
+</tr>
+<tr>
+<td><span class="text-center block">2</span></td>
+<td>A fire starts.</td>
+</tr>
+<tr>
+<td><span class="text-center block">3</span></td>
+<td>A meteor shoots across the sky.</td>
+</tr>
+<tr>
+<td><span class="text-center block">4</span></td>
+<td>A monster appears.</td>
+</tr>
+<tr>
+<td><span class="text-center block">5</span></td>
+<td>A screech pierces the air.</td>
+</tr>
+<tr>
+<td><span class="text-center block">6</span></td>
+<td>A storm begins.</td>
+</tr>
+<tr>
+<td><span class="text-center block">7</span></td>
+<td>A strange star appears in the sky.</td>
+</tr>
+<tr>
+<td><span class="text-center block">8</span></td>
+<td>A strong gust oif wind blows through.</td>
+</tr>
+<tr>
+<td><span class="text-center block">9</span></td>
+<td>A tremor shakes the ground.</td>
+</tr>
+<tr>
+<td><span class="text-center block">10</span></td>
+<td>Someone experiences déjà vu.</td>
+</tr>
+<tr>
+<td><span class="text-center block">11</span></td>
+<td>Someone gets angry.</td>
+</tr>
+<tr>
+<td><span class="text-center block">12</span></td>
+<td>Someone glimpses the future.</td>
+</tr>
+<tr>
+<td><span class="text-center block">13</span></td>
+<td>Someone has a sense of foreboding.</td>
+</tr>
+<tr>
+<td><span class="text-center block">14</span></td>
+<td>Someone has to go to the bathroom.</td>
+</tr>
+<tr>
+<td><span class="text-center block">15</span></td>
+<td>Something spills or falls to the ground.</td>
+</tr>
+<tr>
+<td><span class="text-center block">16</span></td>
+<td>Something isn&rsquo;t where it&rsquo;s supposed to be.</td>
+</tr>
+<tr>
+<td><span class="text-center block">17</span></td>
+<td>The lights go out.</td>
+</tr>
+<tr>
+<td><span class="text-center block">18</span></td>
+<td>The sun comes out.</td>
+</tr>
+<tr>
+<td><span class="text-center block">19</span></td>
+<td>There&rsquo;s a foul smell in the air.</td>
+</tr>
+<tr>
+<td><span class="text-center block">20</span></td>
+<td>Unexplained magic occurs.</td>
+</tr>
+</tbody>
+</table> </div>
+<h3 id=quick-finds>
+<a href=#quick-finds class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Quick Finds</h3><div class=table-wrapper> <table>
+<thead>
+<tr>
+<th><span class="text-center block">d12</span></th>
+<th>Find</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="text-center block">1</span></td>
+<td>Artwork</td>
+</tr>
+<tr>
+<td><span class="text-center block">2</span></td>
+<td>Body</td>
+</tr>
+<tr>
+<td><span class="text-center block">3</span></td>
+<td>Food or drink</td>
+</tr>
+<tr>
+<td><span class="text-center block">4</span></td>
+<td>Jewelery</td>
+</tr>
+<tr>
+<td><span class="text-center block">5</span></td>
+<td>Key</td>
+</tr>
+<tr>
+<td><span class="text-center block">6</span></td>
+<td>Letter</td>
+</tr>
+<tr>
+<td><span class="text-center block">7</span></td>
+<td>Magic herbs</td>
+</tr>
+<tr>
+<td><span class="text-center block">8</span></td>
+<td>Map</td>
+</tr>
+<tr>
+<td><span class="text-center block">9</span></td>
+<td>Monster parts</td>
+</tr>
+<tr>
+<td><span class="text-center block">10</span></td>
+<td>Secret message</td>
+</tr>
+<tr>
+<td><span class="text-center block">11</span></td>
+<td>Signet or insignia</td>
+</tr>
+<tr>
+<td><span class="text-center block">12</span></td>
+<td>Tome</td>
+</tr>
+</tbody>
+</table> </div>
+<h3 id=light>
+<a href=#light class="header-link icon text-gray-300" aria-label=(anchor)><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>Light</h3><div class=table-wrapper> <table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Bright Light</th>
+<th>Dim Light</th>
+<th>Duration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Candle</td>
+<td>5 ft.</td>
+<td>+ 5 ft.</td>
+<td>1 hour</td>
+</tr>
+<tr>
+<td>Lamp</td>
+<td>15 ft.</td>
+<td>+ 30 ft.</td>
+<td>6 hours</td>
+</tr>
+<tr>
+<td>Lantern, bullseye</td>
+<td>60 ft. cone</td>
+<td>+ 60 ft.</td>
+<td>6 hours</td>
+</tr>
+<tr>
+<td>Lantern, hooded</td>
+<td>30 ft.</td>
+<td>+ 30 ft.</td>
+<td>6 hours</td>
+</tr>
+<tr>
+<td>    Lowered hood</td>
+<td>—</td>
+<td>+ 5 ft.</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Torch</td>
+<td>20 ft.</td>
+<td>+ 20 ft.</td>
+<td>1 hour</td>
+</tr>
+</tbody>
+</table> </div>
+</article>
+<aside class="sticky top-16 text-xs font-sans">
+<details class=relative>
+<summary class=mb-1>DM Screen</summary>
+<nav class="absolute bg-white overflow-x-scroll rounded shadow border-gray-200 border-2 max-h-56">
+<a href=/5eTools/book/dungeon-masters-screen/dm-screen/ class="block px-2 py-1">DM Screen</a>
+</nav>
+</details>
+<wc-toc>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#npc-characteristics>NPC Characteristics</a></li>
+<li><a href=#npc-ideals>NPC Ideals</a></li>
+<li><a href=#npc-bonds>NPC Bonds</a></li>
+<li><a href=#npc-flaws>NPC Flaws</a></li>
+<li><a href=#name-generator>Name Generator</a></li>
+<li><a href=#encounter-distance>Encounter Distance</a></li>
+<li><a href=#something-happens>Something happens!</a></li>
+<li><a href=#quick-finds>Quick Finds</a></li>
+<li><a href=#light>Light</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</wc-toc>
+<div class="flex mt-4 gap-1 items-center">
+<a href=https://timbomckay.github.io/5eTools/adventure/wildemount-dangerous-designs/dangerous-designs/ class="icon text-lg leading-none"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></a>
+<a href=#skip-nav class="icon text-xl leading-none"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="20" viewBox="0 0 20 20" width="20"><g><rect fill="none" height="20" width="20"/><path d="M10 4c3.31.0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-1c-3.87.0-7 3.13-7 7s3.13 7 7 7 7-3.13 7-7c0-3.87-3.13-7-7-7zm-.5 7v3h1v-3H13l-3-3-3 3H9.5z"/></g></svg></a>
+<a href=https://timbomckay.github.io/5eTools/adventure/tomb-of-annihilation/dramatis-personae/ class="icon text-lg leading-none"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></a>
+</div>
+</aside>
+</div>
+<script>window.customElements.define('wc-toc',class extends HTMLElement{connectedCallback(){const{headings:a}=this,b=this,c=window.visualViewport.height/4;document.addEventListener('scroll',function(f){const d=a.filter(a=>a.target.offsetTop<window.scrollY+c).pop(),e=b.getElementsByClassName('active');if(e!=null)for(let a of e){a.classList.remove('active');const b=a.closest('ul');b.classList.remove('has-active')}if(d!=null){d.el.classList.add('active');const a=d.el.closest('ul');a.classList.add('has-active')}})}get headings(){const a=[];for(let b of this.querySelectorAll('a'))a.push({el:b,target:document.getElementById(b.hash.replace('#',''))});return a}})</script>
+</main>
+<footer></footer></body>
+</html>
