@@ -1,29 +1,50 @@
 {
   "campaigns": {
-    "--random-id-123--": {
+    "--campaign-uid-123--": {
       "name": "The War of Storms",
-      "users": [ "--random-id-123--" ],
-      "characters": [ "--random-id-123--" ],
+      "users": [ "--user-uid-123--" ],
+      "characters": [ "--character-uid-123--" ],
       "notes": [],
       "timeline": [],
-      "items": [
-        {
-          "id": "--random-id-123--",
+      // campaign holds all items
+      "items": {
+        // bag of holding
+        "--item-uid-abc--": {
+          "notes": []
+        },
+        // unidentified item
+        "--item-uid-321--": {
           "notes": [],
-          "identified": true
+          "identified": false
         }
-      ]
+      },
+      // TODO: items not on characters
+      "inventory": {}
     }
   },
   "characters": {
-    "--random-id-123--": {
+    "--character-uid-123--": {
       "name": "Tenebrae",
-      "items": [
-        {
-          "id": "--random-id-123--",
-          "notes": []
-        }
-      ]
+      // sorting items
+      "inventory": {
+        // attuned items
+        "attuned": [
+          "--item-uid-321--",
+          "--item-uid-abc--"
+        ],
+        // items held on person
+        "--character-uid-123--": [
+          "--item-uid-321--",
+          "--item-uid-abc--",
+          "--item-uid-xyz--"
+        ],
+        // sorted items in bag of holding
+        "--item-uid-abc--": [
+          "--item-uid-321--",
+          "--item-uid-abc--",
+          "--item-uid-xyz--"
+        ]
+      }
     }
   },
   "items": {
