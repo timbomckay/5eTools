@@ -34,13 +34,16 @@ export class WCItemList extends LitElement {
 
   @property({ type: Boolean }) isDropTarget = false;
 
-  @property({ type: Number }) dragging = -1;
-
   connectedCallback() {
     super.connectedCallback();
 
     this.addEventListener('dragenter', (e) => e.preventDefault());
-    this.addEventListener('dragover', (e) => e.preventDefault());
+
+    this.addEventListener('dragover', (e) => {
+      e.stopPropagation(); // let child accept & don't pass up to parent element
+      e.preventDefault(); // required to accept drop
+      e.dataTransfer.dropEffect = 'copy'; // move has no icon? adding copy shows +
+    });
   }
 
   render() {

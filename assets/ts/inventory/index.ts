@@ -111,7 +111,7 @@ export class WCInventory extends LitElement {
   }
 
   public handleDrag(ch, list, e: DragEvent) {
-    const { index, uid } = e.path.shift();
+    const { index, uid } = e.composedPath().shift();
 
     this.dragging = {
       ch, list, index, uid,
@@ -119,11 +119,13 @@ export class WCInventory extends LitElement {
   }
 
   public handleDrop(toChar, toList, e: DragEvent) {
+    e.preventDefault(); // prevent safari reload
     const clone = JSON.parse(JSON.stringify(this.data));
     const {
       ch, list, index, uid,
     } = this.dragging;
-    let { index: toIndex } = e.path.shift();
+
+    let { index: toIndex } = e.composedPath().shift();
 
     if (toIndex == null) {
       // append to array when null to append to new list
