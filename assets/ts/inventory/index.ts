@@ -1,6 +1,5 @@
 import { html, css, LitElement } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
-import { repeat } from 'lit/directives/repeat.js';
 import { v4 as uuidv4 } from 'uuid';
 import './item-list.ts';
 import ItemsData from './items.json';
@@ -87,11 +86,12 @@ export class WCInventory extends LitElement {
         padding: 0.5rem;
       }
       .character {
-        flex: 1 1 0;
+        flex: 1 0 32ch;
         border-width: 1px;
         border-color: #78350f;
         border-style: solid;
         list-style: none;
+        overflow-x: auto;
       }
     `,
     css`@media (min-width: 48rem) {

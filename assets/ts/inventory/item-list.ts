@@ -1,6 +1,7 @@
 import { html, css, LitElement } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { customElement, property, state } from 'lit/decorators.js';
 import './item.ts';
+import './item-details.ts';
 
 @customElement('wc-item-list')
 export class WCItemList extends LitElement {
@@ -15,7 +16,7 @@ export class WCItemList extends LitElement {
       padding: 0.25rem;
       display: grid;
       gap: 0.25rem;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(2.5rem, 1fr));
     }
     .highlight {
       background-color: yellow;
@@ -32,7 +33,9 @@ export class WCItemList extends LitElement {
 
   @property() uid = '--uid--';
 
-  @property({ type: Boolean }) isDropTarget = false;
+  @state({ type: Boolean }) isDropTarget = false;
+
+  @state({ type: String }) active;
 
   connectedCallback() {
     super.connectedCallback();
@@ -49,11 +52,16 @@ export class WCItemList extends LitElement {
   render() {
     return html`
       <div class="title">${this.uid}</div>
+      <wc-item-details
+        uid="${this.active}"
+        .details="${this.ownerDocument.__ITEMS__[this.active]}"
+      ></wc-item-details>
       <div class="container ${this.isDropTarget ? 'highlight' : ''}">
         ${this.list.map((item, i) => html`<wc-item
           uid="${item}"
           .index="${i}"
           draggable="true"
+          @click="${() => { this.active = item; }}"
         ></wc-item>`)}
       </div>
     `;

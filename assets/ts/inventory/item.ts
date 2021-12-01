@@ -21,6 +21,14 @@ export class WCItem extends LitElement {
       background-color: yellow;
       transform: scale(1.15);
     }
+
+    img {
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      transform: scale(1.75);
+      pointer-events: none;
+    }
   `;
 
   @property() uid = null;
@@ -29,6 +37,8 @@ export class WCItem extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
+
+    this.setAttribute('tabindex', '0');
 
     this.addEventListener('dragstart', () => { this.classList.add('dragging'); });
     this.addEventListener('dragend', () => { this.classList.remove('dragging'); });
@@ -40,9 +50,16 @@ export class WCItem extends LitElement {
 
   render() {
     if (this.uid != null) {
-      this.details = this.ownerDocument.__ITEMS__[this.uid];
-      this.title = this.details.name;
-      return html`${this.details.name}`;
+      const details = this.ownerDocument.__ITEMS__[this.uid];
+      this.title = details.name;
+
+      if (details.image) {
+        const src = Object.keys(details.sources).shift();
+        const name = encodeURI(details.name);
+        return html`<img src="https://5e.tools/img/items/${src}/${name}.jpg" alt="${details.name}" />`;
+      }
+
+      return html`${details.name}`;
     }
 
     return html`${this.uid}`;
