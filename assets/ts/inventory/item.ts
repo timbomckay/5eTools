@@ -1,5 +1,7 @@
-import { html, css, LitElement } from 'lit';
-import { customElement, property, state } from 'lit/decorators.js';
+import {
+  html, css, LitElement, nothing,
+} from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 
 @customElement('wc-item')
 export class WCItem extends LitElement {
@@ -13,6 +15,7 @@ export class WCItem extends LitElement {
       line-height: 1;
       overflow: hidden;
       padding: 0.25rem;
+      position: relative;
     }
     :host(.hovering) {
       background-color: red;
@@ -29,11 +32,43 @@ export class WCItem extends LitElement {
       transform: scale(1.75);
       pointer-events: none;
     }
+
+    :host([rarity])::before {
+      content: "";
+      display: block;
+      position: absolute;
+      border-width: 0.5em;
+      border-style: solid;
+      border-color: var(--rarity, transparent) var(--rarity, transparent) transparent transparent;
+      height: 0;
+      width: 0;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    :host([rarity="common"]) { --rarity: #94A3B8; }
+    :host([rarity="uncommon"]) { --rarity: #84CC16; }
+    :host([rarity="rare"]) { --rarity: #3B82F6; }
+    :host([rarity="very rare"]) { --rarity: #7C3AED; }
+    :host([rarity="legendary"]) { --rarity: #FCD34D; }
+    :host([rarity="artifact"]) { --rarity: #DC2626; }
   `;
 
   @property() uid = null;
 
-  @state() details = {};
+  @property({
+    type: String,
+    reflect: true,
+  }) rarity = null;
+
+  @property({
+    type: Object,
+    attribute: false,
+    hasChanged(n, o) {
+      return JSON.stringify(n) !== JSON.stringify(o);
+    },
+  }) details = {};
 
   connectedCallback() {
     super.connectedCallback();
@@ -49,19 +84,21 @@ export class WCItem extends LitElement {
   }
 
   render() {
-    if (this.uid != null) {
-      const details = this.ownerDocument.__ITEMS__[this.uid];
-      this.title = details.name;
+    if (!this.uid) { return nothing; }
 
-      if (details.image) {
-        const src = Object.keys(details.sources).shift();
-        const name = encodeURI(details.name);
-        return html`<img src="https://5e.tools/img/items/${src}/${name}.jpg" alt="${details.name}" />`;
-      }
+    const { details } = this;
+    this.title = details.name;
 
-      return html`${details.name}`;
+    if (details.rarity) {
+      this.rarity = details.rarity;
     }
 
-    return html`${this.uid}`;
+    if (details.image) {
+      const src = Object.keys(details.sources).shift();
+      const name = encodeURI(details.name);
+      return html`<img src="https://5e.tools/img/items/${src}/${name}.jpg" alt="${details.name}" />`;
+    }
+
+    return html`${details.name}`;
   }
 }

@@ -60,6 +60,7 @@ export class WCItemList extends LitElement {
         ${this.list.map((item, i) => html`<wc-item
           uid="${item}"
           .index="${i}"
+          .details="${this.ownerDocument.__ITEMS__[item]}"
           draggable="true"
           @click="${() => { this.active = item; }}"
         ></wc-item>`)}

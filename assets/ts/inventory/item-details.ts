@@ -16,7 +16,7 @@ export class WCItemDetails extends LitElement {
       font-size: 0.9rem;
       overflow: auto;
       padding: 0.5rem;
-      max-height: 40vh;
+      max-height: 50vh;
     }
 
     :host([uid=""]) {
@@ -63,7 +63,13 @@ export class WCItemDetails extends LitElement {
 
   @property() uid = null;
 
-  @property() details = {};
+  @property({
+    type: Object,
+    attribute: false,
+    hasChanged(n, o) {
+      return JSON.stringify(n) !== JSON.stringify(o);
+    },
+  }) details = {};
 
   imageTemplate() {
     if (!this.details.image) { return nothing; }
