@@ -3,6 +3,24 @@ import {
 } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
+export interface itemType {
+  name: string,
+  sources: { [key: string]: number },
+  type: string,
+  // optional
+  attunement?: string,
+  charges?: number,
+  damage?: {},
+  entries?: (string | object)[],
+  extends?: {},
+  image?: boolean | string,
+  rarity?: string,
+  range?: string,
+  properties?: string[],
+  srd?: boolean,
+  tier?: string,
+}
+
 @customElement('wc-item')
 export class WCItem extends LitElement {
   static styles = css`
@@ -55,12 +73,12 @@ export class WCItem extends LitElement {
     :host([rarity="artifact"]) { --rarity: #DC2626; }
   `;
 
-  @property() uid = null;
+  @property() uid: string | null;
 
   @property({
     type: String,
     reflect: true,
-  }) rarity = null;
+  }) rarity;
 
   @property({
     type: Object,
@@ -68,7 +86,7 @@ export class WCItem extends LitElement {
     hasChanged(n, o) {
       return JSON.stringify(n) !== JSON.stringify(o);
     },
-  }) details = {};
+  }) details: itemType;
 
   connectedCallback() {
     super.connectedCallback();
@@ -84,7 +102,7 @@ export class WCItem extends LitElement {
   }
 
   render() {
-    if (!this.uid) { return nothing; }
+    if (this.uid == null) { return nothing; }
 
     const { details } = this;
     this.title = details.name;
@@ -95,8 +113,13 @@ export class WCItem extends LitElement {
 
     if (details.image) {
       const src = Object.keys(details.sources).shift();
-      const name = encodeURI(details.name);
-      return html`<img src="https://5e.tools/img/items/${src}/${name}.jpg" alt="${details.name}" />`;
+      const name = details.name
+        .replace(/\s/g, '_')
+        .replace(/,/g, '')
+        .replace(/\(/g, '')
+        .replace(/\)/g, '')
+        .replace(/'/g, '');
+      return html`<img src="https://res.cloudinary.com/timbomckay/image/upload/items/${src}/${name}.webp" alt="${details.name}" />`;
     }
 
     return html`${details.name}`;

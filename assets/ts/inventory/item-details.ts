@@ -3,7 +3,8 @@ import {
 } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
-import { classMap } from 'lit/directives/class-map.js';
+
+import { itemType } from './item';
 
 @customElement('wc-item-details')
 export class WCItemDetails extends LitElement {
@@ -69,7 +70,7 @@ export class WCItemDetails extends LitElement {
     hasChanged(n, o) {
       return JSON.stringify(n) !== JSON.stringify(o);
     },
-  }) details = {};
+  }) details: itemType;
 
   imageTemplate() {
     if (!this.details.image) { return nothing; }
@@ -77,11 +78,17 @@ export class WCItemDetails extends LitElement {
     const { details } = this;
 
     const src = Object.keys(details.sources).shift();
-    const name = encodeURI(details.name);
-    return html`<div><img src="https://5e.tools/img/items/${src}/${name}.jpg" alt="${details.name}" width="480" height="360" /></div>`;
+    const name = details.name
+      .replace(/\s/g, '_')
+      .replace(/,/g, '')
+      .replace(/\(/g, '')
+      .replace(/\)/g, '')
+      .replace(/'/g, '');
+
+    return html`<div><img src="https://res.cloudinary.com/timbomckay/image/upload/items/${src}/${name}.webp" alt="${details.name}" width="480" height="360" /></div>`;
   }
 
-  processEntries(entries: []) {
+  processEntries(entries: itemType['entries']) {
     return html`${entries == null
       ? nothing
       : entries.map((entry) => this.processEntry(entry))
@@ -113,13 +120,39 @@ export class WCItemDetails extends LitElement {
   render() {
     if (!this.uid) { return nothing; }
 
-    const { name, entries, ...data } = this.details;
+    const {
+      name,
+      image,
+      entries,
+      srd,
+      attunement,
+      rarity,
+      type,
+      tier,
+      sources,
+      charges,
+      properties,
+      ...data
+    } = this.details;
 
     return html`
       ${this.imageTemplate()}
       <div>${name}</div>
+      <div>
+        ${type}
+        ${tier ? `(${tier})` : ''}
+        ${rarity}
+        ${attunement ? '(requires attunement)' : ''}
+      </div>
+      <div>
+        ${properties ? properties.join(' | ') : ''}
+        ${charges ? html`<div>charges: ${charges}</div>` : ''}
+      </div>
+      ${Object.keys(data).length ? html`<pre>${JSON.stringify(data, null, 2)}</pre>` : ''}
       ${this.processEntries(entries)}
-      <pre>${JSON.stringify(data, null, 2)}</pre>
+      <div>
+        ${sources ? Object.keys(sources) : ''}
+      </div>
     `;
   }
 }
