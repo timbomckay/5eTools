@@ -33,9 +33,9 @@ export class WCItemList extends LitElement {
 
   @property() uid = '--uid--';
 
-  @state({ type: Boolean }) isDropTarget = false;
+  @state() isDropTarget = false;
 
-  @state({ type: String }) active;
+  @state() active = '';
 
   connectedCallback() {
     super.connectedCallback();
