@@ -74,32 +74,37 @@
       <img src="${d.toURL()}" alt="${c.name}" width="2" height="1" />
     </div>`}attunementTemplate(c){if(!c)return b;const d=a`<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="20" viewBox="0 0 20 20" width="20"><g><rect fill="none" height="20" width="20"/></g><g><path d="M18,10l-1.77-2.03l0.25-2.69l-2.63-0.6l-1.37-2.32L10,3.43L7.53,2.36L6.15,4.68L3.53,5.28l0.25,2.69L2,10l1.77,2.03 l-0.25,2.69l2.63,0.6l1.37,2.32L10,16.56l2.47,1.07l1.37-2.32l2.63-0.6l-0.25-2.69L18,10z M8.59,13.07l-2.12-2.12l0.71-0.71 l1.41,1.41l4.24-4.24l0.71,0.71L8.59,13.07z"/></g></svg>`,e=a`<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>`;return a`<span class="attunement icon" data-tooltip="requires attunement${c.length?` ${c}`:""}">
       ${d}
-    </span>`}damageTemplate(c){if(!c)return b;const{roll:e,type:f,versatile:d}=c;return a`
+    </span>`}damageTemplate(c){if(!c)return b;const{roll:d,type:e,versatile:f}=c;return a`
       <span class="icon">
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0zm21.02 19c0 1.1-.9 2-2 2h-14c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7.5 18c-.83 0-1.5-.67-1.5-1.5S6.67 15 7.5 15s1.5.67 1.5 1.5S8.33 18 7.5 18zm0-9C6.67 9 6 8.33 6 7.5S6.67 6 7.5 6 9 6.67 9 7.5 8.33 9 7.5 9zm4.5 4.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5 4.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm0-9c-.83 0-1.5-.67-1.5-1.5S15.67 6 16.5 6s1.5.67 1.5 1.5S17.33 9 16.5 9z"/></svg>
       </span>
-      ${e}${d?`/${d}`:""} | ${f}
+      ${[d,f].filter(a=>!!a).join("/")} ${e}
       <span style="margin-right: auto;"></span>`}chargeTemplate(c){if(!c)return b;const d=()=>a`<span class="icon">
       <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z"/></svg>
-    </span>`;return a`<span class="charges">${Array.from(Array(c)).map(()=>d())}</span>`}closeButtonTemplate(){const b=a`<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>`;return a`<button style="line-height: 0;" type="button" @click="${()=>{this._dispatchMyEvent("close")}}">${b}</button>`}menuButtonTemplate(){const b=a`<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>`;return a`<button style="line-height: 0;" type="button">${b}</button>`}processEntries(c){return a`${c==null?b:c.map(a=>this.processEntry(a))}`}processEntry(b,c){if(typeof b=="string")switch(c){case"li":return a`<li>${aj(b)}</li>`;default:return a`<p>${aj(b)}</p>`}if(Array.isArray(b))return a`Array: <pre>${JSON.stringify(b,null,2)}</pre>`;switch(b.type){case"list":return a`<ul class=${b.style}>${b.items.map(b=>a`${this.processEntry(b,"li")}`)}</ul>`;default:return a`<pre>${JSON.stringify(b,null,2)}</pre>`}}_dispatchMyEvent(a,b={}){const c=new CustomEvent(a,{bubbles:!0,composed:!0,detail:b});this.dispatchEvent(c)}render(){if(!this.uid)return b;const{attunement:m,charges:g,damage:k,entries:i,image:o,name:h,properties:c,rarity:j,sources:e,srd:n,tier:d,type:l,...f}=this.details;return a`
+    </span>`;return a`<span class="charges">${Array.from(Array(c)).map(()=>d())}</span>`}closeButtonTemplate(){const b=a`<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>`;return a`<button style="line-height: 0;" type="button" @click="${()=>{this._dispatchMyEvent("close")}}">${b}</button>`}menuButtonTemplate(){const b=a`<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>`;return a`<details>
+      <summary style="line-height: 0;">${b}</summary>
+      <div>
+        <i>Menu in Progress</i>
+      </div>
+    </details>`}processEntries(c){return a`${c==null?b:c.map(a=>this.processEntry(a))}`}processEntry(b,c){if(typeof b=="string")switch(c){case"li":return a`<li>${aj(b)}</li>`;default:return a`<p>${aj(b)}</p>`}if(Array.isArray(b))return a`Array: <pre>${JSON.stringify(b,null,2)}</pre>`;switch(b.type){case"list":return a`<ul class=${b.style}>${b.items.map(b=>a`${this.processEntry(b,"li")}`)}</ul>`;default:return a`<pre>${JSON.stringify(b,null,2)}</pre>`}}_dispatchMyEvent(a,b={}){const c=new CustomEvent(a,{bubbles:!0,composed:!0,detail:b});this.dispatchEvent(c)}render(){if(!this.uid)return b;const{attunement:g,charges:m,damage:l,entries:j,image:o,name:h,properties:c,range:p,rarity:k,sources:e,srd:n,tier:d,type:i,...f}=this.details;return a`
       ${this.imageTemplate()}
       <div class="title">
         ${h}
         <div>
-          ${this.attunementTemplate(m)}
+          ${this.attunementTemplate(g)}
         </div>
       </div>
       <div class="content">
         <div class="content-inner">
           <div class="info">
-            <i>${l} ${d?`(${d})`:""} ${j}</i>
+            <i>${i} ${d?`(${d})`:""} ${k}</i>
             <div style="display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0;">
-              ${this.chargeTemplate(g)}
+              ${this.chargeTemplate(m)}
               ${c?a`<div>${c.map((b,c)=>a`<span class="property" style="z-index: -${c};">${b}</span>`)}</div>`:""}
             </div>
           </div>
           ${Object.keys(f).length?a`<pre>${JSON.stringify(f,null,2)}</pre>`:""}
-          ${this.processEntries(i)}
+          ${this.processEntries(j)}
           <div>
             <i class="sources">
               ${e?Object.keys(e).map(a=>dw[a]).join(" \u2022\xA0"):""}
@@ -108,7 +113,7 @@
         </div>
       </div>
       <div class="footer">
-        ${this.damageTemplate(k)}
+        ${this.damageTemplate(l)}
         ${this.menuButtonTemplate()}
         ${this.closeButtonTemplate()}
       </div>
@@ -253,6 +258,31 @@
       color: inherit;
       line-height: inherit;
       padding: 0;
+    }
+
+    details {
+      position: relative;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+    }
+
+    ::-webkit-details-marker {
+      display: none;
+    }
+
+    details > div {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      bottom: 100%;
+      filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.125));
+      padding: 0.5rem;
+      position: absolute;
+      right: -0.25rem;
+      width: 14ch;
     }
 
     pre {
