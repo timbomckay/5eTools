@@ -143,9 +143,19 @@ export class WCItemDetails extends LitElement {
       display: flex;
       align-items: center;
       padding: 0.5rem;
-      gap: 0.5rem;
+      gap: 0.25rem;
       justify-content: flex-end;
       font-size: 0.85em;
+    }
+
+    button {
+      border: 0;
+      background-color: transparent;
+      background-image: none;
+      cursor: pointer;
+      color: inherit;
+      line-height: inherit;
+      padding: 0;
     }
 
     pre {
@@ -202,24 +212,36 @@ export class WCItemDetails extends LitElement {
     // );
 
     return html`<div class="image-container">
-      <img src="${image.toURL()}" alt="${details.name}" width="16" height="9" />
+      <img src="${image.toURL()}" alt="${details.name}" width="2" height="1" />
     </div>`;
   }
 
   attunementTemplate(val: string | undefined) {
     if (!val) { return nothing; }
 
+    const icon = html`<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="20" viewBox="0 0 20 20" width="20"><g><rect fill="none" height="20" width="20"/></g><g><path d="M18,10l-1.77-2.03l0.25-2.69l-2.63-0.6l-1.37-2.32L10,3.43L7.53,2.36L6.15,4.68L3.53,5.28l0.25,2.69L2,10l1.77,2.03 l-0.25,2.69l2.63,0.6l1.37,2.32L10,16.56l2.47,1.07l1.37-2.32l2.63-0.6l-0.25-2.69L18,10z M8.59,13.07l-2.12-2.12l0.71-0.71 l1.41,1.41l4.24-4.24l0.71,0.71L8.59,13.07z"/></g></svg>`;
+    const icon2 = html`<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>`;
+
+    // attuned => colored verified icon
+    // attuneable => faded verified icon
+    // not attuneable => black x icon (or something)
+
     return html`<span class="attunement icon" data-tooltip="requires attunement${val.length ? ` ${val}` : ''}">
-      <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="20" viewBox="0 0 20 20" width="20"><g><rect fill="none" height="20" width="20"/></g><g><path d="M18,10l-1.77-2.03l0.25-2.69l-2.63-0.6l-1.37-2.32L10,3.43L7.53,2.36L6.15,4.68L3.53,5.28l0.25,2.69L2,10l1.77,2.03 l-0.25,2.69l2.63,0.6l1.37,2.32L10,16.56l2.47,1.07l1.37-2.32l2.63-0.6l-0.25-2.69L18,10z M8.59,13.07l-2.12-2.12l0.71-0.71 l1.41,1.41l4.24-4.24l0.71,0.71L8.59,13.07z"/></g></svg>
+      ${icon}
     </span>`;
   }
 
   damageTemplate(val: {} | undefined) {
     if (!val) { return nothing; }
 
-    return html`<span class="damage icon" data-tooltip="damage ${val}">
-      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0zm21.02 19c0 1.1-.9 2-2 2h-14c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7.5 18c-.83 0-1.5-.67-1.5-1.5S6.67 15 7.5 15s1.5.67 1.5 1.5S8.33 18 7.5 18zm0-9C6.67 9 6 8.33 6 7.5S6.67 6 7.5 6 9 6.67 9 7.5 8.33 9 7.5 9zm4.5 4.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5 4.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm0-9c-.83 0-1.5-.67-1.5-1.5S15.67 6 16.5 6s1.5.67 1.5 1.5S17.33 9 16.5 9z"/></svg>
-    </span>`;
+    const { roll, type, versatile } = val;
+
+    return html`
+      <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0zm21.02 19c0 1.1-.9 2-2 2h-14c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7.5 18c-.83 0-1.5-.67-1.5-1.5S6.67 15 7.5 15s1.5.67 1.5 1.5S8.33 18 7.5 18zm0-9C6.67 9 6 8.33 6 7.5S6.67 6 7.5 6 9 6.67 9 7.5 8.33 9 7.5 9zm4.5 4.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5 4.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm0-9c-.83 0-1.5-.67-1.5-1.5S15.67 6 16.5 6s1.5.67 1.5 1.5S17.33 9 16.5 9z"/></svg>
+      </span>
+      ${roll}${versatile ? `/${versatile}` : ''} | ${type}
+      <span style="margin-right: auto;"></span>`;
   }
 
   chargeTemplate(val: number | undefined) {
@@ -229,7 +251,21 @@ export class WCItemDetails extends LitElement {
       <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z"/></svg>
     </span>`;
 
-    return html`<span class="charges" data-tooltip="${val} charges">${Array.from(Array(val)).map(() => icon())}</span>`;
+    // if count > 8, reduce to 5 icons
+
+    return html`<span class="charges">${Array.from(Array(val)).map(() => icon())}</span>`;
+  }
+
+  closeButtonTemplate() {
+    const icon = html`<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>`;
+
+    return html`<button style="line-height: 0;" type="button" @click="${() => { this._dispatchMyEvent('close'); }}">${icon}</button>`;
+  }
+
+  menuButtonTemplate() {
+    const icon = html`<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>`;
+
+    return html`<button style="line-height: 0;" type="button">${icon}</button>`;
   }
 
   processEntries(entries: itemType['entries']) {
@@ -259,6 +295,15 @@ export class WCItemDetails extends LitElement {
       default:
         return html`<pre>${JSON.stringify(entry, null, 2)}</pre>`;
     }
+  }
+
+  private _dispatchMyEvent(name: string, detail = {}) {
+    const myEvent = new CustomEvent(name, {
+      bubbles: true,
+      composed: true,
+      detail,
+    });
+    this.dispatchEvent(myEvent);
   }
 
   render() {
@@ -291,11 +336,7 @@ export class WCItemDetails extends LitElement {
       <div class="content">
         <div class="content-inner">
           <div class="info">
-            <i>
-              ${type} 
-              ${tier ? `(${tier})` : ''}
-              ${rarity}
-            </i>
+            <i>${type} ${tier ? `(${tier})` : ''} ${rarity}</i>
             <div style="display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0;">
               ${this.chargeTemplate(charges)}
               ${properties ? html`<div>${properties.map((p, i) => html`<span class="property" style="z-index: -${i};">${p}</span>`)}</div>` : ''}
@@ -312,8 +353,8 @@ export class WCItemDetails extends LitElement {
       </div>
       <div class="footer">
         ${this.damageTemplate(damage)}
-        <span style="margin-left: auto;">Menu =</span>
-        <span>Close X</span>
+        ${this.menuButtonTemplate()}
+        ${this.closeButtonTemplate()}
       </div>
     `;
   }

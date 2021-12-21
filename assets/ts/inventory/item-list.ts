@@ -42,7 +42,7 @@ export class WCItemList extends LitElement {
 
     this.addEventListener('dragenter', (e) => e.preventDefault());
 
-    this.active = this.list[0];
+    // this.active = this.list[0];
 
     this.addEventListener('dragover', (e) => {
       e.stopPropagation(); // let child accept & don't pass up to parent element
@@ -57,6 +57,7 @@ export class WCItemList extends LitElement {
       <wc-item-details
         uid="${this.active}"
         .details="${this.ownerDocument.__ITEMS__[this.active]}"
+        @close="${() => { this.active = ''; }}"
       ></wc-item-details>
       <div class="container ${this.isDropTarget ? 'highlight' : ''}">
         ${this.list.map((item, i) => html`<wc-item
