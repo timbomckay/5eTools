@@ -1,27 +1,35 @@
 import {
-  html, css, LitElement, nothing,
+  html, css, LitElement, nothing, unsafeCSS,
 } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { unsafeHTML } from 'lit/directives/unsafe-html.js';
-
+import { unsafeHTML } from 'lit/directives/unsafe-html.js';// Import the scale mode from the resize action.
+import { Transformation } from '@cloudinary/url-gen';
+import { fill, pad } from '@cloudinary/url-gen/actions/resize';
+import { ifCondition } from '@cloudinary/url-gen/actions/conditional';
+import { primary, yellow } from '../../colors';
+import { cld } from '../cloudinary';
 import { itemType } from './item';
+import { SOURCES } from './parser';
+
+const imgW = window.devicePixelRatio * 480;
 
 @customElement('wc-item-details')
 export class WCItemDetails extends LitElement {
   static styles = css`
     :host {
-      border-color: #78350f;
+      border-color: ${unsafeCSS(primary[800])};
       border-style: solid;
       border-width: 1px 0;
       display: block;
-      font-size: 0.9rem;
-      overflow: auto;
-      padding: 0.5rem;
-      max-height: 50vh;
     }
 
     :host([uid=""]) {
       display: none;
+    }
+
+    .image-container {
+      padding: 0;
+      position: relative;
     }
 
     img {
@@ -30,26 +38,114 @@ export class WCItemDetails extends LitElement {
       line-height: 0;
       margin-left: auto;
       margin-right: auto;
-      max-height: 7.5rem;
       max-width: 100%;
       mix-blend-mode: multiply;
-      width: auto;
+      width: 100%;
+    }
+    
+    .content {
+      padding: 0 0.5rem;
     }
 
-    p, li {
+    .content-inner {
+      border-color: ${unsafeCSS(yellow[600])};
+      border-style: solid;
+      border-width: 1px 0;
       font-size: 0.85em;
+      padding: 0.5rem 0;
       line-height: 1.25;
+      max-height: 50vh;
+      overflow: auto;
+    }
+
+    .title, .info {
+      align-items: center;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+
+    .title {
+      color: ${unsafeCSS(primary[600])};
+      font-size: 1.125rem;
+      line-height: 1;
+      font-weight: 600;
+      padding: 0.5rem;
+    }
+
+    .title .attunement {
+      flex-shrink: 0;
+      color: ${unsafeCSS(primary[900])};
+      color: black;
+      opacity: 0.325;
+    }
+
+    .icon {
+      display: inline-block;
+      line-height: 0;
+    }
+    
+    .icon > svg {
+      display: block;
+      fill: currentColor;
+      height: 1em;
+      max-height: 100%;
+      max-width: 100%;
+      width: 1em;
     }
 
     b { line-height: 1; }
 
     ul { padding-left: 1.25rem; }
 
-    li { margin-top: 0.5em; }
+    li, p {
+      margin-top: 0.5em;
+    }
 
     ul.none {
       padding-left: 0;
       list-style-none;
+    }
+
+    .charges {
+      line-height: 1;
+    }
+
+    .charges > .icon {
+      margin-left: -0.5em;
+    }
+
+    .sources {
+      font-size: 0.9em;
+      margin-top: 1rem;
+      display: block;
+    }
+
+    .property {
+      background-color: black;
+      border-radius: 9999px;
+      border: 1px solid white;
+      color: white;
+      display: inline-grid;
+      font-family: sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      height: 1rem;
+      line-height: 1;
+      margin-left: -0.325rem;
+      padding: 0 0.325rem;
+      place-content: center;
+      position: relative;
+      text-align: center;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      gap: 0.5rem;
+      justify-content: flex-end;
+      font-size: 0.85em;
     }
 
     pre {
@@ -73,19 +169,67 @@ export class WCItemDetails extends LitElement {
   }) details: itemType;
 
   imageTemplate() {
-    if (!this.details.image) { return nothing; }
-
     const { details } = this;
+    if (!details.image) { return nothing; }
 
+    // get first source for image path
     const src = Object.keys(details.sources).shift();
+    // alter name for url path
     const name = details.name
-      .replace(/\s/g, '_')
-      .replace(/,/g, '')
-      .replace(/\(/g, '')
-      .replace(/\)/g, '')
-      .replace(/'/g, '');
+      .replace(/\s/g, '_') // convert spaces to underscore
+      .replace(/,/g, '') // remove commas
+      .replace(/\(/g, '') // remove open parens
+      .replace(/\)/g, '') // remove close parens
+      .replace(/'/g, ''); // remove apostrephes
 
-    return html`<div><img src="https://res.cloudinary.com/timbomckay/image/upload/items/${src}/${name}.webp" alt="${details.name}" width="480" height="360" /></div>`;
+    const image = cld.image(`items/${src}/${name}`);
+
+    image
+      .format('auto')
+      .conditional(
+        ifCondition(
+          'aspect_ratio > 1.2',
+          new Transformation().resize(fill().width(imgW).height(imgW * 0.5625)),
+        ).otherwise(
+          new Transformation().resize(pad().width(imgW).height(imgW * 0.5)),
+        ),
+      );
+    // .conditional(
+    //   ifCondition(
+    //     `width > ${imgW}`,
+    //     new Transformation().resize(scale().width(imgW)),
+    //   ),
+    // );
+
+    return html`<div class="image-container">
+      <img src="${image.toURL()}" alt="${details.name}" width="16" height="9" />
+    </div>`;
+  }
+
+  attunementTemplate(val: string | undefined) {
+    if (!val) { return nothing; }
+
+    return html`<span class="attunement icon" data-tooltip="requires attunement${val.length ? ` ${val}` : ''}">
+      <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="20" viewBox="0 0 20 20" width="20"><g><rect fill="none" height="20" width="20"/></g><g><path d="M18,10l-1.77-2.03l0.25-2.69l-2.63-0.6l-1.37-2.32L10,3.43L7.53,2.36L6.15,4.68L3.53,5.28l0.25,2.69L2,10l1.77,2.03 l-0.25,2.69l2.63,0.6l1.37,2.32L10,16.56l2.47,1.07l1.37-2.32l2.63-0.6l-0.25-2.69L18,10z M8.59,13.07l-2.12-2.12l0.71-0.71 l1.41,1.41l4.24-4.24l0.71,0.71L8.59,13.07z"/></g></svg>
+    </span>`;
+  }
+
+  damageTemplate(val: {} | undefined) {
+    if (!val) { return nothing; }
+
+    return html`<span class="damage icon" data-tooltip="damage ${val}">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0zm21.02 19c0 1.1-.9 2-2 2h-14c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7.5 18c-.83 0-1.5-.67-1.5-1.5S6.67 15 7.5 15s1.5.67 1.5 1.5S8.33 18 7.5 18zm0-9C6.67 9 6 8.33 6 7.5S6.67 6 7.5 6 9 6.67 9 7.5 8.33 9 7.5 9zm4.5 4.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5 4.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm0-9c-.83 0-1.5-.67-1.5-1.5S15.67 6 16.5 6s1.5.67 1.5 1.5S17.33 9 16.5 9z"/></svg>
+    </span>`;
+  }
+
+  chargeTemplate(val: number | undefined) {
+    if (!val) { return nothing; }
+
+    const icon = () => html`<span class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z"/></svg>
+    </span>`;
+
+    return html`<span class="charges" data-tooltip="${val} charges">${Array.from(Array(val)).map(() => icon())}</span>`;
   }
 
   processEntries(entries: itemType['entries']) {
@@ -121,37 +265,55 @@ export class WCItemDetails extends LitElement {
     if (!this.uid) { return nothing; }
 
     const {
-      name,
-      image,
-      entries,
-      srd,
       attunement,
-      rarity,
-      type,
-      tier,
-      sources,
       charges,
+      damage,
+      entries,
+      image,
+      name,
       properties,
+      rarity,
+      sources,
+      srd,
+      tier,
+      type,
       ...data
     } = this.details;
 
     return html`
       ${this.imageTemplate()}
-      <div>${name}</div>
-      <div>
-        ${type}
-        ${tier ? `(${tier})` : ''}
-        ${rarity}
-        ${attunement ? '(requires attunement)' : ''}
+      <div class="title">
+        ${name}
+        <div>
+          ${this.attunementTemplate(attunement)}
+        </div>
       </div>
-      <div>
-        ${properties ? properties.join(' | ') : ''}
-        ${charges ? html`<div>charges: ${charges}</div>` : ''}
+      <div class="content">
+        <div class="content-inner">
+          <div class="info">
+            <i>
+              ${type} 
+              ${tier ? `(${tier})` : ''}
+              ${rarity}
+            </i>
+            <div style="display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0;">
+              ${this.chargeTemplate(charges)}
+              ${properties ? html`<div>${properties.map((p, i) => html`<span class="property" style="z-index: -${i};">${p}</span>`)}</div>` : ''}
+            </div>
+          </div>
+          ${Object.keys(data).length ? html`<pre>${JSON.stringify(data, null, 2)}</pre>` : ''}
+          ${this.processEntries(entries)}
+          <div>
+            <i class="sources">
+              ${sources ? Object.keys(sources).map((src) => SOURCES[src]).join(' • ') : ''}
+            </i>
+          </div>
+        </div>
       </div>
-      ${Object.keys(data).length ? html`<pre>${JSON.stringify(data, null, 2)}</pre>` : ''}
-      ${this.processEntries(entries)}
-      <div>
-        ${sources ? Object.keys(sources) : ''}
+      <div class="footer">
+        ${this.damageTemplate(damage)}
+        <span style="margin-left: auto;">Menu =</span>
+        <span>Close X</span>
       </div>
     `;
   }

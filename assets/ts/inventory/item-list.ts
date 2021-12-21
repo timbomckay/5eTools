@@ -42,6 +42,8 @@ export class WCItemList extends LitElement {
 
     this.addEventListener('dragenter', (e) => e.preventDefault());
 
+    this.active = this.list[0];
+
     this.addEventListener('dragover', (e) => {
       e.stopPropagation(); // let child accept & don't pass up to parent element
       e.preventDefault(); // required to accept drop

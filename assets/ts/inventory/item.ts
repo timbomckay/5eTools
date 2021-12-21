@@ -2,6 +2,8 @@ import {
   html, css, LitElement, nothing,
 } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import { thumbnail } from '@cloudinary/url-gen/actions/resize';
+import { cld } from '../cloudinary';
 
 export interface itemType {
   name: string,
@@ -20,6 +22,8 @@ export interface itemType {
   srd?: boolean,
   tier?: string,
 }
+
+const d = window.devicePixelRatio * 60;
 
 @customElement('wc-item')
 export class WCItem extends LitElement {
@@ -119,7 +123,14 @@ export class WCItem extends LitElement {
         .replace(/\(/g, '')
         .replace(/\)/g, '')
         .replace(/'/g, '');
-      return html`<img src="https://res.cloudinary.com/timbomckay/image/upload/items/${src}/${name}.webp" alt="${details.name}" />`;
+
+      const image = cld.image(`items/${src}/${name}`);
+
+      image
+        .format('auto')
+        .resize(thumbnail().width(d).height(d));
+
+      return html`<img src="${image.toURL()}" alt="${details.name}" />`;
     }
 
     return html`${details.name}`;

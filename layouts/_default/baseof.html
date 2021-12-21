@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html
-    lang="{{ .Site.LanguageCode }}"
-    style="background-image:url('{{"/lightpaperfibers.png" | relURL }}')"
+  lang="{{ .Site.LanguageCode }}"
+  style="background-image:url('{{ "/lightpaperfibers.png" | relURL }}')"
 >
-    {{- partial "head" . -}}
-    <body class="flex flex-col min-h-screen">
-        {{- partial "header" . -}}
-        {{- block "main" . }}{{- end }}
-        {{- partial "footer" . -}}
-    </body>
+  {{- partial "head" . -}}
+  <body class="m-0 flex flex-col min-h-screen">
+    {{- partial "header" . -}}
+    {{- block "main" . }}{{- end }}
+    {{- partial "footer" . -}}
+  </body>
 </html>
