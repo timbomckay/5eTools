@@ -83,30 +83,33 @@
       ${[d,f].filter(a=>!!a).join("/")} ${e}
       <span style="margin-right: auto;"></span>`}chargeTemplate(c){if(!c)return b;const d=()=>a`<span class="icon">
       <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z"/></svg>
-    </span>`;return a`<span class="charges">${Array.from(Array(c)).map(()=>d())}</span>`}closeButtonTemplate(){const b=a`<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>`;return a`<button style="line-height: 0;" type="button" @click="${()=>{this._dispatchMyEvent("close")}}">${b}</button>`}menuButtonTemplate(){const b=a`<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>`;return a`<details>
+    </span>`;return c>8?a`<span class="charges">
+        ${d()}<span>*${c}</span>
+      </span>`:a`<span class="charges">${Array.from(Array(c)).map(()=>d())}</span>`}rarityTemplate(c){return c?a`<span data-rarity="${c}"></span>`:b}closeButtonTemplate(){const b=a`<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>`;return a`<button style="line-height: 0;" type="button" @click="${()=>{this._dispatchMyEvent("close")}}">${b}</button>`}menuButtonTemplate(){const b=a`<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>`;return a`<details>
       <summary style="line-height: 0;">${b}</summary>
       <div>
         <i>Menu in Progress</i>
       </div>
-    </details>`}processEntries(c){return a`${c==null?b:c.map(a=>this.processEntry(a))}`}processEntry(b,c){if(typeof b=="string")switch(c){case"li":return a`<li>${aj(b)}</li>`;default:return a`<p>${aj(b)}</p>`}if(Array.isArray(b))return a`Array: <pre>${JSON.stringify(b,null,2)}</pre>`;switch(b.type){case"list":return a`<ul class=${b.style}>${b.items.map(b=>a`${this.processEntry(b,"li")}`)}</ul>`;default:return a`<pre>${JSON.stringify(b,null,2)}</pre>`}}_dispatchMyEvent(a,b={}){const c=new CustomEvent(a,{bubbles:!0,composed:!0,detail:b});this.dispatchEvent(c)}render(){if(!this.uid)return b;const{attunement:g,charges:m,damage:l,entries:j,image:o,name:h,properties:c,range:p,rarity:k,sources:e,srd:n,tier:d,type:i,...f}=this.details;return a`
+    </details>`}processEntries(c){return a`${c==null?b:c.map(a=>this.processEntry(a))}`}processEntry(b,c){if(typeof b=="string")switch(c){case"li":return a`<li>${aj(b)}</li>`;default:return a`<p>${aj(b)}</p>`}if(Array.isArray(b))return a`Array: <pre>${JSON.stringify(b,null,2)}</pre>`;switch(b.type){case"list":return a`<ul class=${b.style}>${b.items.map(b=>a`${this.processEntry(b,"li")}`)}</ul>`;default:return a`<pre>${JSON.stringify(b,null,2)}</pre>`}}_dispatchMyEvent(a,b={}){const c=new CustomEvent(a,{bubbles:!0,composed:!0,detail:b});this.dispatchEvent(c)}render(){if(!this.uid)return b;const{attunement:h,charges:m,damage:l,entries:k,image:o,name:i,properties:c,range:p,rarity:f,sources:e,srd:n,tier:d,type:j,...g}=this.details;return a`
       ${this.imageTemplate()}
       <div class="title">
-        ${h}
+        ${i}
         <div>
-          ${this.attunementTemplate(g)}
+          ${this.attunementTemplate(h)}
         </div>
+        ${this.rarityTemplate(f)}
       </div>
       <div class="content">
         <div class="content-inner">
           <div class="info">
-            <i>${i} ${d?`(${d})`:""} ${k}</i>
+            <i>${j} ${d?`(${d})`:""} ${f}</i>
             <div style="display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0;">
               ${this.chargeTemplate(m)}
               ${c?a`<div>${c.map((b,c)=>a`<span class="property" style="z-index: -${c};">${b}</span>`)}</div>`:""}
             </div>
           </div>
-          ${Object.keys(f).length?a`<pre>${JSON.stringify(f,null,2)}</pre>`:""}
-          ${this.processEntries(j)}
+          ${Object.keys(g).length?a`<pre>${JSON.stringify(g,null,2)}</pre>`:""}
+          ${this.processEntries(k)}
           <div>
             <i class="sources">
               ${e?Object.keys(e).map(a=>dw[a]).join(" \u2022\xA0"):""}
@@ -121,11 +124,11 @@
       </div>
     `}},A.styles=s`
     * { box-sizing: border-box; }
-  
+
     :host {
       border-color: ${C(J.primary[800])};
       border-style: solid;
-      border-width: 1px 0;
+      border-width: 0 0 1px 0;
       display: block;
     }
 
@@ -177,6 +180,7 @@
       line-height: 1;
       font-weight: 600;
       padding: 0.5rem;
+      position: relative;
     }
 
     .title .attunement {
@@ -215,6 +219,7 @@
 
     .charges {
       line-height: 1;
+      display: inline-flex;
     }
 
     .charges > .icon {
@@ -288,6 +293,28 @@
       right: -0.25rem;
       width: 14ch;
     }
+
+    span[data-rarity] {
+      background-color: var(--rarity, transparent);
+      box-shadow: 0 0 0 2px white;
+      content: "";
+      display: block;
+      font-size: 0.45rem;
+      height: 1em;
+      left: 50%;
+      position: absolute;
+      top: 100%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      width: 1em;
+      z-index: 1;
+    }
+
+    span[data-rarity="common"] { --rarity: #94A3B8; }
+    span[data-rarity="uncommon"] { --rarity: #84CC16; }
+    span[data-rarity="rare"] { --rarity: #3B82F6; }
+    span[data-rarity="very rare"] { --rarity: #7C3AED; }
+    span[data-rarity="legendary"] { --rarity: #FCD34D; }
+    span[data-rarity="artifact"] { --rarity: #DC2626; }
 
     pre {
       background-color: whitesmoke;
