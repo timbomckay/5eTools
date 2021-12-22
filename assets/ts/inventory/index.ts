@@ -74,29 +74,37 @@ const data = {
 export class WCInventory extends LitElement {
   static styles = [
     css`
+      * { box-sizing: border-box; }
+
       :host {
-        display: flex;
-        flex-direction: column;
         min-height: calc(100vh - 5rem);
-        gap: 1rem;
-        margin-top: 1rem;
+      }
+      .character {
+        border-width: 0 0 1px 0;
+        border-color: #78350f;
+        border-style: solid;
+        list-style: none;
       }
       .name {
         text-align: center;
         padding: 0.5rem;
-      }
-      .character {
-        flex: 1 0 32ch;
-        border-width: 1px;
-        border-color: #78350f;
-        border-style: solid;
-        list-style: none;
-        overflow-x: auto;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: white;
+        height: 2.5rem;
       }
     `,
     css`@media (min-width: 48rem) {
       :host {
+        display: flex;
         flex-direction: row;
+        gap: 1rem;
+      }
+      .character {
+        border-width: 1px;
+        flex: 1 0 32ch;
+        overflow: auto;
       }
     }`,
   ];

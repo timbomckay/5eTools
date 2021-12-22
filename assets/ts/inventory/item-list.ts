@@ -5,23 +5,35 @@ import './item-details.ts';
 
 @customElement('wc-item-list')
 export class WCItemList extends LitElement {
-  static styles = css`
-    .title {
-      background-color: rgb(254, 243, 199);
-      font-size: 0.9rem;
-      padding: 0 0.25rem;
-      text-align: center;
-    }
-    .container {
-      padding: 0.25rem;
-      display: grid;
-      gap: 0.25rem;
-      grid-template-columns: repeat(auto-fill, minmax(2.5rem, 1fr));
-    }
-    .highlight {
-      background-color: yellow;
-    }
-  `;
+  static styles = [
+    css`
+      * { box-sizing: border-box; }
+
+      .title {
+        background-color: rgb(254, 243, 199);
+        font-size: 0.9rem;
+        padding: 0 0.25rem;
+        text-align: center;
+        position: sticky;
+        top: 2.5rem;
+        z-index: 10;
+      }
+      .container {
+        padding: 0.5rem;
+        display: grid;
+        gap: 0.25rem;
+        grid-template-columns: repeat(auto-fill, minmax(2.5rem, 1fr));
+      }
+      .highlight {
+        background-color: yellow;
+      }
+    `,
+    css`@media (min-width: 48rem) {
+      .container {
+        padding: 0.25rem;
+      }
+    }`,
+  ];
 
   @property({
     type: Array,

@@ -11,11 +11,13 @@ import { cld } from '../cloudinary';
 import { itemType } from './item';
 import { SOURCES } from './parser';
 
-const imgW = window.devicePixelRatio * 480;
+const imgW = Math.round(window.devicePixelRatio * 480);
 
 @customElement('wc-item-details')
 export class WCItemDetails extends LitElement {
   static styles = css`
+    * { box-sizing: border-box; }
+  
     :host {
       border-color: ${unsafeCSS(primary[800])};
       border-style: solid;

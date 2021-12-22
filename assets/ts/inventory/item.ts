@@ -23,11 +23,13 @@ export interface itemType {
   tier?: string,
 }
 
-const d = window.devicePixelRatio * 60;
+const d = Math.round(window.devicePixelRatio * 60);
 
 @customElement('wc-item')
 export class WCItem extends LitElement {
   static styles = css`
+    * { box-sizing: border-box; }
+  
     :host {
       aspect-ratio: 1/1;
       border-color: #78350f;
