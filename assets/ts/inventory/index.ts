@@ -89,7 +89,7 @@ export class WCInventory extends LitElement {
         text-align: center;
         padding: 0.5rem;
         position: sticky;
-        top: 0;
+        top: 2rem;
         z-index: 10;
         background-color: white;
         height: 2.5rem;
@@ -105,6 +105,9 @@ export class WCInventory extends LitElement {
         border-width: 1px;
         flex: 1 0 32ch;
         overflow: auto;
+      }
+      .name {
+        top: 0;
       }
     }`,
   ];

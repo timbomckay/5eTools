@@ -15,8 +15,8 @@ export class WCItemList extends LitElement {
         padding: 0 0.25rem;
         text-align: center;
         position: sticky;
-        top: 2.5rem;
-        z-index: 10;
+        top: 4.5rem;
+        z-index: 9;
       }
       .container {
         padding: 0.5rem;
@@ -31,6 +31,10 @@ export class WCItemList extends LitElement {
     css`@media (min-width: 48rem) {
       .container {
         padding: 0.25rem;
+      }
+
+      .title {
+        top: 0;
       }
     }`,
   ];
