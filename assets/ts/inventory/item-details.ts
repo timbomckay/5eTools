@@ -17,11 +17,11 @@ const imgW = Math.round(window.devicePixelRatio * 480);
 export class WCItemDetails extends LitElement {
   static styles = css`
     * { box-sizing: border-box; }
-  
+
     :host {
       border-color: ${unsafeCSS(primary[800])};
       border-style: solid;
-      border-width: 1px 0;
+      border-width: 0 0 1px 0;
       display: block;
     }
 
@@ -73,6 +73,7 @@ export class WCItemDetails extends LitElement {
       line-height: 1;
       font-weight: 600;
       padding: 0.5rem;
+      position: relative;
     }
 
     .title .attunement {
@@ -111,6 +112,7 @@ export class WCItemDetails extends LitElement {
 
     .charges {
       line-height: 1;
+      display: inline-flex;
     }
 
     .charges > .icon {
@@ -184,6 +186,28 @@ export class WCItemDetails extends LitElement {
       right: -0.25rem;
       width: 14ch;
     }
+
+    span[data-rarity] {
+      background-color: var(--rarity, transparent);
+      box-shadow: 0 0 0 2px white;
+      content: "";
+      display: block;
+      font-size: 0.45rem;
+      height: 1em;
+      left: 50%;
+      position: absolute;
+      top: 100%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      width: 1em;
+      z-index: 1;
+    }
+
+    span[data-rarity="common"] { --rarity: #94A3B8; }
+    span[data-rarity="uncommon"] { --rarity: #84CC16; }
+    span[data-rarity="rare"] { --rarity: #3B82F6; }
+    span[data-rarity="very rare"] { --rarity: #7C3AED; }
+    span[data-rarity="legendary"] { --rarity: #FCD34D; }
+    span[data-rarity="artifact"] { --rarity: #DC2626; }
 
     pre {
       background-color: whitesmoke;
@@ -271,16 +295,26 @@ export class WCItemDetails extends LitElement {
       <span style="margin-right: auto;"></span>`;
   }
 
-  chargeTemplate(val: number | undefined) {
-    if (!val) { return nothing; }
+  chargeTemplate(count: number | undefined) {
+    if (!count) { return nothing; }
 
     const icon = () => html`<span class="icon">
       <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z"/></svg>
     </span>`;
 
-    // if count > 8, reduce to 5 icons
+    if (count > 8) {
+      // if count > 8, reduce to 5 icons
+      return html`<span class="charges">
+        ${icon()}<span>*${count}</span>
+      </span>`;
+    }
 
-    return html`<span class="charges">${Array.from(Array(val)).map(() => icon())}</span>`;
+    return html`<span class="charges">${Array.from(Array(count)).map(() => icon())}</span>`;
+  }
+
+  rarityTemplate(val: string | undefined) {
+    if (!val) { return nothing; }
+    return html`<span data-rarity="${val}"></span>`;
   }
 
   closeButtonTemplate() {
@@ -365,6 +399,7 @@ export class WCItemDetails extends LitElement {
         <div>
           ${this.attunementTemplate(attunement)}
         </div>
+        ${this.rarityTemplate(rarity)}
       </div>
       <div class="content">
         <div class="content-inner">
