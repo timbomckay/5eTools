@@ -1,10 +1,10 @@
 <span class="block -mx-6 lg:-mx-28">
   <img
-    src="https://thegiddylimit.github.io/img/{{ .Destination | safeURL }}"
+    src="https://res.cloudinary.com/timbomckay/image/upload/f_auto/{{ .Destination | urlize }}"
     alt="{{ .Text }}"
     class="mx-auto relative z-10"
     loading="lazy"
-    {{ with .Title}}
+    {{ with .Title }}
       title="{{ . }}"
     {{ end }}
   />

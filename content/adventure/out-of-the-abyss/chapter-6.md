@@ -202,7 +202,7 @@ In the last year, a handful of svirfneblin youths have been training in secret u
 
 #### Ghosts of Blingdenstone
 
-![Ghosts of Blingdinstone](adventure/OotA/Ghosts%20of%20Blingdinstone.jpg)
+![Ghosts of Blingdinstone](adventure/OotA/Ghosts_of_Blingdinstone.jpg)
 
 Although not truly organized, the ghosts of the svirfneblin killed during the drow attack are an undeniable presence. The settlers have been wise enough to mark haunted burrows off from their reclamation plans. But as new svirfneblin arrive and need accommodation, space is starting to become a problem. There are far more ghosts in the ruined settlement than anyone expected, and each ghost is different. Some are harmless, appearing only as echoes of the event that led to their deaths. Others are fully aware-and often hostile and dangerous.
 
@@ -236,9 +236,9 @@ The deep gnomes working in the mines, farms, and forges outside the settlement s
 
 Svirfneblin in the outskirts are more curt with strangers, and a few might even try to steal from them. Taskmasters at each location are now feeling themselves driven to the point of near tyranny, demanding that their workers toil ever harder. Some miners pocket gemstones they dig out, while others are drawn to possess things the adventurers are carrying.
 
-![Blingdenstone Map](adventure/OotA/Blingdenstone%20Map.jpg)
+![Blingdenstone Map](adventure/OotA/Blingdenstone_Map.jpg)
 
-![DM - Blingdenstone Map](adventure/OotA/DM%20-%20Blingdenstone%20Map.jpg)
+![DM - Blingdenstone Map](adventure/OotA/DM_-_Blingdenstone_Map.jpg)
 
 ### Entemoch's Boon
 
@@ -304,9 +304,9 @@ Nomi Pathshutter is aware of Ogrémoch's Bane and has made it her life's work to
 
 Everything in Outer Blingdenstone was designed to thwart would-be invaders.
 
-![Blingdenstone Map](adventure/OotA/Blingdenstone%20Map.jpg)
+![Blingdenstone Map](adventure/OotA/Blingdenstone_Map.jpg)
 
-![DM - Blingdenstone Map](adventure/OotA/DM%20-%20Blingdenstone%20Map.jpg)
+![DM - Blingdenstone Map](adventure/OotA/DM_-_Blingdenstone_Map.jpg)
 
 ### Doors of Blingdenstone
 
@@ -374,9 +374,9 @@ Read the following boxed text when the characters first arrive in Inner Blingden
 > 
 > One of the guards escorting you abandons his severe frown to give a deep nod as he prompts you past the inner gate. "Welcome to Blingdenstone, travelers."
 
-![Blingdenstone Map](adventure/OotA/Blingdenstone%20Map.jpg)
+![Blingdenstone Map](adventure/OotA/Blingdenstone_Map.jpg)
 
-![DM - Blingdenstone Map](adventure/OotA/DM%20-%20Blingdenstone%20Map.jpg)
+![DM - Blingdenstone Map](adventure/OotA/DM_-_Blingdenstone_Map.jpg)
 
 ### Inner Blingdenstone: General Features
 
@@ -568,9 +568,9 @@ Enraged by her fate, Neheedra turned her servants to stone and descended into ma
 
 Since the return of the svirfneblin to Blingdenstone, the deep gnomes have studiously avoided sections of the old city that Ogrémoch's Bane and Neheedra inhabit, blocking it off from the rest of the settlement and giving it the name "Rockblight."
 
-![Blingdenstone Map](adventure/OotA/Blingdenstone%20Map.jpg)
+![Blingdenstone Map](adventure/OotA/Blingdenstone_Map.jpg)
 
-![DM - Blingdenstone Map](adventure/OotA/DM%20-%20Blingdenstone%20Map.jpg)
+![DM - Blingdenstone Map](adventure/OotA/DM_-_Blingdenstone_Map.jpg)
 
 ### Rockblight: General Features
 
@@ -707,9 +707,9 @@ The svirfneblin wererats of the Goldwhisker clan don't remember having lived any
 
 For decades, the Goldwhisker svirfneblin have lived and thrived in these caverns, avoiding drow and crazed elementals, and securing their homes in cunning and vicious ways. They aren't willing to leave just because the cowards who fled Blingdenstone when it needed them most have now returned.
 
-![Blingdenstone Map](adventure/OotA/Blingdenstone%20Map.jpg)
+![Blingdenstone Map](adventure/OotA/Blingdenstone_Map.jpg)
 
-![DM - Blingdenstone Map](adventure/OotA/DM%20-%20Blingdenstone%20Map.jpg)
+![DM - Blingdenstone Map](adventure/OotA/DM_-_Blingdenstone_Map.jpg)
 
 ### Goldwhisker Warrens: General Features
 
@@ -783,9 +783,9 @@ Princess Ebonmire is a black pudding with an Intelligence of 6 (-2) and the abil
 
 Prince Livid is a gray ooze with 30 hit points (use the psychic gray ooze variant).
 
-![Blingdenstone Map](adventure/OotA/Blingdenstone%20Map.jpg)
+![Blingdenstone Map](adventure/OotA/Blingdenstone_Map.jpg)
 
-![DM - Blingdenstone Map](adventure/OotA/DM%20-%20Blingdenstone%20Map.jpg)
+![DM - Blingdenstone Map](adventure/OotA/DM_-_Blingdenstone_Map.jpg)
 
 ### 28. House Center
 
@@ -823,7 +823,7 @@ This cave is also home to a gibbering mouther that isn't under the sway of Juibl
 
 The **Pudding King** holds court here, attended by his royal "children," **Princess Ebonmire** and **Prince Livid**.
 
-![The Pudding King](adventure/OotA/The%20Pudding%20King.jpg)
+![The Pudding King](adventure/OotA/The_Pudding_King.jpg)
 
 The Pudding King's throne is made of chiseled stone and sculpted with lidless eyes and gaping mouths. A patch of green slime covers it. More patches of green slime hang from the ceiling and form pools on the floor. The pools are easily avoided, while the patches on the ceiling don't fall unless the Pudding King commands them to. The Pudding King can use a bonus action to make a patch of green slime fall from the ceiling onto a creature below.
 
