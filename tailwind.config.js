@@ -2,6 +2,10 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 // Shades & Tints generator: https://javisperez.github.io/tailwindcolorshades/#/?primary=1169D3&tv=1
 
 module.exports = {
+  purge: {
+    enabled: process.env.HUGO_ENVIRONMENT === 'production',
+    content: ['./layouts/**/*.html'],
+  },
   theme: {
     extend: {
       colors: {
