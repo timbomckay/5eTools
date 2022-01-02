@@ -3,14 +3,16 @@
 <title>Appendix A: Of Ships and the Sea · The Handy Haversack</title>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=HandheldFriendly content="True">
-<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
-<script src=/5eTools/index.min.50274d0697ab9a51ec541f7d45acd771c7e36248d31819839cd1ca77d08969b1.js defer></script>
-<link rel=stylesheet href="/5eTools/index.min.14a6cde680a5c0ad95dd76911a1b76b9c011d83732e0b19a085099a93017f5c3.css" media=all>
+<link rel=icon href=https://timbomckay.github.io/5eTools/backpack.svg>
+<script src=/5eTools/index.min.561301f5be519645c97938192171cdbf23e4742896df7158420659d268ec1a47.js integrity="sha256-VhMB9b5RlkXJeTgZIXHNvyPkdCiW33FYQgZZ0mjsGkc=" defer></script>
+<link rel=stylesheet href=/5eTools/index.min.c2ec4dd825c89b28f43da223f4b57ce0fd9e1e8e3f364a8d3742628dde12cef6.css media=all integrity="sha256-wuxN2CXImyj0PaIj9LV84P2eHo4/NkqNN0Jijd4SzvY=">
 <link rel=preconnect href=https://res.cloudinary.com>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel=stylesheet>
 <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=UnifrakturMaguntia&display=swap" rel=stylesheet>
+<link rel=manifest href=/manifest.json>
+<meta name=theme-color content="#9d0a0e">
 <body class="m-0 flex flex-col min-h-screen"><a href=#skip-nav class="fixed bg-primary-500 focus:text-white leading-none m-2 not-focus:sr-only px-3 py-2 text-xs z-50">Skip Navigation</a>
 <header class="bg-white print:absolute px-4 border-b-2 sticky top-0 z-40 h-8">
 <div class="flex items-center justify-between max-w-screen-md mx-auto">
@@ -66,5 +68,6 @@
 </div>
 <script>window.customElements.define('wc-toc',class extends HTMLElement{connectedCallback(){const{headings:a}=this,b=this,c=window.visualViewport.height/4;document.addEventListener('scroll',function(f){const d=a.filter(a=>a.target.offsetTop<window.scrollY+c).pop(),e=b.getElementsByClassName('active');if(e!=null)for(let a of e){a.classList.remove('active');const b=a.closest('ul');b.classList.remove('has-active')}if(d!=null){d.el.classList.add('active');const a=d.el.closest('ul');a.classList.add('has-active')}})}get headings(){const a=[];for(let b of this.querySelectorAll('a'))a.push({el:b,target:document.getElementById(b.hash.replace('#',''))});return a}})</script>
 </main>
+<script>"serviceWorker"in navigator&&window.addEventListener("load",()=>{navigator.serviceWorker.register("/5eTools/service-worker.min.fe912683b59cd7d6bab7d4edd11952274c20e9c022fb5d407d0b190d5e17eb60.js")})</script>
 </body>
 </html>
