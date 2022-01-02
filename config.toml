@@ -2,15 +2,32 @@ baseURL = "/"
 languageCode = "en-us"
 title = "The Handy Haversack"
 relativeurls = false
-disableKinds = [ "RSS", "sitemap" ]
+disableKinds = ["RSS", "sitemap"]
+
+[params]
+themeColor = "#9d0a0e"
 
 [build]
-  writeStats = true
+writeStats = true
 
 [minify]
-  minifyOutput = true
+minifyOutput = true
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+
+[markup.goldmark]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[outputs]
+home = ["HTML", "MANIFEST"]
+
+[outputFormats]
+
+[outputFormats.manifest]
+name = "manifest"
+baseName = "manifest"
+mediaType = "application/json"
+notAlternative = "true"
+permalinkable = "true"

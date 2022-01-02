@@ -6,6 +6,7 @@ import { unsafeHTML } from 'lit/directives/unsafe-html.js';// Import the scale m
 import { Transformation } from '@cloudinary/url-gen';
 import { fill, pad } from '@cloudinary/url-gen/actions/resize';
 import { ifCondition } from '@cloudinary/url-gen/actions/conditional';
+import { dispatchMyEvent } from '../utils';
 import { primary, yellow } from '../../colors';
 import { cld } from '../cloudinary';
 import { itemType } from './item';
@@ -263,7 +264,7 @@ export class WCItemDetails extends LitElement {
     // );
 
     return html`<div class="image-container">
-      <img src="${image.toURL()}" alt="${details.name}" width="2" height="1" />
+      <img src="${image.toURL()}" alt="${details.name}" width="2" height="1" crossorigin="anonymous" />
     </div>`;
   }
 
@@ -313,14 +314,14 @@ export class WCItemDetails extends LitElement {
   }
 
   rarityTemplate(val: string | undefined) {
-    if (!val) { return nothing; }
+    if (!val || (val === 'varies')) { return nothing; }
     return html`<span data-rarity="${val}"></span>`;
   }
 
   closeButtonTemplate() {
     const icon = html`<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>`;
 
-    return html`<button style="line-height: 0;" type="button" @click="${() => { this._dispatchMyEvent('close'); }}">${icon}</button>`;
+    return html`<button style="line-height: 0;" type="button" @click="${() => { dispatchMyEvent(this, 'close'); }}">${icon}</button>`;
   }
 
   menuButtonTemplate() {
@@ -361,15 +362,6 @@ export class WCItemDetails extends LitElement {
       default:
         return html`<pre>${JSON.stringify(entry, null, 2)}</pre>`;
     }
-  }
-
-  private _dispatchMyEvent(name: string, detail = {}) {
-    const myEvent = new CustomEvent(name, {
-      bubbles: true,
-      composed: true,
-      detail,
-    });
-    this.dispatchEvent(myEvent);
   }
 
   render() {

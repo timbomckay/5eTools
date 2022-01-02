@@ -3,6 +3,7 @@ import {
 } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { thumbnail } from '@cloudinary/url-gen/actions/resize';
+import { dispatchMyEvent } from '../utils';
 import { cld } from '../cloudinary';
 
 export interface itemType {
@@ -57,17 +58,17 @@ export class WCItem extends LitElement {
       pointer-events: none;
     }
 
-    :host([rarity])::before {
+    :host([rarity])::before {      
+      background-color: var(--rarity, transparent);
       content: "";
       display: block;
+      height: 1rem;
       position: absolute;
-      border-width: 0.5em;
-      border-style: solid;
-      border-color: var(--rarity, transparent) var(--rarity, transparent) transparent transparent;
-      height: 0;
-      width: 0;
-      top: 0;
-      right: 0;
+      right: 0px;
+      top: 0px;
+      transform-origin: top;
+      transform: rotate(45deg) translate(50%, -100%);
+      width: 1rem;
       z-index: 1;
     }
 
@@ -132,7 +133,11 @@ export class WCItem extends LitElement {
         .format('auto')
         .resize(thumbnail().width(d).height(d));
 
-      return html`<img src="${image.toURL()}" alt="${details.name}" />`;
+      return html`<img src="${image.toURL()}" alt="${details.name}" crossorigin="anonymous" />`;
+    }
+
+    if (details.extends) {
+      dispatchMyEvent(this, 'click');
     }
 
     return html`${details.name}`;

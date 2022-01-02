@@ -1,5 +1,6 @@
 import { html, css, LitElement } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
+import { items } from '../firebase';
 import './item.ts';
 import './item-details.ts';
 
@@ -34,7 +35,7 @@ export class WCItemList extends LitElement {
       }
 
       .title {
-        top: 0;
+        top: 2.5rem;
       }
     }`,
   ];
@@ -72,14 +73,14 @@ export class WCItemList extends LitElement {
       <div class="title">${this.uid}</div>
       <wc-item-details
         uid="${this.active}"
-        .details="${this.ownerDocument.__ITEMS__[this.active]}"
+        .details="${items[this.active]}"
         @close="${() => { this.active = ''; }}"
       ></wc-item-details>
       <div class="container ${this.isDropTarget ? 'highlight' : ''}">
         ${this.list.map((item, i) => html`<wc-item
           uid="${item}"
           .index="${i}"
-          .details="${this.ownerDocument.__ITEMS__[item]}"
+          .details="${items[item]}"
           draggable="true"
           @click="${() => { this.active = item; }}"
         ></wc-item>`)}

@@ -1,74 +1,70 @@
-import { html, css, LitElement } from 'lit';
+import {
+  html, css, LitElement, nothing,
+} from 'lit';
 import { customElement, state } from 'lit/decorators.js';
-import { v4 as uuidv4 } from 'uuid';
 import './item-list.ts';
-import ItemsData from './items.json';
+import { items } from '../firebase';
 
-function randomItem(arr) {
+function randomItem() {
+  const arr = Object.keys(items);
   return arr[Math.floor(Math.random() * arr.length)];
 }
-
-const items = Object.fromEntries(Array.from(Array(256), () => [uuidv4(), randomItem(ItemsData)]));
-
-const itemIDs = Object.keys(items);
 
 function genInventory() {
   return Array.from(
     Array(Math.floor(Math.random() * 24 + 7)),
-    () => randomItem(itemIDs),
+    () => randomItem(),
   );
 }
 
-const data = {
-  characters: {
-    'ch-uid-123': {
-      name: 'Tenebrae',
-      inventory: {
-        Attuned: [
-          randomItem(itemIDs),
-          randomItem(itemIDs),
-        ],
-        Inventory: genInventory(),
-        Backpack: genInventory(),
-        'Bag of Holding': genInventory(),
-      },
-    },
-    'ch-uid-321': {
-      name: 'Cyan',
-      inventory: {
-        Attuned: [
-          randomItem(itemIDs),
-          randomItem(itemIDs),
-          randomItem(itemIDs),
-        ],
-        Inventory: genInventory(),
-        Backpack: genInventory(),
-        'Astral Scarf': genInventory(),
-      },
-    },
-    'ch-uid-aaa': {
-      name: 'Chris...?',
-      inventory: {
-        Attuned: [
-          randomItem(itemIDs),
-        ],
-        Inventory: genInventory(),
-        Backpack: genInventory(),
-      },
-    },
-    'ch-uid-abc': {
-      name: 'DOMO',
-      inventory: {
-        Attuned: [
-          randomItem(itemIDs),
-          randomItem(itemIDs),
-        ],
-        Inventory: genInventory(),
-        Backpack: genInventory(),
-      },
+const characters = () => ({
+  'ch-uid-123': {
+    name: 'Tenebrae',
+    inventory: {
+      Attuned: [
+        randomItem(),
+        randomItem(),
+      ],
+      Inventory: genInventory(),
+      Backpack: genInventory(),
+      'Bag of Holding': genInventory(),
     },
   },
-};
+  'ch-uid-321': {
+    name: 'Cyan',
+    inventory: {
+      Attuned: [
+        randomItem(),
+        randomItem(),
+        randomItem(),
+      ],
+      Inventory: genInventory(),
+      Backpack: genInventory(),
+      'Astral Scarf': genInventory(),
+    },
+  },
+  'ch-uid-aaa': {
+    name: 'Chris...?',
+    inventory: {
+      Attuned: [
+        randomItem(),
+      ],
+      Inventory: genInventory(),
+      Backpack: genInventory(),
+    },
+  },
+  'ch-uid-abc': {
+    name: 'DOMO',
+    inventory: {
+      Attuned: [
+        randomItem(),
+        randomItem(),
+      ],
+      Inventory: genInventory(),
+      Backpack: genInventory(),
+    },
+  },
+});
 
 @customElement('wc-inventory')
 export class WCInventory extends LitElement {
@@ -100,6 +96,7 @@ export class WCInventory extends LitElement {
         display: flex;
         flex-direction: row;
         gap: 1rem;
+        height: calc(100vh - 4rem);
       }
       .character {
         border-width: 1px;
@@ -112,14 +109,9 @@ export class WCInventory extends LitElement {
     }`,
   ];
 
-  @state() data = data.characters;
+  @state() data: {} | null = null;
 
   @state() dragging = {};
-
-  constructor() {
-    super();
-    this.ownerDocument.__ITEMS__ = items;
-  }
 
   public handleDrag(ch, list, e: DragEvent) {
     const { index, uid } = e.composedPath().shift();
@@ -153,7 +145,25 @@ export class WCInventory extends LitElement {
     this.dragging = {};
   }
 
+  public setData() {
+    this.data = characters();
+  }
+
+  connectedCallback() {
+    super.connectedCallback();
+    window.addEventListener('ITEMS', () => this.setData());
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    window.removeEventListener('ITEMS', () => this.setData());
+  }
+
   render() {
+    if (this.data == null) {
+      return nothing;
+    }
+
     /* eslint-disable */
     return html`${Object.entries(this.data).map(([c, character]) =>
       html`<div class="character">

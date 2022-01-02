@@ -1,0 +1,7 @@
+{
+  "name": "{{ .Site.Title }}",
+  "theme_color": "{{ .Site.Params.themeColor }}",
+  "background_color": "#fffbeb",
+  "display": "standalone",
+  "start_url": "{ .Site.BaseURL }"
+}

@@ -8,20 +8,28 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="HandheldFriendly" content="True" />
 
-<link
-  rel="icon"
-  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>"
-/>
+<link rel="icon" href="{{ .Site.BaseURL }}backpack.svg" />
 
 {{ $script := resources.Get "index.ts" | js.Build }}
 {{ if hugo.IsProduction }}
   {{ $script = $script | minify | fingerprint }}
-{{ end }}<script src="{{ $script.RelPermalink }}" defer></script>
+  {{ .Scratch.Add "assets" (slice $script.RelPermalink) }}
+{{ end }}<script
+  src="{{ $script.RelPermalink }}"
+  integrity="{{ $script.Data.Integrity }}"
+  defer
+></script>
 {{ $css := resources.Get "index.css" | resources.PostCSS }}
 {{ if hugo.IsProduction }}
-  {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+  {{ $css = $css | minify | fingerprint }}
+  {{ .Scratch.Add "assets" (slice $css.RelPermalink) }}
 {{ end }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}" media="all" />
+<link
+  rel="stylesheet"
+  href="{{ $css.RelPermalink }}"
+  media="all"
+  integrity="{{ $css.Data.Integrity }}"
+/>
 
 <link rel="preconnect" href="https://res.cloudinary.com" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,3 +42,5 @@
   href="https://fonts.googleapis.com/css2?family=PT+Serif&family=UnifrakturMaguntia&display=swap"
   rel="stylesheet"
 />
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="{{ .Site.Params.themeColor }}" />
