@@ -1,99 +1,122 @@
 {{ define "main" }}
-<main class="lg:pb-10 mx-auto px-4 lg:px-6 mb-6 lg:mb-8">
-  <h1 class="mb-6 px-6">{{- .Title -}}</h1>
+  <main class="lg:pb-10 mx-auto px-4 lg:px-6 mb-6 lg:mb-8">
+    <h1 class="mb-6 px-6">{{- .Title -}}</h1>
 
-  <div class="gap-8 lg:grid items-start" style="grid-template-columns: auto 10rem;">
-    <article class="max-w-ch mx-auto px-6">
-      {{- $wrappedTable := printf "<div class=table-wrapper> ${1} </div>" -}}
-      {{- .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML -}}
-    </article>
+    <div
+      class="gap-8 lg:grid items-start"
+      style="grid-template-columns: auto 10rem;"
+    >
+      <article class="max-w-ch mx-auto px-6">
+        {{- $wrappedTable := printf "<div class=table-wrapper> ${1} </div>" -}}
+        {{- .Content
+          | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable
+          | replaceRE "<p><p ([^>]+)>" "<p $1>"
+          | replaceRE "</p>\n</p>" "</p>"
+          | safeHTML
+        -}}
+      </article>
 
-    <aside class="sticky top-16 text-xs font-sans">
-      <details class="relative">
-        <summary class="mb-1">{{- .Title -}}</summary>
-        <nav class="absolute bg-white overflow-x-scroll rounded shadow border-gray-200 border-2 max-h-56">
-          {{ $currentPage := . }}
+      <aside class="sticky top-16 text-xs font-sans">
+        <details class="relative">
+          <summary class="mb-1">{{- .Title -}}</summary>
+          <nav
+            class="absolute bg-white overflow-x-scroll rounded shadow border-gray-200 border-2 max-h-56"
+          >
+            {{ $currentPage := . }}
 
-          {{ range .CurrentSection.Pages }}
-            {{ $classList := slice "block px-2 py-1" }}
-            {{ if (eq .Title $currentPage.Title) }}
-              {{ $classList = $classList | append "" }}
-            {{ else }}
-              {{ $classList = $classList | append "font-normal text-gray-700" }}
+            {{ range .CurrentSection.Pages }}
+              {{ $classList := slice "block px-2 py-1" }}
+              {{ if (eq .Title $currentPage.Title) }}
+                {{ $classList = $classList | append "" }}
+              {{ else }}
+                {{ $classList = $classList | append "font-normal text-gray-700" }}
+              {{ end }}
+              <a
+                href="{{ .RelPermalink }}"
+                class="{{ delimit (sort $classList) " " }}"
+                >{{ .Title }}</a
+              >
             {{ end }}
-            <a href="{{ .RelPermalink }}" class="{{ delimit (sort $classList) " " }}">{{ .Title }}</a>
+          </nav>
+        </details>
+
+        <wc-toc>
+          {{ .TableOfContents }}
+        </wc-toc>
+
+        <div class="flex mt-4 gap-1 items-center">
+          {{ if .NextInSection }}
+            <a
+              href="{{ .NextInSection.Permalink }}"
+              class="icon text-lg leading-none"
+            >
+              {{- partial "icons/navigation/chevron_left.svg" -}}
+            </a>
           {{ end }}
-        </nav>
-      </details>
-
-      <wc-toc>
-        {{ .TableOfContents }}
-      </wc-toc>
-
-      <div class="flex mt-4 gap-1 items-center">
-        {{ if .NextPage }}
-          <a href="{{ .NextPage.Permalink }}" class="icon text-lg leading-none">
-            {{- partial "icons/navigation/chevron_left.svg" -}}
+          <a href="#skip-nav" class="icon text-xl leading-none">
+            {{- partial "icons/action/arrow_circle_up.svg" -}}
           </a>
-        {{ end }}
-        <a href="#skip-nav" class="icon text-xl leading-none">
-          {{- partial "icons/action/arrow_circle_up.svg" -}}
-        </a>
-        {{ if .PrevPage }}
-          <a href="{{ .PrevPage.Permalink }}" class="icon text-lg leading-none">
-            {{- partial "icons/navigation/chevron_right.svg" -}}
-          </a>
-        {{ end }}
-      </div>
-    </aside>
-  </div>
+          {{ if .PrevInSection }}
+            <a
+              href="{{ .PrevInSection.Permalink }}"
+              class="icon text-lg leading-none"
+            >
+              {{- partial "icons/navigation/chevron_right.svg" -}}
+            </a>
+          {{ end }}
+        </div>
+      </aside>
+    </div>
 
-  <script>
-  window.customElements.define('wc-toc',
-    class extends HTMLElement {
-      connectedCallback() {
-        const { headings } = this;
-        const toc = this;
+    <script>
+      window.customElements.define(
+        "wc-toc",
+        class extends HTMLElement {
+          connectedCallback() {
+            const { headings } = this;
+            const toc = this;
 
-        const offset = window.visualViewport.height / 4;
-        
-        document.addEventListener('scroll', function(e) {
-          const find = headings.filter(obj => {
-            return obj.target.offsetTop < (window.scrollY + offset);
-          }).pop();
+            const offset = window.visualViewport.height / 4;
 
-          const current = toc.getElementsByClassName('active');
-          
-          if (current != null) {
-            for (let el of current) {
-              el.classList.remove('active');
-              const list = el.closest('ul');
-              list.classList.remove('has-active');
+            document.addEventListener("scroll", function (e) {
+              const find = headings
+                .filter((obj) => {
+                  return obj.target.offsetTop < window.scrollY + offset;
+                })
+                .pop();
+
+              const current = toc.getElementsByClassName("active");
+
+              if (current != null) {
+                for (let el of current) {
+                  el.classList.remove("active");
+                  const list = el.closest("ul");
+                  list.classList.remove("has-active");
+                }
+              }
+
+              if (find != null) {
+                find.el.classList.add("active");
+                const list = find.el.closest("ul");
+                list.classList.add("has-active");
+              }
+            });
+          }
+
+          get headings() {
+            const arr = [];
+
+            for (let el of this.querySelectorAll("a")) {
+              arr.push({
+                el,
+                target: document.getElementById(el.hash.replace("#", "")),
+              });
             }
+
+            return arr;
           }
-
-          if (find != null) {
-            find.el.classList.add('active');
-            const list = find.el.closest('ul');
-            list.classList.add('has-active');
-          }
-        });
-      }
-
-      get headings() {
-        const arr = [];
-
-        for (let el of this.querySelectorAll('a')) {
-          arr.push({
-            el,
-            target: document.getElementById(el.hash.replace('#', ''))
-          });
         }
-
-        return arr;
-      }
-    }
-  );
-  </script>
-</main>
+      );
+    </script>
+  </main>
 {{ end }}

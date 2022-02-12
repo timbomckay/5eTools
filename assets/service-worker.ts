@@ -96,3 +96,26 @@ registerRoute(
     ],
   }),
 );
+
+// Cache fonts with a Cache First strategy
+registerRoute(
+  // Check to see if the request's destination is for a font
+  ({ request }) => request.destination === 'font',
+  // Use a Cache First caching strategy
+  new CacheFirst({
+    // Put all cached files in a cache named 'fonts'
+    cacheName: `${prefix}-fonts`,
+    plugins: [
+      // Ensure that only requests that result in a 200 status are cached
+      new CacheableResponsePlugin({
+        statuses: [200],
+      }),
+      // Don't cache more than 25 fonts, and expire them after 90 days
+      new ExpirationPlugin({
+        maxEntries: 25,
+        maxAgeSeconds: 60 * 60 * 24 * 90, // 90 Days
+        purgeOnQuotaError: true,
+      }),
+    ],
+  }),
+);

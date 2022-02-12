@@ -1,11 +1,13 @@
-<span class="block -mx-6 lg:-mx-28">
+<p class="has-image block -mx-6 lg:-mx-28">
   <img
-    src="https://res.cloudinary.com/timbomckay/image/upload/f_auto/{{ .Destination | urlize }}"
+    src="https://res.cloudinary.com/timbomckay/image/upload/f_auto/{{ replaceRE "%20" "_" .Destination | urlize }}"
     alt="{{ .Text }}"
     class="mx-auto relative z-10"
     loading="lazy"
+    height="300"
+    width="400"
     {{ with .Title }}
       title="{{ . }}"
     {{ end }}
   />
-</span>
+</p>
