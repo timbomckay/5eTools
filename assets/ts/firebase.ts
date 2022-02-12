@@ -7,6 +7,7 @@ import {
   getFirestore,
   query,
   where,
+  getDoc,
   // getDocFromCache,
   // doc,
 } from 'firebase/firestore';
@@ -85,6 +86,19 @@ const foo = async () => {
   querySnapshot.forEach((doc) => {
     // @ts-ignore
     items[doc.id] = doc.data();
+  });
+
+  const q2 = await getDocs(collection(db, 'campaigns'));
+  q2.forEach(async (doc) => {
+    // doc.data() is never undefined for query doc snapshots
+    const data = doc.data();
+
+    console.log('campaign', ' => ', data);
+
+    data.inventories.forEach(async (i) => {
+      const inventory = await getDoc(i);
+      console.log('inventory', inventory.data());
+    });
   });
 
   // async function wait(ms) {

@@ -2,47 +2,42 @@
   "campaigns": {
     "--campaign-uid-123--": {
       "name": "The War of Storms",
-      "users": [ "--user-uid-123--" ],
-      "characters": [ "--character-uid-123--" ],
+      "users": [ "--user-reference-123--" ],
+      "characters": [ "--character-reference-123--" ],
       "notes": [],
       "timeline": [],
-      // campaign holds all items
-      "items": {
-        // bag of holding
-        "--item-uid-abc--": {
-          "notes": []
-        },
-        // unidentified item
-        "--item-uid-321--": {
-          "notes": [],
-          "identified": false
-        }
-      },
-      // TODO: items not on characters
-      "inventory": {}
+      "inventories": [
+        "--inventories-reference-1--",
+        "--inventories-reference-2--",
+        "--inventories-reference-3--"
+      ],
+      "unidentified": [
+        "--item-reference-1--",
+        "--item-reference-2--",
+        "--item-reference-3--"
+      ]
     }
   },
   "characters": {
     "--character-uid-123--": {
       "name": "Tenebrae",
-      // sorting items
-      "inventory": {
-        // attuned items
-        "attuned": [
-          "--item-uid-321--",
-          "--item-uid-abc--"
-        ],
-        // items held on person
-        "--character-uid-123--": [
-          "--item-uid-321--",
-          "--item-uid-abc--",
-          "--item-uid-xyz--"
-        ],
-        // sorted items in bag of holding
-        "--item-uid-abc--": [
-          "--item-uid-321--",
-          "--item-uid-abc--",
-          "--item-uid-xyz--"
+      "campaign": "--campaign-reference--",
+      "attuned": [
+        "--item-reference-1--",
+        "--item-reference-2--",
+        "--item-reference-3--"
+      ],
+      "inventory": [
+        "--inventories-reference-1--",
+        "--inventories-reference-2--",
+        "--inventories-reference-3--"
+      ],
+      "notes": {
+        "items": [
+          {
+            "ref": "--any-reference-1--",
+            "entries": []
+          }
         ]
       }
     }
@@ -60,7 +55,19 @@
       "description": "array | object",
       "srd": "boolean",
       "type": "string",
-      "tier": "string",
+      "tier": "string"
+    }
+  },
+  "inventories": {
+    "--inventory-uid-123": {
+      "name": "Equipment",
+      "ref": "--item-uid-321--",
+      "items": [
+        {
+          "ref": "--item-uid-321--",
+          "quantity": 3
+        }
+      ]
     }
   },
   "users": {
@@ -85,4 +92,3 @@
     }
   }
 }
-
