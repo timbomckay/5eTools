@@ -10,20 +10,27 @@
 
 <link rel="icon" href="{{ .Site.BaseURL }}backpack.svg" />
 
-{{ $script := resources.Get "index.ts" | js.Build }}
+{{ $opts := dict "target" "es2019" }}
+{{ $script := resources.Get "index.ts" | js.Build $opts }}
+
 {{ if hugo.IsProduction }}
   {{ $script = $script | minify | fingerprint }}
   {{ .Scratch.Add "assets" (slice $script.RelPermalink) }}
-{{ end }}<script
+{{ end }}
+
+<script
   src="{{ $script.RelPermalink }}"
   integrity="{{ $script.Data.Integrity }}"
   defer
 ></script>
 {{ $css := resources.Get "index.css" | resources.PostCSS }}
+
 {{ if hugo.IsProduction }}
   {{ $css = $css | minify | fingerprint }}
   {{ .Scratch.Add "assets" (slice $css.RelPermalink) }}
 {{ end }}
+
+
 <link
   rel="stylesheet"
   href="{{ $css.RelPermalink }}"

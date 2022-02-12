@@ -9,6 +9,7 @@ themeColor = "#9d0a0e"
 
 [build]
 writeStats = true
+noJSConfigInAssets = true
 
 [minify]
 minifyOutput = true
